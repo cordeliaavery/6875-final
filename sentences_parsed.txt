@@ -1,0 +1,92 @@
+(ROOT
+  (S
+    (NP (NNP Mary))
+    (VP (VBD watched)
+      (NP (PRP$ her) (NN dance)))
+    (. .)))
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (MD must)
+      (VP (VB be)
+        (NP (NNP John))))
+    (. .)))
+(ROOT
+  (S
+    (ADVP (IN At) (JJS least))
+    (NP (PRP he))
+    (VP (VBZ looks)
+      (PP (IN like)
+        (NP (PRP him))))
+    (. .)))
+(ROOT
+  (S
+    (NP (DT Every) (NN bear))
+    (VP (VBZ washes)
+      (NP (PRP her)))
+    (. .)))
+(ROOT
+  (S
+    (NP
+      (NP (NNP Lucy) (POS 's))
+      (NN mother))
+    (VP (VBZ sees)
+      (S
+        (NP (PRP herself))
+        (VP (VB play)
+          (NP (DT the) (NN piano)))))
+    (. .)))
+(ROOT
+  (S
+    (NP
+      (NP (NNP Lucy) (POS 's))
+      (NN mother))
+    (VP (VBZ sees)
+      (S
+        (NP (PRP$ her) (NN play))
+        (NP (DT the) (NN piano))))
+    (. .)))
+(ROOT
+  (S
+    (NP
+      (NP (NNP Mary) (POS 's))
+      (NN mother))
+    (VP (VBZ watches)
+      (NP (PRP$ her) (NN dance)))
+    (. .)))
+(ROOT
+  (S
+    (NP
+      (NP (NNP Mary) (POS 's))
+      (NN mother))
+    (VP (VBZ watches)
+      (S
+        (NP (PRP herself))
+        (NP (NN dance))))
+    (. .)))
+(ROOT
+  (S
+    (NP (DT Every) (NN girl))
+    (VP (VBD saw)
+      (NP (PRP$ her) (NN dance)))
+    (. .)))
+(ROOT
+  (S
+    (NP (NNP John))
+    (VP (VBD saw)
+      (NP (PRP himself)))
+    (. .)))
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which)
+      (NP (NN picture)
+        (PP (IN of)
+          (NP (PRP himself)))))
+    (SQ (VBZ does)
+      (NP (NNP John))
+      (VP (VB think)
+        (SBAR
+          (S
+            (NP (NNP Bill))
+            (VP (VBZ likes))))))
+    (. ?)))
