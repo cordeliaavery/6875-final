@@ -1,6 +1,5 @@
 # 6875-final
 
-## Dependencies:
 Need pyStatParser:
 `pip install pyStatParser`
 
