@@ -1,6 +1,11 @@
 
+class NodeError(Exception):
+    def __init__(self, expression):
+        self.expression = expression
+        self.message = "Attempting to access child at leaf!"
+
 class Tree:
-    def __init__(self, vals, parent=None):
+    def __init__(self, vals, __parent=None):
         if len(vals) != 1:
             print ("VALS dict must contain a single item")
             exit
@@ -10,12 +15,26 @@ class Tree:
         else:
             self.__node = Bar(children, self)
 
-    def get_tag(self):
+    def tag(self):
         return self.__tag
+
+    def parent(self):
+        return self.__parent
+
+    def get_left(self):
+        if isinstance(self.__node, Bar):
+            return self.__node.get_left()
+        raise NodeError
+
+    def get_right(self):
+        if isinstance(self.__node, Bar):
+            return self.__node.get_right()
+        raise NodeError
 
     def pretty_print(self, depth=0):
         print(" " * depth + self.__tag)
         self.__node.pretty_print(depth + 4)
+        print (" " * depth + str(isinstance(self.__node, Head)))
 
 class Bar:
     def __init__(self, vals, parent):
@@ -59,3 +78,6 @@ class Head:
 
     def pretty_print(self, depth):
         print(" " * depth + self.__val)
+
+def is_leaf(val):
+    return isinstance(val, Head)
