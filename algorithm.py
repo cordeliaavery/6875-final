@@ -1,3 +1,5 @@
+import tree
+
 def find_X(node, path):
     if node.tag is 'NP' or node.tag is 'S':
         return node, path
@@ -48,11 +50,11 @@ def explore_right_helper(X):
 		to_explore.append(X.get_left)
 	if X.get_right.tag is 'NP':
 		to_explore.append(X.get_right)
-	if X.get_left.tag is 'NP' or X.get_left.tag is 'S' or
-		X.get_right.tag is 'NP' or X.get_right.tag is 'S':
+	if (X.get_left.tag is 'NP' or X.get_left.tag is 'S' or 
+		X.get_right.tag is 'NP' or X.get_right.tag is 'S'):
 		return to_explore
-	return to_explore + explore_right_helper(X.get_left) + 
-			explore_right_helper(X.get_right)
+	return (to_explore + explore_right_helper(X.get_left) + 
+			explore_right_helper(X.get_right))
 
 
 def explore_right(X, path):
@@ -66,16 +68,16 @@ def resolve_anaphor(input_node):
     search_start = get_parent(input_node)
     if search_start.tag is not 'NP':
         search_start = get_parent(node)
-    X, path, proposed_antecedents = 
+    X, path, proposed_antecedents = \
     	steps_two_through_four(search_start, [])
     while(get_parent(X) is not None):
 		# Step 5: From node X, go up the tree to the first
 		# NP or S node encountered. Call this new node X, 
 		# and call the path traversed to reach it p
     	search_start = get_parent(X)
-	    if search_start.tag is not 'NP':
+    	if search_start.tag is not 'NP':
 	        search_start = get_parent(X)
-	    X, path = find_X(search_start, path)
+        X, path = find_X(search_start, path)
 	    # Step 6: If X is an NP node and if the path p to X 
 		# did not pass through the N node that X immediately
 		# dominates, propose X as the antecedent.
@@ -85,10 +87,10 @@ def resolve_anaphor(input_node):
     	# Step 7: Traverse all branches below node X to the left 
     	# of path p in a left-toright, breadth-first manner. 
     	# Propose any NP node encountered as the antecedent
-	    node = find_left_of_p(X, path)
-	    proposed_antecedents += explore(node, true)
-	    if X.tag is 'S':
-	    	proposed_antecedents += explore_right(X, path)
+        node = find_left_of_p(X, path)
+        proposed_antecedents += explore(node, true)
+        if X.tag is 'S':
+            proposed_antecedents += explore_right(X, path)
 	    # Step 8: if X is an S node, traverse all branches of node
 	    # X to the right of the path p in a left-to-right breadth-
 	    # first meanner, but do not go below any NP or S node 
