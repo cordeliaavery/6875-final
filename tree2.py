@@ -45,11 +45,13 @@ class Bar:
         self.__left = Tree(vals[0], parent)
         if len(vals) > 1:
             self.__right = Tree(vals[1], parent)
+        else:
+            self.__right = None
 
     def pretty_print(self, depth=0):
         if self.__left:
             self.__left.pretty_print(depth)
-        if hasattr(self, "__right"):
+        if self.__right:
             self.__right.pretty_print(depth)
 
     def get_left(self):
