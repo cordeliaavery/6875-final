@@ -22,6 +22,10 @@ for elem in sorted(parser_output["sentences"], key=lambda x: x["index"]):
         return unresolved + look_for_PRP(cell.get_left()) + look_for_PRP(cell.get_right())
     candidates = look_for_PRP(tree_to_parse)
     for candidate in candidates:
+        print '-'*10
+        print 'Proposed antecedents for'
+        candidate.pretty_print()
+        print 'Are as follows: '
         proposed = resolve_anaphor(candidate)
         for proposal in proposed:
             proposal.pretty_print()

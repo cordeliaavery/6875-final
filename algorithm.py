@@ -46,6 +46,7 @@ def steps_two_through_four(search_start, path):
     return X, path, explore(X, False)
 
 def explore_right_helper(X):
+    if X is None: return []
     if X.is_leaf(): return []
     to_explore = []
     if X.get_left().tag() == 'NP':
@@ -60,6 +61,7 @@ def explore_right_helper(X):
 
 
 def explore_right(X, path):
+    if X is None: return []
     if X.is_leaf(): return []
     if X.get_right() not in path:
         return explore_right_helper(X.get_right())
@@ -93,7 +95,7 @@ def resolve_anaphor(input_node):
         proposed_antecedents += explore(node, True)
         if X.tag() == 'S':
             proposed_antecedents += explore_right(X, path)
-        break
+        X = get_parent(X)
         # Step 8: if X is an S node, traverse all branches of node
         # X to the right of the path p in a left-to-right breadth-
         # first meanner, but do not go below any NP or S node 
