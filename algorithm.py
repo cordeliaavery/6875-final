@@ -89,6 +89,13 @@ def explore_right(X, path):
         return explore_right_helper(X.get_right())
     return explore_right(X.get_left(), path)
 
+def is_not_highest_S(X):
+    while(get_parent(X) is not None):
+        X = get_parent(X)
+        if X.tag() == 'S':
+            return True
+    return False
+
 def resolve_anaphor(input_node):
     # Begin at NP node immediately dominating pronoun
     path = [input_node]
@@ -101,7 +108,7 @@ def resolve_anaphor(input_node):
     X, path = find_X(get_parent(search_start), path)
     proposed_antecedents = explore_left_of_path(X, path)
     print proposed_antecedents
-    while(get_parent(X) is not None):
+    while(is_not_highest_S(X)):
         # Step 5: From node X, go up the tree to the first
         # NP or S node encountered. Call this new node X, 
         # and call the path traversed to reach it p
@@ -128,5 +135,6 @@ def resolve_anaphor(input_node):
         # encountered. Propose any NP node encountered as the 
         # antecedent.
     return proposed_antecedents
+    # Should explore previous sentences at this point
 
 
