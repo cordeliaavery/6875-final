@@ -7,41 +7,27 @@ def find_X(node, path):
     next_step = get_parent(node)
     return find_X(next_step, path)
 
-def explore_left_of_path(X, path, has_encountered_NP_or_S=False):
+def explore_left_of_path(X, path):
     has_encountered_NP_or_S = False
     proposed = []
-    queue = [X.get_left()]
+    queue = [(X.get_left(), has_encountered_NP_or_S)]
     if X.get_right() in path:
-        queue.append(X.get_right())
+        queue.append((X.get_right(), has_encountered_NP_or_S))
     # Explore each layer of the tree, adding to a queue!
     while len(queue) > 0:
-        node = queue.pop(0)
+        node, has_encountered_NP_or_S = queue.pop(0)
         if node is None: continue
         if node not in path:
-            if node.tag() == 'NP':
-                proposed.append(node)
+            if has_encountered_NP_or_S:
+                if node.tag() == 'NP':
+                    proposed.append(node)
+        if node.tag() == 'NP' or node.tag() == 'S': has_encountered_NP_or_S = True
         if not node.is_leaf():
-            queue.append(node.get_left())
+            queue.append((node.get_left(), has_encountered_NP_or_S))
             if node.get_right() in path:
-                queue.append(node.get_right())
+                queue.append((node.get_right(), has_encountered_NP_or_S))
     return proposed
 
-    # # Then go through the queue and test each, in order of breadth!
-    # if X.tag() == 'NP': proposed.append(X)
-    # if X.is_leaf(): return proposed
-
-    # if has_encountered_NP_or_S:
-    #     if X.get_left() is not None:
-    #         if X.get_left().tag() == 'NP':
-    #             proposed.append(X.get_left())
-    #     if X.get_right() is not None:
-    #         if X.get_right().tag() == 'NP':
-    #             to_explore.append(X.get_right())
-    # if X.tag() == 'NP' or X.tag() == 'S':
-    #     has_encountered_NP_or_S = True
-    # # if X in path, go down to the left
-    # # if X not in path, go down left and right
-    # return proposed
 
 # Condition three: 
 # Traverse all branches below node X to the left of path p
