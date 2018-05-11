@@ -1,0 +1,279 @@
+{
+  "docId": "binding_27.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (NN Everyone))\n    (VP (VBD said)\n      (SBAR\n        (S\n          (NP (PRP he))\n          (VP (VBD had)\n            (VP (VBN kissed)\n              (NP (NNP Mary)))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "said"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "said",
+          "dependent": 1,
+          "dependentGloss": "Everyone"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "kissed",
+          "dependent": 3,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "aux",
+          "governor": 5,
+          "governorGloss": "kissed",
+          "dependent": 4,
+          "dependentGloss": "had"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 2,
+          "governorGloss": "said",
+          "dependent": 5,
+          "dependentGloss": "kissed"
+        },
+        {
+          "dep": "dobj",
+          "governor": 5,
+          "governorGloss": "kissed",
+          "dependent": 6,
+          "dependentGloss": "Mary"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "said",
+          "dependent": 7,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "said"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "said",
+          "dependent": 1,
+          "dependentGloss": "Everyone"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "kissed",
+          "dependent": 3,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "aux",
+          "governor": 5,
+          "governorGloss": "kissed",
+          "dependent": 4,
+          "dependentGloss": "had"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 2,
+          "governorGloss": "said",
+          "dependent": 5,
+          "dependentGloss": "kissed"
+        },
+        {
+          "dep": "dobj",
+          "governor": 5,
+          "governorGloss": "kissed",
+          "dependent": 6,
+          "dependentGloss": "Mary"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "said",
+          "dependent": 7,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "said"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "said",
+          "dependent": 1,
+          "dependentGloss": "Everyone"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "kissed",
+          "dependent": 3,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "aux",
+          "governor": 5,
+          "governorGloss": "kissed",
+          "dependent": 4,
+          "dependentGloss": "had"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 2,
+          "governorGloss": "said",
+          "dependent": 5,
+          "dependentGloss": "kissed"
+        },
+        {
+          "dep": "dobj",
+          "governor": 5,
+          "governorGloss": "kissed",
+          "dependent": 6,
+          "dependentGloss": "Mary"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "said",
+          "dependent": 7,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 5,
+          "docTokenEnd": 6,
+          "tokenBegin": 5,
+          "tokenEnd": 6,
+          "text": "Mary",
+          "characterOffsetBegin": 28,
+          "characterOffsetEnd": 32,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 2,
+          "docTokenEnd": 3,
+          "tokenBegin": 2,
+          "tokenEnd": 3,
+          "text": "he",
+          "characterOffsetBegin": 14,
+          "characterOffsetEnd": 16,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "Everyone",
+          "originalText": "Everyone",
+          "lemma": "everyone",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 8,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "said",
+          "originalText": "said",
+          "lemma": "say",
+          "characterOffsetBegin": 9,
+          "characterOffsetEnd": 13,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "he",
+          "originalText": "he",
+          "lemma": "he",
+          "characterOffsetBegin": 14,
+          "characterOffsetEnd": 16,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "had",
+          "originalText": "had",
+          "lemma": "have",
+          "characterOffsetBegin": 17,
+          "characterOffsetEnd": 20,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "kissed",
+          "originalText": "kissed",
+          "lemma": "kiss",
+          "characterOffsetBegin": 21,
+          "characterOffsetEnd": 27,
+          "pos": "VBN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "Mary",
+          "originalText": "Mary",
+          "lemma": "Mary",
+          "characterOffsetBegin": 28,
+          "characterOffsetEnd": 32,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 7,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 32,
+          "characterOffsetEnd": 33,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+  }
+}

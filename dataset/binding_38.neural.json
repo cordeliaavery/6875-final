@@ -1,0 +1,393 @@
+{
+  "docId": "binding_38.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (NNP John))\n    (VP (VBD promised)\n      (NP (NNP Bill))\n      (NP\n        (NP (PRP$ his) (NN admission))\n        (PP (TO to)\n          (NP (DT the) (NN university)))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "promised"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "promised",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "iobj",
+          "governor": 2,
+          "governorGloss": "promised",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 5,
+          "governorGloss": "admission",
+          "dependent": 4,
+          "dependentGloss": "his"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "promised",
+          "dependent": 5,
+          "dependentGloss": "admission"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "university",
+          "dependent": 6,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "det",
+          "governor": 8,
+          "governorGloss": "university",
+          "dependent": 7,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nmod",
+          "governor": 5,
+          "governorGloss": "admission",
+          "dependent": 8,
+          "dependentGloss": "university"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "promised",
+          "dependent": 9,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "promised"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "promised",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "iobj",
+          "governor": 2,
+          "governorGloss": "promised",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 5,
+          "governorGloss": "admission",
+          "dependent": 4,
+          "dependentGloss": "his"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "promised",
+          "dependent": 5,
+          "dependentGloss": "admission"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "university",
+          "dependent": 6,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "det",
+          "governor": 8,
+          "governorGloss": "university",
+          "dependent": 7,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nmod:to",
+          "governor": 5,
+          "governorGloss": "admission",
+          "dependent": 8,
+          "dependentGloss": "university"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "promised",
+          "dependent": 9,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "promised"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "promised",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "iobj",
+          "governor": 2,
+          "governorGloss": "promised",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 5,
+          "governorGloss": "admission",
+          "dependent": 4,
+          "dependentGloss": "his"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "promised",
+          "dependent": 5,
+          "dependentGloss": "admission"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "university",
+          "dependent": 6,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "det",
+          "governor": 8,
+          "governorGloss": "university",
+          "dependent": 7,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nmod:to",
+          "governor": 5,
+          "governorGloss": "admission",
+          "dependent": 8,
+          "dependentGloss": "university"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "promised",
+          "dependent": 9,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 0,
+          "docTokenEnd": 1,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 2,
+          "docTokenEnd": 3,
+          "tokenBegin": 2,
+          "tokenEnd": 3,
+          "text": "Bill",
+          "characterOffsetBegin": 14,
+          "characterOffsetEnd": 18,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 3,
+          "docTokenEnd": 4,
+          "tokenBegin": 3,
+          "tokenEnd": 4,
+          "text": "his",
+          "characterOffsetBegin": 19,
+          "characterOffsetEnd": 22,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "John",
+          "originalText": "John",
+          "lemma": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "promised",
+          "originalText": "promised",
+          "lemma": "promise",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 13,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "Bill",
+          "originalText": "Bill",
+          "lemma": "Bill",
+          "characterOffsetBegin": 14,
+          "characterOffsetEnd": 18,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "his",
+          "originalText": "his",
+          "lemma": "he",
+          "characterOffsetBegin": 19,
+          "characterOffsetEnd": 22,
+          "pos": "PRP$",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "admission",
+          "originalText": "admission",
+          "lemma": "admission",
+          "characterOffsetBegin": 23,
+          "characterOffsetEnd": 32,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "to",
+          "originalText": "to",
+          "lemma": "to",
+          "characterOffsetBegin": 33,
+          "characterOffsetEnd": 35,
+          "pos": "TO",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "the",
+          "originalText": "the",
+          "lemma": "the",
+          "characterOffsetBegin": 36,
+          "characterOffsetEnd": 39,
+          "pos": "DT",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "university",
+          "originalText": "university",
+          "lemma": "university",
+          "characterOffsetBegin": 40,
+          "characterOffsetEnd": 50,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 9,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 50,
+          "characterOffsetEnd": 51,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "3": [
+      {
+        "id": 0,
+        "text": "John",
+        "type": "PROPER",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 1,
+        "endIndex": 2,
+        "headIndex": 1,
+        "sentNum": 1,
+        "position": [
+          1,
+          1
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 3,
+        "text": "his",
+        "type": "PRONOMINAL",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 4,
+        "endIndex": 5,
+        "headIndex": 4,
+        "sentNum": 1,
+        "position": [
+          1,
+          4
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}

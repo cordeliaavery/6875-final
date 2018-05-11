@@ -1,0 +1,191 @@
+{
+  "docId": "binding_57.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (PRP They))\n    (VP (VBP like)\n      (NP (DT each) (JJ other)))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "like"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "like",
+          "dependent": 1,
+          "dependentGloss": "They"
+        },
+        {
+          "dep": "det",
+          "governor": 4,
+          "governorGloss": "other",
+          "dependent": 3,
+          "dependentGloss": "each"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "like",
+          "dependent": 4,
+          "dependentGloss": "other"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "like",
+          "dependent": 5,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "like"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "like",
+          "dependent": 1,
+          "dependentGloss": "They"
+        },
+        {
+          "dep": "det",
+          "governor": 4,
+          "governorGloss": "other",
+          "dependent": 3,
+          "dependentGloss": "each"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "like",
+          "dependent": 4,
+          "dependentGloss": "other"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "like",
+          "dependent": 5,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "like"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "like",
+          "dependent": 1,
+          "dependentGloss": "They"
+        },
+        {
+          "dep": "det",
+          "governor": 4,
+          "governorGloss": "other",
+          "dependent": 3,
+          "dependentGloss": "each"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "like",
+          "dependent": 4,
+          "dependentGloss": "other"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "like",
+          "dependent": 5,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "They",
+          "originalText": "They",
+          "lemma": "they",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "like",
+          "originalText": "like",
+          "lemma": "like",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 9,
+          "pos": "VBP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "each",
+          "originalText": "each",
+          "lemma": "each",
+          "characterOffsetBegin": 10,
+          "characterOffsetEnd": 14,
+          "pos": "DT",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "other",
+          "originalText": "other",
+          "lemma": "other",
+          "characterOffsetBegin": 15,
+          "characterOffsetEnd": 20,
+          "pos": "JJ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 5,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 20,
+          "characterOffsetEnd": 21,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+  }
+}

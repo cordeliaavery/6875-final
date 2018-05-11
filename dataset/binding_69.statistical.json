@@ -1,0 +1,359 @@
+{
+  "docId": "binding_69.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP\n      (NP (NNP John) (POS 's))\n      (NN teacher))\n    (VP (MD ca) (RB n't)\n      (VP (VB stand)\n        (NP (NNP John))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "stand"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 3,
+          "governorGloss": "teacher",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "case",
+          "governor": 1,
+          "governorGloss": "John",
+          "dependent": 2,
+          "dependentGloss": "'s"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "stand",
+          "dependent": 3,
+          "dependentGloss": "teacher"
+        },
+        {
+          "dep": "aux",
+          "governor": 6,
+          "governorGloss": "stand",
+          "dependent": 4,
+          "dependentGloss": "ca"
+        },
+        {
+          "dep": "neg",
+          "governor": 6,
+          "governorGloss": "stand",
+          "dependent": 5,
+          "dependentGloss": "n't"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "stand",
+          "dependent": 7,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "stand",
+          "dependent": 8,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "stand"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 3,
+          "governorGloss": "teacher",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "case",
+          "governor": 1,
+          "governorGloss": "John",
+          "dependent": 2,
+          "dependentGloss": "'s"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "stand",
+          "dependent": 3,
+          "dependentGloss": "teacher"
+        },
+        {
+          "dep": "aux",
+          "governor": 6,
+          "governorGloss": "stand",
+          "dependent": 4,
+          "dependentGloss": "ca"
+        },
+        {
+          "dep": "neg",
+          "governor": 6,
+          "governorGloss": "stand",
+          "dependent": 5,
+          "dependentGloss": "n't"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "stand",
+          "dependent": 7,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "stand",
+          "dependent": 8,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "stand"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 3,
+          "governorGloss": "teacher",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "case",
+          "governor": 1,
+          "governorGloss": "John",
+          "dependent": 2,
+          "dependentGloss": "'s"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "stand",
+          "dependent": 3,
+          "dependentGloss": "teacher"
+        },
+        {
+          "dep": "aux",
+          "governor": 6,
+          "governorGloss": "stand",
+          "dependent": 4,
+          "dependentGloss": "ca"
+        },
+        {
+          "dep": "neg",
+          "governor": 6,
+          "governorGloss": "stand",
+          "dependent": 5,
+          "dependentGloss": "n't"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "stand",
+          "dependent": 7,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "stand",
+          "dependent": 8,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 0,
+          "docTokenEnd": 1,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 2,
+          "docTokenEnd": 3,
+          "tokenBegin": 2,
+          "tokenEnd": 3,
+          "text": "teacher",
+          "characterOffsetBegin": 7,
+          "characterOffsetEnd": 14,
+          "ner": "TITLE"
+        },
+        {
+          "docTokenBegin": 6,
+          "docTokenEnd": 7,
+          "tokenBegin": 6,
+          "tokenEnd": 7,
+          "text": "John",
+          "characterOffsetBegin": 27,
+          "characterOffsetEnd": 31,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "John",
+          "originalText": "John",
+          "lemma": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 2,
+          "word": "'s",
+          "originalText": "'s",
+          "lemma": "'s",
+          "characterOffsetBegin": 4,
+          "characterOffsetEnd": 6,
+          "pos": "POS",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "teacher",
+          "originalText": "teacher",
+          "lemma": "teacher",
+          "characterOffsetBegin": 7,
+          "characterOffsetEnd": 14,
+          "pos": "NN",
+          "ner": "TITLE",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "ca",
+          "originalText": "ca",
+          "lemma": "can",
+          "characterOffsetBegin": 15,
+          "characterOffsetEnd": 17,
+          "pos": "MD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 5,
+          "word": "n't",
+          "originalText": "n't",
+          "lemma": "not",
+          "characterOffsetBegin": 17,
+          "characterOffsetEnd": 20,
+          "pos": "RB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "stand",
+          "originalText": "stand",
+          "lemma": "stand",
+          "characterOffsetBegin": 21,
+          "characterOffsetEnd": 26,
+          "pos": "VB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "John",
+          "originalText": "John",
+          "lemma": "John",
+          "characterOffsetBegin": 27,
+          "characterOffsetEnd": 31,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 8,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 31,
+          "characterOffsetEnd": 32,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "1": [
+      {
+        "id": 0,
+        "text": "John 's",
+        "type": "PROPER",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 1,
+        "endIndex": 3,
+        "headIndex": 1,
+        "sentNum": 1,
+        "position": [
+          1,
+          1
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 1,
+        "text": "John",
+        "type": "PROPER",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 7,
+        "endIndex": 8,
+        "headIndex": 7,
+        "sentNum": 1,
+        "position": [
+          1,
+          2
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}

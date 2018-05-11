@@ -1,0 +1,325 @@
+{
+  "docId": "binding_60.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (NNP John))\n    (VP (VBZ believes)\n      (SBAR (IN that)\n        (S\n          (NP (PRP he))\n          (VP (VBZ likes)\n            (NP (NNP Mary))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "believes"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "believes",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "mark",
+          "governor": 5,
+          "governorGloss": "likes",
+          "dependent": 3,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "likes",
+          "dependent": 4,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 2,
+          "governorGloss": "believes",
+          "dependent": 5,
+          "dependentGloss": "likes"
+        },
+        {
+          "dep": "dobj",
+          "governor": 5,
+          "governorGloss": "likes",
+          "dependent": 6,
+          "dependentGloss": "Mary"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "believes",
+          "dependent": 7,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "believes"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "believes",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "mark",
+          "governor": 5,
+          "governorGloss": "likes",
+          "dependent": 3,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "likes",
+          "dependent": 4,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 2,
+          "governorGloss": "believes",
+          "dependent": 5,
+          "dependentGloss": "likes"
+        },
+        {
+          "dep": "dobj",
+          "governor": 5,
+          "governorGloss": "likes",
+          "dependent": 6,
+          "dependentGloss": "Mary"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "believes",
+          "dependent": 7,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "believes"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "believes",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "mark",
+          "governor": 5,
+          "governorGloss": "likes",
+          "dependent": 3,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "likes",
+          "dependent": 4,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 2,
+          "governorGloss": "believes",
+          "dependent": 5,
+          "dependentGloss": "likes"
+        },
+        {
+          "dep": "dobj",
+          "governor": 5,
+          "governorGloss": "likes",
+          "dependent": 6,
+          "dependentGloss": "Mary"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "believes",
+          "dependent": 7,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 0,
+          "docTokenEnd": 1,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 5,
+          "docTokenEnd": 6,
+          "tokenBegin": 5,
+          "tokenEnd": 6,
+          "text": "Mary",
+          "characterOffsetBegin": 28,
+          "characterOffsetEnd": 32,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 3,
+          "docTokenEnd": 4,
+          "tokenBegin": 3,
+          "tokenEnd": 4,
+          "text": "he",
+          "characterOffsetBegin": 19,
+          "characterOffsetEnd": 21,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "John",
+          "originalText": "John",
+          "lemma": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "believes",
+          "originalText": "believes",
+          "lemma": "believe",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 13,
+          "pos": "VBZ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "that",
+          "originalText": "that",
+          "lemma": "that",
+          "characterOffsetBegin": 14,
+          "characterOffsetEnd": 18,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "he",
+          "originalText": "he",
+          "lemma": "he",
+          "characterOffsetBegin": 19,
+          "characterOffsetEnd": 21,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "likes",
+          "originalText": "likes",
+          "lemma": "like",
+          "characterOffsetBegin": 22,
+          "characterOffsetEnd": 27,
+          "pos": "VBZ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "Mary",
+          "originalText": "Mary",
+          "lemma": "Mary",
+          "characterOffsetBegin": 28,
+          "characterOffsetEnd": 32,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 7,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 32,
+          "characterOffsetEnd": 33,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "2": [
+      {
+        "id": 0,
+        "text": "John",
+        "type": "PROPER",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 1,
+        "endIndex": 2,
+        "headIndex": 1,
+        "sentNum": 1,
+        "position": [
+          1,
+          1
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 2,
+        "text": "he",
+        "type": "PRONOMINAL",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 4,
+        "endIndex": 5,
+        "headIndex": 4,
+        "sentNum": 1,
+        "position": [
+          1,
+          3
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}

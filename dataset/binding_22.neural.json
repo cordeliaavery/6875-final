@@ -1,0 +1,443 @@
+{
+  "docId": "binding_22.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (NNP John))\n    (VP (VBZ is)\n      (ADJP (RB too) (JJ clever))\n      (S\n        (VP (TO to)\n          (VP (VB expect)\n            (S\n              (NP (PRP us))\n              (VP (TO to)\n                (VP (VB catch)\n                  (NP (NNP Bill)))))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "clever"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "clever",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "cop",
+          "governor": 4,
+          "governorGloss": "clever",
+          "dependent": 2,
+          "dependentGloss": "is"
+        },
+        {
+          "dep": "advmod",
+          "governor": 4,
+          "governorGloss": "clever",
+          "dependent": 3,
+          "dependentGloss": "too"
+        },
+        {
+          "dep": "mark",
+          "governor": 6,
+          "governorGloss": "expect",
+          "dependent": 5,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 4,
+          "governorGloss": "clever",
+          "dependent": 6,
+          "dependentGloss": "expect"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "expect",
+          "dependent": 7,
+          "dependentGloss": "us"
+        },
+        {
+          "dep": "mark",
+          "governor": 9,
+          "governorGloss": "catch",
+          "dependent": 8,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 6,
+          "governorGloss": "expect",
+          "dependent": 9,
+          "dependentGloss": "catch"
+        },
+        {
+          "dep": "dobj",
+          "governor": 9,
+          "governorGloss": "catch",
+          "dependent": 10,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "clever",
+          "dependent": 11,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "clever"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "clever",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 6,
+          "governorGloss": "expect",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "cop",
+          "governor": 4,
+          "governorGloss": "clever",
+          "dependent": 2,
+          "dependentGloss": "is"
+        },
+        {
+          "dep": "advmod",
+          "governor": 4,
+          "governorGloss": "clever",
+          "dependent": 3,
+          "dependentGloss": "too"
+        },
+        {
+          "dep": "mark",
+          "governor": 6,
+          "governorGloss": "expect",
+          "dependent": 5,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 4,
+          "governorGloss": "clever",
+          "dependent": 6,
+          "dependentGloss": "expect"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "expect",
+          "dependent": 7,
+          "dependentGloss": "us"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 9,
+          "governorGloss": "catch",
+          "dependent": 7,
+          "dependentGloss": "us"
+        },
+        {
+          "dep": "mark",
+          "governor": 9,
+          "governorGloss": "catch",
+          "dependent": 8,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 6,
+          "governorGloss": "expect",
+          "dependent": 9,
+          "dependentGloss": "catch"
+        },
+        {
+          "dep": "dobj",
+          "governor": 9,
+          "governorGloss": "catch",
+          "dependent": 10,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "clever",
+          "dependent": 11,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "clever"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "clever",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 6,
+          "governorGloss": "expect",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "cop",
+          "governor": 4,
+          "governorGloss": "clever",
+          "dependent": 2,
+          "dependentGloss": "is"
+        },
+        {
+          "dep": "advmod",
+          "governor": 4,
+          "governorGloss": "clever",
+          "dependent": 3,
+          "dependentGloss": "too"
+        },
+        {
+          "dep": "mark",
+          "governor": 6,
+          "governorGloss": "expect",
+          "dependent": 5,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 4,
+          "governorGloss": "clever",
+          "dependent": 6,
+          "dependentGloss": "expect"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "expect",
+          "dependent": 7,
+          "dependentGloss": "us"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 9,
+          "governorGloss": "catch",
+          "dependent": 7,
+          "dependentGloss": "us"
+        },
+        {
+          "dep": "mark",
+          "governor": 9,
+          "governorGloss": "catch",
+          "dependent": 8,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 6,
+          "governorGloss": "expect",
+          "dependent": 9,
+          "dependentGloss": "catch"
+        },
+        {
+          "dep": "dobj",
+          "governor": 9,
+          "governorGloss": "catch",
+          "dependent": 10,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "clever",
+          "dependent": 11,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 0,
+          "docTokenEnd": 1,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 9,
+          "docTokenEnd": 10,
+          "tokenBegin": 9,
+          "tokenEnd": 10,
+          "text": "Bill",
+          "characterOffsetBegin": 41,
+          "characterOffsetEnd": 45,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "John",
+          "originalText": "John",
+          "lemma": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "is",
+          "originalText": "is",
+          "lemma": "be",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 7,
+          "pos": "VBZ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "too",
+          "originalText": "too",
+          "lemma": "too",
+          "characterOffsetBegin": 8,
+          "characterOffsetEnd": 11,
+          "pos": "RB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "clever",
+          "originalText": "clever",
+          "lemma": "clever",
+          "characterOffsetBegin": 12,
+          "characterOffsetEnd": 18,
+          "pos": "JJ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "to",
+          "originalText": "to",
+          "lemma": "to",
+          "characterOffsetBegin": 19,
+          "characterOffsetEnd": 21,
+          "pos": "TO",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "expect",
+          "originalText": "expect",
+          "lemma": "expect",
+          "characterOffsetBegin": 22,
+          "characterOffsetEnd": 28,
+          "pos": "VB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "us",
+          "originalText": "us",
+          "lemma": "we",
+          "characterOffsetBegin": 29,
+          "characterOffsetEnd": 31,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "to",
+          "originalText": "to",
+          "lemma": "to",
+          "characterOffsetBegin": 32,
+          "characterOffsetEnd": 34,
+          "pos": "TO",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 9,
+          "word": "catch",
+          "originalText": "catch",
+          "lemma": "catch",
+          "characterOffsetBegin": 35,
+          "characterOffsetEnd": 40,
+          "pos": "VB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 10,
+          "word": "Bill",
+          "originalText": "Bill",
+          "lemma": "Bill",
+          "characterOffsetBegin": 41,
+          "characterOffsetEnd": 45,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 11,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 45,
+          "characterOffsetEnd": 46,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+  }
+}

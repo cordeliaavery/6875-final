@@ -1,0 +1,551 @@
+{
+  "docId": "binding_30.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (PRP I))\n    (VP (VBP do) (RB n't)\n      (VP (VB remember)\n        (SBAR\n          (WHNP (WP who))\n          (S\n            (VP (VBZ thinks)\n              (SBAR (IN that)\n                (S\n                  (NP (PRP he))\n                  (VP (VBD read)\n                    (NP (WDT which) (NN book))\n                    (SBAR (IN that)\n                      (S\n                        (NP (NNP John))\n                        (VP (VBZ likes))))))))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "remember"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "remember",
+          "dependent": 1,
+          "dependentGloss": "I"
+        },
+        {
+          "dep": "aux",
+          "governor": 4,
+          "governorGloss": "remember",
+          "dependent": 2,
+          "dependentGloss": "do"
+        },
+        {
+          "dep": "neg",
+          "governor": 4,
+          "governorGloss": "remember",
+          "dependent": 3,
+          "dependentGloss": "n't"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "thinks",
+          "dependent": 5,
+          "dependentGloss": "who"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 4,
+          "governorGloss": "remember",
+          "dependent": 6,
+          "dependentGloss": "thinks"
+        },
+        {
+          "dep": "mark",
+          "governor": 9,
+          "governorGloss": "read",
+          "dependent": 7,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 9,
+          "governorGloss": "read",
+          "dependent": 8,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 6,
+          "governorGloss": "thinks",
+          "dependent": 9,
+          "dependentGloss": "read"
+        },
+        {
+          "dep": "det",
+          "governor": 11,
+          "governorGloss": "book",
+          "dependent": 10,
+          "dependentGloss": "which"
+        },
+        {
+          "dep": "dobj",
+          "governor": 9,
+          "governorGloss": "read",
+          "dependent": 11,
+          "dependentGloss": "book"
+        },
+        {
+          "dep": "mark",
+          "governor": 14,
+          "governorGloss": "likes",
+          "dependent": 12,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 14,
+          "governorGloss": "likes",
+          "dependent": 13,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 9,
+          "governorGloss": "read",
+          "dependent": 14,
+          "dependentGloss": "likes"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "remember",
+          "dependent": 15,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "remember"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "remember",
+          "dependent": 1,
+          "dependentGloss": "I"
+        },
+        {
+          "dep": "aux",
+          "governor": 4,
+          "governorGloss": "remember",
+          "dependent": 2,
+          "dependentGloss": "do"
+        },
+        {
+          "dep": "neg",
+          "governor": 4,
+          "governorGloss": "remember",
+          "dependent": 3,
+          "dependentGloss": "n't"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "thinks",
+          "dependent": 5,
+          "dependentGloss": "who"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 4,
+          "governorGloss": "remember",
+          "dependent": 6,
+          "dependentGloss": "thinks"
+        },
+        {
+          "dep": "mark",
+          "governor": 9,
+          "governorGloss": "read",
+          "dependent": 7,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 9,
+          "governorGloss": "read",
+          "dependent": 8,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 6,
+          "governorGloss": "thinks",
+          "dependent": 9,
+          "dependentGloss": "read"
+        },
+        {
+          "dep": "det",
+          "governor": 11,
+          "governorGloss": "book",
+          "dependent": 10,
+          "dependentGloss": "which"
+        },
+        {
+          "dep": "dobj",
+          "governor": 9,
+          "governorGloss": "read",
+          "dependent": 11,
+          "dependentGloss": "book"
+        },
+        {
+          "dep": "mark",
+          "governor": 14,
+          "governorGloss": "likes",
+          "dependent": 12,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 14,
+          "governorGloss": "likes",
+          "dependent": 13,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 9,
+          "governorGloss": "read",
+          "dependent": 14,
+          "dependentGloss": "likes"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "remember",
+          "dependent": 15,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "remember"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "remember",
+          "dependent": 1,
+          "dependentGloss": "I"
+        },
+        {
+          "dep": "aux",
+          "governor": 4,
+          "governorGloss": "remember",
+          "dependent": 2,
+          "dependentGloss": "do"
+        },
+        {
+          "dep": "neg",
+          "governor": 4,
+          "governorGloss": "remember",
+          "dependent": 3,
+          "dependentGloss": "n't"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "thinks",
+          "dependent": 5,
+          "dependentGloss": "who"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 4,
+          "governorGloss": "remember",
+          "dependent": 6,
+          "dependentGloss": "thinks"
+        },
+        {
+          "dep": "mark",
+          "governor": 9,
+          "governorGloss": "read",
+          "dependent": 7,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 9,
+          "governorGloss": "read",
+          "dependent": 8,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 6,
+          "governorGloss": "thinks",
+          "dependent": 9,
+          "dependentGloss": "read"
+        },
+        {
+          "dep": "det",
+          "governor": 11,
+          "governorGloss": "book",
+          "dependent": 10,
+          "dependentGloss": "which"
+        },
+        {
+          "dep": "dobj",
+          "governor": 9,
+          "governorGloss": "read",
+          "dependent": 11,
+          "dependentGloss": "book"
+        },
+        {
+          "dep": "mark",
+          "governor": 14,
+          "governorGloss": "likes",
+          "dependent": 12,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 14,
+          "governorGloss": "likes",
+          "dependent": 13,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 9,
+          "governorGloss": "read",
+          "dependent": 14,
+          "dependentGloss": "likes"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "remember",
+          "dependent": 15,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 12,
+          "docTokenEnd": 13,
+          "tokenBegin": 12,
+          "tokenEnd": 13,
+          "text": "John",
+          "characterOffsetBegin": 57,
+          "characterOffsetEnd": 61,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 7,
+          "docTokenEnd": 8,
+          "tokenBegin": 7,
+          "tokenEnd": 8,
+          "text": "he",
+          "characterOffsetBegin": 33,
+          "characterOffsetEnd": 35,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "I",
+          "originalText": "I",
+          "lemma": "I",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 1,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "do",
+          "originalText": "do",
+          "lemma": "do",
+          "characterOffsetBegin": 2,
+          "characterOffsetEnd": 4,
+          "pos": "VBP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 3,
+          "word": "n't",
+          "originalText": "n't",
+          "lemma": "not",
+          "characterOffsetBegin": 4,
+          "characterOffsetEnd": 7,
+          "pos": "RB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "remember",
+          "originalText": "remember",
+          "lemma": "remember",
+          "characterOffsetBegin": 8,
+          "characterOffsetEnd": 16,
+          "pos": "VB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "who",
+          "originalText": "who",
+          "lemma": "who",
+          "characterOffsetBegin": 17,
+          "characterOffsetEnd": 20,
+          "pos": "WP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "thinks",
+          "originalText": "thinks",
+          "lemma": "think",
+          "characterOffsetBegin": 21,
+          "characterOffsetEnd": 27,
+          "pos": "VBZ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "that",
+          "originalText": "that",
+          "lemma": "that",
+          "characterOffsetBegin": 28,
+          "characterOffsetEnd": 32,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "he",
+          "originalText": "he",
+          "lemma": "he",
+          "characterOffsetBegin": 33,
+          "characterOffsetEnd": 35,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 9,
+          "word": "read",
+          "originalText": "read",
+          "lemma": "read",
+          "characterOffsetBegin": 36,
+          "characterOffsetEnd": 40,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 10,
+          "word": "which",
+          "originalText": "which",
+          "lemma": "which",
+          "characterOffsetBegin": 41,
+          "characterOffsetEnd": 46,
+          "pos": "WDT",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 11,
+          "word": "book",
+          "originalText": "book",
+          "lemma": "book",
+          "characterOffsetBegin": 47,
+          "characterOffsetEnd": 51,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 12,
+          "word": "that",
+          "originalText": "that",
+          "lemma": "that",
+          "characterOffsetBegin": 52,
+          "characterOffsetEnd": 56,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 13,
+          "word": "John",
+          "originalText": "John",
+          "lemma": "John",
+          "characterOffsetBegin": 57,
+          "characterOffsetEnd": 61,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 14,
+          "word": "likes",
+          "originalText": "likes",
+          "lemma": "like",
+          "characterOffsetBegin": 62,
+          "characterOffsetEnd": 67,
+          "pos": "VBZ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 15,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 67,
+          "characterOffsetEnd": 68,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "docId": "binding_50.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (PRP He))\n    (VP (VBZ considers)\n      (S\n        (NP (NNP John))\n        (ADJP (JJ intelligent))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "considers"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "considers",
+          "dependent": 1,
+          "dependentGloss": "He"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "intelligent",
+          "dependent": 3,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 2,
+          "governorGloss": "considers",
+          "dependent": 4,
+          "dependentGloss": "intelligent"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "considers",
+          "dependent": 5,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "considers"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "considers",
+          "dependent": 1,
+          "dependentGloss": "He"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "intelligent",
+          "dependent": 3,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 2,
+          "governorGloss": "considers",
+          "dependent": 4,
+          "dependentGloss": "intelligent"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "considers",
+          "dependent": 5,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "considers"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "considers",
+          "dependent": 1,
+          "dependentGloss": "He"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "intelligent",
+          "dependent": 3,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 2,
+          "governorGloss": "considers",
+          "dependent": 4,
+          "dependentGloss": "intelligent"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "considers",
+          "dependent": 5,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 2,
+          "docTokenEnd": 3,
+          "tokenBegin": 2,
+          "tokenEnd": 3,
+          "text": "John",
+          "characterOffsetBegin": 13,
+          "characterOffsetEnd": 17,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 0,
+          "docTokenEnd": 1,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "He",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 2,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "He",
+          "originalText": "He",
+          "lemma": "he",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 2,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "considers",
+          "originalText": "considers",
+          "lemma": "consider",
+          "characterOffsetBegin": 3,
+          "characterOffsetEnd": 12,
+          "pos": "VBZ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "John",
+          "originalText": "John",
+          "lemma": "John",
+          "characterOffsetBegin": 13,
+          "characterOffsetEnd": 17,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "intelligent",
+          "originalText": "intelligent",
+          "lemma": "intelligent",
+          "characterOffsetBegin": 18,
+          "characterOffsetEnd": 29,
+          "pos": "JJ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 5,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 29,
+          "characterOffsetEnd": 30,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+  }
+}

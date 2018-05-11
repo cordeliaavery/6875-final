@@ -1,0 +1,281 @@
+{
+  "docId": "binding_51.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (NNP John))\n    (VP (VBZ is)\n      (NP (PRP$ his) (JJS worst) (NN enemy)))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 5,
+          "dependentGloss": "enemy"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "enemy",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "cop",
+          "governor": 5,
+          "governorGloss": "enemy",
+          "dependent": 2,
+          "dependentGloss": "is"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 5,
+          "governorGloss": "enemy",
+          "dependent": 3,
+          "dependentGloss": "his"
+        },
+        {
+          "dep": "amod",
+          "governor": 5,
+          "governorGloss": "enemy",
+          "dependent": 4,
+          "dependentGloss": "worst"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "enemy",
+          "dependent": 6,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 5,
+          "dependentGloss": "enemy"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "enemy",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "cop",
+          "governor": 5,
+          "governorGloss": "enemy",
+          "dependent": 2,
+          "dependentGloss": "is"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 5,
+          "governorGloss": "enemy",
+          "dependent": 3,
+          "dependentGloss": "his"
+        },
+        {
+          "dep": "amod",
+          "governor": 5,
+          "governorGloss": "enemy",
+          "dependent": 4,
+          "dependentGloss": "worst"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "enemy",
+          "dependent": 6,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 5,
+          "dependentGloss": "enemy"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "enemy",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "cop",
+          "governor": 5,
+          "governorGloss": "enemy",
+          "dependent": 2,
+          "dependentGloss": "is"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 5,
+          "governorGloss": "enemy",
+          "dependent": 3,
+          "dependentGloss": "his"
+        },
+        {
+          "dep": "amod",
+          "governor": 5,
+          "governorGloss": "enemy",
+          "dependent": 4,
+          "dependentGloss": "worst"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "enemy",
+          "dependent": 6,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 0,
+          "docTokenEnd": 1,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 2,
+          "docTokenEnd": 3,
+          "tokenBegin": 2,
+          "tokenEnd": 3,
+          "text": "his",
+          "characterOffsetBegin": 8,
+          "characterOffsetEnd": 11,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "John",
+          "originalText": "John",
+          "lemma": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "is",
+          "originalText": "is",
+          "lemma": "be",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 7,
+          "pos": "VBZ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "his",
+          "originalText": "his",
+          "lemma": "he",
+          "characterOffsetBegin": 8,
+          "characterOffsetEnd": 11,
+          "pos": "PRP$",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "worst",
+          "originalText": "worst",
+          "lemma": "worst",
+          "characterOffsetBegin": 12,
+          "characterOffsetEnd": 17,
+          "pos": "JJS",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "enemy",
+          "originalText": "enemy",
+          "lemma": "enemy",
+          "characterOffsetBegin": 18,
+          "characterOffsetEnd": 23,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 6,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 23,
+          "characterOffsetEnd": 24,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "2": [
+      {
+        "id": 0,
+        "text": "John",
+        "type": "PROPER",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 1,
+        "endIndex": 2,
+        "headIndex": 1,
+        "sentNum": 1,
+        "position": [
+          1,
+          1
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 2,
+        "text": "his",
+        "type": "PRONOMINAL",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 3,
+        "endIndex": 4,
+        "headIndex": 3,
+        "sentNum": 1,
+        "position": [
+          1,
+          3
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}
