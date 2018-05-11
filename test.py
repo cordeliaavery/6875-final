@@ -66,6 +66,16 @@ print x.get_right().pretty_print()
 with open("binding_dataset.neural.json") as f:
     parser_output = json.load(f)
 
-for elem in sorted(parser_output["sentences"], key=lambda x: x["index"]):
-    proc = process_string(elem["parse"])
-    Tree2(proc[0]).pretty_print()
+#for elem in sorted(parser_output["sentences"], key=lambda x: x["index"]):
+    #proc = process_string(elem["parse"])
+    #Tree2(proc[0]).pretty_print()
+ 
+for elem in parser_output["corefs"].values():
+    finished_nums = set()
+    groups = []
+    for entry in elem:
+        if entry["sentNum"] not in finished_nums:
+            groups.append(filter(lambda x: x["sentNum"] == entry["sentNum"], elem))
+            finished_nums.add(entry["sentNum"])
+
+    print groups
