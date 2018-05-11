@@ -13,7 +13,6 @@ with open("binding_dataset.neural.json") as f:
 for elem in sorted(parser_output["sentences"], key=lambda x: x["index"]):
     proc = process_string(elem["parse"])
     tree_to_parse = Tree2(proc[0])
-    print tree_to_parse.tag()
     def look_for_PRP(cell):
         if cell is None: return []
         unresolved = []
@@ -22,8 +21,12 @@ for elem in sorted(parser_output["sentences"], key=lambda x: x["index"]):
         if cell.is_leaf(): return unresolved
         return unresolved + look_for_PRP(cell.get_left()) + look_for_PRP(cell.get_right())
     candidates = look_for_PRP(tree_to_parse)
+    for candidate in candidates:
+        proposed = resolve_anaphor(candidate)
+        for proposal in proposed:
+            proposal.pretty_print()
 
     # Search for PRP
     # If PRP found, send into algorithm to resolve anaphor
-    break
     tree_to_parse.pretty_print()
+    break
