@@ -1,0 +1,293 @@
+{
+  "docId": "binding_58.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP\n      (NP (PRP$ Their) (NNS pictures))\n      (PP (IN of)\n        (NP (DT each) (JJ other))))\n    (VP (VBP are)\n      (ADJP (JJ nice)))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 7,
+          "dependentGloss": "nice"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 2,
+          "governorGloss": "pictures",
+          "dependent": 1,
+          "dependentGloss": "Their"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 7,
+          "governorGloss": "nice",
+          "dependent": 2,
+          "dependentGloss": "pictures"
+        },
+        {
+          "dep": "case",
+          "governor": 5,
+          "governorGloss": "other",
+          "dependent": 3,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "other",
+          "dependent": 4,
+          "dependentGloss": "each"
+        },
+        {
+          "dep": "nmod",
+          "governor": 2,
+          "governorGloss": "pictures",
+          "dependent": 5,
+          "dependentGloss": "other"
+        },
+        {
+          "dep": "cop",
+          "governor": 7,
+          "governorGloss": "nice",
+          "dependent": 6,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "punct",
+          "governor": 7,
+          "governorGloss": "nice",
+          "dependent": 8,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 7,
+          "dependentGloss": "nice"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 2,
+          "governorGloss": "pictures",
+          "dependent": 1,
+          "dependentGloss": "Their"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 7,
+          "governorGloss": "nice",
+          "dependent": 2,
+          "dependentGloss": "pictures"
+        },
+        {
+          "dep": "case",
+          "governor": 5,
+          "governorGloss": "other",
+          "dependent": 3,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "other",
+          "dependent": 4,
+          "dependentGloss": "each"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 2,
+          "governorGloss": "pictures",
+          "dependent": 5,
+          "dependentGloss": "other"
+        },
+        {
+          "dep": "cop",
+          "governor": 7,
+          "governorGloss": "nice",
+          "dependent": 6,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "punct",
+          "governor": 7,
+          "governorGloss": "nice",
+          "dependent": 8,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 7,
+          "dependentGloss": "nice"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 2,
+          "governorGloss": "pictures",
+          "dependent": 1,
+          "dependentGloss": "Their"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 7,
+          "governorGloss": "nice",
+          "dependent": 2,
+          "dependentGloss": "pictures"
+        },
+        {
+          "dep": "case",
+          "governor": 5,
+          "governorGloss": "other",
+          "dependent": 3,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "other",
+          "dependent": 4,
+          "dependentGloss": "each"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 2,
+          "governorGloss": "pictures",
+          "dependent": 5,
+          "dependentGloss": "other"
+        },
+        {
+          "dep": "cop",
+          "governor": 7,
+          "governorGloss": "nice",
+          "dependent": 6,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "punct",
+          "governor": 7,
+          "governorGloss": "nice",
+          "dependent": 8,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "Their",
+          "originalText": "Their",
+          "lemma": "they",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 5,
+          "pos": "PRP$",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "pictures",
+          "originalText": "pictures",
+          "lemma": "picture",
+          "characterOffsetBegin": 6,
+          "characterOffsetEnd": 14,
+          "pos": "NNS",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "of",
+          "originalText": "of",
+          "lemma": "of",
+          "characterOffsetBegin": 15,
+          "characterOffsetEnd": 17,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "each",
+          "originalText": "each",
+          "lemma": "each",
+          "characterOffsetBegin": 18,
+          "characterOffsetEnd": 22,
+          "pos": "DT",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "other",
+          "originalText": "other",
+          "lemma": "other",
+          "characterOffsetBegin": 23,
+          "characterOffsetEnd": 28,
+          "pos": "JJ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "are",
+          "originalText": "are",
+          "lemma": "be",
+          "characterOffsetBegin": 29,
+          "characterOffsetEnd": 32,
+          "pos": "VBP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "nice",
+          "originalText": "nice",
+          "lemma": "nice",
+          "characterOffsetBegin": 33,
+          "characterOffsetEnd": 37,
+          "pos": "JJ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 8,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 37,
+          "characterOffsetEnd": 38,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+  }
+}
