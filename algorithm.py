@@ -1,11 +1,47 @@
 from tree2 import *
 
 def find_X(node, path):
+    path.append(node)
     if node.tag() == 'NP' or node.tag() == 'S':
         return node, path
-    path.append(node)
     next_step = get_parent(node)
     return find_X(next_step, path)
+
+def explore_left_of_path(X, path, has_encountered_NP_or_S=False):
+    has_encountered_NP_or_S = False
+    proposed = []
+    queue = [X.get_left()]
+    if X.get_right() in path:
+        queue.append(X.get_right())
+    # Explore each layer of the tree, adding to a queue!
+    while len(queue) > 0:
+        node = queue.pop(0)
+        if node is None: continue
+        if node not in path:
+            if node.tag() == 'NP':
+                proposed.append(node)
+        if not node.is_leaf():
+            queue.append(node.get_left())
+            if node.get_right() in path:
+                queue.append(node.get_right())
+    return proposed
+
+    # # Then go through the queue and test each, in order of breadth!
+    # if X.tag() == 'NP': proposed.append(X)
+    # if X.is_leaf(): return proposed
+
+    # if has_encountered_NP_or_S:
+    #     if X.get_left() is not None:
+    #         if X.get_left().tag() == 'NP':
+    #             proposed.append(X.get_left())
+    #     if X.get_right() is not None:
+    #         if X.get_right().tag() == 'NP':
+    #             to_explore.append(X.get_right())
+    # if X.tag() == 'NP' or X.tag() == 'S':
+    #     has_encountered_NP_or_S = True
+    # # if X in path, go down to the left
+    # # if X not in path, go down left and right
+    # return proposed
 
 # Condition three: 
 # Traverse all branches below node X to the left of path p
@@ -69,12 +105,16 @@ def explore_right(X, path):
 
 def resolve_anaphor(input_node):
     # Begin at NP node immediately dominating pronoun
+    path = [input_node]
     search_start = get_parent(input_node)
     while True:
+        path.append(search_start)
         if search_start.tag() == 'NP': break
         search_start = get_parent(search_start)
-    X, path, proposed_antecedents = \
-        steps_two_through_four(search_start, [])
+    search_start.pretty_print()
+    X, path = find_X(get_parent(search_start), path)
+    proposed_antecedents = explore_left_of_path(X, path)
+    print proposed_antecedents
     while(get_parent(X) is not None):
         # Step 5: From node X, go up the tree to the first
         # NP or S node encountered. Call this new node X, 
