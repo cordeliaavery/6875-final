@@ -37,8 +37,11 @@ class Tree:
         return self.__leaf
 
     def pretty_print(self, depth=0):
-        print(" " * depth + self.__tag)
+        print(" " * depth + self.__tag + ":")
         self.__node.pretty_print(depth + 4)
+
+    def get_string(self):
+        return self.__node.get_string()
 
 class Bar:
     def __init__(self, vals, parent):
@@ -81,6 +84,15 @@ class Bar:
     def get_next(self):
         return
 
+    def get_string(self):
+        retval = ""
+        for elem in self.__extras:
+            if retval:
+                retval += " "
+            retval += elem.get_string()
+        return retval
+
+
 class Head:
     def __init__(self, val, parent):
         self.__val = val
@@ -89,8 +101,23 @@ class Head:
     def pretty_print(self, depth):
         print(" " * depth + self.__val)
 
+    def get_string(self):
+        return self.__val
+
 def is_leaf(val):
     return isinstance(val, Head)
 
 def get_parent(val):
     return val.parent()
+
+def get_index(word, sentence):
+    if isinstance(sentence, Tree):
+        words = sentence.get_string().split()
+    else:
+        words = sentence.split()
+    index = 0
+    for w in words:
+        if word == w:
+            return index
+        index += 1
+    return -1
