@@ -15,19 +15,15 @@ for elem in sorted(parser_output["sentences"], key=lambda x: x["index"]):
     tree_to_parse = Tree2(proc[0])
     print tree_to_parse.tag()
     def look_for_PRP(cell):
-        cell.pretty_print()
-        if cell.tag() == 'NNP':
-            print is_leaf(cell)
         if cell is None: return []
         unresolved = []
         if cell.tag() == 'PRP':
-            unresolved += cell
-        if is_leaf(cell): return unresolved
+            unresolved.append(cell)
+        if cell.is_leaf(): return unresolved
         return unresolved + look_for_PRP(cell.get_left()) + look_for_PRP(cell.get_right())
     candidates = look_for_PRP(tree_to_parse)
-    print candidates
-    break
+
     # Search for PRP
     # If PRP found, send into algorithm to resolve anaphor
-
+    break
     tree_to_parse.pretty_print()
