@@ -5,6 +5,7 @@ def find_X(node, path):
     if node.tag() == 'NP' or node.tag() == 'S':
         return node, path
     next_step = get_parent(node)
+    if next_step is None: return None, path 
     return find_X(next_step, path)
 
 def explore_left_of_path(X, path, has_encountered_NP_or_S=False):
@@ -26,32 +27,6 @@ def explore_left_of_path(X, path, has_encountered_NP_or_S=False):
             if node.get_right() in path:
                 queue.append((node.get_right(), has_encountered_NP_or_S))
     return proposed
-
-
-# Condition three: 
-# Traverse all branches below node X to the left of path p
-# in a left-to-right, breadth-first fashion.
-def explore(X, has_encountered_NP_or_S):
-    # Traverse all branches, left-to-right, breadth-first
-    if X is None or X.is_leaf():
-        return []
-    if X.tag() == 'NP' or X.tag() == 'S':
-        is_NP_or_S = True
-
-    to_explore = []
-    if has_encountered_NP_or_S:
-        if X.get_left() is not None:
-            if X.get_left().tag() == 'NP':
-                to_explore.append(X.get_left())
-        if X.get_right() is not None:
-            if X.get_right().tag() == 'NP':
-                to_explore.append(X.get_right())
-    if X.tag() == 'NP' or X.tag() == 'S':
-        has_encountered_NP_or_S = True
-    left_path = explore(X.get_left(), has_encountered_NP_or_S)
-    right_path = explore(X.get_right(), has_encountered_NP_or_S)
-    return to_explore + left_path + right_path
-
 
 def explore_right(X, path):
     proposed = []
@@ -94,10 +69,10 @@ def resolve_anaphor(input_node):
         path.append(search_start)
         if search_start.tag() == 'NP': break
         search_start = get_parent(search_start)
-    search_start.pretty_print()
     X, path = find_X(get_parent(search_start), path)
+    if X is None:
+        return None
     proposed_antecedents = explore_left_of_path(X, path)
-    print proposed_antecedents
     while(is_not_highest_S(X)):
         # Step 5: From node X, go up the tree to the first
         # NP or S node encountered. Call this new node X, 

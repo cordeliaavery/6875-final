@@ -13,6 +13,7 @@ with open("binding_dataset.neural.json") as f:
 for elem in sorted(parser_output["sentences"], key=lambda x: x["index"]):
     proc = process_string(elem["parse"])
     tree_to_parse = Tree2(proc[0])
+    tree_to_parse.pretty_print()
     def look_for_PRP(cell):
         if cell is None: return []
         unresolved = []
@@ -23,14 +24,15 @@ for elem in sorted(parser_output["sentences"], key=lambda x: x["index"]):
     candidates = look_for_PRP(tree_to_parse)
     for candidate in candidates:
         proposed = resolve_anaphor(candidate)
-        print '-'*10
         print 'Proposed antecedents for'
         candidate.pretty_print()
         print 'Are as follows: '
+        if proposed is None:
+            continue
         for proposal in proposed:
             proposal.pretty_print()
+    print '-'*20    
 
     # Search for PRP
     # If PRP found, send into algorithm to resolve anaphor
-    # tree_to_parse.pretty_print()
-    break
+
