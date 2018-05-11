@@ -1,0 +1,383 @@
+{
+  "docId": "binding_18.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (NNP John))\n    (VP (MD would)\n      (VP (VB hate)\n        (NP (PRP it))\n        (PP (IN for)\n          (NP (PRP him)))\n        (S\n          (VP (TO to)\n            (VP (VB win))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "hate"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "hate",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "aux",
+          "governor": 3,
+          "governorGloss": "hate",
+          "dependent": 2,
+          "dependentGloss": "would"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "hate",
+          "dependent": 4,
+          "dependentGloss": "it"
+        },
+        {
+          "dep": "case",
+          "governor": 6,
+          "governorGloss": "him",
+          "dependent": 5,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "nmod",
+          "governor": 3,
+          "governorGloss": "hate",
+          "dependent": 6,
+          "dependentGloss": "him"
+        },
+        {
+          "dep": "mark",
+          "governor": 8,
+          "governorGloss": "win",
+          "dependent": 7,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "advcl",
+          "governor": 3,
+          "governorGloss": "hate",
+          "dependent": 8,
+          "dependentGloss": "win"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "hate",
+          "dependent": 9,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "hate"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "hate",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "aux",
+          "governor": 3,
+          "governorGloss": "hate",
+          "dependent": 2,
+          "dependentGloss": "would"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "hate",
+          "dependent": 4,
+          "dependentGloss": "it"
+        },
+        {
+          "dep": "case",
+          "governor": 6,
+          "governorGloss": "him",
+          "dependent": 5,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "nmod:for",
+          "governor": 3,
+          "governorGloss": "hate",
+          "dependent": 6,
+          "dependentGloss": "him"
+        },
+        {
+          "dep": "mark",
+          "governor": 8,
+          "governorGloss": "win",
+          "dependent": 7,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "advcl:to",
+          "governor": 3,
+          "governorGloss": "hate",
+          "dependent": 8,
+          "dependentGloss": "win"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "hate",
+          "dependent": 9,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "hate"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "hate",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "aux",
+          "governor": 3,
+          "governorGloss": "hate",
+          "dependent": 2,
+          "dependentGloss": "would"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "hate",
+          "dependent": 4,
+          "dependentGloss": "it"
+        },
+        {
+          "dep": "case",
+          "governor": 6,
+          "governorGloss": "him",
+          "dependent": 5,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "nmod:for",
+          "governor": 3,
+          "governorGloss": "hate",
+          "dependent": 6,
+          "dependentGloss": "him"
+        },
+        {
+          "dep": "mark",
+          "governor": 8,
+          "governorGloss": "win",
+          "dependent": 7,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "advcl:to",
+          "governor": 3,
+          "governorGloss": "hate",
+          "dependent": 8,
+          "dependentGloss": "win"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "hate",
+          "dependent": 9,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 0,
+          "docTokenEnd": 1,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 5,
+          "docTokenEnd": 6,
+          "tokenBegin": 5,
+          "tokenEnd": 6,
+          "text": "him",
+          "characterOffsetBegin": 23,
+          "characterOffsetEnd": 26,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "John",
+          "originalText": "John",
+          "lemma": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "would",
+          "originalText": "would",
+          "lemma": "would",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 10,
+          "pos": "MD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "hate",
+          "originalText": "hate",
+          "lemma": "hate",
+          "characterOffsetBegin": 11,
+          "characterOffsetEnd": 15,
+          "pos": "VB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "it",
+          "originalText": "it",
+          "lemma": "it",
+          "characterOffsetBegin": 16,
+          "characterOffsetEnd": 18,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "for",
+          "originalText": "for",
+          "lemma": "for",
+          "characterOffsetBegin": 19,
+          "characterOffsetEnd": 22,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "him",
+          "originalText": "him",
+          "lemma": "he",
+          "characterOffsetBegin": 23,
+          "characterOffsetEnd": 26,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "to",
+          "originalText": "to",
+          "lemma": "to",
+          "characterOffsetBegin": 27,
+          "characterOffsetEnd": 29,
+          "pos": "TO",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "win",
+          "originalText": "win",
+          "lemma": "win",
+          "characterOffsetBegin": 30,
+          "characterOffsetEnd": 33,
+          "pos": "VB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 9,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 33,
+          "characterOffsetEnd": 34,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "2": [
+      {
+        "id": 0,
+        "text": "John",
+        "type": "PROPER",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 1,
+        "endIndex": 2,
+        "headIndex": 1,
+        "sentNum": 1,
+        "position": [
+          1,
+          1
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 2,
+        "text": "him",
+        "type": "PRONOMINAL",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 6,
+        "endIndex": 7,
+        "headIndex": 6,
+        "sentNum": 1,
+        "position": [
+          1,
+          3
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}

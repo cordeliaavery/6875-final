@@ -1,0 +1,375 @@
+{
+  "docId": "binding_71.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (DT The) (NNS men))\n    (VP (VBP seem)\n      (PP (TO to)\n        (NP (DT each) (JJ other)))\n      (S\n        (VP (TO to)\n          (VP (VB be)\n            (ADJP (JJ clever))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "seem"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "men",
+          "dependent": 1,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "seem",
+          "dependent": 2,
+          "dependentGloss": "men"
+        },
+        {
+          "dep": "case",
+          "governor": 6,
+          "governorGloss": "other",
+          "dependent": 4,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "other",
+          "dependent": 5,
+          "dependentGloss": "each"
+        },
+        {
+          "dep": "nmod",
+          "governor": 3,
+          "governorGloss": "seem",
+          "dependent": 6,
+          "dependentGloss": "other"
+        },
+        {
+          "dep": "mark",
+          "governor": 9,
+          "governorGloss": "clever",
+          "dependent": 7,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "cop",
+          "governor": 9,
+          "governorGloss": "clever",
+          "dependent": 8,
+          "dependentGloss": "be"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 3,
+          "governorGloss": "seem",
+          "dependent": 9,
+          "dependentGloss": "clever"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "seem",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "seem"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "men",
+          "dependent": 1,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "seem",
+          "dependent": 2,
+          "dependentGloss": "men"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 9,
+          "governorGloss": "clever",
+          "dependent": 2,
+          "dependentGloss": "men"
+        },
+        {
+          "dep": "case",
+          "governor": 6,
+          "governorGloss": "other",
+          "dependent": 4,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "other",
+          "dependent": 5,
+          "dependentGloss": "each"
+        },
+        {
+          "dep": "nmod:to",
+          "governor": 3,
+          "governorGloss": "seem",
+          "dependent": 6,
+          "dependentGloss": "other"
+        },
+        {
+          "dep": "mark",
+          "governor": 9,
+          "governorGloss": "clever",
+          "dependent": 7,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "cop",
+          "governor": 9,
+          "governorGloss": "clever",
+          "dependent": 8,
+          "dependentGloss": "be"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 3,
+          "governorGloss": "seem",
+          "dependent": 9,
+          "dependentGloss": "clever"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "seem",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "seem"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "men",
+          "dependent": 1,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "seem",
+          "dependent": 2,
+          "dependentGloss": "men"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 9,
+          "governorGloss": "clever",
+          "dependent": 2,
+          "dependentGloss": "men"
+        },
+        {
+          "dep": "case",
+          "governor": 6,
+          "governorGloss": "other",
+          "dependent": 4,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "other",
+          "dependent": 5,
+          "dependentGloss": "each"
+        },
+        {
+          "dep": "nmod:to",
+          "governor": 3,
+          "governorGloss": "seem",
+          "dependent": 6,
+          "dependentGloss": "other"
+        },
+        {
+          "dep": "mark",
+          "governor": 9,
+          "governorGloss": "clever",
+          "dependent": 7,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "cop",
+          "governor": 9,
+          "governorGloss": "clever",
+          "dependent": 8,
+          "dependentGloss": "be"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 3,
+          "governorGloss": "seem",
+          "dependent": 9,
+          "dependentGloss": "clever"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "seem",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "The",
+          "originalText": "The",
+          "lemma": "the",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 3,
+          "pos": "DT",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "men",
+          "originalText": "men",
+          "lemma": "man",
+          "characterOffsetBegin": 4,
+          "characterOffsetEnd": 7,
+          "pos": "NNS",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "seem",
+          "originalText": "seem",
+          "lemma": "seem",
+          "characterOffsetBegin": 8,
+          "characterOffsetEnd": 12,
+          "pos": "VBP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "to",
+          "originalText": "to",
+          "lemma": "to",
+          "characterOffsetBegin": 13,
+          "characterOffsetEnd": 15,
+          "pos": "TO",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "each",
+          "originalText": "each",
+          "lemma": "each",
+          "characterOffsetBegin": 16,
+          "characterOffsetEnd": 20,
+          "pos": "DT",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "other",
+          "originalText": "other",
+          "lemma": "other",
+          "characterOffsetBegin": 21,
+          "characterOffsetEnd": 26,
+          "pos": "JJ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "to",
+          "originalText": "to",
+          "lemma": "to",
+          "characterOffsetBegin": 27,
+          "characterOffsetEnd": 29,
+          "pos": "TO",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "be",
+          "originalText": "be",
+          "lemma": "be",
+          "characterOffsetBegin": 30,
+          "characterOffsetEnd": 32,
+          "pos": "VB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 9,
+          "word": "clever",
+          "originalText": "clever",
+          "lemma": "clever",
+          "characterOffsetBegin": 33,
+          "characterOffsetEnd": 39,
+          "pos": "JJ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 10,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 39,
+          "characterOffsetEnd": 40,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+  }
+}

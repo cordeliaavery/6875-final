@@ -1,0 +1,417 @@
+{
+  "docId": "binding_42.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (NNP John))\n    (VP (VBD heard)\n      (NP (RB too) (JJ many) (NNS things))\n      (PP (IN for)\n        (NP (PRP him)))\n      (S\n        (VP (TO to)\n          (VP (VB understand)))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "heard"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "heard",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "advmod",
+          "governor": 5,
+          "governorGloss": "things",
+          "dependent": 3,
+          "dependentGloss": "too"
+        },
+        {
+          "dep": "amod",
+          "governor": 5,
+          "governorGloss": "things",
+          "dependent": 4,
+          "dependentGloss": "many"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "heard",
+          "dependent": 5,
+          "dependentGloss": "things"
+        },
+        {
+          "dep": "case",
+          "governor": 7,
+          "governorGloss": "him",
+          "dependent": 6,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "nmod",
+          "governor": 2,
+          "governorGloss": "heard",
+          "dependent": 7,
+          "dependentGloss": "him"
+        },
+        {
+          "dep": "mark",
+          "governor": 9,
+          "governorGloss": "understand",
+          "dependent": 8,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "advcl",
+          "governor": 2,
+          "governorGloss": "heard",
+          "dependent": 9,
+          "dependentGloss": "understand"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "heard",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "heard"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "heard",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "advmod",
+          "governor": 5,
+          "governorGloss": "things",
+          "dependent": 3,
+          "dependentGloss": "too"
+        },
+        {
+          "dep": "amod",
+          "governor": 5,
+          "governorGloss": "things",
+          "dependent": 4,
+          "dependentGloss": "many"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "heard",
+          "dependent": 5,
+          "dependentGloss": "things"
+        },
+        {
+          "dep": "case",
+          "governor": 7,
+          "governorGloss": "him",
+          "dependent": 6,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "nmod:for",
+          "governor": 2,
+          "governorGloss": "heard",
+          "dependent": 7,
+          "dependentGloss": "him"
+        },
+        {
+          "dep": "mark",
+          "governor": 9,
+          "governorGloss": "understand",
+          "dependent": 8,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "advcl:to",
+          "governor": 2,
+          "governorGloss": "heard",
+          "dependent": 9,
+          "dependentGloss": "understand"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "heard",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "heard"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "heard",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "advmod",
+          "governor": 5,
+          "governorGloss": "things",
+          "dependent": 3,
+          "dependentGloss": "too"
+        },
+        {
+          "dep": "amod",
+          "governor": 5,
+          "governorGloss": "things",
+          "dependent": 4,
+          "dependentGloss": "many"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "heard",
+          "dependent": 5,
+          "dependentGloss": "things"
+        },
+        {
+          "dep": "case",
+          "governor": 7,
+          "governorGloss": "him",
+          "dependent": 6,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "nmod:for",
+          "governor": 2,
+          "governorGloss": "heard",
+          "dependent": 7,
+          "dependentGloss": "him"
+        },
+        {
+          "dep": "mark",
+          "governor": 9,
+          "governorGloss": "understand",
+          "dependent": 8,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "advcl:to",
+          "governor": 2,
+          "governorGloss": "heard",
+          "dependent": 9,
+          "dependentGloss": "understand"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "heard",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 0,
+          "docTokenEnd": 1,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 6,
+          "docTokenEnd": 7,
+          "tokenBegin": 6,
+          "tokenEnd": 7,
+          "text": "him",
+          "characterOffsetBegin": 31,
+          "characterOffsetEnd": 34,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "John",
+          "originalText": "John",
+          "lemma": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "heard",
+          "originalText": "heard",
+          "lemma": "hear",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 10,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "too",
+          "originalText": "too",
+          "lemma": "too",
+          "characterOffsetBegin": 11,
+          "characterOffsetEnd": 14,
+          "pos": "RB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "many",
+          "originalText": "many",
+          "lemma": "many",
+          "characterOffsetBegin": 15,
+          "characterOffsetEnd": 19,
+          "pos": "JJ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "things",
+          "originalText": "things",
+          "lemma": "thing",
+          "characterOffsetBegin": 20,
+          "characterOffsetEnd": 26,
+          "pos": "NNS",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "for",
+          "originalText": "for",
+          "lemma": "for",
+          "characterOffsetBegin": 27,
+          "characterOffsetEnd": 30,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "him",
+          "originalText": "him",
+          "lemma": "he",
+          "characterOffsetBegin": 31,
+          "characterOffsetEnd": 34,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "to",
+          "originalText": "to",
+          "lemma": "to",
+          "characterOffsetBegin": 35,
+          "characterOffsetEnd": 37,
+          "pos": "TO",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 9,
+          "word": "understand",
+          "originalText": "understand",
+          "lemma": "understand",
+          "characterOffsetBegin": 38,
+          "characterOffsetEnd": 48,
+          "pos": "VB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 10,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 48,
+          "characterOffsetEnd": 49,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "2": [
+      {
+        "id": 0,
+        "text": "John",
+        "type": "PROPER",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 1,
+        "endIndex": 2,
+        "headIndex": 1,
+        "sentNum": 1,
+        "position": [
+          1,
+          1
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 2,
+        "text": "him",
+        "type": "PRONOMINAL",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 7,
+        "endIndex": 8,
+        "headIndex": 7,
+        "sentNum": 1,
+        "position": [
+          1,
+          3
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}

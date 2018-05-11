@@ -1,0 +1,295 @@
+{
+  "docId": "binding_16.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (NNP John))\n    (VP (VBD expected)\n      (S\n        (NP (PRP him))\n        (VP (TO to)\n          (VP (VB win)))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "expected"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 3,
+          "dependentGloss": "him"
+        },
+        {
+          "dep": "mark",
+          "governor": 5,
+          "governorGloss": "win",
+          "dependent": 4,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 5,
+          "dependentGloss": "win"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 6,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "expected"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 3,
+          "dependentGloss": "him"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 5,
+          "governorGloss": "win",
+          "dependent": 3,
+          "dependentGloss": "him"
+        },
+        {
+          "dep": "mark",
+          "governor": 5,
+          "governorGloss": "win",
+          "dependent": 4,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 5,
+          "dependentGloss": "win"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 6,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "expected"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 3,
+          "dependentGloss": "him"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 5,
+          "governorGloss": "win",
+          "dependent": 3,
+          "dependentGloss": "him"
+        },
+        {
+          "dep": "mark",
+          "governor": 5,
+          "governorGloss": "win",
+          "dependent": 4,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 5,
+          "dependentGloss": "win"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 6,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 0,
+          "docTokenEnd": 1,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 2,
+          "docTokenEnd": 3,
+          "tokenBegin": 2,
+          "tokenEnd": 3,
+          "text": "him",
+          "characterOffsetBegin": 14,
+          "characterOffsetEnd": 17,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "John",
+          "originalText": "John",
+          "lemma": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "expected",
+          "originalText": "expected",
+          "lemma": "expect",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 13,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "him",
+          "originalText": "him",
+          "lemma": "he",
+          "characterOffsetBegin": 14,
+          "characterOffsetEnd": 17,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "to",
+          "originalText": "to",
+          "lemma": "to",
+          "characterOffsetBegin": 18,
+          "characterOffsetEnd": 20,
+          "pos": "TO",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "win",
+          "originalText": "win",
+          "lemma": "win",
+          "characterOffsetBegin": 21,
+          "characterOffsetEnd": 24,
+          "pos": "VB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 6,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 24,
+          "characterOffsetEnd": 25,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "1": [
+      {
+        "id": 0,
+        "text": "John",
+        "type": "PROPER",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 1,
+        "endIndex": 2,
+        "headIndex": 1,
+        "sentNum": 1,
+        "position": [
+          1,
+          1
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 1,
+        "text": "him",
+        "type": "PRONOMINAL",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 3,
+        "endIndex": 4,
+        "headIndex": 3,
+        "sentNum": 1,
+        "position": [
+          1,
+          2
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}

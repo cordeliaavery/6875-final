@@ -1,0 +1,363 @@
+{
+  "docId": "binding_34.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (PRP They))\n    (VP (VBD impressed)\n      (NP (PRP me))\n      (PP (IN as)\n        (NP\n          (NP (RB too) (JJ critical))\n          (PP (IN of)\n            (NP (PRP themselves))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "impressed"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "impressed",
+          "dependent": 1,
+          "dependentGloss": "They"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "impressed",
+          "dependent": 3,
+          "dependentGloss": "me"
+        },
+        {
+          "dep": "case",
+          "governor": 6,
+          "governorGloss": "critical",
+          "dependent": 4,
+          "dependentGloss": "as"
+        },
+        {
+          "dep": "advmod",
+          "governor": 6,
+          "governorGloss": "critical",
+          "dependent": 5,
+          "dependentGloss": "too"
+        },
+        {
+          "dep": "nmod",
+          "governor": 2,
+          "governorGloss": "impressed",
+          "dependent": 6,
+          "dependentGloss": "critical"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "themselves",
+          "dependent": 7,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod",
+          "governor": 6,
+          "governorGloss": "critical",
+          "dependent": 8,
+          "dependentGloss": "themselves"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "impressed",
+          "dependent": 9,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "impressed"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "impressed",
+          "dependent": 1,
+          "dependentGloss": "They"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "impressed",
+          "dependent": 3,
+          "dependentGloss": "me"
+        },
+        {
+          "dep": "case",
+          "governor": 6,
+          "governorGloss": "critical",
+          "dependent": 4,
+          "dependentGloss": "as"
+        },
+        {
+          "dep": "advmod",
+          "governor": 6,
+          "governorGloss": "critical",
+          "dependent": 5,
+          "dependentGloss": "too"
+        },
+        {
+          "dep": "nmod:as",
+          "governor": 2,
+          "governorGloss": "impressed",
+          "dependent": 6,
+          "dependentGloss": "critical"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "themselves",
+          "dependent": 7,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 6,
+          "governorGloss": "critical",
+          "dependent": 8,
+          "dependentGloss": "themselves"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "impressed",
+          "dependent": 9,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "impressed"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "impressed",
+          "dependent": 1,
+          "dependentGloss": "They"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "impressed",
+          "dependent": 3,
+          "dependentGloss": "me"
+        },
+        {
+          "dep": "case",
+          "governor": 6,
+          "governorGloss": "critical",
+          "dependent": 4,
+          "dependentGloss": "as"
+        },
+        {
+          "dep": "advmod",
+          "governor": 6,
+          "governorGloss": "critical",
+          "dependent": 5,
+          "dependentGloss": "too"
+        },
+        {
+          "dep": "nmod:as",
+          "governor": 2,
+          "governorGloss": "impressed",
+          "dependent": 6,
+          "dependentGloss": "critical"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "themselves",
+          "dependent": 7,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 6,
+          "governorGloss": "critical",
+          "dependent": 8,
+          "dependentGloss": "themselves"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "impressed",
+          "dependent": 9,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "They",
+          "originalText": "They",
+          "lemma": "they",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "impressed",
+          "originalText": "impressed",
+          "lemma": "impress",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 14,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "me",
+          "originalText": "me",
+          "lemma": "I",
+          "characterOffsetBegin": 15,
+          "characterOffsetEnd": 17,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "as",
+          "originalText": "as",
+          "lemma": "as",
+          "characterOffsetBegin": 18,
+          "characterOffsetEnd": 20,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "too",
+          "originalText": "too",
+          "lemma": "too",
+          "characterOffsetBegin": 21,
+          "characterOffsetEnd": 24,
+          "pos": "RB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "critical",
+          "originalText": "critical",
+          "lemma": "critical",
+          "characterOffsetBegin": 25,
+          "characterOffsetEnd": 33,
+          "pos": "JJ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "of",
+          "originalText": "of",
+          "lemma": "of",
+          "characterOffsetBegin": 34,
+          "characterOffsetEnd": 36,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "themselves",
+          "originalText": "themselves",
+          "lemma": "themselves",
+          "characterOffsetBegin": 37,
+          "characterOffsetEnd": 47,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 9,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 47,
+          "characterOffsetEnd": 48,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "3": [
+      {
+        "id": 0,
+        "text": "They",
+        "type": "PRONOMINAL",
+        "number": "PLURAL",
+        "gender": "UNKNOWN",
+        "animacy": "ANIMATE",
+        "startIndex": 1,
+        "endIndex": 2,
+        "headIndex": 1,
+        "sentNum": 1,
+        "position": [
+          1,
+          1
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 3,
+        "text": "themselves",
+        "type": "PRONOMINAL",
+        "number": "PLURAL",
+        "gender": "UNKNOWN",
+        "animacy": "ANIMATE",
+        "startIndex": 8,
+        "endIndex": 9,
+        "headIndex": 8,
+        "sentNum": 1,
+        "position": [
+          1,
+          4
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}

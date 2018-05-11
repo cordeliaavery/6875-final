@@ -1,0 +1,461 @@
+{
+  "docId": "binding_43.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (NNP John))\n    (VP (VBZ considers)\n      (S\n        (NP (NNP Bill))\n        (ADJP (RB too) (JJ stupid))\n        (SBAR (IN for)\n          (S\n            (NP (PRP him))\n            (VP (TO to)\n              (VP (VB pass)\n                (NP (NN algebra))))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "considers"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "considers",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 9,
+          "governorGloss": "pass",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "advmod",
+          "governor": 5,
+          "governorGloss": "stupid",
+          "dependent": 4,
+          "dependentGloss": "too"
+        },
+        {
+          "dep": "dep",
+          "governor": 9,
+          "governorGloss": "pass",
+          "dependent": 5,
+          "dependentGloss": "stupid"
+        },
+        {
+          "dep": "mark",
+          "governor": 9,
+          "governorGloss": "pass",
+          "dependent": 6,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 9,
+          "governorGloss": "pass",
+          "dependent": 7,
+          "dependentGloss": "him"
+        },
+        {
+          "dep": "mark",
+          "governor": 9,
+          "governorGloss": "pass",
+          "dependent": 8,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 2,
+          "governorGloss": "considers",
+          "dependent": 9,
+          "dependentGloss": "pass"
+        },
+        {
+          "dep": "dobj",
+          "governor": 9,
+          "governorGloss": "pass",
+          "dependent": 10,
+          "dependentGloss": "algebra"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "considers",
+          "dependent": 11,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "considers"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "considers",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 9,
+          "governorGloss": "pass",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "advmod",
+          "governor": 5,
+          "governorGloss": "stupid",
+          "dependent": 4,
+          "dependentGloss": "too"
+        },
+        {
+          "dep": "dep",
+          "governor": 9,
+          "governorGloss": "pass",
+          "dependent": 5,
+          "dependentGloss": "stupid"
+        },
+        {
+          "dep": "mark",
+          "governor": 9,
+          "governorGloss": "pass",
+          "dependent": 6,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 9,
+          "governorGloss": "pass",
+          "dependent": 7,
+          "dependentGloss": "him"
+        },
+        {
+          "dep": "mark",
+          "governor": 9,
+          "governorGloss": "pass",
+          "dependent": 8,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 2,
+          "governorGloss": "considers",
+          "dependent": 9,
+          "dependentGloss": "pass"
+        },
+        {
+          "dep": "dobj",
+          "governor": 9,
+          "governorGloss": "pass",
+          "dependent": 10,
+          "dependentGloss": "algebra"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "considers",
+          "dependent": 11,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "considers"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "considers",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 9,
+          "governorGloss": "pass",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "advmod",
+          "governor": 5,
+          "governorGloss": "stupid",
+          "dependent": 4,
+          "dependentGloss": "too"
+        },
+        {
+          "dep": "dep",
+          "governor": 9,
+          "governorGloss": "pass",
+          "dependent": 5,
+          "dependentGloss": "stupid"
+        },
+        {
+          "dep": "mark",
+          "governor": 9,
+          "governorGloss": "pass",
+          "dependent": 6,
+          "dependentGloss": "for"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 9,
+          "governorGloss": "pass",
+          "dependent": 7,
+          "dependentGloss": "him"
+        },
+        {
+          "dep": "mark",
+          "governor": 9,
+          "governorGloss": "pass",
+          "dependent": 8,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 2,
+          "governorGloss": "considers",
+          "dependent": 9,
+          "dependentGloss": "pass"
+        },
+        {
+          "dep": "dobj",
+          "governor": 9,
+          "governorGloss": "pass",
+          "dependent": 10,
+          "dependentGloss": "algebra"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "considers",
+          "dependent": 11,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 0,
+          "docTokenEnd": 1,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 2,
+          "docTokenEnd": 3,
+          "tokenBegin": 2,
+          "tokenEnd": 3,
+          "text": "Bill",
+          "characterOffsetBegin": 15,
+          "characterOffsetEnd": 19,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 6,
+          "docTokenEnd": 7,
+          "tokenBegin": 6,
+          "tokenEnd": 7,
+          "text": "him",
+          "characterOffsetBegin": 35,
+          "characterOffsetEnd": 38,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "John",
+          "originalText": "John",
+          "lemma": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "considers",
+          "originalText": "considers",
+          "lemma": "consider",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 14,
+          "pos": "VBZ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "Bill",
+          "originalText": "Bill",
+          "lemma": "Bill",
+          "characterOffsetBegin": 15,
+          "characterOffsetEnd": 19,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "too",
+          "originalText": "too",
+          "lemma": "too",
+          "characterOffsetBegin": 20,
+          "characterOffsetEnd": 23,
+          "pos": "RB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "stupid",
+          "originalText": "stupid",
+          "lemma": "stupid",
+          "characterOffsetBegin": 24,
+          "characterOffsetEnd": 30,
+          "pos": "JJ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "for",
+          "originalText": "for",
+          "lemma": "for",
+          "characterOffsetBegin": 31,
+          "characterOffsetEnd": 34,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "him",
+          "originalText": "him",
+          "lemma": "he",
+          "characterOffsetBegin": 35,
+          "characterOffsetEnd": 38,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "to",
+          "originalText": "to",
+          "lemma": "to",
+          "characterOffsetBegin": 39,
+          "characterOffsetEnd": 41,
+          "pos": "TO",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 9,
+          "word": "pass",
+          "originalText": "pass",
+          "lemma": "pass",
+          "characterOffsetBegin": 42,
+          "characterOffsetEnd": 46,
+          "pos": "VB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 10,
+          "word": "algebra",
+          "originalText": "algebra",
+          "lemma": "algebra",
+          "characterOffsetBegin": 47,
+          "characterOffsetEnd": 54,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 11,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 54,
+          "characterOffsetEnd": 55,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "2": [
+      {
+        "id": 0,
+        "text": "John",
+        "type": "PROPER",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 1,
+        "endIndex": 2,
+        "headIndex": 1,
+        "sentNum": 1,
+        "position": [
+          1,
+          1
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 2,
+        "text": "him",
+        "type": "PRONOMINAL",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 7,
+        "endIndex": 8,
+        "headIndex": 7,
+        "sentNum": 1,
+        "position": [
+          1,
+          3
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "docId": "binding_1.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (NNP Mary))\n    (VP (VBD thought)\n      (SBAR\n        (S\n          (NP (PRP she))\n          (VP (VBD gave)\n            (NP (DT the) (NNS books))\n            (PP (TO to)\n              (NP (NNP Bill)))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "thought"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "thought",
+          "dependent": 1,
+          "dependentGloss": "Mary"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "gave",
+          "dependent": 3,
+          "dependentGloss": "she"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 2,
+          "governorGloss": "thought",
+          "dependent": 4,
+          "dependentGloss": "gave"
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "books",
+          "dependent": 5,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 4,
+          "governorGloss": "gave",
+          "dependent": 6,
+          "dependentGloss": "books"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "Bill",
+          "dependent": 7,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "nmod",
+          "governor": 4,
+          "governorGloss": "gave",
+          "dependent": 8,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "thought",
+          "dependent": 9,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "thought"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "thought",
+          "dependent": 1,
+          "dependentGloss": "Mary"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "gave",
+          "dependent": 3,
+          "dependentGloss": "she"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 2,
+          "governorGloss": "thought",
+          "dependent": 4,
+          "dependentGloss": "gave"
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "books",
+          "dependent": 5,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 4,
+          "governorGloss": "gave",
+          "dependent": 6,
+          "dependentGloss": "books"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "Bill",
+          "dependent": 7,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "nmod:to",
+          "governor": 4,
+          "governorGloss": "gave",
+          "dependent": 8,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "thought",
+          "dependent": 9,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "thought"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "thought",
+          "dependent": 1,
+          "dependentGloss": "Mary"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "gave",
+          "dependent": 3,
+          "dependentGloss": "she"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 2,
+          "governorGloss": "thought",
+          "dependent": 4,
+          "dependentGloss": "gave"
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "books",
+          "dependent": 5,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 4,
+          "governorGloss": "gave",
+          "dependent": 6,
+          "dependentGloss": "books"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "Bill",
+          "dependent": 7,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "nmod:to",
+          "governor": 4,
+          "governorGloss": "gave",
+          "dependent": 8,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "thought",
+          "dependent": 9,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 0,
+          "docTokenEnd": 1,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "Mary",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 7,
+          "docTokenEnd": 8,
+          "tokenBegin": 7,
+          "tokenEnd": 8,
+          "text": "Bill",
+          "characterOffsetBegin": 35,
+          "characterOffsetEnd": 39,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 2,
+          "docTokenEnd": 3,
+          "tokenBegin": 2,
+          "tokenEnd": 3,
+          "text": "she",
+          "characterOffsetBegin": 13,
+          "characterOffsetEnd": 16,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "Mary",
+          "originalText": "Mary",
+          "lemma": "Mary",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "thought",
+          "originalText": "thought",
+          "lemma": "think",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 12,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "she",
+          "originalText": "she",
+          "lemma": "she",
+          "characterOffsetBegin": 13,
+          "characterOffsetEnd": 16,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "gave",
+          "originalText": "gave",
+          "lemma": "give",
+          "characterOffsetBegin": 17,
+          "characterOffsetEnd": 21,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "the",
+          "originalText": "the",
+          "lemma": "the",
+          "characterOffsetBegin": 22,
+          "characterOffsetEnd": 25,
+          "pos": "DT",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "books",
+          "originalText": "books",
+          "lemma": "book",
+          "characterOffsetBegin": 26,
+          "characterOffsetEnd": 31,
+          "pos": "NNS",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "to",
+          "originalText": "to",
+          "lemma": "to",
+          "characterOffsetBegin": 32,
+          "characterOffsetEnd": 34,
+          "pos": "TO",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "Bill",
+          "originalText": "Bill",
+          "lemma": "Bill",
+          "characterOffsetBegin": 35,
+          "characterOffsetEnd": 39,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 9,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 39,
+          "characterOffsetEnd": 40,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "2": [
+      {
+        "id": 0,
+        "text": "Mary",
+        "type": "PROPER",
+        "number": "SINGULAR",
+        "gender": "FEMALE",
+        "animacy": "ANIMATE",
+        "startIndex": 1,
+        "endIndex": 2,
+        "headIndex": 1,
+        "sentNum": 1,
+        "position": [
+          1,
+          1
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 2,
+        "text": "she",
+        "type": "PRONOMINAL",
+        "number": "SINGULAR",
+        "gender": "FEMALE",
+        "animacy": "ANIMATE",
+        "startIndex": 3,
+        "endIndex": 4,
+        "headIndex": 3,
+        "sentNum": 1,
+        "position": [
+          1,
+          3
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}

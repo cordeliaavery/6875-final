@@ -1,0 +1,431 @@
+{
+  "docId": "binding_6.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (NNP Mary))\n    (VP (VBD expected)\n      (S\n        (NP (PRP me))\n        (VP (TO to)\n          (VP (VB point)\n            (NP (DT the) (NN gun))\n            (PP (IN at)\n              (NP (PRP her)))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "expected"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 1,
+          "dependentGloss": "Mary"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 3,
+          "dependentGloss": "me"
+        },
+        {
+          "dep": "mark",
+          "governor": 5,
+          "governorGloss": "point",
+          "dependent": 4,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 5,
+          "dependentGloss": "point"
+        },
+        {
+          "dep": "det",
+          "governor": 7,
+          "governorGloss": "gun",
+          "dependent": 6,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 5,
+          "governorGloss": "point",
+          "dependent": 7,
+          "dependentGloss": "gun"
+        },
+        {
+          "dep": "case",
+          "governor": 9,
+          "governorGloss": "her",
+          "dependent": 8,
+          "dependentGloss": "at"
+        },
+        {
+          "dep": "nmod",
+          "governor": 5,
+          "governorGloss": "point",
+          "dependent": 9,
+          "dependentGloss": "her"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "expected"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 1,
+          "dependentGloss": "Mary"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 3,
+          "dependentGloss": "me"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 5,
+          "governorGloss": "point",
+          "dependent": 3,
+          "dependentGloss": "me"
+        },
+        {
+          "dep": "mark",
+          "governor": 5,
+          "governorGloss": "point",
+          "dependent": 4,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 5,
+          "dependentGloss": "point"
+        },
+        {
+          "dep": "det",
+          "governor": 7,
+          "governorGloss": "gun",
+          "dependent": 6,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 5,
+          "governorGloss": "point",
+          "dependent": 7,
+          "dependentGloss": "gun"
+        },
+        {
+          "dep": "case",
+          "governor": 9,
+          "governorGloss": "her",
+          "dependent": 8,
+          "dependentGloss": "at"
+        },
+        {
+          "dep": "nmod:at",
+          "governor": 5,
+          "governorGloss": "point",
+          "dependent": 9,
+          "dependentGloss": "her"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "expected"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 1,
+          "dependentGloss": "Mary"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 3,
+          "dependentGloss": "me"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 5,
+          "governorGloss": "point",
+          "dependent": 3,
+          "dependentGloss": "me"
+        },
+        {
+          "dep": "mark",
+          "governor": 5,
+          "governorGloss": "point",
+          "dependent": 4,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 5,
+          "dependentGloss": "point"
+        },
+        {
+          "dep": "det",
+          "governor": 7,
+          "governorGloss": "gun",
+          "dependent": 6,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 5,
+          "governorGloss": "point",
+          "dependent": 7,
+          "dependentGloss": "gun"
+        },
+        {
+          "dep": "case",
+          "governor": 9,
+          "governorGloss": "her",
+          "dependent": 8,
+          "dependentGloss": "at"
+        },
+        {
+          "dep": "nmod:at",
+          "governor": 5,
+          "governorGloss": "point",
+          "dependent": 9,
+          "dependentGloss": "her"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 0,
+          "docTokenEnd": 1,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "Mary",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 8,
+          "docTokenEnd": 9,
+          "tokenBegin": 8,
+          "tokenEnd": 9,
+          "text": "her",
+          "characterOffsetBegin": 37,
+          "characterOffsetEnd": 40,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "Mary",
+          "originalText": "Mary",
+          "lemma": "Mary",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "expected",
+          "originalText": "expected",
+          "lemma": "expect",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 13,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "me",
+          "originalText": "me",
+          "lemma": "I",
+          "characterOffsetBegin": 14,
+          "characterOffsetEnd": 16,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "to",
+          "originalText": "to",
+          "lemma": "to",
+          "characterOffsetBegin": 17,
+          "characterOffsetEnd": 19,
+          "pos": "TO",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "point",
+          "originalText": "point",
+          "lemma": "point",
+          "characterOffsetBegin": 20,
+          "characterOffsetEnd": 25,
+          "pos": "VB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "the",
+          "originalText": "the",
+          "lemma": "the",
+          "characterOffsetBegin": 26,
+          "characterOffsetEnd": 29,
+          "pos": "DT",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "gun",
+          "originalText": "gun",
+          "lemma": "gun",
+          "characterOffsetBegin": 30,
+          "characterOffsetEnd": 33,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "at",
+          "originalText": "at",
+          "lemma": "at",
+          "characterOffsetBegin": 34,
+          "characterOffsetEnd": 36,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 9,
+          "word": "her",
+          "originalText": "her",
+          "lemma": "she",
+          "characterOffsetBegin": 37,
+          "characterOffsetEnd": 40,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 10,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 40,
+          "characterOffsetEnd": 41,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "3": [
+      {
+        "id": 0,
+        "text": "Mary",
+        "type": "PROPER",
+        "number": "SINGULAR",
+        "gender": "FEMALE",
+        "animacy": "ANIMATE",
+        "startIndex": 1,
+        "endIndex": 2,
+        "headIndex": 1,
+        "sentNum": 1,
+        "position": [
+          1,
+          1
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 3,
+        "text": "her",
+        "type": "PRONOMINAL",
+        "number": "SINGULAR",
+        "gender": "FEMALE",
+        "animacy": "ANIMATE",
+        "startIndex": 9,
+        "endIndex": 10,
+        "headIndex": 9,
+        "sentNum": 1,
+        "position": [
+          1,
+          4
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}

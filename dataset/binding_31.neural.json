@@ -1,0 +1,373 @@
+{
+  "docId": "binding_31.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (PRP They))\n    (VP (VBD reagrd)\n      (NP (NNP Bill))\n      (PP (IN as)\n        (NP\n          (NP (RB too) (JJ critical))\n          (PP (IN of)\n            (NP (PRP them))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "reagrd"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "reagrd",
+          "dependent": 1,
+          "dependentGloss": "They"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "reagrd",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "case",
+          "governor": 6,
+          "governorGloss": "critical",
+          "dependent": 4,
+          "dependentGloss": "as"
+        },
+        {
+          "dep": "advmod",
+          "governor": 6,
+          "governorGloss": "critical",
+          "dependent": 5,
+          "dependentGloss": "too"
+        },
+        {
+          "dep": "nmod",
+          "governor": 2,
+          "governorGloss": "reagrd",
+          "dependent": 6,
+          "dependentGloss": "critical"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "them",
+          "dependent": 7,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod",
+          "governor": 6,
+          "governorGloss": "critical",
+          "dependent": 8,
+          "dependentGloss": "them"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "reagrd",
+          "dependent": 9,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "reagrd"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "reagrd",
+          "dependent": 1,
+          "dependentGloss": "They"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "reagrd",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "case",
+          "governor": 6,
+          "governorGloss": "critical",
+          "dependent": 4,
+          "dependentGloss": "as"
+        },
+        {
+          "dep": "advmod",
+          "governor": 6,
+          "governorGloss": "critical",
+          "dependent": 5,
+          "dependentGloss": "too"
+        },
+        {
+          "dep": "nmod:as",
+          "governor": 2,
+          "governorGloss": "reagrd",
+          "dependent": 6,
+          "dependentGloss": "critical"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "them",
+          "dependent": 7,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 6,
+          "governorGloss": "critical",
+          "dependent": 8,
+          "dependentGloss": "them"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "reagrd",
+          "dependent": 9,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "reagrd"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "reagrd",
+          "dependent": 1,
+          "dependentGloss": "They"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "reagrd",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "case",
+          "governor": 6,
+          "governorGloss": "critical",
+          "dependent": 4,
+          "dependentGloss": "as"
+        },
+        {
+          "dep": "advmod",
+          "governor": 6,
+          "governorGloss": "critical",
+          "dependent": 5,
+          "dependentGloss": "too"
+        },
+        {
+          "dep": "nmod:as",
+          "governor": 2,
+          "governorGloss": "reagrd",
+          "dependent": 6,
+          "dependentGloss": "critical"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "them",
+          "dependent": 7,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 6,
+          "governorGloss": "critical",
+          "dependent": 8,
+          "dependentGloss": "them"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "reagrd",
+          "dependent": 9,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 2,
+          "docTokenEnd": 3,
+          "tokenBegin": 2,
+          "tokenEnd": 3,
+          "text": "Bill",
+          "characterOffsetBegin": 12,
+          "characterOffsetEnd": 16,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "They",
+          "originalText": "They",
+          "lemma": "they",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "reagrd",
+          "originalText": "reagrd",
+          "lemma": "reagrd",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 11,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "Bill",
+          "originalText": "Bill",
+          "lemma": "Bill",
+          "characterOffsetBegin": 12,
+          "characterOffsetEnd": 16,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "as",
+          "originalText": "as",
+          "lemma": "as",
+          "characterOffsetBegin": 17,
+          "characterOffsetEnd": 19,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "too",
+          "originalText": "too",
+          "lemma": "too",
+          "characterOffsetBegin": 20,
+          "characterOffsetEnd": 23,
+          "pos": "RB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "critical",
+          "originalText": "critical",
+          "lemma": "critical",
+          "characterOffsetBegin": 24,
+          "characterOffsetEnd": 32,
+          "pos": "JJ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "of",
+          "originalText": "of",
+          "lemma": "of",
+          "characterOffsetBegin": 33,
+          "characterOffsetEnd": 35,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "them",
+          "originalText": "them",
+          "lemma": "they",
+          "characterOffsetBegin": 36,
+          "characterOffsetEnd": 40,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 9,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 40,
+          "characterOffsetEnd": 41,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "3": [
+      {
+        "id": 1,
+        "text": "They",
+        "type": "PRONOMINAL",
+        "number": "PLURAL",
+        "gender": "UNKNOWN",
+        "animacy": "ANIMATE",
+        "startIndex": 1,
+        "endIndex": 2,
+        "headIndex": 1,
+        "sentNum": 1,
+        "position": [
+          1,
+          2
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 3,
+        "text": "them",
+        "type": "PRONOMINAL",
+        "number": "PLURAL",
+        "gender": "UNKNOWN",
+        "animacy": "ANIMATE",
+        "startIndex": 8,
+        "endIndex": 9,
+        "headIndex": 8,
+        "sentNum": 1,
+        "position": [
+          1,
+          4
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}
