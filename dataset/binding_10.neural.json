@@ -1,0 +1,283 @@
+{
+  "docId": "binding_10.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (NN Everyone))\n    (VP (VBD believed)\n      (S\n        (NP (PRP him))\n        (VP (TO to)\n          (VP (VB be)\n            (ADJP (JJ incompetent))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "believed"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "believed",
+          "dependent": 1,
+          "dependentGloss": "Everyone"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "believed",
+          "dependent": 3,
+          "dependentGloss": "him"
+        },
+        {
+          "dep": "mark",
+          "governor": 6,
+          "governorGloss": "incompetent",
+          "dependent": 4,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "cop",
+          "governor": 6,
+          "governorGloss": "incompetent",
+          "dependent": 5,
+          "dependentGloss": "be"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 2,
+          "governorGloss": "believed",
+          "dependent": 6,
+          "dependentGloss": "incompetent"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "believed",
+          "dependent": 7,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "believed"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "believed",
+          "dependent": 1,
+          "dependentGloss": "Everyone"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "believed",
+          "dependent": 3,
+          "dependentGloss": "him"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 6,
+          "governorGloss": "incompetent",
+          "dependent": 3,
+          "dependentGloss": "him"
+        },
+        {
+          "dep": "mark",
+          "governor": 6,
+          "governorGloss": "incompetent",
+          "dependent": 4,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "cop",
+          "governor": 6,
+          "governorGloss": "incompetent",
+          "dependent": 5,
+          "dependentGloss": "be"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 2,
+          "governorGloss": "believed",
+          "dependent": 6,
+          "dependentGloss": "incompetent"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "believed",
+          "dependent": 7,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "believed"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "believed",
+          "dependent": 1,
+          "dependentGloss": "Everyone"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "believed",
+          "dependent": 3,
+          "dependentGloss": "him"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 6,
+          "governorGloss": "incompetent",
+          "dependent": 3,
+          "dependentGloss": "him"
+        },
+        {
+          "dep": "mark",
+          "governor": 6,
+          "governorGloss": "incompetent",
+          "dependent": 4,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "cop",
+          "governor": 6,
+          "governorGloss": "incompetent",
+          "dependent": 5,
+          "dependentGloss": "be"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 2,
+          "governorGloss": "believed",
+          "dependent": 6,
+          "dependentGloss": "incompetent"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "believed",
+          "dependent": 7,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 2,
+          "docTokenEnd": 3,
+          "tokenBegin": 2,
+          "tokenEnd": 3,
+          "text": "him",
+          "characterOffsetBegin": 18,
+          "characterOffsetEnd": 21,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "Everyone",
+          "originalText": "Everyone",
+          "lemma": "everyone",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 8,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "believed",
+          "originalText": "believed",
+          "lemma": "believe",
+          "characterOffsetBegin": 9,
+          "characterOffsetEnd": 17,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "him",
+          "originalText": "him",
+          "lemma": "he",
+          "characterOffsetBegin": 18,
+          "characterOffsetEnd": 21,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "to",
+          "originalText": "to",
+          "lemma": "to",
+          "characterOffsetBegin": 22,
+          "characterOffsetEnd": 24,
+          "pos": "TO",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "be",
+          "originalText": "be",
+          "lemma": "be",
+          "characterOffsetBegin": 25,
+          "characterOffsetEnd": 27,
+          "pos": "VB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "incompetent",
+          "originalText": "incompetent",
+          "lemma": "incompetent",
+          "characterOffsetBegin": 28,
+          "characterOffsetEnd": 39,
+          "pos": "JJ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 7,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 39,
+          "characterOffsetEnd": 40,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+  }
+}

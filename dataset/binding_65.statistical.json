@@ -1,0 +1,227 @@
+{
+  "docId": "binding_65.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (PRP They))\n    (VP (VBP read)\n      (NP (PRP$ their) (NNS books)))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "read"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "read",
+          "dependent": 1,
+          "dependentGloss": "They"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 4,
+          "governorGloss": "books",
+          "dependent": 3,
+          "dependentGloss": "their"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "read",
+          "dependent": 4,
+          "dependentGloss": "books"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "read",
+          "dependent": 5,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "read"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "read",
+          "dependent": 1,
+          "dependentGloss": "They"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 4,
+          "governorGloss": "books",
+          "dependent": 3,
+          "dependentGloss": "their"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "read",
+          "dependent": 4,
+          "dependentGloss": "books"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "read",
+          "dependent": 5,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "read"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "read",
+          "dependent": 1,
+          "dependentGloss": "They"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 4,
+          "governorGloss": "books",
+          "dependent": 3,
+          "dependentGloss": "their"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "read",
+          "dependent": 4,
+          "dependentGloss": "books"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "read",
+          "dependent": 5,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "They",
+          "originalText": "They",
+          "lemma": "they",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "read",
+          "originalText": "read",
+          "lemma": "read",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 9,
+          "pos": "VBP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "their",
+          "originalText": "their",
+          "lemma": "they",
+          "characterOffsetBegin": 10,
+          "characterOffsetEnd": 15,
+          "pos": "PRP$",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "books",
+          "originalText": "books",
+          "lemma": "book",
+          "characterOffsetBegin": 16,
+          "characterOffsetEnd": 21,
+          "pos": "NNS",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 5,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 21,
+          "characterOffsetEnd": 22,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "1": [
+      {
+        "id": 2,
+        "text": "They",
+        "type": "PRONOMINAL",
+        "number": "PLURAL",
+        "gender": "UNKNOWN",
+        "animacy": "ANIMATE",
+        "startIndex": 1,
+        "endIndex": 2,
+        "headIndex": 1,
+        "sentNum": 1,
+        "position": [
+          1,
+          3
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 1,
+        "text": "their",
+        "type": "PRONOMINAL",
+        "number": "PLURAL",
+        "gender": "UNKNOWN",
+        "animacy": "ANIMATE",
+        "startIndex": 3,
+        "endIndex": 4,
+        "headIndex": 3,
+        "sentNum": 1,
+        "position": [
+          1,
+          2
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}

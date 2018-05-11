@@ -1,0 +1,407 @@
+{
+  "docId": "binding_3.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (NNP Mary))\n    (VP (VBD expected)\n      (S\n        (NP (PRP me))\n        (VP (TO to)\n          (VP (VB introduce)\n            (NP (PRP her))\n            (PP (TO to)\n              (NP (NNP Bill)))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "expected"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 1,
+          "dependentGloss": "Mary"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 3,
+          "dependentGloss": "me"
+        },
+        {
+          "dep": "mark",
+          "governor": 5,
+          "governorGloss": "introduce",
+          "dependent": 4,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 5,
+          "dependentGloss": "introduce"
+        },
+        {
+          "dep": "dobj",
+          "governor": 5,
+          "governorGloss": "introduce",
+          "dependent": 6,
+          "dependentGloss": "her"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "Bill",
+          "dependent": 7,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "nmod",
+          "governor": 5,
+          "governorGloss": "introduce",
+          "dependent": 8,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 9,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "expected"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 1,
+          "dependentGloss": "Mary"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 3,
+          "dependentGloss": "me"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 5,
+          "governorGloss": "introduce",
+          "dependent": 3,
+          "dependentGloss": "me"
+        },
+        {
+          "dep": "mark",
+          "governor": 5,
+          "governorGloss": "introduce",
+          "dependent": 4,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 5,
+          "dependentGloss": "introduce"
+        },
+        {
+          "dep": "dobj",
+          "governor": 5,
+          "governorGloss": "introduce",
+          "dependent": 6,
+          "dependentGloss": "her"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "Bill",
+          "dependent": 7,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "nmod:to",
+          "governor": 5,
+          "governorGloss": "introduce",
+          "dependent": 8,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 9,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "expected"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 1,
+          "dependentGloss": "Mary"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 3,
+          "dependentGloss": "me"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 5,
+          "governorGloss": "introduce",
+          "dependent": 3,
+          "dependentGloss": "me"
+        },
+        {
+          "dep": "mark",
+          "governor": 5,
+          "governorGloss": "introduce",
+          "dependent": 4,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 5,
+          "dependentGloss": "introduce"
+        },
+        {
+          "dep": "dobj",
+          "governor": 5,
+          "governorGloss": "introduce",
+          "dependent": 6,
+          "dependentGloss": "her"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "Bill",
+          "dependent": 7,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "nmod:to",
+          "governor": 5,
+          "governorGloss": "introduce",
+          "dependent": 8,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "expected",
+          "dependent": 9,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 0,
+          "docTokenEnd": 1,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "Mary",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 7,
+          "docTokenEnd": 8,
+          "tokenBegin": 7,
+          "tokenEnd": 8,
+          "text": "Bill",
+          "characterOffsetBegin": 37,
+          "characterOffsetEnd": 41,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 5,
+          "docTokenEnd": 6,
+          "tokenBegin": 5,
+          "tokenEnd": 6,
+          "text": "her",
+          "characterOffsetBegin": 30,
+          "characterOffsetEnd": 33,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "Mary",
+          "originalText": "Mary",
+          "lemma": "Mary",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "expected",
+          "originalText": "expected",
+          "lemma": "expect",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 13,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "me",
+          "originalText": "me",
+          "lemma": "I",
+          "characterOffsetBegin": 14,
+          "characterOffsetEnd": 16,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "to",
+          "originalText": "to",
+          "lemma": "to",
+          "characterOffsetBegin": 17,
+          "characterOffsetEnd": 19,
+          "pos": "TO",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "introduce",
+          "originalText": "introduce",
+          "lemma": "introduce",
+          "characterOffsetBegin": 20,
+          "characterOffsetEnd": 29,
+          "pos": "VB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "her",
+          "originalText": "her",
+          "lemma": "she",
+          "characterOffsetBegin": 30,
+          "characterOffsetEnd": 33,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "to",
+          "originalText": "to",
+          "lemma": "to",
+          "characterOffsetBegin": 34,
+          "characterOffsetEnd": 36,
+          "pos": "TO",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "Bill",
+          "originalText": "Bill",
+          "lemma": "Bill",
+          "characterOffsetBegin": 37,
+          "characterOffsetEnd": 41,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 9,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 41,
+          "characterOffsetEnd": 42,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "3": [
+      {
+        "id": 0,
+        "text": "Mary",
+        "type": "PROPER",
+        "number": "SINGULAR",
+        "gender": "FEMALE",
+        "animacy": "ANIMATE",
+        "startIndex": 1,
+        "endIndex": 2,
+        "headIndex": 1,
+        "sentNum": 1,
+        "position": [
+          1,
+          1
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 3,
+        "text": "her",
+        "type": "PRONOMINAL",
+        "number": "SINGULAR",
+        "gender": "FEMALE",
+        "animacy": "ANIMATE",
+        "startIndex": 6,
+        "endIndex": 7,
+        "headIndex": 6,
+        "sentNum": 1,
+        "position": [
+          1,
+          4
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}

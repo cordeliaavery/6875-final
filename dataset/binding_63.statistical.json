@@ -1,0 +1,271 @@
+{
+  "docId": "binding_63.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (NNP John))\n    (VP (VBZ likes)\n      (NP\n        (NP (NNS pictures))\n        (PP (IN of)\n          (NP (PRP himself)))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "likes"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "likes",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "likes",
+          "dependent": 3,
+          "dependentGloss": "pictures"
+        },
+        {
+          "dep": "case",
+          "governor": 5,
+          "governorGloss": "himself",
+          "dependent": 4,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod",
+          "governor": 3,
+          "governorGloss": "pictures",
+          "dependent": 5,
+          "dependentGloss": "himself"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "likes",
+          "dependent": 6,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "likes"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "likes",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "likes",
+          "dependent": 3,
+          "dependentGloss": "pictures"
+        },
+        {
+          "dep": "case",
+          "governor": 5,
+          "governorGloss": "himself",
+          "dependent": 4,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 3,
+          "governorGloss": "pictures",
+          "dependent": 5,
+          "dependentGloss": "himself"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "likes",
+          "dependent": 6,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "likes"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "likes",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "likes",
+          "dependent": 3,
+          "dependentGloss": "pictures"
+        },
+        {
+          "dep": "case",
+          "governor": 5,
+          "governorGloss": "himself",
+          "dependent": 4,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 3,
+          "governorGloss": "pictures",
+          "dependent": 5,
+          "dependentGloss": "himself"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "likes",
+          "dependent": 6,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 0,
+          "docTokenEnd": 1,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "John",
+          "originalText": "John",
+          "lemma": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "likes",
+          "originalText": "likes",
+          "lemma": "like",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 10,
+          "pos": "VBZ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "pictures",
+          "originalText": "pictures",
+          "lemma": "picture",
+          "characterOffsetBegin": 11,
+          "characterOffsetEnd": 19,
+          "pos": "NNS",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "of",
+          "originalText": "of",
+          "lemma": "of",
+          "characterOffsetBegin": 20,
+          "characterOffsetEnd": 22,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "himself",
+          "originalText": "himself",
+          "lemma": "himself",
+          "characterOffsetBegin": 23,
+          "characterOffsetEnd": 30,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 6,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 30,
+          "characterOffsetEnd": 31,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "2": [
+      {
+        "id": 0,
+        "text": "John",
+        "type": "PROPER",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 1,
+        "endIndex": 2,
+        "headIndex": 1,
+        "sentNum": 1,
+        "position": [
+          1,
+          1
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 2,
+        "text": "himself",
+        "type": "PRONOMINAL",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 5,
+        "endIndex": 6,
+        "headIndex": 5,
+        "sentNum": 1,
+        "position": [
+          1,
+          3
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}

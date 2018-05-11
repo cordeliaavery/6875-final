@@ -1,0 +1,259 @@
+{
+  "docId": "binding_66.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (PRP They))\n    (VP (VBP read)\n      (NP\n        (NP (DT each) (JJ other) (POS 's))\n        (NNS books)))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "read"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "read",
+          "dependent": 1,
+          "dependentGloss": "They"
+        },
+        {
+          "dep": "det",
+          "governor": 4,
+          "governorGloss": "other",
+          "dependent": 3,
+          "dependentGloss": "each"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 6,
+          "governorGloss": "books",
+          "dependent": 4,
+          "dependentGloss": "other"
+        },
+        {
+          "dep": "case",
+          "governor": 4,
+          "governorGloss": "other",
+          "dependent": 5,
+          "dependentGloss": "'s"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "read",
+          "dependent": 6,
+          "dependentGloss": "books"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "read",
+          "dependent": 7,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "read"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "read",
+          "dependent": 1,
+          "dependentGloss": "They"
+        },
+        {
+          "dep": "det",
+          "governor": 4,
+          "governorGloss": "other",
+          "dependent": 3,
+          "dependentGloss": "each"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 6,
+          "governorGloss": "books",
+          "dependent": 4,
+          "dependentGloss": "other"
+        },
+        {
+          "dep": "case",
+          "governor": 4,
+          "governorGloss": "other",
+          "dependent": 5,
+          "dependentGloss": "'s"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "read",
+          "dependent": 6,
+          "dependentGloss": "books"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "read",
+          "dependent": 7,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "read"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "read",
+          "dependent": 1,
+          "dependentGloss": "They"
+        },
+        {
+          "dep": "det",
+          "governor": 4,
+          "governorGloss": "other",
+          "dependent": 3,
+          "dependentGloss": "each"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 6,
+          "governorGloss": "books",
+          "dependent": 4,
+          "dependentGloss": "other"
+        },
+        {
+          "dep": "case",
+          "governor": 4,
+          "governorGloss": "other",
+          "dependent": 5,
+          "dependentGloss": "'s"
+        },
+        {
+          "dep": "dobj",
+          "governor": 2,
+          "governorGloss": "read",
+          "dependent": 6,
+          "dependentGloss": "books"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "read",
+          "dependent": 7,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "They",
+          "originalText": "They",
+          "lemma": "they",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "read",
+          "originalText": "read",
+          "lemma": "read",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 9,
+          "pos": "VBP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "each",
+          "originalText": "each",
+          "lemma": "each",
+          "characterOffsetBegin": 10,
+          "characterOffsetEnd": 14,
+          "pos": "DT",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "other",
+          "originalText": "other",
+          "lemma": "other",
+          "characterOffsetBegin": 15,
+          "characterOffsetEnd": 20,
+          "pos": "JJ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 5,
+          "word": "'s",
+          "originalText": "'s",
+          "lemma": "'s",
+          "characterOffsetBegin": 20,
+          "characterOffsetEnd": 22,
+          "pos": "POS",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "books",
+          "originalText": "books",
+          "lemma": "book",
+          "characterOffsetBegin": 23,
+          "characterOffsetEnd": 28,
+          "pos": "NNS",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 7,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 28,
+          "characterOffsetEnd": 29,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+  }
+}
