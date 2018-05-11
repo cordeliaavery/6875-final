@@ -12,8 +12,10 @@ class Tree:
         children = vals[1:][0]
         if isinstance(children, str) or isinstance(children, unicode):
             self.__node = Head(children, self)
+            self.__leaf = True
         else:
             self.__node = Bar(children, self)
+            self.__leaf = False
 
     def tag(self):
         return self.__tag
@@ -30,6 +32,9 @@ class Tree:
         if isinstance(self.__node, Bar):
             return self.__node.get_right()
         raise NodeError
+
+    def is_leaf(self):
+        return self.__leaf
 
     def pretty_print(self, depth=0):
         print(" " * depth + self.__tag)
