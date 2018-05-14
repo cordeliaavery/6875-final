@@ -1,0 +1,305 @@
+{
+  "docId": "binding_75.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (NNP Mary))\n    (VP (VBD watched)\n      (S\n        (NP (PRP herself))\n        (VP (VB do)\n          (NP (DT the) (NN shuffle)))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "watched"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "watched",
+          "dependent": 1,
+          "dependentGloss": "Mary"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "do",
+          "dependent": 3,
+          "dependentGloss": "herself"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 2,
+          "governorGloss": "watched",
+          "dependent": 4,
+          "dependentGloss": "do"
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "shuffle",
+          "dependent": 5,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 4,
+          "governorGloss": "do",
+          "dependent": 6,
+          "dependentGloss": "shuffle"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "watched",
+          "dependent": 7,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "watched"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "watched",
+          "dependent": 1,
+          "dependentGloss": "Mary"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "do",
+          "dependent": 3,
+          "dependentGloss": "herself"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 2,
+          "governorGloss": "watched",
+          "dependent": 4,
+          "dependentGloss": "do"
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "shuffle",
+          "dependent": 5,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 4,
+          "governorGloss": "do",
+          "dependent": 6,
+          "dependentGloss": "shuffle"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "watched",
+          "dependent": 7,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "watched"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "watched",
+          "dependent": 1,
+          "dependentGloss": "Mary"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "do",
+          "dependent": 3,
+          "dependentGloss": "herself"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 2,
+          "governorGloss": "watched",
+          "dependent": 4,
+          "dependentGloss": "do"
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "shuffle",
+          "dependent": 5,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 4,
+          "governorGloss": "do",
+          "dependent": 6,
+          "dependentGloss": "shuffle"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "watched",
+          "dependent": 7,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 0,
+          "docTokenEnd": 1,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "Mary",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "Mary",
+          "originalText": "Mary",
+          "lemma": "Mary",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "watched",
+          "originalText": "watched",
+          "lemma": "watch",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 12,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "herself",
+          "originalText": "herself",
+          "lemma": "herself",
+          "characterOffsetBegin": 13,
+          "characterOffsetEnd": 20,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "do",
+          "originalText": "do",
+          "lemma": "do",
+          "characterOffsetBegin": 21,
+          "characterOffsetEnd": 23,
+          "pos": "VB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "the",
+          "originalText": "the",
+          "lemma": "the",
+          "characterOffsetBegin": 24,
+          "characterOffsetEnd": 27,
+          "pos": "DT",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "shuffle",
+          "originalText": "shuffle",
+          "lemma": "shuffle",
+          "characterOffsetBegin": 28,
+          "characterOffsetEnd": 35,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 7,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 35,
+          "characterOffsetEnd": 36,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "1": [
+      {
+        "id": 0,
+        "text": "Mary",
+        "type": "PROPER",
+        "number": "SINGULAR",
+        "gender": "FEMALE",
+        "animacy": "ANIMATE",
+        "startIndex": 1,
+        "endIndex": 2,
+        "headIndex": 1,
+        "sentNum": 1,
+        "position": [
+          1,
+          1
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 1,
+        "text": "herself",
+        "type": "PRONOMINAL",
+        "number": "SINGULAR",
+        "gender": "FEMALE",
+        "animacy": "ANIMATE",
+        "startIndex": 3,
+        "endIndex": 4,
+        "headIndex": 3,
+        "sentNum": 1,
+        "position": [
+          1,
+          2
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}
