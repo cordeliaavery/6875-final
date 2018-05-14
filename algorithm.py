@@ -3,6 +3,7 @@ from tree2 import *
 def find_X(node, path):
     path.append(node)
     if node.tag() == 'NP' or node.tag() == 'S':
+    #if node.tag().startswith('S'):
         return node, path
     next_step = get_parent(node)
     if next_step is None: return None, path 
