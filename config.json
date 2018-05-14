@@ -1,0 +1,136 @@
+{
+    "eng": {
+        "I_dir": "left",
+        "V_dir": "left",
+        "lexicon": {
+            "Mary": {
+                "gender": "f",
+                "person": "t",
+                "count": "s",
+                "type:": "R"
+            },
+            "John": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "type": "R"
+            },
+            "Bill": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "type": "R"
+            },
+            "I": {
+                "gender": "[fm]",
+                "person": "f",
+                "count": "s",
+                "case": "nom",
+                "type": "P"
+            },
+            "me": {
+                "gender": "[fm]",
+                "person": "f",
+                "count": "s",
+                "case": "obj|dat",
+                "type": "P"
+            },
+            "my": {
+                "gender": "[fm]",
+                "person": "f",
+                "count": "s",
+                "case": "gen",
+                "type": "P"
+            },
+            "myself": {
+                "gender": "[fm]",
+                "person": "f",
+                "count": "s",
+                "case": "obj|dat",
+                "type": "A"
+            },
+            "you": {
+                "gender": "[fm]",
+                "person": "s",
+                "count": "[sp]",
+                "case": "nom|obj|dat",
+                "type":"P"
+            },
+            "your": {
+                "gender": "[fm]",
+                "person": "s",
+                "count": "[sp]",
+                "case": "gen",
+                "type":"P"
+            },
+            "yourself": {
+                "gender": "[fm]",
+                "person": "s",
+                "count": "s",
+                "case": "obj|dat",
+                "type": "A"
+            },
+            "yourselves": {
+                "gender": "[fm]",
+                "person": "s",
+                "count": "p",
+                "case": "obj|dat",
+                "type": "A"
+            },
+            "she": {
+                "gender": "f",
+                "person": "t",
+                "count": "s",
+                "case": "nom",
+                "type":"P"
+            },
+            "he": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "case": "nom",
+                "type":"P"
+            },
+            "her": {
+                "gender": "f",
+                "person": "t",
+                "count": "s",
+                "case": "obj|dat|gen",
+                "type":"P"
+            },
+            "him": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "case": "obj|dat",
+                "type":"P"
+            },
+            "his": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "case": "gen",
+                "type":"P"
+            },
+            "herself": {
+                "gender": "f",
+                "person": "t",
+                "count": "s",
+                "case": "obj|dat",
+                "type": "A"
+            },
+            "himself": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "case": "obj|dat",
+                "type": "A"
+            }
+        }
+    },
+    "ger": {
+        "I_dir": "left",
+        "V_dir": "right",
+        "lexicon": {}
+    }
+}

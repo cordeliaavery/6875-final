@@ -26,8 +26,8 @@ for elem in sorted(parser_output["sentences"], key=lambda x: x["index"]):
     candidates = look_for_PRP(tree_to_parse)
     for candidate in candidates:
         proposed = resolve_anaphor(candidate)
-        print 'Proposed antecedents for'
-        candidate.pretty_print()
+        print 'Proposed antecedents for', candidate.get_string()
+
         print 'Are as follows: '
         if proposed is None:
             continue
