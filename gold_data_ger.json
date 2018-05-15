@@ -530,5 +530,61 @@
         "startIndex" : 3,
         "endIndex" : 4
       }
+    ],
+    "54" : [
+      {
+        "sentNum" : 54,
+        "text" : "Johann und Wilhelm",
+        "startIndex" : 1,
+        "endIndex" : 4
+      },
+      {
+        "sentNum" : 54,
+        "text" : "sich",
+        "startIndex" : 5,
+        "endIndex" : 6
+      }
+    ],
+    "55" : [
+      {
+        "sentNum" : 55,
+        "text" : "Ihre",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 55,
+        "text" : "einander",
+        "startIndex" : 4,
+        "endIndex" : 5
+      }
+    ],
+    "56" : [
+      {
+        "sentNum" : 56,
+        "text" : "Sie",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 56,
+        "text" : "einander",
+        "startIndex" : 5,
+        "endIndex" : 6
+      }
+    ],
+    "57" : [
+      {
+        "sentNum" : 57,
+        "text" : "Männer",
+        "startIndex" : 2,
+        "endIndex" : 3
+      },
+      {
+        "sentNum" : 57,
+        "text" : "zueinander",
+        "startIndex" : 4,
+        "endIndex" : 5
+      }
     ]
 }

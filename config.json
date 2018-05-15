@@ -3,194 +3,277 @@
         "I_dir": "left",
         "V_dir": "left",
         "lexicon": {
+            "mother": {
+                "gender": "f",
+                "person": "t",
+                "count": "s",
+                "case": "obj|dat|nom",
+                "type": "R",
+                "animate": true
+            },
             "Mary": {
                 "gender": "f",
                 "person": "t",
                 "count": "s",
                 "case": "obj|dat|nom",
-                "type:": "R"
+                "type": "R",
+                "animate": true
             },
             "John": {
                 "gender": "m",
                 "person": "t",
                 "count": "s",
                 "case":"obj|dat|nom",
-                "type": "R"
+                "type": "R",
+                "animate": true
             },
             "Bill": {
                 "gender": "m",
                 "person": "t",
                 "count": "s",
                 "case":"obj|dat|nom",
-                "type": "R"
-            },
+                "type": "R",
+                "animate": true
+            },                
             "I": {
                 "gender": "[fm]",
                 "person": "f",
                 "count": "s",
                 "case": "nom",
-                "type": "P"
+                "type": "P",
+                "animate": true
             },
             "me": {
                 "gender": "[fm]",
                 "person": "f",
                 "count": "s",
                 "case": "obj|dat",
-                "type": "P"
+                "type": "P",
+                "animate": true
             },
             "my": {
                 "gender": "[fm]",
                 "person": "f",
                 "count": "s",
                 "case": "gen",
-                "type": "P"
+                "type": "P",
+                "animate": true
             },
             "myself": {
                 "gender": "[fm]",
                 "person": "f",
                 "count": "s",
                 "case": "obj|dat",
-                "type": "A"
+                "type": "A",
+                "animate": true
             },
             "you": {
                 "gender": "[fm]",
                 "person": "s",
                 "count": "[sp]",
                 "case": "nom|obj|dat",
-                "type":"P"
+                "type":"P",
+                "animate": true
             },
             "your": {
                 "gender": "[fm]",
                 "person": "s",
                 "count": "[sp]",
                 "case": "gen",
-                "type":"P"
+                "type":"P",
+                "animate": true
             },
             "yourself": {
                 "gender": "[fm]",
                 "person": "s",
                 "count": "s",
                 "case": "obj|dat",
-                "type": "A"
+                "type": "A",
+                "animate": true
             },
             "yourselves": {
                 "gender": "[fm]",
                 "person": "s",
                 "count": "p",
                 "case": "obj|dat",
-                "type": "A"
+                "type": "A",
+                "animate": true
+            },
+            "it": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "s",
+                "case": "nom|dat|obj",
+                "type": "P",
+                "animate": false
+            },
+            "itself": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "s",
+                "case":"nom|dat|obj",
+                "type":"A",
+                "animate": false
             },
             "she": {
                 "gender": "f",
                 "person": "t",
                 "count": "s",
                 "case": "nom",
-                "type":"P"
+                "type":"P",
+                "animate": true
             },
             "he": {
                 "gender": "m",
                 "person": "t",
                 "count": "s",
                 "case": "nom",
-                "type":"P"
+                "type":"P",
+                "animate": true
             },
             "her": {
                 "gender": "f",
                 "person": "t",
                 "count": "s",
                 "case": "obj|dat|gen",
-                "type":"P"
+                "type":"P",
+                "animate": true
             },
             "him": {
                 "gender": "m",
                 "person": "t",
                 "count": "s",
                 "case": "obj|dat",
-                "type":"P"
+                "type":"P",
+                "animate": true
             },
             "his": {
                 "gender": "m",
                 "person": "t",
                 "count": "s",
                 "case": "gen",
-                "type":"P"
+                "type":"P",
+                "animate": true
             },
             "herself": {
                 "gender": "f",
                 "person": "t",
                 "count": "s",
                 "case": "obj|dat",
-                "type": "A"
+                "type": "A",
+                "animate": true
             },
             "himself": {
                 "gender": "m",
                 "person": "t",
                 "count": "s",
                 "case": "obj|dat",
-                "type": "A"
+                "type": "A",
+                "animate": true
             },
             "each other": {
                 "gender": "[fm]",
                 "person": "t",
                 "count": "p",
                 "case": "obj|dat",
-                "type": "A"
+                "type": "A",
+                "animate": true
             },
             "we": {
                 "gender": "[fm]",
                 "person": "f",
                 "count": "p",
                 "case": "nom",
-                "type": "P"
+                "type": "P",
+                "animate": true
             },
             "us": {
                 "gender": "[fm]",
                 "person": "f",
                 "count": "p",
                 "case": "obj|dat",
-                "type": "P"
+                "type": "P",
+                "animate": true
             },
             "our": {
                 "gender": "[fm]",
                 "person": "f",
                 "count": "p",
                 "case": "gen",
-                "type": "P"
+                "type": "P",
+                "animate": true
             },
             "ourselves": {
                 "gender": "[fm]",
                 "person": "f",
                 "count": "p",
                 "case": "obj|dat",
-                "type": "A"
+                "type": "A",
+                "animate": true
             },
-            "them": {
+            "they": {
                 "gender": "[fm]",
                 "person": "t",
                 "count": "p",
                 "case": "nom",
-                "type": "P"
+                "type": "P",
+                "animate": true
             },
             "them": {
                 "gender": "[fm]",
                 "person": "t",
                 "count": "p",
                 "case": "obj|dat",
-                "type": "P"
+                "type": "P",
+                "animate": true
             },
             "their": {
                 "gender": "[fm]",
                 "person": "t",
                 "count": "p",
                 "case": "gen",
-                "type": "P"
+                "type": "P",
+                "animate": true
             },
             "themselves": {
                 "gender": "[fm]",
                 "person": "t",
                 "count": "p",
                 "case": "obj|dat",
-                "type": "A"
+                "type": "A",
+                "animate": true
+            },
+            "teacher": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "s",
+                "case": "obj|dat|nom",
+                "type": "R",
+                "animate": true
+            },
+            "men": {
+                "gender": "m",
+                "person": "t",
+                "count": "p",
+                "case":"obj|dat|nom",
+                "type":"R",
+                "animate": true
+            },
+            "man": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "case":"obj|dat|nom",
+                "type":"R",
+                "animate": true
+            },
+            "enemy": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "s",
+                "case":"obj|dat|nom",
+                "type":"R",
+                "animate": true
             }
         }
     },
@@ -202,7 +285,7 @@
                 "gender": "f",
                 "person": "t",
                 "count": "s",
-                "type:": "R"
+                "type": "R"
             },
             "Johann": {
                 "gender": "m",
@@ -355,7 +438,45 @@
                 "count": "s",
                 "case": "gen",
                 "type": "P"
-            }
+            },
+            "einander": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "p",
+                "case": "dat",
+                "type": "A"
+            },
+            "zueinander": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "p",
+                "case": "dat",
+                "type": "A"
+            },
+            "Männer": {
+                "gender": "m",
+                "person": "t",
+                "count": "p",
+                "case": "nom",
+                "type": "R",
+                "animate": true
+            }, 
+            "Lehrerin": {
+                "gender": "f",
+                "person": "t",
+                "count": "s",
+                "case": "nom",
+                "type": "R",
+                "animate": true
+            }, 
+            "Feind": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "case": "nom",
+                "type": "R",
+                "animate": true
+            }, 
         }
     }
 }

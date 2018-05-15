@@ -31,7 +31,7 @@ class Tree:
         self.__config = None
 
         if isinstance(children, str) or isinstance(children, unicode):
-            if self.__tag.startswith("PRP"):
+            if self.__tag.startswith("PRP") and children not in Tree.lexicon:
                 children = children.lower()
             self.__node = Head(children, prior_leaves)
             self.__leaf = True
@@ -273,9 +273,9 @@ def find_pair(treelist):
         elem = treelist[x]
         # first value is the start index, second is the one
         # we want to keep, third is the one we discard
-        if prev_elem.tag() == 'MD' and elem.tag() == 'RB':
-            return x - 1, x - 1, x
-        if prev_elem.tag() == 'RB' and elem.tag() == 'JJ':
-            return x - 1, x, x - 1
+        #if prev_elem.tag() == 'MD' and elem.tag() == 'RB':
+        #    return x - 1, x - 1, x
+        #if prev_elem.tag() == 'RB' and elem.tag() == 'JJ':
+        #    return x - 1, x, x - 1
 
     return -1, -1, -1
