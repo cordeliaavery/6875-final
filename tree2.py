@@ -140,19 +140,20 @@ class Bar:
             self.__left = self.__extras[0]
             self.__right = None
             return
-        if len(self.__extras) == 2:
-            self.__left, self.__right = self.__extras
-            if self.get_string() in Tree.lexicon:
-                # some two-word elements such as "each other" ought
-                # to be treated as pronouns, but will still be separate
-                # nodes
+
+        for x in range(len(self.__extras) - 1):
+            # handles cases such as "each other"
+            combo_str = self.__extras[x].get_string() + " " + self.__extras[x + 1].get_string()
+            if combo_str in Tree.lexicon:
                 assert (parent.tag() == "NP")
-                conf = Tree.lexicon[self.get_string()]
+                conf = Tree.lexicon[combo_str]
                 if conf["type"] != "R":
                     Tree.PR_nodes.add(parent)
                     assert (parent in Tree.NP_nodes)
                 parent.set_config(conf)
 
+        if len(self.__extras) == 2:
+            self.__left, self.__right = self.__extras
             return
 
         check = find_pair(self.__extras)
@@ -161,6 +162,7 @@ class Bar:
             self.__extras[check[1]].set_string(e1.get_string() + " " + e2.get_string())
             self.__extras.pop(check[2])
             check = find_pair(self.__extras)
+
 
         self.__left = self.__extras[0]
         if len(self.__extras) > 1:
