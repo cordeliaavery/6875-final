@@ -9,7 +9,7 @@ class Tree:
     NP_nodes = set()
     PR_nodes = set()
 
-    def __init__(self, vals, root_idx, local_idx=0, parent=None):
+    def __init__(self, vals, root_idx, local_idx=0, prior_leaves=1, parent=None):
         self.__parent = parent
         self.__tag = vals[0]
         self.__root_idx = root_idx
@@ -28,7 +28,7 @@ class Tree:
         if isinstance(children, str) or isinstance(children, unicode):
             if self.__tag == "PRP":
                 children = children.lower()
-            self.__node = Head(children, self)
+            self.__node = Head(children, prior_leaves)
             self.__leaf = True
             if self.__tag.startswith("N") or self.__tag.startswith("PR"):
                 conf = Tree.lexicon.get(self.__node.get_string())
@@ -46,7 +46,7 @@ class Tree:
                 self.__parent.set_config(conf)
 
         else:
-            self.__node = Bar(children, root_idx, local_idx, self)
+            self.__node = Bar(children, root_idx, local_idx, prior_leaves, self)
             self.__leaf = False
 
 
@@ -104,14 +104,14 @@ class Tree:
         return self.__config
 
 class Bar:
-    def __init__(self, vals, root_idx, local_idx, parent):
+    def __init__(self, vals, root_idx, local_idx, prior_leaves, parent):
         self.__parent = parent
 
         c_index = local_idx + 1
         self.__num_leaves = 0
         self.__extras = []
         for x in vals:
-            t = Tree(x, root_idx, c_index, parent)
+            t = Tree(x, root_idx, c_index, prior_leaves + self.__num_leaves, parent)
             c_index += t.size_of_subtree()
             self.__num_leaves += t.num_leaves()
             self.__extras.append(t)
@@ -186,9 +186,9 @@ class Bar:
         print ("WARNING: attempting to set string at bar level")
 
 class Head:
-    def __init__(self, val, parent):
+    def __init__(self, val, leaf_index):
         self.__val = val
-        self.__parent = parent
+        self.__leaf_index = leaf_index
 
     def pretty_print(self, depth):
         print(" " * depth + self.__val)

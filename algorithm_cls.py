@@ -26,7 +26,7 @@ def get_governed_nodes(node, base, passed_S=False, heads=HEADS, include_non_matc
     for n in node.get_children():
         if n == base:
             continue
-        if n.tag() in heads and (include_non_matches or match(n, base)) and (not passed_S or n.config["type"] == "R"):
+        if n.tag() in heads and (include_non_matches or match(n, base)) and (not passed_S or n.config()["type"] == "R"):
             govs.add(n)
         govs |= get_governed_nodes(n,
                                    base,
@@ -61,7 +61,6 @@ def get_c_commanding_nodes(node, r_exp=False, base=None, heads=HEADS):
 def resolve_anaphor(node, NP_set):
     # Begin at NP node immediately dominating pronoun
 
-    synset = set()
     assert (node.tag() == "NP" and node.config())
 
     node_type = node.config()["type"]
@@ -73,9 +72,6 @@ def resolve_anaphor(node, NP_set):
         while c_node:
             synset -= {c_node,}
             c_node = c_node.parent()
-
-    # elif node.config()["type"] == "A":
-    # each reference to an anaphor must be licensed
 
     if node.parent():
         c_commanding = get_c_commanding_nodes(node,
@@ -94,5 +90,6 @@ def resolve_anaphor(node, NP_set):
         return (synset - c_commanding) - governed
 
     elif node_type == "A":
+        print node_type
         return c_commanding - governed
     

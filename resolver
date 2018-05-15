@@ -42,16 +42,18 @@ def main(args):
         tree_to_parse = Tree(list_hier[0], 0)
         print tree_to_parse.get_string()
         tree_to_parse.pretty_print()
-        #candidates = look_for_PRP(tree_to_parse)
 
         for candidate in Tree.PR_nodes:
             print "Candidate:"
             candidate.pretty_print()
             print "Results:"
             proposed = resolve_anaphor(candidate, Tree.NP_nodes)
+            if not proposed:
+                print "NO PROP"
+                continue
             for proposal in proposed:
                 proposal.pretty_print()
-
+            
         print '-'*20
         Tree.PR_nodes.clear()
         Tree.NP_nodes.clear()
