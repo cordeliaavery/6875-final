@@ -6,16 +6,60 @@ from tree2 import Tree, get_index
 from tree3 import process_string
 from algorithm_cls import resolve_anaphor
 import json
+from os.path import basename, splitext
 
 gold_data = {}
 lexicon = {}
 head_settings = {}
 
-def compute_corenlp_accuracy():
-    pass
+def compute_corenlp_accuracy(args):
+    convert_all_sentences()
+    
 
-def read_gold_data():
-    pass
+
+def convert_all_sentences():
+    with open("dataset/all_files.txt") as f:
+        files = ["dataset/"+splitext(basename(x))[0] for x in f]
+
+    models = ["deterministic", "neural", "statistical"]
+    for model in models:
+        dict = {}
+        counter = 1
+        for line in files:
+            filename = line+"."+model+".json"
+            entry = convert_corenlp_output(filename)
+            dict[str(counter)] = entry
+            counter += 1
+
+        to_write = {"corefs" : dict}
+        
+        outfile = "dataset/corenlp_"+model+".json"
+        with open(outfile, "w") as f:
+            json.dump(to_write, f, indent=2)
+
+def convert_corenlp_output(filename):
+    with open(filename) as f:
+        output = json.load(f)
+    print output["corefs"]
+
+    entry = []
+    if len(output["corefs"]) == 0:
+        return entry
+    else:
+        for key in output["corefs"]:
+            coref_sets = output["corefs"][key]
+            for i in range(len(coref_sets)):
+                mention = coref_sets[i]
+                dict = {"sentNum" : mention["sentNum"], "text" : mention["text"], "startIndex" : mention["startIndex"], "endIndex" : mention["endIndex"]}
+                entry.append(dict)
+            
+            return entry
+
+def read_gold_data(args):
+    with open(args.gold_data) as f:
+        gold_data = json.load(f)
+
+    return gold_data
 
 def look_for_PRP(cell):
     if cell is None:
@@ -81,4 +125,5 @@ if __name__ == "__main__":
                         help="json input for parameter settings. Should not need anything other than the default!")
 
     args = parser.parse_args()
-    main(args)
+    #main(args)
+    compute_corenlp_accuracy(args)

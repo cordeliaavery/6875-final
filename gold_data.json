@@ -1,4 +1,5 @@
-"corefs" : {
+{
+  "corefs" : {
     "1" : [
         {
           "sentNum" : 1,
@@ -923,4 +924,5 @@
         "endIndex" : 3
       }
     ]
+  }
 }
