@@ -1,0 +1,451 @@
+{
+  "docId": "binding_85.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (SBAR (IN After)\n      (S\n        (NP (NNP John))\n        (VP (VBD robbed)\n          (NP (DT the) (NN bank)))))\n    (, ,)\n    (NP (DT the) (NN policeman))\n    (VP (VBD apprehended)\n      (NP (PRP himself)))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 9,
+          "dependentGloss": "apprehended"
+        },
+        {
+          "dep": "mark",
+          "governor": 3,
+          "governorGloss": "robbed",
+          "dependent": 1,
+          "dependentGloss": "After"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "robbed",
+          "dependent": 2,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "advcl",
+          "governor": 9,
+          "governorGloss": "apprehended",
+          "dependent": 3,
+          "dependentGloss": "robbed"
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "bank",
+          "dependent": 4,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "robbed",
+          "dependent": 5,
+          "dependentGloss": "bank"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "apprehended",
+          "dependent": 6,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "det",
+          "governor": 8,
+          "governorGloss": "policeman",
+          "dependent": 7,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 9,
+          "governorGloss": "apprehended",
+          "dependent": 8,
+          "dependentGloss": "policeman"
+        },
+        {
+          "dep": "dobj",
+          "governor": 9,
+          "governorGloss": "apprehended",
+          "dependent": 10,
+          "dependentGloss": "himself"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "apprehended",
+          "dependent": 11,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 9,
+          "dependentGloss": "apprehended"
+        },
+        {
+          "dep": "mark",
+          "governor": 3,
+          "governorGloss": "robbed",
+          "dependent": 1,
+          "dependentGloss": "After"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "robbed",
+          "dependent": 2,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "advcl:after",
+          "governor": 9,
+          "governorGloss": "apprehended",
+          "dependent": 3,
+          "dependentGloss": "robbed"
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "bank",
+          "dependent": 4,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "robbed",
+          "dependent": 5,
+          "dependentGloss": "bank"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "apprehended",
+          "dependent": 6,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "det",
+          "governor": 8,
+          "governorGloss": "policeman",
+          "dependent": 7,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 9,
+          "governorGloss": "apprehended",
+          "dependent": 8,
+          "dependentGloss": "policeman"
+        },
+        {
+          "dep": "dobj",
+          "governor": 9,
+          "governorGloss": "apprehended",
+          "dependent": 10,
+          "dependentGloss": "himself"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "apprehended",
+          "dependent": 11,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 9,
+          "dependentGloss": "apprehended"
+        },
+        {
+          "dep": "mark",
+          "governor": 3,
+          "governorGloss": "robbed",
+          "dependent": 1,
+          "dependentGloss": "After"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "robbed",
+          "dependent": 2,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "advcl:after",
+          "governor": 9,
+          "governorGloss": "apprehended",
+          "dependent": 3,
+          "dependentGloss": "robbed"
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "bank",
+          "dependent": 4,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "robbed",
+          "dependent": 5,
+          "dependentGloss": "bank"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "apprehended",
+          "dependent": 6,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "det",
+          "governor": 8,
+          "governorGloss": "policeman",
+          "dependent": 7,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 9,
+          "governorGloss": "apprehended",
+          "dependent": 8,
+          "dependentGloss": "policeman"
+        },
+        {
+          "dep": "dobj",
+          "governor": 9,
+          "governorGloss": "apprehended",
+          "dependent": 10,
+          "dependentGloss": "himself"
+        },
+        {
+          "dep": "punct",
+          "governor": 9,
+          "governorGloss": "apprehended",
+          "dependent": 11,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 1,
+          "docTokenEnd": 2,
+          "tokenBegin": 1,
+          "tokenEnd": 2,
+          "text": "John",
+          "characterOffsetBegin": 6,
+          "characterOffsetEnd": 10,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 7,
+          "docTokenEnd": 8,
+          "tokenBegin": 7,
+          "tokenEnd": 8,
+          "text": "policeman",
+          "characterOffsetBegin": 32,
+          "characterOffsetEnd": 41,
+          "ner": "TITLE"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "After",
+          "originalText": "After",
+          "lemma": "after",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 5,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "John",
+          "originalText": "John",
+          "lemma": "John",
+          "characterOffsetBegin": 6,
+          "characterOffsetEnd": 10,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "robbed",
+          "originalText": "robbed",
+          "lemma": "rob",
+          "characterOffsetBegin": 11,
+          "characterOffsetEnd": 17,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "the",
+          "originalText": "the",
+          "lemma": "the",
+          "characterOffsetBegin": 18,
+          "characterOffsetEnd": 21,
+          "pos": "DT",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "bank",
+          "originalText": "bank",
+          "lemma": "bank",
+          "characterOffsetBegin": 22,
+          "characterOffsetEnd": 26,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 6,
+          "word": ",",
+          "originalText": ",",
+          "lemma": ",",
+          "characterOffsetBegin": 26,
+          "characterOffsetEnd": 27,
+          "pos": ",",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "the",
+          "originalText": "the",
+          "lemma": "the",
+          "characterOffsetBegin": 28,
+          "characterOffsetEnd": 31,
+          "pos": "DT",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "policeman",
+          "originalText": "policeman",
+          "lemma": "policeman",
+          "characterOffsetBegin": 32,
+          "characterOffsetEnd": 41,
+          "pos": "NN",
+          "ner": "TITLE",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 9,
+          "word": "apprehended",
+          "originalText": "apprehended",
+          "lemma": "apprehend",
+          "characterOffsetBegin": 42,
+          "characterOffsetEnd": 53,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 10,
+          "word": "himself",
+          "originalText": "himself",
+          "lemma": "himself",
+          "characterOffsetBegin": 54,
+          "characterOffsetEnd": 61,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 11,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 61,
+          "characterOffsetEnd": 62,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "1": [
+      {
+        "id": 0,
+        "text": "John",
+        "type": "PROPER",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 2,
+        "endIndex": 3,
+        "headIndex": 2,
+        "sentNum": 1,
+        "position": [
+          1,
+          1
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 1,
+        "text": "himself",
+        "type": "PRONOMINAL",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 10,
+        "endIndex": 11,
+        "headIndex": 10,
+        "sentNum": 1,
+        "position": [
+          1,
+          2
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}
