@@ -1,0 +1,631 @@
+{
+  "docId": "binding_86.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (NNP John))\n    (VP (VBD claimed)\n      (SBAR (IN that)\n        (S\n          (NP\n            (NP (DT the) (NN picture))\n            (PP (IN of)\n              (S\n                (NP (PRP him))\n                (VP (VBG hanging)\n                  (PP (IN in)\n                    (NP (DT the) (NN post) (NN office)))))))\n          (VP (VBD was)\n            (NP (DT a) (NN fraud))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "claimed"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "claimed",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "mark",
+          "governor": 15,
+          "governorGloss": "fraud",
+          "dependent": 3,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "picture",
+          "dependent": 4,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 15,
+          "governorGloss": "fraud",
+          "dependent": 5,
+          "dependentGloss": "picture"
+        },
+        {
+          "dep": "mark",
+          "governor": 8,
+          "governorGloss": "hanging",
+          "dependent": 6,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 8,
+          "governorGloss": "hanging",
+          "dependent": 7,
+          "dependentGloss": "him"
+        },
+        {
+          "dep": "acl",
+          "governor": 5,
+          "governorGloss": "picture",
+          "dependent": 8,
+          "dependentGloss": "hanging"
+        },
+        {
+          "dep": "case",
+          "governor": 12,
+          "governorGloss": "office",
+          "dependent": 9,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "det",
+          "governor": 12,
+          "governorGloss": "office",
+          "dependent": 10,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "compound",
+          "governor": 12,
+          "governorGloss": "office",
+          "dependent": 11,
+          "dependentGloss": "post"
+        },
+        {
+          "dep": "nmod",
+          "governor": 8,
+          "governorGloss": "hanging",
+          "dependent": 12,
+          "dependentGloss": "office"
+        },
+        {
+          "dep": "cop",
+          "governor": 15,
+          "governorGloss": "fraud",
+          "dependent": 13,
+          "dependentGloss": "was"
+        },
+        {
+          "dep": "det",
+          "governor": 15,
+          "governorGloss": "fraud",
+          "dependent": 14,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 2,
+          "governorGloss": "claimed",
+          "dependent": 15,
+          "dependentGloss": "fraud"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "claimed",
+          "dependent": 16,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "claimed"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "claimed",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "mark",
+          "governor": 15,
+          "governorGloss": "fraud",
+          "dependent": 3,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "picture",
+          "dependent": 4,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 15,
+          "governorGloss": "fraud",
+          "dependent": 5,
+          "dependentGloss": "picture"
+        },
+        {
+          "dep": "mark",
+          "governor": 8,
+          "governorGloss": "hanging",
+          "dependent": 6,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 8,
+          "governorGloss": "hanging",
+          "dependent": 7,
+          "dependentGloss": "him"
+        },
+        {
+          "dep": "acl:of",
+          "governor": 5,
+          "governorGloss": "picture",
+          "dependent": 8,
+          "dependentGloss": "hanging"
+        },
+        {
+          "dep": "case",
+          "governor": 12,
+          "governorGloss": "office",
+          "dependent": 9,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "det",
+          "governor": 12,
+          "governorGloss": "office",
+          "dependent": 10,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "compound",
+          "governor": 12,
+          "governorGloss": "office",
+          "dependent": 11,
+          "dependentGloss": "post"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 8,
+          "governorGloss": "hanging",
+          "dependent": 12,
+          "dependentGloss": "office"
+        },
+        {
+          "dep": "cop",
+          "governor": 15,
+          "governorGloss": "fraud",
+          "dependent": 13,
+          "dependentGloss": "was"
+        },
+        {
+          "dep": "det",
+          "governor": 15,
+          "governorGloss": "fraud",
+          "dependent": 14,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 2,
+          "governorGloss": "claimed",
+          "dependent": 15,
+          "dependentGloss": "fraud"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "claimed",
+          "dependent": 16,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "claimed"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "claimed",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "mark",
+          "governor": 15,
+          "governorGloss": "fraud",
+          "dependent": 3,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "picture",
+          "dependent": 4,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 15,
+          "governorGloss": "fraud",
+          "dependent": 5,
+          "dependentGloss": "picture"
+        },
+        {
+          "dep": "mark",
+          "governor": 8,
+          "governorGloss": "hanging",
+          "dependent": 6,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 8,
+          "governorGloss": "hanging",
+          "dependent": 7,
+          "dependentGloss": "him"
+        },
+        {
+          "dep": "acl:of",
+          "governor": 5,
+          "governorGloss": "picture",
+          "dependent": 8,
+          "dependentGloss": "hanging"
+        },
+        {
+          "dep": "case",
+          "governor": 12,
+          "governorGloss": "office",
+          "dependent": 9,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "det",
+          "governor": 12,
+          "governorGloss": "office",
+          "dependent": 10,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "compound",
+          "governor": 12,
+          "governorGloss": "office",
+          "dependent": 11,
+          "dependentGloss": "post"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 8,
+          "governorGloss": "hanging",
+          "dependent": 12,
+          "dependentGloss": "office"
+        },
+        {
+          "dep": "cop",
+          "governor": 15,
+          "governorGloss": "fraud",
+          "dependent": 13,
+          "dependentGloss": "was"
+        },
+        {
+          "dep": "det",
+          "governor": 15,
+          "governorGloss": "fraud",
+          "dependent": 14,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 2,
+          "governorGloss": "claimed",
+          "dependent": 15,
+          "dependentGloss": "fraud"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "claimed",
+          "dependent": 16,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 0,
+          "docTokenEnd": 1,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 14,
+          "docTokenEnd": 15,
+          "tokenBegin": 14,
+          "tokenEnd": 15,
+          "text": "fraud",
+          "characterOffsetBegin": 70,
+          "characterOffsetEnd": 75,
+          "ner": "CRIMINAL_CHARGE"
+        },
+        {
+          "docTokenBegin": 6,
+          "docTokenEnd": 7,
+          "tokenBegin": 6,
+          "tokenEnd": 7,
+          "text": "him",
+          "characterOffsetBegin": 33,
+          "characterOffsetEnd": 36,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "John",
+          "originalText": "John",
+          "lemma": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "claimed",
+          "originalText": "claimed",
+          "lemma": "claim",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 12,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "that",
+          "originalText": "that",
+          "lemma": "that",
+          "characterOffsetBegin": 13,
+          "characterOffsetEnd": 17,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "the",
+          "originalText": "the",
+          "lemma": "the",
+          "characterOffsetBegin": 18,
+          "characterOffsetEnd": 21,
+          "pos": "DT",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "picture",
+          "originalText": "picture",
+          "lemma": "picture",
+          "characterOffsetBegin": 22,
+          "characterOffsetEnd": 29,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "of",
+          "originalText": "of",
+          "lemma": "of",
+          "characterOffsetBegin": 30,
+          "characterOffsetEnd": 32,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "him",
+          "originalText": "him",
+          "lemma": "he",
+          "characterOffsetBegin": 33,
+          "characterOffsetEnd": 36,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "hanging",
+          "originalText": "hanging",
+          "lemma": "hang",
+          "characterOffsetBegin": 37,
+          "characterOffsetEnd": 44,
+          "pos": "VBG",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 9,
+          "word": "in",
+          "originalText": "in",
+          "lemma": "in",
+          "characterOffsetBegin": 45,
+          "characterOffsetEnd": 47,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 10,
+          "word": "the",
+          "originalText": "the",
+          "lemma": "the",
+          "characterOffsetBegin": 48,
+          "characterOffsetEnd": 51,
+          "pos": "DT",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 11,
+          "word": "post",
+          "originalText": "post",
+          "lemma": "post",
+          "characterOffsetBegin": 52,
+          "characterOffsetEnd": 56,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 12,
+          "word": "office",
+          "originalText": "office",
+          "lemma": "office",
+          "characterOffsetBegin": 57,
+          "characterOffsetEnd": 63,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 13,
+          "word": "was",
+          "originalText": "was",
+          "lemma": "be",
+          "characterOffsetBegin": 64,
+          "characterOffsetEnd": 67,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 14,
+          "word": "a",
+          "originalText": "a",
+          "lemma": "a",
+          "characterOffsetBegin": 68,
+          "characterOffsetEnd": 69,
+          "pos": "DT",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 15,
+          "word": "fraud",
+          "originalText": "fraud",
+          "lemma": "fraud",
+          "characterOffsetBegin": 70,
+          "characterOffsetEnd": 75,
+          "pos": "NN",
+          "ner": "CRIMINAL_CHARGE",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 16,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 75,
+          "characterOffsetEnd": 76,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "2": [
+      {
+        "id": 0,
+        "text": "John",
+        "type": "PROPER",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 1,
+        "endIndex": 2,
+        "headIndex": 1,
+        "sentNum": 1,
+        "position": [
+          1,
+          1
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 2,
+        "text": "him",
+        "type": "PRONOMINAL",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 7,
+        "endIndex": 8,
+        "headIndex": 7,
+        "sentNum": 1,
+        "position": [
+          1,
+          3
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}

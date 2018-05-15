@@ -1,0 +1,339 @@
+{
+  "docId": "binding_83.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (NP\n    (NP\n      (NP\n        (NP\n          (NP (NNP John) (POS 's))\n          (NN father) (POS 's))\n        (NN portrait))\n      (PP (IN of)\n        (NP (PRP himself))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 5,
+          "dependentGloss": "portrait"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 3,
+          "governorGloss": "father",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "case",
+          "governor": 1,
+          "governorGloss": "John",
+          "dependent": 2,
+          "dependentGloss": "'s"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 5,
+          "governorGloss": "portrait",
+          "dependent": 3,
+          "dependentGloss": "father"
+        },
+        {
+          "dep": "case",
+          "governor": 3,
+          "governorGloss": "father",
+          "dependent": 4,
+          "dependentGloss": "'s"
+        },
+        {
+          "dep": "case",
+          "governor": 7,
+          "governorGloss": "himself",
+          "dependent": 6,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod",
+          "governor": 5,
+          "governorGloss": "portrait",
+          "dependent": 7,
+          "dependentGloss": "himself"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "portrait",
+          "dependent": 8,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 5,
+          "dependentGloss": "portrait"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 3,
+          "governorGloss": "father",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "case",
+          "governor": 1,
+          "governorGloss": "John",
+          "dependent": 2,
+          "dependentGloss": "'s"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 5,
+          "governorGloss": "portrait",
+          "dependent": 3,
+          "dependentGloss": "father"
+        },
+        {
+          "dep": "case",
+          "governor": 3,
+          "governorGloss": "father",
+          "dependent": 4,
+          "dependentGloss": "'s"
+        },
+        {
+          "dep": "case",
+          "governor": 7,
+          "governorGloss": "himself",
+          "dependent": 6,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 5,
+          "governorGloss": "portrait",
+          "dependent": 7,
+          "dependentGloss": "himself"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "portrait",
+          "dependent": 8,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 5,
+          "dependentGloss": "portrait"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 3,
+          "governorGloss": "father",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "case",
+          "governor": 1,
+          "governorGloss": "John",
+          "dependent": 2,
+          "dependentGloss": "'s"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 5,
+          "governorGloss": "portrait",
+          "dependent": 3,
+          "dependentGloss": "father"
+        },
+        {
+          "dep": "case",
+          "governor": 3,
+          "governorGloss": "father",
+          "dependent": 4,
+          "dependentGloss": "'s"
+        },
+        {
+          "dep": "case",
+          "governor": 7,
+          "governorGloss": "himself",
+          "dependent": 6,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 5,
+          "governorGloss": "portrait",
+          "dependent": 7,
+          "dependentGloss": "himself"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "portrait",
+          "dependent": 8,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 0,
+          "docTokenEnd": 1,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "John",
+          "originalText": "John",
+          "lemma": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": "",
+          "after": ""
+        },
+        {
+          "index": 2,
+          "word": "'s",
+          "originalText": "'s",
+          "lemma": "'s",
+          "characterOffsetBegin": 4,
+          "characterOffsetEnd": 6,
+          "pos": "POS",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "father",
+          "originalText": "father",
+          "lemma": "father",
+          "characterOffsetBegin": 7,
+          "characterOffsetEnd": 13,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 4,
+          "word": "'s",
+          "originalText": "'s",
+          "lemma": "'s",
+          "characterOffsetBegin": 13,
+          "characterOffsetEnd": 15,
+          "pos": "POS",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "portrait",
+          "originalText": "portrait",
+          "lemma": "portrait",
+          "characterOffsetBegin": 16,
+          "characterOffsetEnd": 24,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "of",
+          "originalText": "of",
+          "lemma": "of",
+          "characterOffsetBegin": 25,
+          "characterOffsetEnd": 27,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "himself",
+          "originalText": "himself",
+          "lemma": "himself",
+          "characterOffsetBegin": 28,
+          "characterOffsetEnd": 35,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 8,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 35,
+          "characterOffsetEnd": 36,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "3": [
+      {
+        "id": 0,
+        "text": "John 's",
+        "type": "PROPER",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 1,
+        "endIndex": 3,
+        "headIndex": 1,
+        "sentNum": 1,
+        "position": [
+          1,
+          1
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 3,
+        "text": "himself",
+        "type": "PRONOMINAL",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 7,
+        "endIndex": 8,
+        "headIndex": 7,
+        "sentNum": 1,
+        "position": [
+          1,
+          4
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}
