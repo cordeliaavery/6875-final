@@ -1,0 +1,415 @@
+{
+  "docId": "binding_89.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (SBAR (IN That)\n      (S\n        (NP (PRP he))\n        (VP (VBD had)\n          (VP (VBN done)\n            (NP (NN something) (JJ terrible))))))\n    (VP (VBD was)\n      (VP (VBG disturbing)\n        (PP (TO to)\n          (NP (NNP John)))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 8,
+          "dependentGloss": "disturbing"
+        },
+        {
+          "dep": "mark",
+          "governor": 4,
+          "governorGloss": "done",
+          "dependent": 1,
+          "dependentGloss": "That"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "done",
+          "dependent": 2,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "aux",
+          "governor": 4,
+          "governorGloss": "done",
+          "dependent": 3,
+          "dependentGloss": "had"
+        },
+        {
+          "dep": "csubj",
+          "governor": 8,
+          "governorGloss": "disturbing",
+          "dependent": 4,
+          "dependentGloss": "done"
+        },
+        {
+          "dep": "dobj",
+          "governor": 4,
+          "governorGloss": "done",
+          "dependent": 5,
+          "dependentGloss": "something"
+        },
+        {
+          "dep": "amod",
+          "governor": 5,
+          "governorGloss": "something",
+          "dependent": 6,
+          "dependentGloss": "terrible"
+        },
+        {
+          "dep": "aux",
+          "governor": 8,
+          "governorGloss": "disturbing",
+          "dependent": 7,
+          "dependentGloss": "was"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "John",
+          "dependent": 9,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "nmod",
+          "governor": 8,
+          "governorGloss": "disturbing",
+          "dependent": 10,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "disturbing",
+          "dependent": 11,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 8,
+          "dependentGloss": "disturbing"
+        },
+        {
+          "dep": "mark",
+          "governor": 4,
+          "governorGloss": "done",
+          "dependent": 1,
+          "dependentGloss": "That"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "done",
+          "dependent": 2,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "aux",
+          "governor": 4,
+          "governorGloss": "done",
+          "dependent": 3,
+          "dependentGloss": "had"
+        },
+        {
+          "dep": "csubj",
+          "governor": 8,
+          "governorGloss": "disturbing",
+          "dependent": 4,
+          "dependentGloss": "done"
+        },
+        {
+          "dep": "dobj",
+          "governor": 4,
+          "governorGloss": "done",
+          "dependent": 5,
+          "dependentGloss": "something"
+        },
+        {
+          "dep": "amod",
+          "governor": 5,
+          "governorGloss": "something",
+          "dependent": 6,
+          "dependentGloss": "terrible"
+        },
+        {
+          "dep": "aux",
+          "governor": 8,
+          "governorGloss": "disturbing",
+          "dependent": 7,
+          "dependentGloss": "was"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "John",
+          "dependent": 9,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "nmod:to",
+          "governor": 8,
+          "governorGloss": "disturbing",
+          "dependent": 10,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "disturbing",
+          "dependent": 11,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 8,
+          "dependentGloss": "disturbing"
+        },
+        {
+          "dep": "mark",
+          "governor": 4,
+          "governorGloss": "done",
+          "dependent": 1,
+          "dependentGloss": "That"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "done",
+          "dependent": 2,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "aux",
+          "governor": 4,
+          "governorGloss": "done",
+          "dependent": 3,
+          "dependentGloss": "had"
+        },
+        {
+          "dep": "csubj",
+          "governor": 8,
+          "governorGloss": "disturbing",
+          "dependent": 4,
+          "dependentGloss": "done"
+        },
+        {
+          "dep": "dobj",
+          "governor": 4,
+          "governorGloss": "done",
+          "dependent": 5,
+          "dependentGloss": "something"
+        },
+        {
+          "dep": "amod",
+          "governor": 5,
+          "governorGloss": "something",
+          "dependent": 6,
+          "dependentGloss": "terrible"
+        },
+        {
+          "dep": "aux",
+          "governor": 8,
+          "governorGloss": "disturbing",
+          "dependent": 7,
+          "dependentGloss": "was"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "John",
+          "dependent": 9,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "nmod:to",
+          "governor": 8,
+          "governorGloss": "disturbing",
+          "dependent": 10,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "disturbing",
+          "dependent": 11,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 9,
+          "docTokenEnd": 10,
+          "tokenBegin": 9,
+          "tokenEnd": 10,
+          "text": "John",
+          "characterOffsetBegin": 54,
+          "characterOffsetEnd": 58,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 1,
+          "docTokenEnd": 2,
+          "tokenBegin": 1,
+          "tokenEnd": 2,
+          "text": "he",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 7,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "That",
+          "originalText": "That",
+          "lemma": "that",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "he",
+          "originalText": "he",
+          "lemma": "he",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 7,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "had",
+          "originalText": "had",
+          "lemma": "have",
+          "characterOffsetBegin": 8,
+          "characterOffsetEnd": 11,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "done",
+          "originalText": "done",
+          "lemma": "do",
+          "characterOffsetBegin": 12,
+          "characterOffsetEnd": 16,
+          "pos": "VBN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "something",
+          "originalText": "something",
+          "lemma": "something",
+          "characterOffsetBegin": 17,
+          "characterOffsetEnd": 26,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "terrible",
+          "originalText": "terrible",
+          "lemma": "terrible",
+          "characterOffsetBegin": 27,
+          "characterOffsetEnd": 35,
+          "pos": "JJ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "was",
+          "originalText": "was",
+          "lemma": "be",
+          "characterOffsetBegin": 36,
+          "characterOffsetEnd": 39,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "disturbing",
+          "originalText": "disturbing",
+          "lemma": "disturb",
+          "characterOffsetBegin": 40,
+          "characterOffsetEnd": 50,
+          "pos": "VBG",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 9,
+          "word": "to",
+          "originalText": "to",
+          "lemma": "to",
+          "characterOffsetBegin": 51,
+          "characterOffsetEnd": 53,
+          "pos": "TO",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 10,
+          "word": "John",
+          "originalText": "John",
+          "lemma": "John",
+          "characterOffsetBegin": 54,
+          "characterOffsetEnd": 58,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 11,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 58,
+          "characterOffsetEnd": 59,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+  }
+}

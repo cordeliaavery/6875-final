@@ -1,0 +1,791 @@
+{
+  "docId": "binding_78.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP\n      (NP (DT The) (NN castle))\n      (PP (IN in)\n        (NP (NNP Camelot))))\n    (VP (VBD remained)\n      (NP\n        (NP (DT the) (NN residence))\n        (PP (IN of)\n          (NP (DT the) (NN king))))\n      (PP (IN until)\n        (NP (CD 536)))\n      (SBAR\n        (WHADVP (WRB when))\n        (S\n          (NP (PRP he))\n          (VP (VBD moved)\n            (NP (PRP it))\n            (PP (TO to)\n              (NP (NNP London)))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 5,
+          "dependentGloss": "remained"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "castle",
+          "dependent": 1,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "remained",
+          "dependent": 2,
+          "dependentGloss": "castle"
+        },
+        {
+          "dep": "case",
+          "governor": 4,
+          "governorGloss": "Camelot",
+          "dependent": 3,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod",
+          "governor": 2,
+          "governorGloss": "castle",
+          "dependent": 4,
+          "dependentGloss": "Camelot"
+        },
+        {
+          "dep": "det",
+          "governor": 7,
+          "governorGloss": "residence",
+          "dependent": 6,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 5,
+          "governorGloss": "remained",
+          "dependent": 7,
+          "dependentGloss": "residence"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "king",
+          "dependent": 8,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 10,
+          "governorGloss": "king",
+          "dependent": 9,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nmod",
+          "governor": 7,
+          "governorGloss": "residence",
+          "dependent": 10,
+          "dependentGloss": "king"
+        },
+        {
+          "dep": "case",
+          "governor": 12,
+          "governorGloss": "536",
+          "dependent": 11,
+          "dependentGloss": "until"
+        },
+        {
+          "dep": "nmod",
+          "governor": 5,
+          "governorGloss": "remained",
+          "dependent": 12,
+          "dependentGloss": "536"
+        },
+        {
+          "dep": "advmod",
+          "governor": 15,
+          "governorGloss": "moved",
+          "dependent": 13,
+          "dependentGloss": "when"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 15,
+          "governorGloss": "moved",
+          "dependent": 14,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "advcl",
+          "governor": 5,
+          "governorGloss": "remained",
+          "dependent": 15,
+          "dependentGloss": "moved"
+        },
+        {
+          "dep": "dobj",
+          "governor": 15,
+          "governorGloss": "moved",
+          "dependent": 16,
+          "dependentGloss": "it"
+        },
+        {
+          "dep": "case",
+          "governor": 18,
+          "governorGloss": "London",
+          "dependent": 17,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "nmod",
+          "governor": 15,
+          "governorGloss": "moved",
+          "dependent": 18,
+          "dependentGloss": "London"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "remained",
+          "dependent": 19,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 5,
+          "dependentGloss": "remained"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "castle",
+          "dependent": 1,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "remained",
+          "dependent": 2,
+          "dependentGloss": "castle"
+        },
+        {
+          "dep": "case",
+          "governor": 4,
+          "governorGloss": "Camelot",
+          "dependent": 3,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 2,
+          "governorGloss": "castle",
+          "dependent": 4,
+          "dependentGloss": "Camelot"
+        },
+        {
+          "dep": "det",
+          "governor": 7,
+          "governorGloss": "residence",
+          "dependent": 6,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 5,
+          "governorGloss": "remained",
+          "dependent": 7,
+          "dependentGloss": "residence"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "king",
+          "dependent": 8,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 10,
+          "governorGloss": "king",
+          "dependent": 9,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 7,
+          "governorGloss": "residence",
+          "dependent": 10,
+          "dependentGloss": "king"
+        },
+        {
+          "dep": "case",
+          "governor": 12,
+          "governorGloss": "536",
+          "dependent": 11,
+          "dependentGloss": "until"
+        },
+        {
+          "dep": "nmod:until",
+          "governor": 5,
+          "governorGloss": "remained",
+          "dependent": 12,
+          "dependentGloss": "536"
+        },
+        {
+          "dep": "advmod",
+          "governor": 15,
+          "governorGloss": "moved",
+          "dependent": 13,
+          "dependentGloss": "when"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 15,
+          "governorGloss": "moved",
+          "dependent": 14,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "advcl",
+          "governor": 5,
+          "governorGloss": "remained",
+          "dependent": 15,
+          "dependentGloss": "moved"
+        },
+        {
+          "dep": "dobj",
+          "governor": 15,
+          "governorGloss": "moved",
+          "dependent": 16,
+          "dependentGloss": "it"
+        },
+        {
+          "dep": "case",
+          "governor": 18,
+          "governorGloss": "London",
+          "dependent": 17,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "nmod:to",
+          "governor": 15,
+          "governorGloss": "moved",
+          "dependent": 18,
+          "dependentGloss": "London"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "remained",
+          "dependent": 19,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 5,
+          "dependentGloss": "remained"
+        },
+        {
+          "dep": "det",
+          "governor": 2,
+          "governorGloss": "castle",
+          "dependent": 1,
+          "dependentGloss": "The"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "remained",
+          "dependent": 2,
+          "dependentGloss": "castle"
+        },
+        {
+          "dep": "case",
+          "governor": 4,
+          "governorGloss": "Camelot",
+          "dependent": 3,
+          "dependentGloss": "in"
+        },
+        {
+          "dep": "nmod:in",
+          "governor": 2,
+          "governorGloss": "castle",
+          "dependent": 4,
+          "dependentGloss": "Camelot"
+        },
+        {
+          "dep": "det",
+          "governor": 7,
+          "governorGloss": "residence",
+          "dependent": 6,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 5,
+          "governorGloss": "remained",
+          "dependent": 7,
+          "dependentGloss": "residence"
+        },
+        {
+          "dep": "case",
+          "governor": 10,
+          "governorGloss": "king",
+          "dependent": 8,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "det",
+          "governor": 10,
+          "governorGloss": "king",
+          "dependent": 9,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 7,
+          "governorGloss": "residence",
+          "dependent": 10,
+          "dependentGloss": "king"
+        },
+        {
+          "dep": "case",
+          "governor": 12,
+          "governorGloss": "536",
+          "dependent": 11,
+          "dependentGloss": "until"
+        },
+        {
+          "dep": "nmod:until",
+          "governor": 5,
+          "governorGloss": "remained",
+          "dependent": 12,
+          "dependentGloss": "536"
+        },
+        {
+          "dep": "advmod",
+          "governor": 15,
+          "governorGloss": "moved",
+          "dependent": 13,
+          "dependentGloss": "when"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 15,
+          "governorGloss": "moved",
+          "dependent": 14,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "advcl",
+          "governor": 5,
+          "governorGloss": "remained",
+          "dependent": 15,
+          "dependentGloss": "moved"
+        },
+        {
+          "dep": "dobj",
+          "governor": 15,
+          "governorGloss": "moved",
+          "dependent": 16,
+          "dependentGloss": "it"
+        },
+        {
+          "dep": "case",
+          "governor": 18,
+          "governorGloss": "London",
+          "dependent": 17,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "nmod:to",
+          "governor": 15,
+          "governorGloss": "moved",
+          "dependent": 18,
+          "dependentGloss": "London"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "remained",
+          "dependent": 19,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 3,
+          "docTokenEnd": 4,
+          "tokenBegin": 3,
+          "tokenEnd": 4,
+          "text": "Camelot",
+          "characterOffsetBegin": 14,
+          "characterOffsetEnd": 21,
+          "ner": "LOCATION"
+        },
+        {
+          "docTokenBegin": 9,
+          "docTokenEnd": 10,
+          "tokenBegin": 9,
+          "tokenEnd": 10,
+          "text": "king",
+          "characterOffsetBegin": 52,
+          "characterOffsetEnd": 56,
+          "ner": "TITLE"
+        },
+        {
+          "docTokenBegin": 11,
+          "docTokenEnd": 12,
+          "tokenBegin": 11,
+          "tokenEnd": 12,
+          "text": "536",
+          "characterOffsetBegin": 63,
+          "characterOffsetEnd": 66,
+          "ner": "NUMBER",
+          "normalizedNER": "536.0"
+        },
+        {
+          "docTokenBegin": 17,
+          "docTokenEnd": 18,
+          "tokenBegin": 17,
+          "tokenEnd": 18,
+          "text": "London",
+          "characterOffsetBegin": 87,
+          "characterOffsetEnd": 93,
+          "ner": "CITY"
+        },
+        {
+          "docTokenBegin": 13,
+          "docTokenEnd": 14,
+          "tokenBegin": 13,
+          "tokenEnd": 14,
+          "text": "he",
+          "characterOffsetBegin": 72,
+          "characterOffsetEnd": 74,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "The",
+          "originalText": "The",
+          "lemma": "the",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 3,
+          "pos": "DT",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "castle",
+          "originalText": "castle",
+          "lemma": "castle",
+          "characterOffsetBegin": 4,
+          "characterOffsetEnd": 10,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "in",
+          "originalText": "in",
+          "lemma": "in",
+          "characterOffsetBegin": 11,
+          "characterOffsetEnd": 13,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "Camelot",
+          "originalText": "Camelot",
+          "lemma": "Camelot",
+          "characterOffsetBegin": 14,
+          "characterOffsetEnd": 21,
+          "pos": "NNP",
+          "ner": "LOCATION",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "remained",
+          "originalText": "remained",
+          "lemma": "remain",
+          "characterOffsetBegin": 22,
+          "characterOffsetEnd": 30,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "the",
+          "originalText": "the",
+          "lemma": "the",
+          "characterOffsetBegin": 31,
+          "characterOffsetEnd": 34,
+          "pos": "DT",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "residence",
+          "originalText": "residence",
+          "lemma": "residence",
+          "characterOffsetBegin": 35,
+          "characterOffsetEnd": 44,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "of",
+          "originalText": "of",
+          "lemma": "of",
+          "characterOffsetBegin": 45,
+          "characterOffsetEnd": 47,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 9,
+          "word": "the",
+          "originalText": "the",
+          "lemma": "the",
+          "characterOffsetBegin": 48,
+          "characterOffsetEnd": 51,
+          "pos": "DT",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 10,
+          "word": "king",
+          "originalText": "king",
+          "lemma": "king",
+          "characterOffsetBegin": 52,
+          "characterOffsetEnd": 56,
+          "pos": "NN",
+          "ner": "TITLE",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 11,
+          "word": "until",
+          "originalText": "until",
+          "lemma": "until",
+          "characterOffsetBegin": 57,
+          "characterOffsetEnd": 62,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 12,
+          "word": "536",
+          "originalText": "536",
+          "lemma": "536",
+          "characterOffsetBegin": 63,
+          "characterOffsetEnd": 66,
+          "pos": "CD",
+          "ner": "NUMBER",
+          "normalizedNER": "536.0",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 13,
+          "word": "when",
+          "originalText": "when",
+          "lemma": "when",
+          "characterOffsetBegin": 67,
+          "characterOffsetEnd": 71,
+          "pos": "WRB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 14,
+          "word": "he",
+          "originalText": "he",
+          "lemma": "he",
+          "characterOffsetBegin": 72,
+          "characterOffsetEnd": 74,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 15,
+          "word": "moved",
+          "originalText": "moved",
+          "lemma": "move",
+          "characterOffsetBegin": 75,
+          "characterOffsetEnd": 80,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 16,
+          "word": "it",
+          "originalText": "it",
+          "lemma": "it",
+          "characterOffsetBegin": 81,
+          "characterOffsetEnd": 83,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 17,
+          "word": "to",
+          "originalText": "to",
+          "lemma": "to",
+          "characterOffsetBegin": 84,
+          "characterOffsetEnd": 86,
+          "pos": "TO",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 18,
+          "word": "London",
+          "originalText": "London",
+          "lemma": "London",
+          "characterOffsetBegin": 87,
+          "characterOffsetEnd": 93,
+          "pos": "NNP",
+          "ner": "CITY",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 19,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 93,
+          "characterOffsetEnd": 94,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "2": [
+      {
+        "id": 7,
+        "text": "the king",
+        "type": "NOMINAL",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 9,
+        "endIndex": 11,
+        "headIndex": 10,
+        "sentNum": 1,
+        "position": [
+          1,
+          8
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 2,
+        "text": "he",
+        "type": "PRONOMINAL",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 14,
+        "endIndex": 15,
+        "headIndex": 14,
+        "sentNum": 1,
+        "position": [
+          1,
+          3
+        ],
+        "isRepresentativeMention": false
+      }
+    ],
+    "3": [
+      {
+        "id": 5,
+        "text": "The castle in Camelot",
+        "type": "NOMINAL",
+        "number": "SINGULAR",
+        "gender": "UNKNOWN",
+        "animacy": "INANIMATE",
+        "startIndex": 1,
+        "endIndex": 5,
+        "headIndex": 2,
+        "sentNum": 1,
+        "position": [
+          1,
+          6
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 3,
+        "text": "it",
+        "type": "PRONOMINAL",
+        "number": "SINGULAR",
+        "gender": "NEUTRAL",
+        "animacy": "INANIMATE",
+        "startIndex": 16,
+        "endIndex": 17,
+        "headIndex": 16,
+        "sentNum": 1,
+        "position": [
+          1,
+          4
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}

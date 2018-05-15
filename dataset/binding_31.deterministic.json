@@ -3,26 +3,26 @@
   "sentences": [
     {
       "index": 0,
-      "parse": "(ROOT\n  (S\n    (NP (PRP They))\n    (VP (VBD reagrd)\n      (NP (NNP Bill))\n      (PP (IN as)\n        (NP\n          (NP (RB too) (JJ critical))\n          (PP (IN of)\n            (NP (PRP them))))))\n    (. .)))",
+      "parse": "(ROOT\n  (S\n    (NP (PRP They))\n    (VP (VBP regard)\n      (NP\n        (NP (NNP Bill))\n        (PP (IN as)\n          (NP\n            (NP (RB too) (JJ critical))\n            (PP (IN of)\n              (NP (PRP them)))))))\n    (. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 2,
-          "dependentGloss": "reagrd"
+          "dependentGloss": "regard"
         },
         {
           "dep": "nsubj",
           "governor": 2,
-          "governorGloss": "reagrd",
+          "governorGloss": "regard",
           "dependent": 1,
           "dependentGloss": "They"
         },
         {
           "dep": "dobj",
           "governor": 2,
-          "governorGloss": "reagrd",
+          "governorGloss": "regard",
           "dependent": 3,
           "dependentGloss": "Bill"
         },
@@ -42,8 +42,8 @@
         },
         {
           "dep": "nmod",
-          "governor": 2,
-          "governorGloss": "reagrd",
+          "governor": 3,
+          "governorGloss": "Bill",
           "dependent": 6,
           "dependentGloss": "critical"
         },
@@ -64,7 +64,7 @@
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "reagrd",
+          "governorGloss": "regard",
           "dependent": 9,
           "dependentGloss": "."
         }
@@ -75,19 +75,19 @@
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 2,
-          "dependentGloss": "reagrd"
+          "dependentGloss": "regard"
         },
         {
           "dep": "nsubj",
           "governor": 2,
-          "governorGloss": "reagrd",
+          "governorGloss": "regard",
           "dependent": 1,
           "dependentGloss": "They"
         },
         {
           "dep": "dobj",
           "governor": 2,
-          "governorGloss": "reagrd",
+          "governorGloss": "regard",
           "dependent": 3,
           "dependentGloss": "Bill"
         },
@@ -107,8 +107,8 @@
         },
         {
           "dep": "nmod:as",
-          "governor": 2,
-          "governorGloss": "reagrd",
+          "governor": 3,
+          "governorGloss": "Bill",
           "dependent": 6,
           "dependentGloss": "critical"
         },
@@ -129,7 +129,7 @@
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "reagrd",
+          "governorGloss": "regard",
           "dependent": 9,
           "dependentGloss": "."
         }
@@ -140,19 +140,19 @@
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 2,
-          "dependentGloss": "reagrd"
+          "dependentGloss": "regard"
         },
         {
           "dep": "nsubj",
           "governor": 2,
-          "governorGloss": "reagrd",
+          "governorGloss": "regard",
           "dependent": 1,
           "dependentGloss": "They"
         },
         {
           "dep": "dobj",
           "governor": 2,
-          "governorGloss": "reagrd",
+          "governorGloss": "regard",
           "dependent": 3,
           "dependentGloss": "Bill"
         },
@@ -172,8 +172,8 @@
         },
         {
           "dep": "nmod:as",
-          "governor": 2,
-          "governorGloss": "reagrd",
+          "governor": 3,
+          "governorGloss": "Bill",
           "dependent": 6,
           "dependentGloss": "critical"
         },
@@ -194,7 +194,7 @@
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "reagrd",
+          "governorGloss": "regard",
           "dependent": 9,
           "dependentGloss": "."
         }
@@ -227,12 +227,12 @@
         },
         {
           "index": 2,
-          "word": "reagrd",
-          "originalText": "reagrd",
-          "lemma": "reagrd",
+          "word": "regard",
+          "originalText": "regard",
+          "lemma": "regard",
           "characterOffsetBegin": 5,
           "characterOffsetEnd": 11,
-          "pos": "VBD",
+          "pos": "VBP",
           "ner": "O",
           "speaker": "PER0",
           "before": " ",

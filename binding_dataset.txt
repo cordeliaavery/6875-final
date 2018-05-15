@@ -28,8 +28,8 @@ Everyone said he had kissed Mary.
 Which book that John read did he like.
 He liked every book that John read.
 I don't remember who thinks that he read which book that John likes.
-They reagrd Bill as too critical of them.
-Bill regard them as too critical of themselves.
+They regard Bill as too critical of them.
+Bill regards them as too critical of themselves.
 I impressed them as too critical of them.
 They impressed me as too critical of themselves.
 John asked Bill his plans.
@@ -69,3 +69,21 @@ John thinks Mary likes him.
 John's teacher can't stand John.
 John believes himself to be clever.
 The men seem to each other to be clever.
+John believes that Bill talks to himself.
+John likes himself.
+Mary watched her do the shuffle.
+Mary watched herself do the shuffle.
+Mr. Smith saw a driver in his truck.
+Mr. Smith saw a driver of his truck.
+The castle in Camelot remained the residence of the king until 536 when he moved it to London.
+My uncle doesn't have a spouse, but your aunt does, and he is lying on the floor.
+John said his mother would sue the man who hit him.
+John said his mother would sue the man who hit himself.
+John's father's portrait of him.
+John's father's portrait of himself.
+After John robbed the bank, the policeman apprehended him.
+After John robbed the bank, the policeman apprehended himself.
+John claimed that the picture of him hanging in the post office was a fraud.
+After he robbed the bank, John left town.
+That he was elected chairman surprised John.
+That he had done something terrible was disturbing to John.

@@ -1,0 +1,323 @@
+{
+  "docId": "binding_88.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (SBAR (IN That)\n      (S\n        (NP (PRP he))\n        (VP (VBD was)\n          (VP (VBN elected)\n            (NP (NN chairman))))))\n    (VP (VBD surprised)\n      (NP (NNP John)))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "surprised"
+        },
+        {
+          "dep": "mark",
+          "governor": 4,
+          "governorGloss": "elected",
+          "dependent": 1,
+          "dependentGloss": "That"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 4,
+          "governorGloss": "elected",
+          "dependent": 2,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 4,
+          "governorGloss": "elected",
+          "dependent": 3,
+          "dependentGloss": "was"
+        },
+        {
+          "dep": "csubj",
+          "governor": 6,
+          "governorGloss": "surprised",
+          "dependent": 4,
+          "dependentGloss": "elected"
+        },
+        {
+          "dep": "dobj",
+          "governor": 4,
+          "governorGloss": "elected",
+          "dependent": 5,
+          "dependentGloss": "chairman"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "surprised",
+          "dependent": 7,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "surprised",
+          "dependent": 8,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "surprised"
+        },
+        {
+          "dep": "mark",
+          "governor": 4,
+          "governorGloss": "elected",
+          "dependent": 1,
+          "dependentGloss": "That"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 4,
+          "governorGloss": "elected",
+          "dependent": 2,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 4,
+          "governorGloss": "elected",
+          "dependent": 3,
+          "dependentGloss": "was"
+        },
+        {
+          "dep": "csubj",
+          "governor": 6,
+          "governorGloss": "surprised",
+          "dependent": 4,
+          "dependentGloss": "elected"
+        },
+        {
+          "dep": "dobj",
+          "governor": 4,
+          "governorGloss": "elected",
+          "dependent": 5,
+          "dependentGloss": "chairman"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "surprised",
+          "dependent": 7,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "surprised",
+          "dependent": 8,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 6,
+          "dependentGloss": "surprised"
+        },
+        {
+          "dep": "mark",
+          "governor": 4,
+          "governorGloss": "elected",
+          "dependent": 1,
+          "dependentGloss": "That"
+        },
+        {
+          "dep": "nsubjpass",
+          "governor": 4,
+          "governorGloss": "elected",
+          "dependent": 2,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "auxpass",
+          "governor": 4,
+          "governorGloss": "elected",
+          "dependent": 3,
+          "dependentGloss": "was"
+        },
+        {
+          "dep": "csubj",
+          "governor": 6,
+          "governorGloss": "surprised",
+          "dependent": 4,
+          "dependentGloss": "elected"
+        },
+        {
+          "dep": "dobj",
+          "governor": 4,
+          "governorGloss": "elected",
+          "dependent": 5,
+          "dependentGloss": "chairman"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "surprised",
+          "dependent": 7,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "punct",
+          "governor": 6,
+          "governorGloss": "surprised",
+          "dependent": 8,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 4,
+          "docTokenEnd": 5,
+          "tokenBegin": 4,
+          "tokenEnd": 5,
+          "text": "chairman",
+          "characterOffsetBegin": 20,
+          "characterOffsetEnd": 28,
+          "ner": "TITLE"
+        },
+        {
+          "docTokenBegin": 6,
+          "docTokenEnd": 7,
+          "tokenBegin": 6,
+          "tokenEnd": 7,
+          "text": "John",
+          "characterOffsetBegin": 39,
+          "characterOffsetEnd": 43,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 1,
+          "docTokenEnd": 2,
+          "tokenBegin": 1,
+          "tokenEnd": 2,
+          "text": "he",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 7,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "That",
+          "originalText": "That",
+          "lemma": "that",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "he",
+          "originalText": "he",
+          "lemma": "he",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 7,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "was",
+          "originalText": "was",
+          "lemma": "be",
+          "characterOffsetBegin": 8,
+          "characterOffsetEnd": 11,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "elected",
+          "originalText": "elected",
+          "lemma": "elect",
+          "characterOffsetBegin": 12,
+          "characterOffsetEnd": 19,
+          "pos": "VBN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "chairman",
+          "originalText": "chairman",
+          "lemma": "chairman",
+          "characterOffsetBegin": 20,
+          "characterOffsetEnd": 28,
+          "pos": "NN",
+          "ner": "TITLE",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "surprised",
+          "originalText": "surprised",
+          "lemma": "surprise",
+          "characterOffsetBegin": 29,
+          "characterOffsetEnd": 38,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "John",
+          "originalText": "John",
+          "lemma": "John",
+          "characterOffsetBegin": 39,
+          "characterOffsetEnd": 43,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 8,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 43,
+          "characterOffsetEnd": 44,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+  }
+}

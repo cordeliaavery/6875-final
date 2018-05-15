@@ -718,5 +718,209 @@
         "startIndex" : 3,
         "endIndex" : 4
       }
+    ],
+    "76" : [
+      {
+        "sentNum" : 76,
+        "text" : "Mr. Smith",
+        "startIndex" : 1,
+        "endIndex" : 4
+      },
+      {
+        "sentNum" : 76,
+        "text" : "his",
+        "startIndex" : 8,
+        "endIndex" : 9
+      }
+    ],
+    "77" : [
+    ],
+    "78" : [
+      {
+        "sentNum" : 78,
+        "text" : "the king",
+        "startIndex" : 9,
+        "endIndex" : 11
+      },
+      {
+        "sentNum" : 78,
+        "text" : "he",
+        "startIndex" : 14,
+        "endIndex" : 15
+      }
+    ],
+    "79" : [
+      {
+        "sentNum" : 79,
+        "text" : "My uncle",
+        "startIndex" : 1,
+        "endIndex" : 3
+      },
+      {
+        "sentNum" : 79,
+        "text" : "he",
+        "startIndex" : 15,
+        "endIndex" : 16
+      }
+    ],
+    "80" : [
+      {
+        "sentNum" : 80,
+        "text" : "John",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 80,
+        "text" : "his",
+        "startIndex" : 3,
+        "endIndex" : 4
+      },
+      {
+        "sentNum" : 80,
+        "text" : "him",
+        "startIndex" : 11,
+        "endIndex" : 12
+      }
+    ],
+    "81" : [
+      {
+        "sentNum" : 81,
+        "text" : "John",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 81,
+        "text" : "his",
+        "startIndex" : 3,
+        "endIndex" : 4
+      }
+    ],
+    "82" : [
+      {
+        "sentNum" : 81,
+        "text" : "the man",
+        "startIndex" : 7,
+        "endIndex" : 9
+      },
+      {
+        "sentNum" : 81,
+        "text" : "himself",
+        "startIndex" : 11,
+        "endIndex" : 12
+      }
+    ],
+    "83" : [
+      {
+        "sentNum" : 82,
+        "text" : "John",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 82,
+        "text" : "him",
+        "startIndex" : 7,
+        "endIndex" : 8
+      }
+    ],
+    "84" : [
+      {
+        "sentNum" : 83,
+        "text" : "John's father",
+        "startIndex" : 1,
+        "endIndex" : 4
+      },
+      {
+        "sentNum" : 83,
+        "text" : "himself",
+        "startIndex" : 7,
+        "endIndex" : 8
+      }
+    ],
+    "85" : [
+      {
+        "sentNum" : 84,
+        "text" : "John",
+        "startIndex" : 2,
+        "endIndex" : 3
+      },
+      {
+        "sentNum" : 84,
+        "text" : "him",
+        "startIndex" : 10,
+        "endIndex" : 11
+      }
+    ],
+    "86" : [
+      {
+        "sentNum" : 85,
+        "text" : "the policeman",
+        "startIndex" : 7,
+        "endIndex" : 9
+      },
+      {
+        "sentNum" : 85,
+        "text" : "himself",
+        "startIndex" : 10,
+        "endIndex" : 11
+      }
+    ],
+    "87" : [
+      {
+        "sentNum" : 86,
+        "text" : "John",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 86,
+        "text" : "him",
+        "startIndex" : 7,
+        "endIndex" : 8
+      }
+    ],
+    "88" : [
+      {
+        "sentNum" : 87,
+        "text" : "John",
+        "startIndex" : 7,
+        "endIndex" : 8
+      },
+      {
+        "sentNum" : 87,
+        "text" : "he",
+        "startIndex" : 2,
+        "endIndex" : 3
+      }
+    ],
+    "89" : [
+      {
+        "sentNum" : 88,
+        "text" : "John",
+        "startIndex" : 7,
+        "endIndex" : 8
+      },
+      {
+        "sentNum" : 88,
+        "text" : "he",
+        "startIndex" : 2,
+        "endIndex" : 3
+      }
+    ],
+    "90" : [
+      {
+        "sentNum" : 89,
+        "text" : "John",
+        "startIndex" : 10,
+        "endIndex" : 11
+      },
+      {
+        "sentNum" : 89,
+        "text" : "he",
+        "startIndex" : 2,
+        "endIndex" : 3
+      }
     ]
 }

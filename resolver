@@ -1,8 +1,10 @@
+#!/usr/bin/python
+
 import re
 import argparse
 from tree2 import Tree, get_index
 from tree3 import process_string
-from algorithm import resolve_anaphor
+from algorithm_cls import resolve_anaphor
 import json
 
 gold_data = {}
@@ -20,7 +22,7 @@ def look_for_PRP(cell):
         return []
     unresolved = []
     if cell.tag().startswith('PRP'):
-        unresolved.append((cell, lexicon.get(cell.get_string())))
+        unresolved.append(cell)
     if cell.is_leaf():
         return unresolved
     return unresolved + look_for_PRP(cell.get_left()) + look_for_PRP(cell.get_right())
@@ -30,27 +32,31 @@ def main(args):
     with open(args.config_file) as c:
         params = json.load(c)
     lexicon = params[args.language]['lexicon']
+    Tree.lexicon = lexicon
 
     with open(args.sentences) as s:
         parser_output = json.load(s)
 
     for sentence in sorted(parser_output["sentences"], key=lambda x: x["index"]):
         list_hier = process_string(sentence["parse"])
-        tree_to_parse = Tree(list_hier[0])
+        tree_to_parse = Tree(list_hier[0], 0)
         print tree_to_parse.get_string()
-        candidates = look_for_PRP(tree_to_parse)
+        tree_to_parse.pretty_print()
 
-        for candidate, conf in candidates:
-            proposed = resolve_anaphor(candidate)
-            print 'Proposed antecedents for', candidate.get_string()
-
-            print 'Are as follows: '
-            if proposed is None:
+        for candidate in Tree.PR_nodes:
+            print "Candidate:"
+            candidate.pretty_print()
+            print "Results:"
+            proposed = resolve_anaphor(candidate, Tree.NP_nodes)
+            if not proposed:
+                print "NO PROP"
                 continue
             for proposal in proposed:
                 proposal.pretty_print()
+            
         print '-'*20
-
+        Tree.PR_nodes.clear()
+        Tree.NP_nodes.clear()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

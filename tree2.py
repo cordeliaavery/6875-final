@@ -5,17 +5,64 @@ class NodeError(Exception):
         self.message = "Attempting to access child at leaf!"
 
 class Tree:
-    def __init__(self, vals, parent=None):
+    lexicon = None
+    NP_nodes = set()
+    PR_nodes = set()
+
+    def __init__(self, vals, root_idx, local_idx=0, prior_leaves=1, parent=None):
         self.__parent = parent
         self.__tag = vals[0]
+        self.__root_idx = root_idx
+        self.__local_idx = local_idx
+        self.__max_child_idx = local_idx
+
+
+        if self.__tag == 'NP':
+            Tree.NP_nodes.add(self)
+        elif self.__tag == 'PRP':
+            Tree.PR_nodes.add(parent)
+
+        self.__config = None
 
         children = vals[1:][0]
         if isinstance(children, str) or isinstance(children, unicode):
-            self.__node = Head(children, self)
+            if self.__tag == "PRP":
+                children = children.lower()
+            self.__node = Head(children, prior_leaves)
             self.__leaf = True
+            if self.__tag.startswith("N") or self.__tag.startswith("PR"):
+                conf = Tree.lexicon.get(self.__node.get_string())
+                if not conf:
+                    conf = {"gender": "[fm]",
+                            "person": "t",
+                            "count": "s" if self.__tag == "NN" else "p",
+                            "case": "obj|dat|nom",
+                            "type": "R"
+                        }
+
+                    Tree.lexicon[self.__node.get_string()] = conf
+
+                self.__config = conf
+                self.__parent.set_config(conf)
+
         else:
-            self.__node = Bar(children, self)
+            self.__node = Bar(children, root_idx, local_idx, prior_leaves, self)
             self.__leaf = False
+
+
+    def num_leaves(self):
+        return self.__node.num_leaves()
+
+    def size_of_subtree(self):
+        # if this is not true, may find duplicates later in the tree
+        # need to build tree left to right to be consistent
+        return self.__node.size_of_subtree()
+
+    def max_child_idx(self):
+        return self.__max_child_idx
+
+    def __hash__(self):
+        return hash((self.__root_idx, self.__local_idx))
 
     def tag(self):
         return self.__tag
@@ -37,7 +84,7 @@ class Tree:
         return self.__leaf
 
     def pretty_print(self, depth=0):
-        print(" " * depth + self.__tag + ":")
+        print(" " * depth + self.__tag + ": (" + str(self.__local_idx) + ")")
         self.__node.pretty_print(depth + 4)
 
     def get_string(self):
@@ -49,19 +96,27 @@ class Tree:
     def get_children(self):
         return self.__node.get_children()
 
+    def set_config(self, config):
+        assert (self.__tag.endswith("NP"))
+        self.__config = config
+
+    def config(self):
+        return self.__config
+
 class Bar:
-    def __init__(self, vals, parent):
+    def __init__(self, vals, root_idx, local_idx, prior_leaves, parent):
         self.__parent = parent
 
-        #self.__left = Tree(vals[0], parent)
-        #if len(vals) > 1:
-        #    self.__right = Tree(vals[1], parent)
-        #else:
-        #    self.__right = None
-
+        c_index = local_idx + 1
+        self.__num_leaves = 0
         self.__extras = []
         for x in vals:
-            self.__extras.append(Tree(x, parent))
+            t = Tree(x, root_idx, c_index, prior_leaves + self.__num_leaves, parent)
+            c_index += t.size_of_subtree()
+            self.__num_leaves += t.num_leaves()
+            self.__extras.append(t)
+
+        self.__size_of_subtree = c_index - local_idx
 
         if len(self.__extras) < 1:
             print ("Bar must have at least one child")
@@ -87,15 +142,16 @@ class Bar:
         else:
             self.__right = None
 
+    def size_of_subtree(self):
+        return self.__size_of_subtree
+
+    def num_leaves(self):
+        return self.__num_leaves
 
     def pretty_print(self, depth=0):
         for x in self.__extras:
             x.pretty_print(depth)
         return
-        if self.__left:
-            self.__left.pretty_print(depth)
-        if self.__right:
-            self.__right.pretty_print(depth)
 
     def get_children(self):
         return self.__extras
@@ -130,9 +186,9 @@ class Bar:
         print ("WARNING: attempting to set string at bar level")
 
 class Head:
-    def __init__(self, val, parent):
+    def __init__(self, val, leaf_index):
         self.__val = val
-        self.__parent = parent
+        self.__leaf_index = leaf_index
 
     def pretty_print(self, depth):
         print(" " * depth + self.__val)
@@ -145,6 +201,13 @@ class Head:
 
     def set_string(self, val):
         self.__val = val
+
+    def size_of_subtree(self):
+        return 1
+
+    def num_leaves(self):
+        return 1
+
 
 def is_leaf(val):
     return isinstance(val, Head)
@@ -171,12 +234,9 @@ def find_pair(treelist):
         # first value is the start index, second is the one
         # we want to keep, third is the one we discard
         if prev_elem.tag() == 'MD' and elem.tag() == 'RB':
-            print "comp md"
             return x - 1, x - 1, x
         if prev_elem.tag() == 'RB' and elem.tag() == 'JJ':
-            print "comp rb"
             return x - 1, x, x - 1
         if prev_elem.tag() == 'JJ' and elem.tag().startswith('NN'):
-            print "comp jj"
             return x - 1, x, x - 1
     return -1, -1, -1
