@@ -145,16 +145,13 @@ if __name__ == "__main__":
                         default="config.json",
                         help="json input for parameter settings. Should not need anything other than the default!")
 
-<<<<<<< HEAD
     parser.add_argument("-v",
                         action="store_true",
                         help="set to true to output mismatched coreference sets")
-=======
 
     parser.add_argument("-o",
                         "--output_file",
                         default="output_tuple.json")
->>>>>>> e9ab75fc0ce9a26a12c4ca62e489edc4023a34ba
 
     args = parser.parse_args()
     #main(args)
