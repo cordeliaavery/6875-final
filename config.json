@@ -7,18 +7,21 @@
                 "gender": "f",
                 "person": "t",
                 "count": "s",
+                "case": "obj|dat|nom",
                 "type:": "R"
             },
             "John": {
                 "gender": "m",
                 "person": "t",
                 "count": "s",
+                "case":"obj|dat|nom",
                 "type": "R"
             },
             "Bill": {
                 "gender": "m",
                 "person": "t",
                 "count": "s",
+                "case":"obj|dat|nom",
                 "type": "R"
             },
             "I": {
