@@ -16,6 +16,12 @@ class Tree:
         self.__local_idx = local_idx
         self.__max_child_idx = local_idx
 
+        children = vals[1:][0]
+
+        if self.__tag== 'PRP$':
+            assert (isinstance(children, str) or isinstance(children, unicode))
+            self.__tag = 'NP'
+            children = [[u'PRP', children],]
 
         if self.__tag == 'NP':
             Tree.NP_nodes.add(self)
@@ -24,9 +30,8 @@ class Tree:
 
         self.__config = None
 
-        children = vals[1:][0]
         if isinstance(children, str) or isinstance(children, unicode):
-            if self.__tag == "PRP":
+            if self.__tag.startswith("PRP"):
                 children = children.lower()
             self.__node = Head(children, prior_leaves)
             self.__leaf = True
@@ -84,7 +89,7 @@ class Tree:
         return self.__leaf
 
     def pretty_print(self, depth=0):
-        print(" " * depth + self.__tag + ": (" + str(self.__local_idx) + ")")
+        print(" " * depth + self.__tag + ":")
         self.__node.pretty_print(depth + 4)
 
     def get_string(self):
@@ -103,11 +108,21 @@ class Tree:
     def config(self):
         return self.__config
 
+    def min_leaf(self):
+        return self.__node.min_leaf()
+
+    def max_leaf(self):
+        return self.__node.max_leaf()
+
+    def leaf_range(self):
+        return self.__node.min_leaf(), self.__node.max_leaf()
+
 class Bar:
     def __init__(self, vals, root_idx, local_idx, prior_leaves, parent):
         self.__parent = parent
 
         c_index = local_idx + 1
+        self.__min_leaf = prior_leaves
         self.__num_leaves = 0
         self.__extras = []
         for x in vals:
@@ -127,6 +142,17 @@ class Bar:
             return
         if len(self.__extras) == 2:
             self.__left, self.__right = self.__extras
+            if self.get_string() in Tree.lexicon:
+                # some two-word elements such as "each other" ought
+                # to be treated as pronouns, but will still be separate
+                # nodes
+                assert (parent.tag() == "NP")
+                conf = Tree.lexicon[self.get_string()]
+                if conf["type"] != "R":
+                    Tree.PR_nodes.add(parent)
+                    assert (parent in Tree.NP_nodes)
+                parent.set_config(conf)
+
             return
 
         check = find_pair(self.__extras)
@@ -141,6 +167,12 @@ class Bar:
             self.__right = self.__extras[1]
         else:
             self.__right = None
+
+    def min_leaf(self):
+        return self.__min_leaf
+
+    def max_leaf(self):
+        return self.__min_leaf + self.__num_leaves
 
     def size_of_subtree(self):
         return self.__size_of_subtree
@@ -208,6 +240,12 @@ class Head:
     def num_leaves(self):
         return 1
 
+    def min_leaf(self):
+        return self.__leaf_index
+
+    def max_leaf(self):
+        return self.__leaf_index + 1
+
 
 def is_leaf(val):
     return isinstance(val, Head)
@@ -237,6 +275,5 @@ def find_pair(treelist):
             return x - 1, x - 1, x
         if prev_elem.tag() == 'RB' and elem.tag() == 'JJ':
             return x - 1, x, x - 1
-        if prev_elem.tag() == 'JJ' and elem.tag().startswith('NN'):
-            return x - 1, x, x - 1
+
     return -1, -1, -1
