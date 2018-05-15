@@ -98,7 +98,7 @@ class Tree:
         return self.__node.get_children()
 
     def set_config(self, config):
-        assert (self.__tag.endswith("NP"))
+        # assert (self.__tag.endswith("NP"))
         self.__config = dict(config)
 
     def config(self):

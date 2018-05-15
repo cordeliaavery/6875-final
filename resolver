@@ -42,7 +42,7 @@ def compute_corenlp_accuracy(args):
                     print "\tExpected coreference set: ", expected
                     print "\tOutput coreference set: ", predicted
 
-        accuracy = float(counter)/90
+        accuracy = float(counter)/len(eval)
         print "Accuracy: %s" % (accuracy)
 
 
@@ -92,20 +92,25 @@ def read_gold_data(args):
 
 def main(args):
     global lexicon
+    gold_data_file = args.gold_data
+    sentences = args.sentences
+    if args.language == 'ger':
+        gold_data_file = 'gold_data_ger.json'
+        sentences = 'auf_deutsch.json'
 
     with open(args.config_file) as c:
         params = json.load(c)
     lexicon = params[args.language]['lexicon']
     Tree.lexicon = lexicon
 
-    with open(args.sentences) as s:
+    with open(sentences) as s:
         parser_output = json.load(s)
 
     for sentence in sorted(parser_output["sentences"], key=lambda x: x["index"]):
         list_hier = process_string(sentence["parse"])
         tree_to_parse = Tree(list_hier[0], 0)
         print tree_to_parse.get_string()
-        #tree_to_parse.pretty_print()
+        # tree_to_parse.pretty_print()
         for candidate in filter(lambda x: x.config(), Tree.PR_nodes):
             print "Candidate:", candidate.get_string(), candidate.leaf_range()
             print "Results:"
