@@ -98,14 +98,25 @@ def main(args):
         list_hier = process_string(sentence["parse"])
         tree_to_parse = Tree(list_hier[0], 0)
         print tree_to_parse.get_string()
-        #tree_to_parse.pretty_print()
-        for candidate in filter(lambda x: x.config(), Tree.PR_nodes):
+        tree_to_parse.pretty_print()
+
+        candidate_matches = {}
+        for candidate in filter(lambda x: x.config(), Tree.NP_nodes):
             print "Candidate:", candidate.get_string(), candidate.leaf_range()
             print "Results:"
+            candidate_matches[candidate] = {candidate,}
             proposed = resolve_anaphor(candidate, Tree.NP_nodes)
             for proposal in proposed:
+                candidate_matches[candidate].add(proposal)
                 print proposal.get_string(), proposal.leaf_range()
                 
+
+        for grp in candidate_matches.values():
+            for grp_1 in candidate_matches.values():
+                if grp & grp_1:
+                    if len(grp - grp_1) != 0 or len(grp_1-grp) != 0:
+                        print "MISMATCH"
+
         print '-'*20
         Tree.PR_nodes.clear()
         Tree.NP_nodes.clear()

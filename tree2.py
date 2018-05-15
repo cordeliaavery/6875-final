@@ -1,5 +1,6 @@
 import re
 
+
 class NodeError(Exception):
     def __init__(self, expression):
         self.expression = expression
@@ -151,6 +152,16 @@ class Bar:
             if c.tag() == 'POS':
                 parent.set_genitive(True)
 
+        conj_index = find_conj(self.__children)
+        while (conj_index != -1):
+            conf = intersect_configs(self.__children[conj_index-1],
+                                     self.__children[conj_index+1])
+            print "HEREEEE:", conf
+            assert (conf)
+            self.__parent.set_config(conf)
+            conj_index = find_conj(self.__children[conj_index + 1:])
+            print self.__parent.config()
+
         if Bar.disable_pruning:
             return
 
@@ -259,6 +270,14 @@ def find_pair(treelist):
 
     return -1, -1, -1
 
+def find_conj(treelist):
+    for x in range(1, len(treelist) - 1):
+        if treelist[x].tag() == 'CC':
+            assert(treelist[x-1].tag().startswith('N') and \
+                   treelist[x+1].tag().startswith('N'))
+            return x
+    return -1
+
 WS = re.compile("\s")
 
 def process_string(val):
@@ -300,3 +319,82 @@ def process_string(val):
         else:
             current_str += c
     return waiting_stack
+
+def match(pro, ante, params):
+    if not pro:
+        return True
+
+    c1 = pro.config()
+    c2 = ante.config()
+    if not c1 or not c2:
+        return False
+
+    for param in params:
+        # forces agreement                                                                   
+        if not re.search(c1[param], c2[param]):
+            return False
+
+    return True
+
+
+def intersect_configs(t1, t2):
+    c1 = t1.config()
+    c2 = t2.config()
+
+    ands = {"gender", "person", "count", "case"}
+    ors = {"type"}
+    char_match = re.compile("\[[^\[\]]+\]")
+
+    new_config = {}
+    for k, v1 in c1.items():
+        v2 = c2.get(k)
+        if k in ands:
+            c = True
+            assert (re.search(v1, v2))
+            # want to intersect these
+            # will be in regex form
+            if char_match.match(v1):
+                set_1 = set(v1[1:-1])
+            else:
+                c = False
+                set_1 = set(v1.split("|"))
+
+            if char_match.match(v2):
+                set_2 = set(v2[1:-1])
+            else:
+                c = False
+                set_2 =set(v2.split("|"))
+
+            set_inter = set_1 & set_2
+            if not set_inter:
+                if k == "gender":
+                    # allow for gender neutral in this case
+                    set_inter = {"[mf]"}
+                else:
+                    return None
+
+            if c:
+                v = "[" + "".join(set_inter) + "]"
+            else:
+                v = "|".join(set_inter)
+
+            new_config[k] = v
+
+        elif k in ors:
+            # or these
+            if v1 == v2:
+                new_config[k] = v1
+            elif v1 == 'R' or v2 == 'R':
+                new_config[k] = 'R'
+            elif v1 == 'P' or v2 == 'P':
+                new_config[k] = 'P'
+            else:
+                new_config[k] = 'A'
+
+        else:
+            if v1 and not v2 or v1 != v2:
+                return None
+            new_config[k] = v1
+
+    new_config["count"] = "p"
+    return new_config
