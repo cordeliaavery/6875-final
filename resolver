@@ -15,7 +15,13 @@ head_settings = {}
 models = ["deterministic", "neural", "statistical"]
 
 def compute_corenlp_accuracy(args):
-    gold_data = read_gold_data(args)
+    gold_data_file = args.gold_data
+    if args.language == 'ger':
+        gold_data_file = 'gold_data_ger.json'
+    gold_data = read_gold_data(gold_data_file)
+    print gold_data
+    return
+
 
     for model in models:
         print "COMPUTING ACCURACY FOR %s MODEL..." % (model)
@@ -70,7 +76,7 @@ def convert_corenlp_output(filename):
         return ()
 
 def read_gold_data(args):
-    with open(args.gold_data) as f:
+    with open(args) as f:
         gold_data = json.load(f)
 
     dict = defaultdict(tuple)
@@ -96,6 +102,7 @@ def look_for_PRP(cell):
 
 def main(args):
     global lexicon
+
     with open(args.config_file) as c:
         params = json.load(c)
     lexicon = params[args.language]['lexicon']
