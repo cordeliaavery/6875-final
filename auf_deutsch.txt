@@ -3,8 +3,8 @@ Johann hat ihn an Wilhelm vorgestellt .
 Maria hat erwartet , ich sie an Wilhelm vorzustellen .
 Jeder hat Johann ihm vorgestellt .
 Maria erwartet , ich die Waffe auf sie zu richten .
-Johann hätte lieber , er zu winnen .
-Maria hat erwatet , dass Wilhelm bevorzugt , sie zu winnen .
+Johann hätte lieber , dass er gewinnt .
+Maria hat erwatet , dass Wilhelm bevorzugt , dass sie gewinnt .
 Johann glaubte , dass er nutzlos war .
 Jeder glaubte , dass er nutzlos war .
 Maria hat erwartet , dass Wilhelm glaubte , dass sie nutzlos war .
@@ -12,13 +12,13 @@ Maria hat Wilhelms Geschichten von ihr gehört .
 Johann hat einige Geschichten von ihm gehört .
 Johann hat ihn gesehen .
 Johann hat Wilhelm von ihm erzählt .
-Johann hat erwartet , er zu winnen .
-Johann würde es hassen , wenn er winnen würde .
+Johann hat erwartet , dass er gewinnt .
+Johann würde es hassen , wenn er gewinnen würde .
 Johann ist zu klug , dass er erwartet uns ihn einzufangen .
 Johann hat erwartet , Maria ihn einzufangen .
 Johann hat erwartet , dass er Mariah einfangen würde .
 Johann ist zu klug zu erwarten , dass wir Wilhelm einfangen .
-Er hat gesagt , dass Johann winnen würde .
+Er hat gesagt , dass Johann gewinnen würde .
 Er hat gesagt , dass Maria jeden geküsst hat .
 Er hat gesagt , dass jeder Maria geküsst hat .
 Jeder hat gesagt , dass Maria ihn geküsst hat .
@@ -37,8 +37,8 @@ Johann erzählt Wilhelm Sachen , dass er zu schwierig zu verstehen findet .
 Johann hat mein Bild von ihm gesehen .
 Johann hat ein Bild von ihm gesehen .
 Johann glaubt , dass ich ein Bild von ihm sehe .
-Er will , Johann zu winnen .
-Er glaubt , Johann intelligent zu sein .
+Er will , dass Johann gewinnt .
+Er glaubt , dass Johann intelligent ist .
 Er findet Johann intelligent .
 Johann ist sein ärgster Feind .
 Johann hässt ihn .

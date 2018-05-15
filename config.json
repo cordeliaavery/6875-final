@@ -131,6 +131,165 @@
     "ger": {
         "I_dir": "left",
         "V_dir": "right",
-        "lexicon": {}
+        "lexicon": {
+            "Maria": {
+                "gender": "f",
+                "person": "t",
+                "count": "s",
+                "type:": "R"
+            },
+            "Johann": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "type": "R"
+            },
+            "Wilhelm": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "type": "R"
+            },
+            "ich": {
+                "gender": "[fm]",
+                "person": "f",
+                "count": "s",
+                "case": "nom",
+                "type": "P"
+            },
+            "mich": {
+                "gender": "[fm]",
+                "person": "f",
+                "count": "s",
+                "case": "obj",
+                "type": "P"
+            },
+            "mir": {
+                "gender": "[fm]",
+                "person": "f",
+                "count": "s",
+                "case": "dat",
+                "type": "P"
+            },
+            "mich": {
+                "gender": "[fm]",
+                "person": "f",
+                "count": "s",
+                "case": "obj|dat",
+                "type": "A"
+            },
+            "sie": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "s|p",
+                "case": "nom|obj",
+                "type":"P"
+            },
+            "er": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "case": "nom",
+                "type":"P"
+            },
+            "ihre": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "p",
+                "case": "gen",
+                "type":"P"
+            },
+            "ihr": {
+                "gender": "f",
+                "person": "t",
+                "count": "s",
+                "case": "dat",
+                "type":"P"
+            },
+            "ihn": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "case": "obj",
+                "type":"P"
+            },
+            "ihm": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "case": "dat",
+                "type":"P"
+            },
+            "sein": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "case": "gen",
+                "type":"P"
+            },
+            "seiner": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "case": "gen",
+                "type":"P"
+            },
+            "seine": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "case": "gen",
+                "type":"P"
+            },
+            "sich": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "[sp]",
+                "case": "obj",
+                "type": "A"
+            },
+            "jeder": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "p",
+                "case": "nom",
+                "type": "P"
+            },
+            "jeden": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "p",
+                "case": "obj",
+                "type": "P"
+            },
+            "uns": {
+                "gender": "[fm]",
+                "person": "f",
+                "count": "p",
+                "case": "obj|dat",
+                "type": "P"
+            },
+            "wir": {
+                "gender": "[fm]",
+                "person": "f",
+                "count": "p",
+                "case": "nom",
+                "type": "P"
+            },
+            "ihnen": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "p",
+                "case": "dat",
+                "type": "P"
+            },
+            "mein": {
+                "gender": "[fm]",
+                "person": "f",
+                "count": "s",
+                "case": "gen",
+                "type": "P"
+            }
+        }
     }
 }
