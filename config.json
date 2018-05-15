@@ -128,6 +128,69 @@
                 "count": "s",
                 "case": "obj|dat",
                 "type": "A"
+            },
+            "each other": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "p",
+                "case": "obj|dat",
+                "type": "A"
+            },
+            "we": {
+                "gender": "[fm]",
+                "person": "f",
+                "count": "p",
+                "case": "nom",
+                "type": "P"
+            },
+            "us": {
+                "gender": "[fm]",
+                "person": "f",
+                "count": "p",
+                "case": "obj|dat",
+                "type": "P"
+            },
+            "our": {
+                "gender": "[fm]",
+                "person": "f",
+                "count": "p",
+                "case": "gen",
+                "type": "P"
+            },
+            "ourselves": {
+                "gender": "[fm]",
+                "person": "f",
+                "count": "p",
+                "case": "obj|dat",
+                "type": "A"
+            },
+            "them": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "p",
+                "case": "nom",
+                "type": "P"
+            },
+            "them": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "p",
+                "case": "obj|dat",
+                "type": "P"
+            },
+            "their": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "p",
+                "case": "gen",
+                "type": "P"
+            },
+            "themselves": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "p",
+                "case": "obj|dat",
+                "type": "A"
             }
         }
     },

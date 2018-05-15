@@ -1,0 +1,534 @@
+"corefs" : {
+    "1" : [
+        {
+          "sentNum" : 1,
+          "text" : "Maria",
+          "startIndex" : 1,
+          "endIndex" : 2
+        },
+        {
+          "sentNum" : 1,
+          "text" : "sie",
+          "startIndex" : 5,
+          "endIndex" : 6
+        }
+    ],
+    "2" : [
+    ],
+   "3" : [
+      {
+        "sentNum" : 3,
+        "text" : "Maria",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 3,
+        "text" : "sie",
+        "startIndex" : 6,
+        "endIndex" : 7
+      }
+    ],
+    "4" : [
+    ],
+    "5" : [
+      {
+        "sentNum" : 5,
+        "text" : "Maria",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 5,
+        "text" : "sie",
+        "startIndex" : 8,
+        "endIndex" : 9
+      }
+    ],
+    "6" : [
+      {
+        "sentNum" : 6,
+        "text" : "Johann",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 6,
+        "text" : "er",
+        "startIndex" : 6,
+        "endIndex" : 7
+      }
+    ],
+    "7" : [
+      {
+        "sentNum" : 7,
+        "text" : "Maria",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 7,
+        "text" : "sie",
+        "startIndex" : 10,
+        "endIndex" : 11
+      }
+    ],
+    "8" : [
+    ],
+    "9" : [
+    ],
+    "10" : [
+      {
+        "sentNum" : 10,
+        "text" : "Maria",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 10,
+        "text" : "sie",
+        "startIndex" : 10,
+        "endIndex" : 11
+      }
+    ],
+    "11" : [ 
+      {
+        "sentNum" : 11,
+        "text" : "Maria",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 11,
+        "text" : "ihr",
+        "startIndex" : 6,
+        "endIndex" : 7
+      }
+    ],
+    "12" : [
+    ],
+    "13" : [
+    ],
+    "14" : [
+    ],
+    "15" : [
+      {
+        "sentNum" : 15,
+        "text" : "Johann",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 15,
+        "text" : "er",
+        "startIndex" : 6,
+        "endIndex" : 7
+      }
+    ],
+    "16" : [
+      {
+        "sentNum" : 16,
+        "text" : "Johann",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 16,
+        "text" : "er",
+        "startIndex" : 7,
+        "endIndex" : 8
+      }
+    ],
+    "17" : [
+      {
+        "sentNum" : 17,
+        "text" : "Johann",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 17,
+        "text" : "er",
+        "startIndex" : 7,
+        "endIndex" : 8
+      },
+      {
+        "sentNum" : 17,
+        "text" : "ihn",
+        "startIndex" : 10,
+        "endIndex" : 11
+      }
+    ],
+    "18" : [
+      {
+        "sentNum" : 18,
+        "text" : "Johann",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 18,
+        "text" : "ihn",
+        "startIndex" : 6,
+        "endIndex" : 7
+      }
+    ],
+    "19" : [
+      {
+        "sentNum" : 19,
+        "text" : "Johann",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 19,
+        "text" : "er",
+        "startIndex" : 6,
+        "endIndex" : 7
+      }
+    ],
+    "20" : [
+    ],
+    "21" : [
+    ],
+    "22" : [
+    ],
+    "23" : [
+    ],
+    "24" : [
+      {
+        "sentNum" : 24,
+        "text" : "Jeder",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 24,
+        "text" : "ihn",
+        "startIndex" : 7,
+        "endIndex" : 8
+      }
+    ],
+    "25" : [
+      {
+        "sentNum" : 25,
+        "text" : "Jeder",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 25,
+        "text" : "ihn",
+        "startIndex" : 6,
+        "endIndex" : 7
+      }
+    ],
+    "26" : [
+      {
+        "sentNum" : 26,
+        "text" : "Johann",
+        "startIndex" : 5,
+        "endIndex" : 6
+      },
+      {
+        "sentNum" : 26,
+        "text" : "ihm",
+        "startIndex" : 10,
+        "endIndex" : 11
+      }
+    ],
+    "27" : [
+      {
+        "sentNum" : 27,
+        "text" : "Johann",
+        "startIndex" : 5,
+        "endIndex" : 6
+      },
+      {
+        "sentNum" : 27,
+        "text" : "ihm",
+        "startIndex" : 10,
+        "endIndex" : 11
+      }
+    ],
+    "28" : [
+      {
+        "sentNum" : 28,
+        "text" : "Ich",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 28,
+        "text" : "mich",
+        "startIndex" : 3,
+        "endIndex" : 4
+      }
+    ],
+    "29" : [
+      {
+        "sentNum" : 29,
+        "text" : "Sie",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 29,
+        "text" : "ihnen",
+        "startIndex" : 8,
+        "endIndex" : 9
+      }
+    ],
+    "30" : [
+      {
+        "sentNum" : 30,
+        "text" : "sie",
+        "startIndex" : 3,
+        "endIndex" : 4
+      },
+      {
+        "sentNum" : 30,
+        "text" : "ihnen",
+        "startIndex" : 8,
+        "endIndex" : 9
+      }
+    ],
+    "31" : [
+      {
+        "sentNum" : 31,
+        "text" : "Wilhelm",
+        "startIndex" : 3,
+        "endIndex" : 4
+      },
+      {
+        "sentNum" : 31,
+        "text" : "er",
+        "startIndex" : 6,
+        "endIndex" : 7
+      }
+    ],
+    "32" : [
+      {
+        "sentNum" : 32,
+        "text" : "Johann",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 32,
+        "text" : "seiner",
+        "startIndex" : 5,
+        "endIndex" : 6
+      }
+    ],
+    "33" : [
+      {
+        "sentNum" : 33,
+        "text" : "Johann",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 33,
+        "text" : "seine",
+        "startIndex" : 4,
+        "endIndex" : 5
+      }
+    ],
+    "34" : [
+    ],
+    "35" : [
+      {
+        "sentNum" : 35,
+        "text" : "Wilhelm",
+        "startIndex" : 3,
+        "endIndex" : 4
+      },
+      {
+        "sentNum" : 35,
+        "text" : "ihn",
+        "startIndex" : 8,
+        "endIndex" : 9
+      }
+    ],
+    "36" : [
+      {
+        "sentNum" : 36,
+        "text" : "Wilhelm",
+        "startIndex" : 3,
+        "endIndex" : 4
+      },
+      {
+        "sentNum" : 36,
+        "text" : "er",
+        "startIndex" : 7,
+        "endIndex" : 8
+      }
+    ],
+    "37" : [
+      {
+        "sentNum" : 37,
+        "text" : "Johann",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 37,
+        "text" : "ihm",
+        "startIndex" : 6,
+        "endIndex" : 7
+      }
+    ],
+    "38" : [
+    ],
+    "39" : [
+      {
+        "sentNum" : 39,
+        "text" : "Johann",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 39,
+        "text" : "ihm",
+        "startIndex" : 9,
+        "endIndex" : 10
+      }
+    ],
+    "40" : [
+    ],
+    "41" : [
+    ],
+    "42" : [
+    ],
+    "43" : [
+    ],
+    "44" : [
+    ],
+    "45" : [
+      {
+        "sentNum" : 45,
+        "text" : "Johann",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 45,
+        "text" : "sich",
+        "startIndex" : 3,
+        "endIndex" : 4
+      }
+    ],
+    "46" : [
+      {
+        "sentNum" : 46,
+        "text" : "Johann",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 46,
+        "text" : "ihn",
+        "startIndex" : 6,
+        "endIndex" : 7
+      }
+    ],
+    "47" : [
+      {
+        "sentNum" : 47,
+        "text" : "Johann",
+        "startIndex" : 4,
+        "endIndex" : 5
+      },
+      {
+        "sentNum" : 47,
+        "text" : "ihn",
+        "startIndex" : 6,
+        "endIndex" : 7
+      }
+    ],
+    "48" : [
+      {
+        "sentNum" : 48,
+        "text" : "Sie",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 48,
+        "text" : "sich",
+        "startIndex" : 3,
+        "endIndex" : 4
+      }
+    ],
+    "49" : [
+      {
+        "sentNum" : 49,
+        "text" : "Sie",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 49,
+        "text" : "ihre",
+        "startIndex" : 3,
+        "endIndex" : 4
+      }
+    ],
+    "50" : [
+      {
+        "sentNum" : 50,
+        "text" : "Johann",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 50,
+        "text" : "er",
+        "startIndex" : 5,
+        "endIndex" : 6
+      }
+    ],
+    "51" : [
+      {
+        "sentNum" : 51,
+        "text" : "Johann",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 51,
+        "text" : "ihn",
+        "startIndex" : 6,
+        "endIndex" : 7
+      }
+    ],
+    "52" : [
+      {
+        "sentNum" : 52,
+        "text" : "Johann",
+        "startIndex" : 4,
+        "endIndex" : 5
+      },
+      {
+        "sentNum" : 52,
+        "text" : "ihn",
+        "startIndex" : 6,
+        "endIndex" : 7
+      }
+    ],
+    "53" : [
+      {
+        "sentNum" : 53,
+        "text" : "Johann",
+        "startIndex" : 1,
+        "endIndex" : 2
+      },
+      {
+        "sentNum" : 53,
+        "text" : "sich",
+        "startIndex" : 3,
+        "endIndex" : 4
+      }
+    ]
+}

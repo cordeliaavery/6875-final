@@ -4,6 +4,15 @@ import re
 # want to traverse to the nearest node to determine C-command
 HEADS = {'NP', 'S', 'VP'}
 
+def is_genitive(node):
+    if not node.config():
+        return False
+    if node.config()["case"] == "gen":
+        return True
+    elif re.search("gen", node.config()["case"]):
+        assert (node.tag() == "NP")
+        return node.parent() and node.parent().tag() == "NP"
+
 def match(pro, ante):
     if not pro:
         return True
@@ -42,6 +51,9 @@ def get_c_commanding_nodes(node, r_exp=False, base=None, heads=HEADS):
 
     # if node.type != R, only have to iterate
     # to the nearest S node
+    while node.parent() and node.parent().tag() not in HEADS:
+        node = node.parent()
+
     if node.parent():
         for n in node.parent().get_children():
             if n != node and n.tag() in heads and match(base, n):
@@ -62,6 +74,7 @@ def resolve_anaphor(node, NP_set):
     # Begin at NP node immediately dominating pronoun
 
     assert (node.tag() == "NP" and node.config())
+    c_commanding = set()
 
     node_type = node.config()["type"]
     if node_type == "P":
@@ -74,10 +87,12 @@ def resolve_anaphor(node, NP_set):
             c_node = c_node.parent()
 
     if node.parent():
-        c_commanding = get_c_commanding_nodes(node,
-                                              base=node,
-                                              heads={"NP",})
+        if not is_genitive(node) and node_type != 'R':
+            c_commanding = get_c_commanding_nodes(node,
+                                                  base=node,
+                                                  heads={"NP",})
 
+        
         governed = get_governed_nodes(node.parent(),
                                       node,
                                       heads={"NP",})
@@ -90,6 +105,5 @@ def resolve_anaphor(node, NP_set):
         return (synset - c_commanding) - governed
 
     elif node_type == "A":
-        print node_type
         return c_commanding - governed
     
