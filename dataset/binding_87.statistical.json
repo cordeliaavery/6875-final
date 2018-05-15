@@ -1,0 +1,381 @@
+{
+  "docId": "binding_87.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (SBAR (IN After)\n      (S\n        (NP (PRP he))\n        (VP (VBD robbed)\n          (NP (DT the) (NN bank)))))\n    (, ,)\n    (NP (NNP John))\n    (VP (VBD left)\n      (NP (NN town)))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 8,
+          "dependentGloss": "left"
+        },
+        {
+          "dep": "mark",
+          "governor": 3,
+          "governorGloss": "robbed",
+          "dependent": 1,
+          "dependentGloss": "After"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "robbed",
+          "dependent": 2,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "advcl",
+          "governor": 8,
+          "governorGloss": "left",
+          "dependent": 3,
+          "dependentGloss": "robbed"
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "bank",
+          "dependent": 4,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "robbed",
+          "dependent": 5,
+          "dependentGloss": "bank"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "left",
+          "dependent": 6,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "nsubj",
+          "governor": 8,
+          "governorGloss": "left",
+          "dependent": 7,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "dobj",
+          "governor": 8,
+          "governorGloss": "left",
+          "dependent": 9,
+          "dependentGloss": "town"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "left",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 8,
+          "dependentGloss": "left"
+        },
+        {
+          "dep": "mark",
+          "governor": 3,
+          "governorGloss": "robbed",
+          "dependent": 1,
+          "dependentGloss": "After"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "robbed",
+          "dependent": 2,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "advcl:after",
+          "governor": 8,
+          "governorGloss": "left",
+          "dependent": 3,
+          "dependentGloss": "robbed"
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "bank",
+          "dependent": 4,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "robbed",
+          "dependent": 5,
+          "dependentGloss": "bank"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "left",
+          "dependent": 6,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "nsubj",
+          "governor": 8,
+          "governorGloss": "left",
+          "dependent": 7,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "dobj",
+          "governor": 8,
+          "governorGloss": "left",
+          "dependent": 9,
+          "dependentGloss": "town"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "left",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 8,
+          "dependentGloss": "left"
+        },
+        {
+          "dep": "mark",
+          "governor": 3,
+          "governorGloss": "robbed",
+          "dependent": 1,
+          "dependentGloss": "After"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "robbed",
+          "dependent": 2,
+          "dependentGloss": "he"
+        },
+        {
+          "dep": "advcl:after",
+          "governor": 8,
+          "governorGloss": "left",
+          "dependent": 3,
+          "dependentGloss": "robbed"
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "bank",
+          "dependent": 4,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "robbed",
+          "dependent": 5,
+          "dependentGloss": "bank"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "left",
+          "dependent": 6,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "nsubj",
+          "governor": 8,
+          "governorGloss": "left",
+          "dependent": 7,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "dobj",
+          "governor": 8,
+          "governorGloss": "left",
+          "dependent": 9,
+          "dependentGloss": "town"
+        },
+        {
+          "dep": "punct",
+          "governor": 8,
+          "governorGloss": "left",
+          "dependent": 10,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 6,
+          "docTokenEnd": 7,
+          "tokenBegin": 6,
+          "tokenEnd": 7,
+          "text": "John",
+          "characterOffsetBegin": 26,
+          "characterOffsetEnd": 30,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 1,
+          "docTokenEnd": 2,
+          "tokenBegin": 1,
+          "tokenEnd": 2,
+          "text": "he",
+          "characterOffsetBegin": 6,
+          "characterOffsetEnd": 8,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "After",
+          "originalText": "After",
+          "lemma": "after",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 5,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "he",
+          "originalText": "he",
+          "lemma": "he",
+          "characterOffsetBegin": 6,
+          "characterOffsetEnd": 8,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "robbed",
+          "originalText": "robbed",
+          "lemma": "rob",
+          "characterOffsetBegin": 9,
+          "characterOffsetEnd": 15,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "the",
+          "originalText": "the",
+          "lemma": "the",
+          "characterOffsetBegin": 16,
+          "characterOffsetEnd": 19,
+          "pos": "DT",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "bank",
+          "originalText": "bank",
+          "lemma": "bank",
+          "characterOffsetBegin": 20,
+          "characterOffsetEnd": 24,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 6,
+          "word": ",",
+          "originalText": ",",
+          "lemma": ",",
+          "characterOffsetBegin": 24,
+          "characterOffsetEnd": 25,
+          "pos": ",",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "John",
+          "originalText": "John",
+          "lemma": "John",
+          "characterOffsetBegin": 26,
+          "characterOffsetEnd": 30,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "left",
+          "originalText": "left",
+          "lemma": "leave",
+          "characterOffsetBegin": 31,
+          "characterOffsetEnd": 35,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 9,
+          "word": "town",
+          "originalText": "town",
+          "lemma": "town",
+          "characterOffsetBegin": 36,
+          "characterOffsetEnd": 40,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 10,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 40,
+          "characterOffsetEnd": 41,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "docId": "binding_77.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (NNP Mr.) (NNP Smith))\n    (VP (VBD saw)\n      (NP\n        (NP (DT a) (NN driver))\n        (PP (IN of)\n          (NP (PRP$ his) (NN truck)))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "saw"
+        },
+        {
+          "dep": "compound",
+          "governor": 2,
+          "governorGloss": "Smith",
+          "dependent": 1,
+          "dependentGloss": "Mr."
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "saw",
+          "dependent": 2,
+          "dependentGloss": "Smith"
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "driver",
+          "dependent": 4,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "saw",
+          "dependent": 5,
+          "dependentGloss": "driver"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "truck",
+          "dependent": 6,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 8,
+          "governorGloss": "truck",
+          "dependent": 7,
+          "dependentGloss": "his"
+        },
+        {
+          "dep": "nmod",
+          "governor": 5,
+          "governorGloss": "driver",
+          "dependent": 8,
+          "dependentGloss": "truck"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "saw",
+          "dependent": 9,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "saw"
+        },
+        {
+          "dep": "compound",
+          "governor": 2,
+          "governorGloss": "Smith",
+          "dependent": 1,
+          "dependentGloss": "Mr."
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "saw",
+          "dependent": 2,
+          "dependentGloss": "Smith"
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "driver",
+          "dependent": 4,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "saw",
+          "dependent": 5,
+          "dependentGloss": "driver"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "truck",
+          "dependent": 6,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 8,
+          "governorGloss": "truck",
+          "dependent": 7,
+          "dependentGloss": "his"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 5,
+          "governorGloss": "driver",
+          "dependent": 8,
+          "dependentGloss": "truck"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "saw",
+          "dependent": 9,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "saw"
+        },
+        {
+          "dep": "compound",
+          "governor": 2,
+          "governorGloss": "Smith",
+          "dependent": 1,
+          "dependentGloss": "Mr."
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "saw",
+          "dependent": 2,
+          "dependentGloss": "Smith"
+        },
+        {
+          "dep": "det",
+          "governor": 5,
+          "governorGloss": "driver",
+          "dependent": 4,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "dobj",
+          "governor": 3,
+          "governorGloss": "saw",
+          "dependent": 5,
+          "dependentGloss": "driver"
+        },
+        {
+          "dep": "case",
+          "governor": 8,
+          "governorGloss": "truck",
+          "dependent": 6,
+          "dependentGloss": "of"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 8,
+          "governorGloss": "truck",
+          "dependent": 7,
+          "dependentGloss": "his"
+        },
+        {
+          "dep": "nmod:of",
+          "governor": 5,
+          "governorGloss": "driver",
+          "dependent": 8,
+          "dependentGloss": "truck"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "saw",
+          "dependent": 9,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 1,
+          "docTokenEnd": 2,
+          "tokenBegin": 1,
+          "tokenEnd": 2,
+          "text": "Smith",
+          "characterOffsetBegin": 4,
+          "characterOffsetEnd": 9,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 4,
+          "docTokenEnd": 5,
+          "tokenBegin": 4,
+          "tokenEnd": 5,
+          "text": "driver",
+          "characterOffsetBegin": 16,
+          "characterOffsetEnd": 22,
+          "ner": "TITLE"
+        },
+        {
+          "docTokenBegin": 6,
+          "docTokenEnd": 7,
+          "tokenBegin": 6,
+          "tokenEnd": 7,
+          "text": "his",
+          "characterOffsetBegin": 26,
+          "characterOffsetEnd": 29,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "Mr.",
+          "originalText": "Mr.",
+          "lemma": "Mr.",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 3,
+          "pos": "NNP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "Smith",
+          "originalText": "Smith",
+          "lemma": "Smith",
+          "characterOffsetBegin": 4,
+          "characterOffsetEnd": 9,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "saw",
+          "originalText": "saw",
+          "lemma": "see",
+          "characterOffsetBegin": 10,
+          "characterOffsetEnd": 13,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "a",
+          "originalText": "a",
+          "lemma": "a",
+          "characterOffsetBegin": 14,
+          "characterOffsetEnd": 15,
+          "pos": "DT",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "driver",
+          "originalText": "driver",
+          "lemma": "driver",
+          "characterOffsetBegin": 16,
+          "characterOffsetEnd": 22,
+          "pos": "NN",
+          "ner": "TITLE",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "of",
+          "originalText": "of",
+          "lemma": "of",
+          "characterOffsetBegin": 23,
+          "characterOffsetEnd": 25,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "his",
+          "originalText": "his",
+          "lemma": "he",
+          "characterOffsetBegin": 26,
+          "characterOffsetEnd": 29,
+          "pos": "PRP$",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "truck",
+          "originalText": "truck",
+          "lemma": "truck",
+          "characterOffsetBegin": 30,
+          "characterOffsetEnd": 35,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 9,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 35,
+          "characterOffsetEnd": 36,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "3": [
+      {
+        "id": 0,
+        "text": "Mr. Smith",
+        "type": "PROPER",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 1,
+        "endIndex": 3,
+        "headIndex": 2,
+        "sentNum": 1,
+        "position": [
+          1,
+          1
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 3,
+        "text": "his",
+        "type": "PRONOMINAL",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 7,
+        "endIndex": 8,
+        "headIndex": 7,
+        "sentNum": 1,
+        "position": [
+          1,
+          4
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}

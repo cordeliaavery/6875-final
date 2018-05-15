@@ -1,0 +1,516 @@
+{
+  "docId": "binding_81.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (NNP John))\n    (VP (VBD said)\n      (SBAR\n        (S\n          (NP (PRP$ his) (NN mother))\n          (VP (MD would)\n            (VP (VB sue)\n              (NP\n                (NP (DT the) (NN man))\n                (SBAR\n                  (WHNP (WP who))\n                  (S\n                    (VP (VBD hit)\n                      (NP (PRP himself)))))))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "said"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "said",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 4,
+          "governorGloss": "mother",
+          "dependent": 3,
+          "dependentGloss": "his"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "sue",
+          "dependent": 4,
+          "dependentGloss": "mother"
+        },
+        {
+          "dep": "aux",
+          "governor": 6,
+          "governorGloss": "sue",
+          "dependent": 5,
+          "dependentGloss": "would"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 2,
+          "governorGloss": "said",
+          "dependent": 6,
+          "dependentGloss": "sue"
+        },
+        {
+          "dep": "det",
+          "governor": 8,
+          "governorGloss": "man",
+          "dependent": 7,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "sue",
+          "dependent": 8,
+          "dependentGloss": "man"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 10,
+          "governorGloss": "hit",
+          "dependent": 9,
+          "dependentGloss": "who"
+        },
+        {
+          "dep": "acl:relcl",
+          "governor": 8,
+          "governorGloss": "man",
+          "dependent": 10,
+          "dependentGloss": "hit"
+        },
+        {
+          "dep": "dobj",
+          "governor": 10,
+          "governorGloss": "hit",
+          "dependent": 11,
+          "dependentGloss": "himself"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "said",
+          "dependent": 12,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "said"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "said",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 4,
+          "governorGloss": "mother",
+          "dependent": 3,
+          "dependentGloss": "his"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "sue",
+          "dependent": 4,
+          "dependentGloss": "mother"
+        },
+        {
+          "dep": "aux",
+          "governor": 6,
+          "governorGloss": "sue",
+          "dependent": 5,
+          "dependentGloss": "would"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 2,
+          "governorGloss": "said",
+          "dependent": 6,
+          "dependentGloss": "sue"
+        },
+        {
+          "dep": "det",
+          "governor": 8,
+          "governorGloss": "man",
+          "dependent": 7,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "sue",
+          "dependent": 8,
+          "dependentGloss": "man"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 10,
+          "governorGloss": "hit",
+          "dependent": 8,
+          "dependentGloss": "man"
+        },
+        {
+          "dep": "ref",
+          "governor": 8,
+          "governorGloss": "man",
+          "dependent": 9,
+          "dependentGloss": "who"
+        },
+        {
+          "dep": "acl:relcl",
+          "governor": 8,
+          "governorGloss": "man",
+          "dependent": 10,
+          "dependentGloss": "hit"
+        },
+        {
+          "dep": "dobj",
+          "governor": 10,
+          "governorGloss": "hit",
+          "dependent": 11,
+          "dependentGloss": "himself"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "said",
+          "dependent": 12,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "said"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "said",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 4,
+          "governorGloss": "mother",
+          "dependent": 3,
+          "dependentGloss": "his"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 6,
+          "governorGloss": "sue",
+          "dependent": 4,
+          "dependentGloss": "mother"
+        },
+        {
+          "dep": "aux",
+          "governor": 6,
+          "governorGloss": "sue",
+          "dependent": 5,
+          "dependentGloss": "would"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 2,
+          "governorGloss": "said",
+          "dependent": 6,
+          "dependentGloss": "sue"
+        },
+        {
+          "dep": "det",
+          "governor": 8,
+          "governorGloss": "man",
+          "dependent": 7,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "sue",
+          "dependent": 8,
+          "dependentGloss": "man"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 10,
+          "governorGloss": "hit",
+          "dependent": 8,
+          "dependentGloss": "man"
+        },
+        {
+          "dep": "ref",
+          "governor": 8,
+          "governorGloss": "man",
+          "dependent": 9,
+          "dependentGloss": "who"
+        },
+        {
+          "dep": "acl:relcl",
+          "governor": 8,
+          "governorGloss": "man",
+          "dependent": 10,
+          "dependentGloss": "hit"
+        },
+        {
+          "dep": "dobj",
+          "governor": 10,
+          "governorGloss": "hit",
+          "dependent": 11,
+          "dependentGloss": "himself"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "said",
+          "dependent": 12,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 0,
+          "docTokenEnd": 1,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 2,
+          "docTokenEnd": 3,
+          "tokenBegin": 2,
+          "tokenEnd": 3,
+          "text": "his",
+          "characterOffsetBegin": 10,
+          "characterOffsetEnd": 13,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "John",
+          "originalText": "John",
+          "lemma": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "said",
+          "originalText": "said",
+          "lemma": "say",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 9,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "his",
+          "originalText": "his",
+          "lemma": "he",
+          "characterOffsetBegin": 10,
+          "characterOffsetEnd": 13,
+          "pos": "PRP$",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "mother",
+          "originalText": "mother",
+          "lemma": "mother",
+          "characterOffsetBegin": 14,
+          "characterOffsetEnd": 20,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "would",
+          "originalText": "would",
+          "lemma": "would",
+          "characterOffsetBegin": 21,
+          "characterOffsetEnd": 26,
+          "pos": "MD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "sue",
+          "originalText": "sue",
+          "lemma": "sue",
+          "characterOffsetBegin": 27,
+          "characterOffsetEnd": 30,
+          "pos": "VB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "the",
+          "originalText": "the",
+          "lemma": "the",
+          "characterOffsetBegin": 31,
+          "characterOffsetEnd": 34,
+          "pos": "DT",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "man",
+          "originalText": "man",
+          "lemma": "man",
+          "characterOffsetBegin": 35,
+          "characterOffsetEnd": 38,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 9,
+          "word": "who",
+          "originalText": "who",
+          "lemma": "who",
+          "characterOffsetBegin": 39,
+          "characterOffsetEnd": 42,
+          "pos": "WP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 10,
+          "word": "hit",
+          "originalText": "hit",
+          "lemma": "hit",
+          "characterOffsetBegin": 43,
+          "characterOffsetEnd": 46,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 11,
+          "word": "himself",
+          "originalText": "himself",
+          "lemma": "himself",
+          "characterOffsetBegin": 47,
+          "characterOffsetEnd": 54,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 12,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 54,
+          "characterOffsetEnd": 55,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "1": [
+      {
+        "id": 0,
+        "text": "John",
+        "type": "PROPER",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 1,
+        "endIndex": 2,
+        "headIndex": 1,
+        "sentNum": 1,
+        "position": [
+          1,
+          1
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 4,
+        "text": "his",
+        "type": "PRONOMINAL",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 3,
+        "endIndex": 4,
+        "headIndex": 3,
+        "sentNum": 1,
+        "position": [
+          1,
+          5
+        ],
+        "isRepresentativeMention": false
+      },
+      {
+        "id": 1,
+        "text": "himself",
+        "type": "PRONOMINAL",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 11,
+        "endIndex": 12,
+        "headIndex": 11,
+        "sentNum": 1,
+        "position": [
+          1,
+          2
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}

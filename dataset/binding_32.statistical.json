@@ -3,26 +3,26 @@
   "sentences": [
     {
       "index": 0,
-      "parse": "(ROOT\n  (S\n    (NP (NNP Bill))\n    (VP (VB regard)\n      (NP (PRP them))\n      (PP (IN as)\n        (NP\n          (NP (RB too) (JJ critical))\n          (PP (IN of)\n            (NP (PRP themselves))))))\n    (. .)))",
+      "parse": "(ROOT\n  (S\n    (NP (NNP Bill))\n    (VP (VBZ regards)\n      (NP (PRP them))\n      (PP (IN as)\n        (NP\n          (NP (RB too) (JJ critical))\n          (PP (IN of)\n            (NP (PRP themselves))))))\n    (. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 2,
-          "dependentGloss": "regard"
+          "dependentGloss": "regards"
         },
         {
           "dep": "nsubj",
           "governor": 2,
-          "governorGloss": "regard",
+          "governorGloss": "regards",
           "dependent": 1,
           "dependentGloss": "Bill"
         },
         {
           "dep": "dobj",
           "governor": 2,
-          "governorGloss": "regard",
+          "governorGloss": "regards",
           "dependent": 3,
           "dependentGloss": "them"
         },
@@ -43,7 +43,7 @@
         {
           "dep": "nmod",
           "governor": 2,
-          "governorGloss": "regard",
+          "governorGloss": "regards",
           "dependent": 6,
           "dependentGloss": "critical"
         },
@@ -64,7 +64,7 @@
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "regard",
+          "governorGloss": "regards",
           "dependent": 9,
           "dependentGloss": "."
         }
@@ -75,19 +75,19 @@
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 2,
-          "dependentGloss": "regard"
+          "dependentGloss": "regards"
         },
         {
           "dep": "nsubj",
           "governor": 2,
-          "governorGloss": "regard",
+          "governorGloss": "regards",
           "dependent": 1,
           "dependentGloss": "Bill"
         },
         {
           "dep": "dobj",
           "governor": 2,
-          "governorGloss": "regard",
+          "governorGloss": "regards",
           "dependent": 3,
           "dependentGloss": "them"
         },
@@ -108,7 +108,7 @@
         {
           "dep": "nmod:as",
           "governor": 2,
-          "governorGloss": "regard",
+          "governorGloss": "regards",
           "dependent": 6,
           "dependentGloss": "critical"
         },
@@ -129,7 +129,7 @@
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "regard",
+          "governorGloss": "regards",
           "dependent": 9,
           "dependentGloss": "."
         }
@@ -140,19 +140,19 @@
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 2,
-          "dependentGloss": "regard"
+          "dependentGloss": "regards"
         },
         {
           "dep": "nsubj",
           "governor": 2,
-          "governorGloss": "regard",
+          "governorGloss": "regards",
           "dependent": 1,
           "dependentGloss": "Bill"
         },
         {
           "dep": "dobj",
           "governor": 2,
-          "governorGloss": "regard",
+          "governorGloss": "regards",
           "dependent": 3,
           "dependentGloss": "them"
         },
@@ -173,7 +173,7 @@
         {
           "dep": "nmod:as",
           "governor": 2,
-          "governorGloss": "regard",
+          "governorGloss": "regards",
           "dependent": 6,
           "dependentGloss": "critical"
         },
@@ -194,7 +194,7 @@
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "regard",
+          "governorGloss": "regards",
           "dependent": 9,
           "dependentGloss": "."
         }
@@ -227,12 +227,12 @@
         },
         {
           "index": 2,
-          "word": "regard",
-          "originalText": "regard",
+          "word": "regards",
+          "originalText": "regards",
           "lemma": "regard",
           "characterOffsetBegin": 5,
-          "characterOffsetEnd": 11,
-          "pos": "VB",
+          "characterOffsetEnd": 12,
+          "pos": "VBZ",
           "ner": "O",
           "speaker": "PER0",
           "before": " ",
@@ -243,8 +243,8 @@
           "word": "them",
           "originalText": "them",
           "lemma": "they",
-          "characterOffsetBegin": 12,
-          "characterOffsetEnd": 16,
+          "characterOffsetBegin": 13,
+          "characterOffsetEnd": 17,
           "pos": "PRP",
           "ner": "O",
           "speaker": "PER0",
@@ -256,8 +256,8 @@
           "word": "as",
           "originalText": "as",
           "lemma": "as",
-          "characterOffsetBegin": 17,
-          "characterOffsetEnd": 19,
+          "characterOffsetBegin": 18,
+          "characterOffsetEnd": 20,
           "pos": "IN",
           "ner": "O",
           "speaker": "PER0",
@@ -269,8 +269,8 @@
           "word": "too",
           "originalText": "too",
           "lemma": "too",
-          "characterOffsetBegin": 20,
-          "characterOffsetEnd": 23,
+          "characterOffsetBegin": 21,
+          "characterOffsetEnd": 24,
           "pos": "RB",
           "ner": "O",
           "speaker": "PER0",
@@ -282,8 +282,8 @@
           "word": "critical",
           "originalText": "critical",
           "lemma": "critical",
-          "characterOffsetBegin": 24,
-          "characterOffsetEnd": 32,
+          "characterOffsetBegin": 25,
+          "characterOffsetEnd": 33,
           "pos": "JJ",
           "ner": "O",
           "speaker": "PER0",
@@ -295,8 +295,8 @@
           "word": "of",
           "originalText": "of",
           "lemma": "of",
-          "characterOffsetBegin": 33,
-          "characterOffsetEnd": 35,
+          "characterOffsetBegin": 34,
+          "characterOffsetEnd": 36,
           "pos": "IN",
           "ner": "O",
           "speaker": "PER0",
@@ -308,8 +308,8 @@
           "word": "themselves",
           "originalText": "themselves",
           "lemma": "themselves",
-          "characterOffsetBegin": 36,
-          "characterOffsetEnd": 46,
+          "characterOffsetBegin": 37,
+          "characterOffsetEnd": 47,
           "pos": "PRP",
           "ner": "O",
           "speaker": "PER0",
@@ -321,8 +321,8 @@
           "word": ".",
           "originalText": ".",
           "lemma": ".",
-          "characterOffsetBegin": 46,
-          "characterOffsetEnd": 47,
+          "characterOffsetBegin": 47,
+          "characterOffsetEnd": 48,
           "pos": ".",
           "ner": "O",
           "speaker": "PER0",
