@@ -14,8 +14,10 @@ head_settings = {}
 def compute_corenlp_accuracy():
     pass
 
-def read_gold_data():
-    pass
+def read_gold_data(filename):
+    corefs = {}
+    with open(filename) as f:
+        pass
 
 def look_for_PRP(cell):
     if cell is None:
@@ -42,21 +44,19 @@ def main(args):
         tree_to_parse = Tree(list_hier[0], 0)
         print tree_to_parse.get_string()
         tree_to_parse.pretty_print()
+        for candidate in filter(lambda x: x.config(), Tree.NP_nodes):
+            print "Candidate:", candidate.get_string()
+            print candidate.leaf_range()
 
-        for candidate in Tree.PR_nodes:
-            print "Candidate:"
-            candidate.pretty_print()
             print "Results:"
             proposed = resolve_anaphor(candidate, Tree.NP_nodes)
-            if not proposed:
-                print "NO PROP"
-                continue
             for proposal in proposed:
-                proposal.pretty_print()
-            
+                print proposal.leaf_range(), proposal.get_string()
+                
         print '-'*20
         Tree.PR_nodes.clear()
         Tree.NP_nodes.clear()
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -79,6 +79,11 @@ if __name__ == "__main__":
                         "--config_file",
                         default="config.json",
                         help="json input for parameter settings. Should not need anything other than the default!")
+
+
+    parser.add_argument("-o",
+                        "--output_file",
+                        default="output_tuple.json")
 
     args = parser.parse_args()
     main(args)

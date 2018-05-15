@@ -6,7 +6,7 @@ def process_string(val):
     current_str = ""
     current_depth = 0
     completed_stack = []
-    waiting_stack = [] #[[]]
+    waiting_stack = []
 
     searching = False
     root = False
