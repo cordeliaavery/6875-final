@@ -1,3 +1,4 @@
+import re
 
 class NodeError(Exception):
     def __init__(self, expression):
@@ -14,7 +15,6 @@ class Tree:
         self.__tag = vals[0]
         self.__root_idx = root_idx
         self.__local_idx = local_idx
-        self.__max_child_idx = local_idx
 
         children = vals[1:][0]
 
@@ -35,6 +35,7 @@ class Tree:
                 children = children.lower()
             self.__node = Head(children, prior_leaves)
             self.__leaf = True
+
             if self.__tag.startswith("N") or self.__tag.startswith("PR"):
                 conf = Tree.lexicon.get(self.__node.get_string())
                 if not conf:
@@ -47,13 +48,20 @@ class Tree:
 
                     Tree.lexicon[self.__node.get_string()] = conf
 
-                self.__config = conf
+                self.__config = dict(conf)
                 self.__parent.set_config(conf)
 
         else:
             self.__node = Bar(children, root_idx, local_idx, prior_leaves, self)
             self.__leaf = False
 
+    def collapse(self):
+        return int(bool(self.__config and self.__config.get("dec")))
+
+    def set_genitive(self, dec=False):
+        if self.__config:
+            self.__config["case"] = "gen"
+            self.__config["dec"] = dec
 
     def num_leaves(self):
         return self.__node.num_leaves()
@@ -63,8 +71,6 @@ class Tree:
         # need to build tree left to right to be consistent
         return self.__node.size_of_subtree()
 
-    def max_child_idx(self):
-        return self.__max_child_idx
 
     def __hash__(self):
         return hash((self.__root_idx, self.__local_idx))
@@ -74,16 +80,6 @@ class Tree:
 
     def parent(self):
         return self.__parent
-
-    def get_left(self):
-        if isinstance(self.__node, Bar):
-            return self.__node.get_left()
-        raise NodeError
-
-    def get_right(self):
-        if isinstance(self.__node, Bar):
-            return self.__node.get_right()
-        raise NodeError
 
     def is_leaf(self):
         return self.__leaf
@@ -103,7 +99,7 @@ class Tree:
 
     def set_config(self, config):
         assert (self.__tag.endswith("NP"))
-        self.__config = config
+        self.__config = dict(config)
 
     def config(self):
         return self.__config
@@ -117,33 +113,32 @@ class Tree:
     def leaf_range(self):
         return self.__node.min_leaf(), self.__node.max_leaf()
 
+    def local(self): return self.__local_idx
 class Bar:
+    disable_pruning = True
+
     def __init__(self, vals, root_idx, local_idx, prior_leaves, parent):
         self.__parent = parent
 
         c_index = local_idx + 1
         self.__min_leaf = prior_leaves
         self.__num_leaves = 0
-        self.__extras = []
+        self.__children = []
         for x in vals:
             t = Tree(x, root_idx, c_index, prior_leaves + self.__num_leaves, parent)
             c_index += t.size_of_subtree()
             self.__num_leaves += t.num_leaves()
-            self.__extras.append(t)
+            self.__children.append(t)
 
         self.__size_of_subtree = c_index - local_idx
 
-        if len(self.__extras) < 1:
+        if len(self.__children) < 1:
             print ("Bar must have at least one child")
             return
-        if len(self.__extras) == 1:
-            self.__left = self.__extras[0]
-            self.__right = None
-            return
 
-        for x in range(len(self.__extras) - 1):
+        for x in range(len(self.__children) - 1):
             # handles cases such as "each other"
-            combo_str = self.__extras[x].get_string() + " " + self.__extras[x + 1].get_string()
+            combo_str = self.__children[x].get_string() + " " + self.__children[x + 1].get_string()
             if combo_str in Tree.lexicon:
                 assert (parent.tag() == "NP")
                 conf = Tree.lexicon[combo_str]
@@ -152,29 +147,26 @@ class Bar:
                     assert (parent in Tree.NP_nodes)
                 parent.set_config(conf)
 
-        if len(self.__extras) == 2:
-            self.__left, self.__right = self.__extras
+        for c in self.__children:
+            if c.tag() == 'POS':
+                parent.set_genitive(True)
+
+        if Bar.disable_pruning:
             return
 
-        check = find_pair(self.__extras)
+        # eliminates some non-binary branching, if needed
+        check = find_pair(self.__children)
         while not (check == (-1, -1, -1)):
-            e1, e2 = self.__extras[check[0]], self.__extras[check[0] + 1]
-            self.__extras[check[1]].set_string(e1.get_string() + " " + e2.get_string())
-            self.__extras.pop(check[2])
-            check = find_pair(self.__extras)
-
-
-        self.__left = self.__extras[0]
-        if len(self.__extras) > 1:
-            self.__right = self.__extras[1]
-        else:
-            self.__right = None
+            e1, e2 = self.__children[check[0]], self.__children[check[0] + 1]
+            self.__children[check[1]].set_string(e1.get_string() + " " + e2.get_string())
+            self.__children.pop(check[2])
+            check = find_pair(self.__children)
 
     def min_leaf(self):
         return self.__min_leaf
 
     def max_leaf(self):
-        return self.__min_leaf + self.__num_leaves
+        return self.__min_leaf + self.__num_leaves - self.__parent.collapse()
 
     def size_of_subtree(self):
         return self.__size_of_subtree
@@ -183,24 +175,11 @@ class Bar:
         return self.__num_leaves
 
     def pretty_print(self, depth=0):
-        for x in self.__extras:
+        for x in self.__children:
             x.pretty_print(depth)
-        return
 
     def get_children(self):
-        return self.__extras
-
-    def get_left(self):
-        return self.__left
-
-    def get_right(self):
-        return self.__right
-
-    def set_left(self, left):
-        self.__left = left
-
-    def set_right(self, right):
-        self.__right = right
+        return self.__children
 
     def get_prev(self):
         return
@@ -210,7 +189,7 @@ class Bar:
 
     def get_string(self):
         retval = ""
-        for elem in self.__extras:
+        for elem in self.__children:
             if retval:
                 retval += " "
             retval += elem.get_string()
@@ -273,9 +252,51 @@ def find_pair(treelist):
         elem = treelist[x]
         # first value is the start index, second is the one
         # we want to keep, third is the one we discard
-        #if prev_elem.tag() == 'MD' and elem.tag() == 'RB':
-        #    return x - 1, x - 1, x
-        #if prev_elem.tag() == 'RB' and elem.tag() == 'JJ':
-        #    return x - 1, x, x - 1
+        if prev_elem.tag() == 'MD' and elem.tag() == 'RB':
+            return x - 1, x - 1, x
+        if prev_elem.tag() == 'RB' and elem.tag() == 'JJ':
+            return x - 1, x, x - 1
 
     return -1, -1, -1
+
+WS = re.compile("\s")
+
+def process_string(val):
+    current_str = ""
+    current_depth = 0
+    completed_stack = []
+    waiting_stack = []
+
+    searching = False
+    root = False
+    for c in val:
+        if c == "(":
+            current_depth += 1
+            waiting_stack.append([])
+
+        elif c == ")":
+            assert (not root)
+            if current_str:
+                waiting_stack[-1][1].append(current_str)
+            if len(waiting_stack) > 1:
+                tmp = waiting_stack[-1]
+                waiting_stack.pop()
+                if len(tmp[1]) == 1 and (isinstance(tmp[1][0], str) or
+                                         isinstance(tmp[1][0], unicode)):
+                    tmp[1] = tmp[1][0]
+                waiting_stack[-1][1].append(tmp)
+
+            current_str = ""
+
+        elif WS.match(c):
+            if current_str:
+                if not waiting_stack[-1]:
+                    waiting_stack[-1].append(current_str)
+                    waiting_stack[-1].append([])
+                else:
+                    waiting_stack[-1][1].append(current_str)
+                current_str = ""
+
+        else:
+            current_str += c
+    return waiting_stack

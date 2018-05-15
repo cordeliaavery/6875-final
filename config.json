@@ -476,7 +476,7 @@
                 "case": "nom",
                 "type": "R",
                 "animate": true
-            }, 
+            }
         }
     }
 }
