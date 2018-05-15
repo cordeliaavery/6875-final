@@ -1,0 +1,293 @@
+{
+  "docId": "binding_90.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (NNP John)\n      (CC and)\n      (NNP Bill))\n    (VP (VBD saw)\n      (NP (DT each) (JJ other)))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "saw"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "saw",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "cc",
+          "governor": 1,
+          "governorGloss": "John",
+          "dependent": 2,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj",
+          "governor": 1,
+          "governorGloss": "John",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "other",
+          "dependent": 5,
+          "dependentGloss": "each"
+        },
+        {
+          "dep": "dobj",
+          "governor": 4,
+          "governorGloss": "saw",
+          "dependent": 6,
+          "dependentGloss": "other"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "saw",
+          "dependent": 7,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "saw"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "saw",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "cc",
+          "governor": 1,
+          "governorGloss": "John",
+          "dependent": 2,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 1,
+          "governorGloss": "John",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "saw",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "other",
+          "dependent": 5,
+          "dependentGloss": "each"
+        },
+        {
+          "dep": "dobj",
+          "governor": 4,
+          "governorGloss": "saw",
+          "dependent": 6,
+          "dependentGloss": "other"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "saw",
+          "dependent": 7,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "saw"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "saw",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "cc",
+          "governor": 1,
+          "governorGloss": "John",
+          "dependent": 2,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 1,
+          "governorGloss": "John",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "saw",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "det",
+          "governor": 6,
+          "governorGloss": "other",
+          "dependent": 5,
+          "dependentGloss": "each"
+        },
+        {
+          "dep": "dobj",
+          "governor": 4,
+          "governorGloss": "saw",
+          "dependent": 6,
+          "dependentGloss": "other"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "saw",
+          "dependent": 7,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 0,
+          "docTokenEnd": 1,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 2,
+          "docTokenEnd": 3,
+          "tokenBegin": 2,
+          "tokenEnd": 3,
+          "text": "Bill",
+          "characterOffsetBegin": 9,
+          "characterOffsetEnd": 13,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "John",
+          "originalText": "John",
+          "lemma": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "and",
+          "originalText": "and",
+          "lemma": "and",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 8,
+          "pos": "CC",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "Bill",
+          "originalText": "Bill",
+          "lemma": "Bill",
+          "characterOffsetBegin": 9,
+          "characterOffsetEnd": 13,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "saw",
+          "originalText": "saw",
+          "lemma": "see",
+          "characterOffsetBegin": 14,
+          "characterOffsetEnd": 17,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "each",
+          "originalText": "each",
+          "lemma": "each",
+          "characterOffsetBegin": 18,
+          "characterOffsetEnd": 22,
+          "pos": "DT",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "other",
+          "originalText": "other",
+          "lemma": "other",
+          "characterOffsetBegin": 23,
+          "characterOffsetEnd": 28,
+          "pos": "JJ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 7,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 28,
+          "characterOffsetEnd": 29,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+  }
+}

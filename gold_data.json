@@ -923,6 +923,20 @@
         "startIndex" : 2,
         "endIndex" : 3
       }
+    ],
+    "91" : [
+      {
+        "sentNum" : 90,
+        "text" : "John and Bill",
+        "startIndex" : 1,
+        "endIndex" : 4
+      },
+      {
+        "sentNum" : 90,
+        "text" : "each other",
+        "startIndex" : 5,
+        "endIndex" : 7
+      }
     ]
   }
 }

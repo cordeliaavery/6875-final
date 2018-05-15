@@ -438,7 +438,45 @@
                 "count": "s",
                 "case": "gen",
                 "type": "P"
-            }
+            },
+            "einander": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "p",
+                "case": "dat",
+                "type": "A"
+            },
+            "zueinander": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "p",
+                "case": "dat",
+                "type": "A"
+            },
+            "Männer": {
+                "gender": "m",
+                "person": "t",
+                "count": "p",
+                "case": "nom",
+                "type": "R",
+                "animate": true
+            }, 
+            "Lehrerin": {
+                "gender": "f",
+                "person": "t",
+                "count": "s",
+                "case": "nom",
+                "type": "R",
+                "animate": true
+            }, 
+            "Feind": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "case": "nom",
+                "type": "R",
+                "animate": true
+            }, 
         }
     }
 }
