@@ -98,13 +98,13 @@ def main(args):
         list_hier = process_string(sentence["parse"])
         tree_to_parse = Tree(list_hier[0], 0)
         print tree_to_parse.get_string()
-        tree_to_parse.pretty_print()
-        for candidate in filter(lambda x: x.config(), Tree.NP_nodes):
-            print "Candidate:", candidate.get_string()
+        #tree_to_parse.pretty_print()
+        for candidate in filter(lambda x: x.config(), Tree.PR_nodes):
+            print "Candidate:", candidate.get_string(), candidate.leaf_range()
             print "Results:"
             proposed = resolve_anaphor(candidate, Tree.NP_nodes)
             for proposal in proposed:
-                print proposal.get_string()
+                print proposal.get_string(), proposal.leaf_range()
                 
         print '-'*20
         Tree.PR_nodes.clear()

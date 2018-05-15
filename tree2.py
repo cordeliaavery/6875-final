@@ -35,6 +35,7 @@ class Tree:
                 children = children.lower()
             self.__node = Head(children, prior_leaves)
             self.__leaf = True
+
             if self.__tag.startswith("N") or self.__tag.startswith("PR"):
                 conf = Tree.lexicon.get(self.__node.get_string())
                 if not conf:
@@ -47,13 +48,20 @@ class Tree:
 
                     Tree.lexicon[self.__node.get_string()] = conf
 
-                self.__config = conf
+                self.__config = dict(conf)
                 self.__parent.set_config(conf)
 
         else:
             self.__node = Bar(children, root_idx, local_idx, prior_leaves, self)
             self.__leaf = False
 
+    def collapse(self):
+        return int(bool(self.__config and self.__config.get("dec")))
+
+    def set_genitive(self, dec=False):
+        if self.__config:
+            self.__config["case"] = "gen"
+            self.__config["dec"] = dec
 
     def num_leaves(self):
         return self.__node.num_leaves()
@@ -91,7 +99,7 @@ class Tree:
 
     def set_config(self, config):
         assert (self.__tag.endswith("NP"))
-        self.__config = config
+        self.__config = dict(config)
 
     def config(self):
         return self.__config
@@ -105,6 +113,7 @@ class Tree:
     def leaf_range(self):
         return self.__node.min_leaf(), self.__node.max_leaf()
 
+    def local(self): return self.__local_idx
 class Bar:
     disable_pruning = True
 
@@ -138,6 +147,10 @@ class Bar:
                     assert (parent in Tree.NP_nodes)
                 parent.set_config(conf)
 
+        for c in self.__children:
+            if c.tag() == 'POS':
+                parent.set_genitive(True)
+
         if Bar.disable_pruning:
             return
 
@@ -153,7 +166,7 @@ class Bar:
         return self.__min_leaf
 
     def max_leaf(self):
-        return self.__min_leaf + self.__num_leaves
+        return self.__min_leaf + self.__num_leaves - self.__parent.collapse()
 
     def size_of_subtree(self):
         return self.__size_of_subtree
