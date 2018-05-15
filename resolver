@@ -7,59 +7,81 @@ from tree3 import process_string
 from algorithm_cls import resolve_anaphor
 import json
 from os.path import basename, splitext
+from collections import defaultdict
 
 gold_data = {}
 lexicon = {}
 head_settings = {}
+models = ["deterministic", "neural", "statistical"]
 
 def compute_corenlp_accuracy(args):
-    convert_all_sentences()
-    
+    gold_data = read_gold_data(args)
+
+    for model in models:
+        print "COMPUTING ACCURACY FOR %s MODEL..." % (model)
+
+        corenlp_data = convert_all_sentences(model)
+        eval = [(key,corenlp_data[key]==gold_data[key]) for key in corenlp_data]
+
+        counter = 0
+        for i in range(len(eval)):
+            if eval[i][1]:
+                counter += 1
+
+            elif not eval[i][1]:
+                expected = gold_data[eval[i][0]]
+                predicted = corenlp_data[eval[i][0]]
+                if args.v:
+                    print "Sentence number %s does not match." % (eval[i][0])
+                    print "\tExpected coreference set: ", expected
+                    print "\tOutput coreference set: ", predicted
+
+        accuracy = float(counter)/90
+        print "Accuracy: %s" % (accuracy)
 
 
-def convert_all_sentences():
+def convert_all_sentences(model):
     with open("dataset/all_files.txt") as f:
         files = ["dataset/"+splitext(basename(x))[0] for x in f]
 
-    models = ["deterministic", "neural", "statistical"]
-    for model in models:
-        dict = {}
-        counter = 1
-        for line in files:
-            filename = line+"."+model+".json"
-            entry = convert_corenlp_output(filename)
-            dict[str(counter)] = entry
-            counter += 1
-
-        to_write = {"corefs" : dict}
-        
-        outfile = "dataset/corenlp_"+model+".json"
-        with open(outfile, "w") as f:
-            json.dump(to_write, f, indent=2)
+    dict = defaultdict(tuple)
+    for line in files:
+        filename = line+"."+model+".json"
+        sentNum = basename(line).split("_")[1]
+        entry = convert_corenlp_output(filename)
+        dict[sentNum] = dict[sentNum] + entry
+    return dict
 
 def convert_corenlp_output(filename):
     with open(filename) as f:
         output = json.load(f)
-    print output["corefs"]
-
-    entry = []
-    if len(output["corefs"]) == 0:
-        return entry
-    else:
+    
+    if len(output["corefs"]) > 0:
         for key in output["corefs"]:
             coref_sets = output["corefs"][key]
+            sentNum = output["corefs"][key][0]["sentNum"]
+            bounds = ()
             for i in range(len(coref_sets)):
                 mention = coref_sets[i]
-                dict = {"sentNum" : mention["sentNum"], "text" : mention["text"], "startIndex" : mention["startIndex"], "endIndex" : mention["endIndex"]}
-                entry.append(dict)
-            
-            return entry
+                bounds += (mention["startIndex"], mention["endIndex"])
+
+            return bounds
+    else:
+        return ()
 
 def read_gold_data(args):
     with open(args.gold_data) as f:
         gold_data = json.load(f)
 
-    return gold_data
+    dict = defaultdict(tuple)
+
+    for key in gold_data["corefs"]:
+        coref_sets = gold_data["corefs"][key]
+        for i in range(len(coref_sets)):
+            mention = coref_sets[i]
+            dict[mention["sentNum"]] = dict[mention["sentNum"]] + (mention["startIndex"], mention["endIndex"])
+
+    return dict
 
 def look_for_PRP(cell):
     if cell is None:
@@ -123,6 +145,10 @@ if __name__ == "__main__":
                         "--config_file",
                         default="config.json",
                         help="json input for parameter settings. Should not need anything other than the default!")
+
+    parser.add_argument("-v",
+                        action="store_true",
+                        help="set to true to output mismatched coreference sets")
 
     args = parser.parse_args()
     #main(args)
