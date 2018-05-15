@@ -2,12 +2,12 @@
 
 import re
 import argparse
-from tree2 import Tree, get_index
-from tree3 import process_string
-from algorithm_cls import resolve_anaphor
 import json
 from os.path import basename, splitext
 from collections import defaultdict
+
+from tree2 import Tree, process_string
+from algorithm_cls import resolve_anaphor
 
 gold_data = {}
 lexicon = {}
@@ -84,16 +84,6 @@ def read_gold_data(args):
     return dict
 
 
-def look_for_PRP(cell):
-    if cell is None:
-        return []
-    unresolved = []
-    if cell.tag().startswith('PRP'):
-        unresolved.append(cell)
-    if cell.is_leaf():
-        return unresolved
-    return unresolved + look_for_PRP(cell.get_left()) + look_for_PRP(cell.get_right())
-
 def main(args):
     global lexicon
     with open(args.config_file) as c:
@@ -108,15 +98,13 @@ def main(args):
         list_hier = process_string(sentence["parse"])
         tree_to_parse = Tree(list_hier[0], 0)
         print tree_to_parse.get_string()
-        tree_to_parse.pretty_print()
-        for candidate in filter(lambda x: x.config(), Tree.NP_nodes):
-            #print "Candidate:", candidate.get_string()
-            #print candidate.leaf_range()
-
-            #print "Results:"
+        #tree_to_parse.pretty_print()
+        for candidate in filter(lambda x: x.config(), Tree.PR_nodes):
+            print "Candidate:", candidate.get_string(), candidate.leaf_range()
+            print "Results:"
             proposed = resolve_anaphor(candidate, Tree.NP_nodes)
             for proposal in proposed:
-                #print proposal.leaf_range(), proposal.get_string()
+                print proposal.get_string(), proposal.leaf_range()
                 
         print '-'*20
         Tree.PR_nodes.clear()

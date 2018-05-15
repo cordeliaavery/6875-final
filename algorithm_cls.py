@@ -93,14 +93,14 @@ def resolve_anaphor(node, NP_set):
     if node_type != "A":
         # assume pronouns can refer to everything
         # and eliminate based on c-command
-        synset = set(filter(lambda x: match(node, x), NP_set))
+        synset = set(filter(lambda x: match(node, x) and x.parent() != node, NP_set))
         c_node = node
         while c_node:
             synset -= {c_node,}
             c_node = c_node.parent()
 
     if node.parent():
-        if not is_genitive(node):
+        if not is_genitive(node) or node_type != "P":
             c_commanding = get_c_commanding_nodes(node,
                                                   base=node,
                                                   r_exp = (node_type == "R"),
