@@ -1,0 +1,349 @@
+{
+  "docId": "binding_72.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (NNP John))\n    (VP (VBZ believes)\n      (PP (IN that)\n        (NP (NNP Bill) (NNS talks)))\n      (PP (TO to)\n        (NP (PRP himself))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "believes"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "believes",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "case",
+          "governor": 5,
+          "governorGloss": "talks",
+          "dependent": 3,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "compound",
+          "governor": 5,
+          "governorGloss": "talks",
+          "dependent": 4,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "nmod",
+          "governor": 2,
+          "governorGloss": "believes",
+          "dependent": 5,
+          "dependentGloss": "talks"
+        },
+        {
+          "dep": "case",
+          "governor": 7,
+          "governorGloss": "himself",
+          "dependent": 6,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "nmod",
+          "governor": 2,
+          "governorGloss": "believes",
+          "dependent": 7,
+          "dependentGloss": "himself"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "believes",
+          "dependent": 8,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "believes"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "believes",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "case",
+          "governor": 5,
+          "governorGloss": "talks",
+          "dependent": 3,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "compound",
+          "governor": 5,
+          "governorGloss": "talks",
+          "dependent": 4,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "nmod:that",
+          "governor": 2,
+          "governorGloss": "believes",
+          "dependent": 5,
+          "dependentGloss": "talks"
+        },
+        {
+          "dep": "case",
+          "governor": 7,
+          "governorGloss": "himself",
+          "dependent": 6,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "nmod:to",
+          "governor": 2,
+          "governorGloss": "believes",
+          "dependent": 7,
+          "dependentGloss": "himself"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "believes",
+          "dependent": 8,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 2,
+          "dependentGloss": "believes"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 2,
+          "governorGloss": "believes",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "case",
+          "governor": 5,
+          "governorGloss": "talks",
+          "dependent": 3,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "compound",
+          "governor": 5,
+          "governorGloss": "talks",
+          "dependent": 4,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "nmod:that",
+          "governor": 2,
+          "governorGloss": "believes",
+          "dependent": 5,
+          "dependentGloss": "talks"
+        },
+        {
+          "dep": "case",
+          "governor": 7,
+          "governorGloss": "himself",
+          "dependent": 6,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "nmod:to",
+          "governor": 2,
+          "governorGloss": "believes",
+          "dependent": 7,
+          "dependentGloss": "himself"
+        },
+        {
+          "dep": "punct",
+          "governor": 2,
+          "governorGloss": "believes",
+          "dependent": 8,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 0,
+          "docTokenEnd": 1,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 3,
+          "docTokenEnd": 4,
+          "tokenBegin": 3,
+          "tokenEnd": 4,
+          "text": "Bill",
+          "characterOffsetBegin": 19,
+          "characterOffsetEnd": 23,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "John",
+          "originalText": "John",
+          "lemma": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "believes",
+          "originalText": "believes",
+          "lemma": "believe",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 13,
+          "pos": "VBZ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "that",
+          "originalText": "that",
+          "lemma": "that",
+          "characterOffsetBegin": 14,
+          "characterOffsetEnd": 18,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "Bill",
+          "originalText": "Bill",
+          "lemma": "Bill",
+          "characterOffsetBegin": 19,
+          "characterOffsetEnd": 23,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "talks",
+          "originalText": "talks",
+          "lemma": "talk",
+          "characterOffsetBegin": 24,
+          "characterOffsetEnd": 29,
+          "pos": "NNS",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "to",
+          "originalText": "to",
+          "lemma": "to",
+          "characterOffsetBegin": 30,
+          "characterOffsetEnd": 32,
+          "pos": "TO",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "himself",
+          "originalText": "himself",
+          "lemma": "himself",
+          "characterOffsetBegin": 33,
+          "characterOffsetEnd": 40,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 8,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 40,
+          "characterOffsetEnd": 41,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "3": [
+      {
+        "id": 0,
+        "text": "John",
+        "type": "PROPER",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 1,
+        "endIndex": 2,
+        "headIndex": 1,
+        "sentNum": 1,
+        "position": [
+          1,
+          1
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 3,
+        "text": "himself",
+        "type": "PRONOMINAL",
+        "number": "SINGULAR",
+        "gender": "MALE",
+        "animacy": "ANIMATE",
+        "startIndex": 7,
+        "endIndex": 8,
+        "headIndex": 7,
+        "sentNum": 1,
+        "position": [
+          1,
+          4
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}
