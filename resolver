@@ -110,13 +110,13 @@ def main(args):
         print tree_to_parse.get_string()
         tree_to_parse.pretty_print()
         for candidate in filter(lambda x: x.config(), Tree.NP_nodes):
-            print "Candidate:", candidate.get_string()
-            print candidate.leaf_range()
+            #print "Candidate:", candidate.get_string()
+            #print candidate.leaf_range()
 
-            print "Results:"
+            #print "Results:"
             proposed = resolve_anaphor(candidate, Tree.NP_nodes)
             for proposal in proposed:
-                print proposal.leaf_range(), proposal.get_string()
+                #print proposal.leaf_range(), proposal.get_string()
                 
         print '-'*20
         Tree.PR_nodes.clear()
@@ -154,5 +154,5 @@ if __name__ == "__main__":
                         default="output_tuple.json")
 
     args = parser.parse_args()
-    #main(args)
-    compute_corenlp_accuracy(args)
+    main(args)
+    #compute_corenlp_accuracy(args)
