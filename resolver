@@ -16,8 +16,10 @@ models = ["deterministic", "neural", "statistical"]
 
 def compute_algo_accuracy(args, output_dict):
     print "COMPUTING ACCURACY FOR ALGORITHM..."
-
-    gold_data = read_gold_data(args)
+    gold_data_file = args.gold_data
+    if args.language == 'ger':
+        gold_data_file = 'gold_data_ger.json'
+    gold_data = read_gold_data(gold_data_file)
     eval = [(key,output_dict[key]==gold_data[key]) for key in gold_data]
     counter = 0
 
@@ -32,7 +34,7 @@ def compute_algo_accuracy(args, output_dict):
                 print "\tExpected coreference set: ", expected
                 print "\tOutput coreference set: ", predicted
 
-    accuracy = float(counter)/90
+    accuracy = float(counter)/len(eval)
     print "Accuracy: %s" % (accuracy)
                 
 
@@ -41,9 +43,6 @@ def compute_corenlp_accuracy(args):
     if args.language == 'ger':
         gold_data_file = 'gold_data_ger.json'
     gold_data = read_gold_data(gold_data_file)
-    print gold_data
-    return
-
 
     for model in models:
         print "COMPUTING ACCURACY FOR %s MODEL..." % (model)
@@ -101,8 +100,8 @@ def convert_corenlp_output(filename):
     else:
         return ()
 
-def read_gold_data(args):
-    with open(args) as f:
+def read_gold_data(gold_data_file):
+    with open(gold_data_file) as f:
         gold_data = json.load(f)
 
     dict = defaultdict(tuple)
