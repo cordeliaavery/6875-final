@@ -1,6 +1,5 @@
 import re
 
-
 class NodeError(Exception):
     def __init__(self, expression):
         self.expression = expression
@@ -168,7 +167,6 @@ class Bar:
 
             # genitives
             if t.dummy() and not t.collapse():
-            #if False and not t.collapse():
                 self.__children += t.get_children()
                 for c in t.get_children():
                     c.set_parent(parent)
@@ -179,6 +177,7 @@ class Bar:
                  parent.tag() == 'S' and (t.config() and \
                                           not re.search("nom", t.config()["case"]) and \
                                           t.config()["type"] != 'R'):
+                print "ECM HERE"
                 parent.hold(t)
             else:
                 if t.holding():

@@ -29,7 +29,7 @@ def compute_algo_accuracy(args, output_dict):
         elif not eval[i][1]:
             expected = gold_data[eval[i][0]]
             predicted = output_dict[eval[i][0]]
-            if args.v:
+            if args.verbose:
                 print "Sentence number %s does not match." % (eval[i][0])
                 print "\tExpected coreference set: ", expected
                 print "\tOutput coreference set: ", predicted
@@ -56,7 +56,7 @@ def compute_corenlp_accuracy(args):
             elif not eval[i][1]:
                 expected = gold_data[eval[i][0]]
                 predicted = corenlp_data[eval[i][0]]
-                if args.v:
+                if args.verbose:
                     print "Sentence number %s does not match." % (eval[i][0])
                     print "\tExpected coreference set: ", expected
                     print "\tOutput coreference set: ", predicted
@@ -169,11 +169,16 @@ def main(args):
                     output = ()
                 
 
-        for grp in candidate_matches.values():
-            for grp_1 in candidate_matches.values():
-                if grp & grp_1:
-                    if len(grp - grp_1) != 0 or len(grp_1-grp) != 0:
-                        print "MISMATCH"
+        if args.verbose:
+            broken = False
+            for grp in candidate_matches.values():
+                if broken: break
+                for grp_1 in candidate_matches.values():
+                    if grp & grp_1:
+                        if len(grp - grp_1) != 0 or len(grp_1-grp) != 0:
+                            print "MISMATCH"
+                            broken = True
+                            break
 
         sentence_count += 1
         if Tree.syntax_correction:
@@ -188,7 +193,8 @@ def main(args):
     for key in output_dict:
         output_dict[key] = sorted(output_dict[key])
 
-    print "Percent with syntax correction: ", float(corrected_count)/sentence_count
+    print "Number with syntax correction:", corrected_count, "of", sentence_count
+    print "Percent with syntax correction:", float(corrected_count)/sentence_count
 
     if args.language=="eng":
         compute_corenlp_accuracy(args)
@@ -203,7 +209,7 @@ if __name__ == "__main__":
     parser.add_argument("-s",
                         "--sentences",
                         default="binding_dataset.deterministic.json",
-                        help="CoreNLP output containing sentences")
+                        help="CoreNLP output containing parses for input sentences")
 
     parser.add_argument("-g",
                         "--gold_data",
@@ -221,6 +227,7 @@ if __name__ == "__main__":
                         help="json input for parameter settings. Should not need anything other than the default!")
 
     parser.add_argument("-v",
+                        "--verbose",
                         action="store_true",
                         help="set to true to output mismatched coreference sets")
 
