@@ -19,6 +19,7 @@ def compute_algo_accuracy(args, output_dict):
     if args.language == 'ger':
         gold_data_file = 'gold_data_ger.json'
     gold_data = read_gold_data(gold_data_file)
+    print output_dict
 
     eval = [(key,output_dict[key]==gold_data[key]) for key in gold_data]
     counter = 0
@@ -141,8 +142,8 @@ def main(args):
 
         sentNum = sentence["index"]+1
         output = ()
-        #tree_to_parse.pretty_print()
-
+        tree_to_parse.pretty_print()
+        
         for candidate in filter(lambda x: x.config(), Tree.PR_nodes):
             print "Candidate:", candidate.get_string(), candidate.leaf_range()
             print "Results:"
