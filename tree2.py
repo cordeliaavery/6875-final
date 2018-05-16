@@ -27,6 +27,8 @@ class Tree:
             Tree.NP_nodes.add(self)
         elif self.__tag == 'PRP':
             Tree.PR_nodes.add(parent)
+        elif self.__tag == 'PPER':
+            Tree.PR_nodes.add(parent)
 
         self.__config = None
 

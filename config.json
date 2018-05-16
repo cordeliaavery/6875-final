@@ -285,19 +285,25 @@
                 "gender": "f",
                 "person": "t",
                 "count": "s",
-                "type": "R"
+                "case": "obj|dat|nom",
+                "type": "R",
+                "animate": true
             },
             "Johann": {
                 "gender": "m",
                 "person": "t",
                 "count": "s",
-                "type": "R"
+                "case": "obj|dat|nom",
+                "type": "R",
+                "animate": true
             },
             "Wilhelm": {
                 "gender": "m",
                 "person": "t",
                 "count": "s",
-                "type": "R"
+                "case": "obj|dat|nom",
+                "type": "R",
+                "animate": true
             },
             "ich": {
                 "gender": "[fm]",
