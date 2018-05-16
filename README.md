@@ -21,5 +21,6 @@ optional arguments:
   -o OUTPUT_FILE, --output_file OUTPUT_FILE
 ```
 
-The code for the main algorithm can be found in `algorithm_cls.py`, while the code for the tree construction can be found in `tree2.py`. English and German raw data can be found in `binding_dataset.txt` and `auf_deutsch.txt`, and their respective parses are found in `binding_dataset.deterministic.json` and `auf_deutsch.json`. Gold data is found in `gold_data.json` and `gold_data_ger.json`, and all other output from `CoreNLP` is found in `data/`.
+The code for the main algorithm can be found in `algorithm_cls.py`, while the code for the tree construction can be found in `tree2.py`. English and German raw data can be found in `binding_dataset.txt` and `auf_deutsch.txt`, and their respective parses are found in `binding_dataset.deterministic.json` and `auf_deutsch.json`. Gold data is found in `gold_data.json` and `gold_data_ger.json`, and all other output from `CoreNLP` is found in `dataset/`. All code can be found at 
+https://github.com/cordeliaavery/6875-final.
 
