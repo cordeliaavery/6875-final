@@ -15,11 +15,11 @@ head_settings = {}
 models = ["deterministic", "neural", "statistical"]
 
 def compute_algo_accuracy(args, output_dict):
-    print "COMPUTING ACCURACY FOR ALGORITHM..."
     gold_data_file = args.gold_data
     if args.language == 'ger':
         gold_data_file = 'gold_data_ger.json'
     gold_data = read_gold_data(gold_data_file)
+
     eval = [(key,output_dict[key]==gold_data[key]) for key in gold_data]
     counter = 0
 
@@ -35,7 +35,7 @@ def compute_algo_accuracy(args, output_dict):
                 print "\tOutput coreference set: ", predicted
 
     accuracy = float(counter)/len(eval)
-    print "Accuracy: %s" % (accuracy)
+    print "Accuracy for algorithm: %s" % (accuracy)
                 
 
 def compute_corenlp_accuracy(args):
@@ -45,8 +45,6 @@ def compute_corenlp_accuracy(args):
     gold_data = read_gold_data(gold_data_file)
 
     for model in models:
-        print "COMPUTING ACCURACY FOR %s MODEL..." % (model)
-
         corenlp_data = convert_all_sentences(model)
         eval = [(key,corenlp_data[str(key)]==gold_data[key]) for key in gold_data]
 
@@ -64,7 +62,7 @@ def compute_corenlp_accuracy(args):
                     print "\tOutput coreference set: ", predicted
 
         accuracy = float(counter)/len(eval)
-        print "Accuracy: %s" % (accuracy)
+        print "Accuracy for %s model: %s" % (model,accuracy)
 
 
 def convert_all_sentences(model):
