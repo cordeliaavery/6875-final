@@ -6,35 +6,44 @@ HEADS = {'NP', 'S', 'VP'}
 
 def is_genitive(node):
     if not node.config():
+        # must explicitly licensed
         return False
+
     if node.config()["case"] == "gen":
+        # if this is the only possible case, assume true
         return True
     elif re.search("gen", node.config()["case"]):
+        # otherwise, have to verify that it's genitive
         assert (node.tag() == "NP")
         return node.parent() and node.parent().tag() == "NP"
 
 def match(pro, ante):
     if not pro:
+        # if not pass a base node, assume they match
         return True
 
     c1 = pro.config()
     c2 = ante.config()
     if not c1 or not c2:
+        # if both nodes are specified, they must have valid configs
         return False
 
     for param in ["gender", "person", "count"]:
-        # forces agreement
+        # forces agreement via regex match
         if not re.search(c1[param], c2[param]):
             return False
 
     for param in ["animate"]:
+        # selectional constraints are implemented
+        # using booleans, default set to false
         if c1.get(param, False) != c2.get(param, False):
             return False
 
     return True
 
 def get_governed_nodes(node, base, passed_S=False, heads=HEADS, include_non_matches=False):
-    # nodes governed by this node
+    # nodes governed by this node, not including base node
+    # to get nodes c-commanded by a node, pass in node's parent, with base=node
     govs = set()
     for n in node.get_children():
         if n == base:
