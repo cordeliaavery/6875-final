@@ -1,0 +1,821 @@
+{
+  "docId": "binding_92.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (S\n      (NP\n        (NP (NNP Mary))\n        (CC and)\n        (NP (PRP$ her) (NN sister)))\n      (VP (VBD planned)\n        (S\n          (VP (TO to)\n            (VP (VB leave)\n              (PP (RB before)\n                (NP (NN 8AM))))))))\n    (, ,)\n    (CC but)\n    (S\n      (NP (DT the) (NNS girls))\n      (ADVP (RB soon))\n      (VP (VBD realized)\n        (SBAR (IN that)\n          (S\n            (NP (DT this))\n            (VP (VBD was)\n              (ADJP (JJ unrealistic)))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 5,
+          "dependentGloss": "planned"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "planned",
+          "dependent": 1,
+          "dependentGloss": "Mary"
+        },
+        {
+          "dep": "cc",
+          "governor": 1,
+          "governorGloss": "Mary",
+          "dependent": 2,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 4,
+          "governorGloss": "sister",
+          "dependent": 3,
+          "dependentGloss": "her"
+        },
+        {
+          "dep": "conj",
+          "governor": 1,
+          "governorGloss": "Mary",
+          "dependent": 4,
+          "dependentGloss": "sister"
+        },
+        {
+          "dep": "mark",
+          "governor": 7,
+          "governorGloss": "leave",
+          "dependent": 6,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 5,
+          "governorGloss": "planned",
+          "dependent": 7,
+          "dependentGloss": "leave"
+        },
+        {
+          "dep": "advmod",
+          "governor": 9,
+          "governorGloss": "8AM",
+          "dependent": 8,
+          "dependentGloss": "before"
+        },
+        {
+          "dep": "nmod",
+          "governor": 7,
+          "governorGloss": "leave",
+          "dependent": 9,
+          "dependentGloss": "8AM"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "planned",
+          "dependent": 10,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 5,
+          "governorGloss": "planned",
+          "dependent": 11,
+          "dependentGloss": "but"
+        },
+        {
+          "dep": "det",
+          "governor": 13,
+          "governorGloss": "girls",
+          "dependent": 12,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 15,
+          "governorGloss": "realized",
+          "dependent": 13,
+          "dependentGloss": "girls"
+        },
+        {
+          "dep": "advmod",
+          "governor": 15,
+          "governorGloss": "realized",
+          "dependent": 14,
+          "dependentGloss": "soon"
+        },
+        {
+          "dep": "conj",
+          "governor": 5,
+          "governorGloss": "planned",
+          "dependent": 15,
+          "dependentGloss": "realized"
+        },
+        {
+          "dep": "mark",
+          "governor": 19,
+          "governorGloss": "unrealistic",
+          "dependent": 16,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 19,
+          "governorGloss": "unrealistic",
+          "dependent": 17,
+          "dependentGloss": "this"
+        },
+        {
+          "dep": "cop",
+          "governor": 19,
+          "governorGloss": "unrealistic",
+          "dependent": 18,
+          "dependentGloss": "was"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 15,
+          "governorGloss": "realized",
+          "dependent": 19,
+          "dependentGloss": "unrealistic"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "planned",
+          "dependent": 20,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 5,
+          "dependentGloss": "planned"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "planned",
+          "dependent": 1,
+          "dependentGloss": "Mary"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 7,
+          "governorGloss": "leave",
+          "dependent": 1,
+          "dependentGloss": "Mary"
+        },
+        {
+          "dep": "cc",
+          "governor": 1,
+          "governorGloss": "Mary",
+          "dependent": 2,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 4,
+          "governorGloss": "sister",
+          "dependent": 3,
+          "dependentGloss": "her"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 1,
+          "governorGloss": "Mary",
+          "dependent": 4,
+          "dependentGloss": "sister"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "planned",
+          "dependent": 4,
+          "dependentGloss": "sister"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 7,
+          "governorGloss": "leave",
+          "dependent": 4,
+          "dependentGloss": "sister"
+        },
+        {
+          "dep": "mark",
+          "governor": 7,
+          "governorGloss": "leave",
+          "dependent": 6,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 5,
+          "governorGloss": "planned",
+          "dependent": 7,
+          "dependentGloss": "leave"
+        },
+        {
+          "dep": "advmod",
+          "governor": 9,
+          "governorGloss": "8AM",
+          "dependent": 8,
+          "dependentGloss": "before"
+        },
+        {
+          "dep": "nmod",
+          "governor": 7,
+          "governorGloss": "leave",
+          "dependent": 9,
+          "dependentGloss": "8AM"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "planned",
+          "dependent": 10,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 5,
+          "governorGloss": "planned",
+          "dependent": 11,
+          "dependentGloss": "but"
+        },
+        {
+          "dep": "det",
+          "governor": 13,
+          "governorGloss": "girls",
+          "dependent": 12,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 15,
+          "governorGloss": "realized",
+          "dependent": 13,
+          "dependentGloss": "girls"
+        },
+        {
+          "dep": "advmod",
+          "governor": 15,
+          "governorGloss": "realized",
+          "dependent": 14,
+          "dependentGloss": "soon"
+        },
+        {
+          "dep": "conj:but",
+          "governor": 5,
+          "governorGloss": "planned",
+          "dependent": 15,
+          "dependentGloss": "realized"
+        },
+        {
+          "dep": "mark",
+          "governor": 19,
+          "governorGloss": "unrealistic",
+          "dependent": 16,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 19,
+          "governorGloss": "unrealistic",
+          "dependent": 17,
+          "dependentGloss": "this"
+        },
+        {
+          "dep": "cop",
+          "governor": 19,
+          "governorGloss": "unrealistic",
+          "dependent": 18,
+          "dependentGloss": "was"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 15,
+          "governorGloss": "realized",
+          "dependent": 19,
+          "dependentGloss": "unrealistic"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "planned",
+          "dependent": 20,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 5,
+          "dependentGloss": "planned"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "planned",
+          "dependent": 1,
+          "dependentGloss": "Mary"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 7,
+          "governorGloss": "leave",
+          "dependent": 1,
+          "dependentGloss": "Mary"
+        },
+        {
+          "dep": "cc",
+          "governor": 1,
+          "governorGloss": "Mary",
+          "dependent": 2,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 4,
+          "governorGloss": "sister",
+          "dependent": 3,
+          "dependentGloss": "her"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 1,
+          "governorGloss": "Mary",
+          "dependent": 4,
+          "dependentGloss": "sister"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 5,
+          "governorGloss": "planned",
+          "dependent": 4,
+          "dependentGloss": "sister"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 7,
+          "governorGloss": "leave",
+          "dependent": 4,
+          "dependentGloss": "sister"
+        },
+        {
+          "dep": "mark",
+          "governor": 7,
+          "governorGloss": "leave",
+          "dependent": 6,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 5,
+          "governorGloss": "planned",
+          "dependent": 7,
+          "dependentGloss": "leave"
+        },
+        {
+          "dep": "advmod",
+          "governor": 9,
+          "governorGloss": "8AM",
+          "dependent": 8,
+          "dependentGloss": "before"
+        },
+        {
+          "dep": "nmod",
+          "governor": 7,
+          "governorGloss": "leave",
+          "dependent": 9,
+          "dependentGloss": "8AM"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "planned",
+          "dependent": 10,
+          "dependentGloss": ","
+        },
+        {
+          "dep": "cc",
+          "governor": 5,
+          "governorGloss": "planned",
+          "dependent": 11,
+          "dependentGloss": "but"
+        },
+        {
+          "dep": "det",
+          "governor": 13,
+          "governorGloss": "girls",
+          "dependent": 12,
+          "dependentGloss": "the"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 15,
+          "governorGloss": "realized",
+          "dependent": 13,
+          "dependentGloss": "girls"
+        },
+        {
+          "dep": "advmod",
+          "governor": 15,
+          "governorGloss": "realized",
+          "dependent": 14,
+          "dependentGloss": "soon"
+        },
+        {
+          "dep": "conj:but",
+          "governor": 5,
+          "governorGloss": "planned",
+          "dependent": 15,
+          "dependentGloss": "realized"
+        },
+        {
+          "dep": "mark",
+          "governor": 19,
+          "governorGloss": "unrealistic",
+          "dependent": 16,
+          "dependentGloss": "that"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 19,
+          "governorGloss": "unrealistic",
+          "dependent": 17,
+          "dependentGloss": "this"
+        },
+        {
+          "dep": "cop",
+          "governor": 19,
+          "governorGloss": "unrealistic",
+          "dependent": 18,
+          "dependentGloss": "was"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 15,
+          "governorGloss": "realized",
+          "dependent": 19,
+          "dependentGloss": "unrealistic"
+        },
+        {
+          "dep": "punct",
+          "governor": 5,
+          "governorGloss": "planned",
+          "dependent": 20,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 0,
+          "docTokenEnd": 1,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "Mary",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 8,
+          "docTokenEnd": 9,
+          "tokenBegin": 8,
+          "tokenEnd": 9,
+          "text": "8AM",
+          "characterOffsetBegin": 44,
+          "characterOffsetEnd": 47,
+          "ner": "TIME",
+          "normalizedNER": "T08:00",
+          "timex": {
+            "tid": "t1",
+            "type": "TIME",
+            "value": "T08:00"
+          }
+        },
+        {
+          "docTokenBegin": 2,
+          "docTokenEnd": 3,
+          "tokenBegin": 2,
+          "tokenEnd": 3,
+          "text": "her",
+          "characterOffsetBegin": 9,
+          "characterOffsetEnd": 12,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "Mary",
+          "originalText": "Mary",
+          "lemma": "Mary",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "and",
+          "originalText": "and",
+          "lemma": "and",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 8,
+          "pos": "CC",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "her",
+          "originalText": "her",
+          "lemma": "she",
+          "characterOffsetBegin": 9,
+          "characterOffsetEnd": 12,
+          "pos": "PRP$",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "sister",
+          "originalText": "sister",
+          "lemma": "sister",
+          "characterOffsetBegin": 13,
+          "characterOffsetEnd": 19,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "planned",
+          "originalText": "planned",
+          "lemma": "plan",
+          "characterOffsetBegin": 20,
+          "characterOffsetEnd": 27,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "to",
+          "originalText": "to",
+          "lemma": "to",
+          "characterOffsetBegin": 28,
+          "characterOffsetEnd": 30,
+          "pos": "TO",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "leave",
+          "originalText": "leave",
+          "lemma": "leave",
+          "characterOffsetBegin": 31,
+          "characterOffsetEnd": 36,
+          "pos": "VB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "before",
+          "originalText": "before",
+          "lemma": "before",
+          "characterOffsetBegin": 37,
+          "characterOffsetEnd": 43,
+          "pos": "RB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 9,
+          "word": "8AM",
+          "originalText": "8AM",
+          "lemma": "8am",
+          "characterOffsetBegin": 44,
+          "characterOffsetEnd": 47,
+          "pos": "NN",
+          "ner": "TIME",
+          "normalizedNER": "T08:00",
+          "speaker": "PER0",
+          "before": " ",
+          "after": "",
+          "timex": {
+            "tid": "t1",
+            "type": "TIME",
+            "value": "T08:00"
+          }
+        },
+        {
+          "index": 10,
+          "word": ",",
+          "originalText": ",",
+          "lemma": ",",
+          "characterOffsetBegin": 47,
+          "characterOffsetEnd": 48,
+          "pos": ",",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 11,
+          "word": "but",
+          "originalText": "but",
+          "lemma": "but",
+          "characterOffsetBegin": 49,
+          "characterOffsetEnd": 52,
+          "pos": "CC",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 12,
+          "word": "the",
+          "originalText": "the",
+          "lemma": "the",
+          "characterOffsetBegin": 53,
+          "characterOffsetEnd": 56,
+          "pos": "DT",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 13,
+          "word": "girls",
+          "originalText": "girls",
+          "lemma": "girl",
+          "characterOffsetBegin": 57,
+          "characterOffsetEnd": 62,
+          "pos": "NNS",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 14,
+          "word": "soon",
+          "originalText": "soon",
+          "lemma": "soon",
+          "characterOffsetBegin": 63,
+          "characterOffsetEnd": 67,
+          "pos": "RB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 15,
+          "word": "realized",
+          "originalText": "realized",
+          "lemma": "realize",
+          "characterOffsetBegin": 68,
+          "characterOffsetEnd": 76,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 16,
+          "word": "that",
+          "originalText": "that",
+          "lemma": "that",
+          "characterOffsetBegin": 77,
+          "characterOffsetEnd": 81,
+          "pos": "IN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 17,
+          "word": "this",
+          "originalText": "this",
+          "lemma": "this",
+          "characterOffsetBegin": 82,
+          "characterOffsetEnd": 86,
+          "pos": "DT",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 18,
+          "word": "was",
+          "originalText": "was",
+          "lemma": "be",
+          "characterOffsetBegin": 87,
+          "characterOffsetEnd": 90,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 19,
+          "word": "unrealistic",
+          "originalText": "unrealistic",
+          "lemma": "unrealistic",
+          "characterOffsetBegin": 91,
+          "characterOffsetEnd": 102,
+          "pos": "JJ",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 20,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 102,
+          "characterOffsetEnd": 103,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "3": [
+      {
+        "id": 0,
+        "text": "Mary",
+        "type": "PROPER",
+        "number": "SINGULAR",
+        "gender": "FEMALE",
+        "animacy": "ANIMATE",
+        "startIndex": 1,
+        "endIndex": 2,
+        "headIndex": 1,
+        "sentNum": 1,
+        "position": [
+          1,
+          1
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 3,
+        "text": "her",
+        "type": "PRONOMINAL",
+        "number": "SINGULAR",
+        "gender": "FEMALE",
+        "animacy": "ANIMATE",
+        "startIndex": 3,
+        "endIndex": 4,
+        "headIndex": 3,
+        "sentNum": 1,
+        "position": [
+          1,
+          4
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}
