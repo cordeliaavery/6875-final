@@ -4,6 +4,12 @@ import re
 # want to traverse to the nearest node to determine C-command
 HEADS = {'NP', 'S', 'VP'}
 
+
+"""
+node: target node
+
+return: whether or not this node is a genitive case
+"""
 def is_genitive(node):
     if not node.config():
         # must explicitly licensed
@@ -17,6 +23,13 @@ def is_genitive(node):
         assert (node.tag() == "NP")
         return node.parent() and node.parent().tag() == "NP"
 
+
+"""
+pro:  target node
+ante: potential antecedent
+
+return: boolean indicating whether the feature specifications are consistent
+"""
 def match(pro, ante):
     if not pro:
         # if not pass a base node, assume they match
@@ -41,6 +54,16 @@ def match(pro, ante):
 
     return True
 
+
+"""
+node:     current governor
+base:     target node we want to match
+passed_S: if the target base is not within the smallest S (only match R-expressions)
+heads:    head type to match, default includes NP, VP, S
+included_non_matches: match all types of head as opposed to ones with agreement
+
+returns: set of nodes governed by node, of type head, matching base
+"""
 def get_governed_nodes(node, base, passed_S=False, heads=HEADS, include_non_matches=False):
     # nodes governed by this node, not including base node
     # to get nodes c-commanded by a node, pass in node's parent, with base=node
@@ -56,7 +79,15 @@ def get_governed_nodes(node, base, passed_S=False, heads=HEADS, include_non_matc
             ((not passed_S  and n.config()["type"] != "A") or \
              n.config()["type"] == "R")) and \
            not is_genitive(n):
+            # only add heads of the target type
+            # that match the target features
+            # whose config is specified
+            # and where binding conditions apply
+
             govs.add(n)
+
+        # recurse on n's child nodes
+        # need to search past S nodes to find R expressions
         govs |= get_governed_nodes(n,
                                    base,
                                    passed_S or n.tag() == 'S',
@@ -66,6 +97,14 @@ def get_governed_nodes(node, base, passed_S=False, heads=HEADS, include_non_matc
     return govs
         
 
+"""
+node:  current node
+r_exp: if target is an expression
+base:  target node
+heads: head types to match
+
+return: set of nodes that C-command current node that match base, if specified
+"""
 def get_c_commanding_nodes(node, r_exp=False, base=None, heads=HEADS):
     # nodes that c-command this node
 
@@ -91,7 +130,12 @@ def get_c_commanding_nodes(node, r_exp=False, base=None, heads=HEADS):
     return c_commands
 
 
+"""
+node:   target node
+NP_set: set of all NP nodes in the current sentence
 
+return: set of possible antecedents for node
+"""
 def resolve_anaphor(node, NP_set):
     # Begin at NP node immediately dominating pronoun
 

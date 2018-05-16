@@ -136,7 +136,10 @@ def main(args):
 
     output_dict = defaultdict(tuple)
 
+    sentence_count = 0
+    corrected_count = 0
     for sentence in sorted(parser_output["sentences"], key=lambda x: x["index"]):
+        Tree.syntax_correction = False
         list_hier = process_string(sentence["parse"], pos_mapping)
         tree_to_parse = Tree(list_hier[0], 0)
         print tree_to_parse.get_string()
@@ -172,6 +175,10 @@ def main(args):
                     if len(grp - grp_1) != 0 or len(grp_1-grp) != 0:
                         print "MISMATCH"
 
+        sentence_count += 1
+        if Tree.syntax_correction:
+            corrected_count += 1
+
         print '-'*20
         Tree.PR_nodes.clear()
         Tree.NP_nodes.clear()
@@ -180,6 +187,8 @@ def main(args):
 
     for key in output_dict:
         output_dict[key] = sorted(output_dict[key])
+
+    print "Percent with syntax correction: ", float(corrected_count)/sentence_count
 
     if args.language=="eng":
         compute_corenlp_accuracy(args)

@@ -10,6 +10,7 @@ class Tree:
     lexicon = None
     NP_nodes = set()
     PR_nodes = set()
+    syntax_correction = False
 
     def __init__(self, vals, root_idx, local_idx=0, prior_leaves=1, parent=None):
         self.__parent = parent
@@ -169,6 +170,8 @@ class Bar:
                 self.__children += t.get_children()
                 for c in t.get_children():
                     c.set_parent(parent)
+                Tree.syntax_correction = True
+
             elif t.tag() == 'NP' and first_child and \
                  parent.tag() == 'S' and (t.config() and \
                                           not re.search("nom", t.config()["case"]) and \
@@ -179,7 +182,7 @@ class Bar:
                     # TODO: leave a trace in the embedded clause
                     self.__children.append(t.holding())
                     self.__children[-1].set_parent(parent)
-                    
+                    Tree.syntax_correction = True
                 self.__children.append(t)
 
             first_child = False
