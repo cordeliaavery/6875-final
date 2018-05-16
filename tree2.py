@@ -165,12 +165,13 @@ class Bar:
                 assert (parent.tag() == "NP")
                 parent.set_dummy()
 
-            # datives
+            # genitives
             if t.dummy() and not t.collapse():
             #if False and not t.collapse():
                 self.__children += t.get_children()
                 for c in t.get_children():
                     c.set_parent(parent)
+            ### ECM constructions
             elif t.tag() == 'NP' and first_child and \
                  parent.tag() == 'S' and (t.config() and \
                                           not re.search("nom", t.config()["case"]) and \

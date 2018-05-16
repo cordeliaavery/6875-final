@@ -38,6 +38,8 @@ def match(pro, ante):
         # using booleans, default set to false
         if c1.get(param, False) != c2.get(param, False):
             return False
+            #feature checking
+            #continue
 
     return True
 

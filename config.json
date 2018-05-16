@@ -1,8 +1,23 @@
 {
-    "eng": {
-        "I_dir": "left",
+    "eng": { "I_dir": "left",
         "V_dir": "left",
         "lexicon": {
+            "girls": {
+                "gender": "f",
+                "person": "t",
+                "count": "p",
+                "case": "obj|dat|nom",
+                "type": "R",
+                "animate": true
+            },
+            "sister": {
+                "gender": "f",
+                "person": "t",
+                "count": "s",
+                "case": "obj|dat|nom",
+                "type": "R",
+                "animate": true
+            },
             "mother": {
                 "gender": "f",
                 "person": "t",
