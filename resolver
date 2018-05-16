@@ -120,6 +120,7 @@ def main(args):
     global lexicon
     gold_data_file = args.gold_data
     sentences = args.sentences
+    pos_mappings = {}
     if args.language == 'ger':
         gold_data_file = 'gold_data_ger.json'
         sentences = 'auf_deutsch.json'
@@ -127,6 +128,7 @@ def main(args):
     with open(args.config_file) as c:
         params = json.load(c)
     lexicon = params[args.language]['lexicon']
+    pos_mapping = params[args.language].get('pos_mapping', {})
     Tree.lexicon = lexicon
 
     with open(sentences) as s:
@@ -135,9 +137,12 @@ def main(args):
     output_dict = defaultdict(tuple)
 
     for sentence in sorted(parser_output["sentences"], key=lambda x: x["index"]):
-        list_hier = process_string(sentence["parse"])
+        list_hier = process_string(sentence["parse"], pos_mapping)
         tree_to_parse = Tree(list_hier[0], 0)
         print tree_to_parse.get_string()
+
+
+        candidate_matches = {}
 
         sentNum = sentence["index"]+1
         output = ()
@@ -146,8 +151,11 @@ def main(args):
         for candidate in filter(lambda x: x.config(), Tree.PR_nodes):
             print "Candidate:", candidate.get_string(), candidate.leaf_range()
             print "Results:"
+            candidate_matches[candidate] = {candidate,}
             proposed = resolve_anaphor(candidate, Tree.NP_nodes)
+
             for proposal in proposed:
+                candidate_matches[candidate].add(proposal)
                 print proposal.get_string(), proposal.leaf_range()
 
             if not output:
@@ -158,6 +166,13 @@ def main(args):
                 else:
                     output = ()
                 
+
+        for grp in candidate_matches.values():
+            for grp_1 in candidate_matches.values():
+                if grp & grp_1:
+                    if len(grp - grp_1) != 0 or len(grp_1-grp) != 0:
+                        print "MISMATCH"
+
         print '-'*20
         Tree.PR_nodes.clear()
         Tree.NP_nodes.clear()

@@ -1,5 +1,6 @@
 import re
 
+
 class NodeError(Exception):
     def __init__(self, expression):
         self.expression = expression
@@ -18,10 +19,11 @@ class Tree:
 
         children = vals[1:][0]
 
-        if self.__tag== 'PRP$':
+        if self.__tag== 'PRP$' or (self.__tag == 'PRP' and parent.tag() != 'NP'):
             assert (isinstance(children, str) or isinstance(children, unicode))
             self.__tag = 'NP'
             children = [[u'PRP', children],]
+
 
         if self.__tag == 'NP':
             Tree.NP_nodes.add(self)
@@ -61,6 +63,8 @@ class Tree:
         return int(bool(self.__config and self.__config.get("dec")))
 
     def set_genitive(self, dec=False):
+        #print "SETTING GEN"
+        #print "parent:", self.__parent.tag(), self.__parent.__parent.tag()
         if self.__config:
             self.__config["case"] = "gen"
             self.__config["dec"] = dec
@@ -128,6 +132,8 @@ class Bar:
         self.__children = []
         for x in vals:
             t = Tree(x, root_idx, c_index, prior_leaves + self.__num_leaves, parent)
+            #if t.tag() == 'NP':
+            #    print "NEST:", self.__parent.tag(), t.get_string()
             c_index += t.size_of_subtree()
             self.__num_leaves += t.num_leaves()
             self.__children.append(t)
@@ -149,9 +155,32 @@ class Bar:
                     assert (parent in Tree.NP_nodes)
                 parent.set_config(conf)
 
+        # genitive structures behave slightly different
         for c in self.__children:
             if c.tag() == 'POS':
                 parent.set_genitive(True)
+
+        # full names such as "Mr. Smith" and "Betty Lou" ought to
+        # get their component name's feature markings
+        name_index = find_full_names(self.__children)
+        while (name_index != -1):
+            conf = intersect_configs(self.__children[name_index],
+                                     self.__children[name_index + 1],
+                                     False)
+            assert (conf)
+            self.__parent.set_config(conf)
+            print parent.config()
+            name_index = find_full_names(self.__children[name_index + 2:])
+
+        # coordinating conjunctions (i.e., "and") take two nouns
+        # and should mark their parent node as plural
+        conj_index = find_conj(self.__children)
+        while (conj_index != -1):
+            conf = intersect_configs(self.__children[conj_index-1],
+                                     self.__children[conj_index+1])
+            assert (conf)
+            self.__parent.set_config(conf)
+            conj_index = find_conj(self.__children[conj_index + 1:])
 
         if Bar.disable_pruning:
             return
@@ -261,9 +290,24 @@ def find_pair(treelist):
 
     return -1, -1, -1
 
+def find_conj(treelist):
+    for x in range(1, len(treelist) - 1):
+        if treelist[x].tag() == 'CC':
+            if treelist[x-1].tag().startswith('N') and \
+               treelist[x+1].tag().startswith('N') :
+                return x
+    return -1
+
+def find_full_names(treelist):
+    for x in range(len(treelist) - 1):
+        if treelist[x].tag() == 'NNP' and \
+           treelist[x+1].tag() == 'NNP':
+            return x
+    return -1
+
 WS = re.compile("\s")
 
-def process_string(val):
+def process_string(val, pos_mapping={}):
     current_str = ""
     current_depth = 0
     completed_stack = []
@@ -293,6 +337,9 @@ def process_string(val):
         elif WS.match(c):
             if current_str:
                 if not waiting_stack[-1]:
+                    prev_str = current_str
+                    current_str = pos_mapping.get(current_str, current_str)
+                    assert (current_str == prev_str)
                     waiting_stack[-1].append(current_str)
                     waiting_stack[-1].append([])
                 else:
@@ -302,3 +349,84 @@ def process_string(val):
         else:
             current_str += c
     return waiting_stack
+
+def match(pro, ante, params):
+    if not pro:
+        return True
+
+    c1 = pro.config()
+    c2 = ante.config()
+    if not c1 or not c2:
+        return False
+
+    for param in params:
+        # forces agreement                                                                   
+        if not re.search(c1[param], c2[param]):
+            return False
+
+    return True
+
+
+def intersect_configs(t1, t2, in_coord=True):
+    c1 = t1.config()
+    c2 = t2.config()
+
+    ands = {"gender", "person", "count", "case"}
+    ors = {"type"}
+    char_match = re.compile("\[[^\[\]]+\]")
+
+    new_config = {}
+    for k, v1 in c1.items():
+        v2 = c2.get(k)
+        if k in ands:
+            c = True
+            assert (re.search(v1, v2))
+            # want to intersect these
+            # will be in regex form
+            if char_match.match(v1):
+                set_1 = set(v1[1:-1])
+            else:
+                c = False
+                set_1 = set(v1.split("|"))
+
+            if char_match.match(v2):
+                set_2 = set(v2[1:-1])
+            else:
+                c = False
+                set_2 =set(v2.split("|"))
+
+            set_inter = set_1 & set_2
+            if not set_inter:
+                if k == "gender":
+                    # allow for gender neutral in this case
+                    set_inter = {"[mf]"}
+                else:
+                    return None
+
+            if c:
+                v = "[" + "".join(set_inter) + "]"
+            else:
+                v = "|".join(set_inter)
+
+            new_config[k] = v
+
+        elif k in ors:
+            # or these
+            if v1 == v2:
+                new_config[k] = v1
+            elif v1 == 'R' or v2 == 'R':
+                new_config[k] = 'R'
+            elif v1 == 'P' or v2 == 'P':
+                new_config[k] = 'P'
+            else:
+                new_config[k] = 'A'
+
+        else:
+            if v1 and not v2 or v1 != v2:
+                return None
+            new_config[k] = v1
+
+    if in_coord:
+        new_config["count"] = "p"
+
+    return new_config

@@ -11,6 +11,30 @@
                 "type": "R",
                 "animate": true
             },
+            "father": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "case": "obj|dat|nom",
+                "type": "R",
+                "animate": true
+            },
+            "Smith": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "s",
+                "case":"obj|dat|nom",
+                "type":"R",
+                "animate": true
+            },
+            "Mr.": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "case":"obj|dat|nom",
+                "type":"R",
+                "animate": true
+            },
             "Mary": {
                 "gender": "f",
                 "person": "t",
@@ -251,6 +275,14 @@
                 "type": "R",
                 "animate": true
             },
+            "policeman": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "case": "obj|dat|nom",
+                "type": "R",
+                "animate": true
+            },
             "men": {
                 "gender": "m",
                 "person": "t",
@@ -269,6 +301,38 @@
             },
             "enemy": {
                 "gender": "[fm]",
+                "person": "t",
+                "count": "s",
+                "case":"obj|dat|nom",
+                "type":"R",
+                "animate": true
+            },
+            "king": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "case":"obj|dat|nom",
+                "type":"R",
+                "animate": true
+            },
+            "spouse": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "s",
+                "case":"obj|dat|nom",
+                "type":"R",
+                "animate": true
+            },
+            "driver": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "s",
+                "case":"obj|dat|nom",
+                "type":"R",
+                "animate": true
+            },
+            "chairman": {
+                "gender": "m",
                 "person": "t",
                 "count": "s",
                 "case":"obj|dat|nom",
