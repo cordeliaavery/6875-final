@@ -17,8 +17,9 @@ class Tree:
         self.__root_idx = root_idx
         self.__local_idx = local_idx
 
-        children = vals[1:][0]
+        self.__dummy = False
 
+        children = vals[1:][0]
 
         if self.__tag == 'ADV' and \
            (isinstance(children, str) or isinstance(children, unicode)) and \
@@ -71,6 +72,12 @@ class Tree:
             self.__node = Bar(children, root_idx, local_idx, prior_leaves, self)
             self.__leaf = False
 
+    def set_dummy(self):
+        self.__dummy = True
+
+    def dummy(self):
+        return self.__dummy
+
     def collapse(self):
         return int(bool(self.__config and self.__config.get("dec")))
 
@@ -103,7 +110,7 @@ class Tree:
         return self.__leaf
 
     def pretty_print(self, depth=0):
-        print(" " * depth + self.__tag + ":"), self.__config
+        print(" " * depth + self.__tag + ":")
         self.__node.pretty_print(depth + 4)
 
     def get_string(self):
@@ -131,7 +138,9 @@ class Tree:
     def leaf_range(self):
         return self.__node.min_leaf(), self.__node.max_leaf()
 
-    def local(self): return self.__local_idx
+    def set_parent(self, parent):
+        self.__parent = parent
+
 class Bar:
     disable_pruning = True
 
@@ -144,11 +153,23 @@ class Bar:
         self.__children = []
         for x in vals:
             t = Tree(x, root_idx, c_index, prior_leaves + self.__num_leaves, parent)
+
             #if t.tag() == 'NP':
             #    print "NEST:", self.__parent.tag(), t.get_string()
+
             c_index += t.size_of_subtree()
             self.__num_leaves += t.num_leaves()
-            self.__children.append(t)
+
+            if t.collapse() and parent.parent().tag() == 'NP':
+                assert (parent.tag() == "NP")
+                parent.set_dummy()
+
+            if t.dummy() and not t.collapse():
+                self.__children += t.get_children()
+                for c in t.get_children():
+                    c.set_parent(parent)
+            else:
+                self.__children.append(t)
 
         self.__size_of_subtree = c_index - local_idx
 

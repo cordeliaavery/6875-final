@@ -307,6 +307,14 @@
                 "type":"R",
                 "animate": true
             },
+            "chairman": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "case":"obj|dat|nom",
+                "type":"R",
+                "animate": true
+            },
             "king": {
                 "gender": "m",
                 "person": "t",
