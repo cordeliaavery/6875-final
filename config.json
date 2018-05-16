@@ -351,7 +351,10 @@
             "CNP": "NP",
             "PTJVZ": "PRP",
             "PPOSAT": "PRP",
-            "PTKVZ": "PRP"
+            "PTKVZ": "PRP",
+            "ADJD": "ADJP",
+            "PRF": "PRP",
+            "ART": "DET"
         },
         "I_dir": "left",
         "V_dir": "right",

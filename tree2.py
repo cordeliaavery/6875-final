@@ -19,10 +19,20 @@ class Tree:
 
         children = vals[1:][0]
 
+
+        if self.__tag == 'ADV' and \
+           (isinstance(children, str) or isinstance(children, unicode)) and \
+           children in Tree.lexicon:
+            self.__tag = 'PRP'
+
         if self.__tag== 'PRP$' or (self.__tag == 'PRP' and parent.tag() != 'NP'):
             assert (isinstance(children, str) or isinstance(children, unicode))
             self.__tag = 'NP'
             children = [[u'PRP', children],]
+        elif self.__tag== 'NNP' and parent.tag() != 'NP':
+            assert (isinstance(children, str) or isinstance(children, unicode))
+            self.__tag = 'NP'
+            children = [[u'NNP', children],]
 
 
         if self.__tag == 'NP':
@@ -93,7 +103,7 @@ class Tree:
         return self.__leaf
 
     def pretty_print(self, depth=0):
-        print(" " * depth + self.__tag + ":")
+        print(" " * depth + self.__tag + ":"), self.__config
         self.__node.pretty_print(depth + 4)
 
     def get_string(self):
