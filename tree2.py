@@ -17,6 +17,7 @@ class Tree:
         self.__root_idx = root_idx
         self.__local_idx = local_idx
 
+        self.__hold = None
         self.__dummy = False
 
         children = vals[1:][0]
@@ -52,9 +53,7 @@ class Tree:
             self.__leaf = True
 
             if self.__tag.startswith("N") or self.__tag.startswith("PR"):
-                print children
                 conf = Tree.lexicon.get(self.__node.get_string())
-                print conf
                 if not conf:
                     conf = {"gender": "[fm]",
                             "person": "t",
@@ -82,8 +81,6 @@ class Tree:
         return int(bool(self.__config and self.__config.get("dec")))
 
     def set_genitive(self, dec=False):
-        #print "SETTING GEN"
-        #print "parent:", self.__parent.tag(), self.__parent.__parent.tag()
         if self.__config:
             self.__config["case"] = "gen"
             self.__config["dec"] = dec
@@ -141,6 +138,12 @@ class Tree:
     def set_parent(self, parent):
         self.__parent = parent
 
+    def hold(self, node):
+        self.__hold = node
+
+    def holding(self):
+        return self.__hold
+
 class Bar:
     disable_pruning = True
 
@@ -151,11 +154,9 @@ class Bar:
         self.__min_leaf = prior_leaves
         self.__num_leaves = 0
         self.__children = []
+        first_child = True
         for x in vals:
             t = Tree(x, root_idx, c_index, prior_leaves + self.__num_leaves, parent)
-
-            #if t.tag() == 'NP':
-            #    print "NEST:", self.__parent.tag(), t.get_string()
 
             c_index += t.size_of_subtree()
             self.__num_leaves += t.num_leaves()
@@ -168,8 +169,20 @@ class Bar:
                 self.__children += t.get_children()
                 for c in t.get_children():
                     c.set_parent(parent)
+            elif t.tag() == 'NP' and first_child and \
+                 parent.tag() == 'S' and (t.config() and \
+                                          not re.search("nom", t.config()["case"]) and \
+                                          t.config()["type"] != 'R'):
+                parent.hold(t)
             else:
+                if t.holding():
+                    # TODO: leave a trace in the embedded clause
+                    self.__children.append(t.holding())
+                    self.__children[-1].set_parent(parent)
+                    
                 self.__children.append(t)
+
+            first_child = False
 
         self.__size_of_subtree = c_index - local_idx
 
@@ -202,7 +215,6 @@ class Bar:
                                      False)
             assert (conf)
             self.__parent.set_config(conf)
-            print parent.config()
             name_index = find_full_names(self.__children[name_index + 2:])
 
         # coordinating conjunctions (i.e., "and") take two nouns
@@ -291,6 +303,13 @@ class Head:
     def max_leaf(self):
         return self.__leaf_index + 1
 
+
+class Trace:
+    def __init__(self, parent):
+        self.__parent = parent
+
+    def parent(self):
+        return self.__parent
 
 def is_leaf(val):
     return isinstance(val, Head)
