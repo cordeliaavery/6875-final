@@ -1,15 +1,24 @@
 # 6.863-final
 
-Overleaf document:
-[Final writeup](https://www.overleaf.com/15495036jntwcxndwsts)
+Our algorithm requires a .json file containing sentences as parsed by CoreNLP. Our algorithm can be run as follows:
 
-Need pyStatParser:
-`pip install pyStatParser`
+```
+usage: ./resolver [-h] [-s SENTENCES] [-g GOLD_DATA] [-l LANGUAGE]
+                [-c CONFIG_FILE] [-v] [-o OUTPUT_FILE]
 
-Must setup CoreNLP server. Download CoreNLP (https://stanfordnlp.github.io/CoreNLP/download.html).
+optional arguments:
+  -h, --help            show this help message and exit
+  -s SENTENCES, --sentences SENTENCES
+                        CoreNLP output containing parses for input sentences
+  -g GOLD_DATA, --gold_data GOLD_DATA
+                        Gold data for binding using CoreNLP indexing scheme
+  -l LANGUAGE, --language LANGUAGE
+                        Specify 'eng' for English, 'ger' for German
+  -c CONFIG_FILE, --config_file CONFIG_FILE
+                        json input for parameter settings. Should not need
+                        anything other than the default!
+  -v, --verbose         set to true to output mismatched coreference sets
+  -o OUTPUT_FILE, --output_file OUTPUT_FILE
+```
 
-`cd stanford-corenlp-full-2018-02-27`
 
-`java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer`
-
-And then just run `python get_parse_tree.py`
