@@ -800,13 +800,13 @@
     ],
     "82" : [
       {
-        "sentNum" : 82,
+        "sentNum" : 81,
         "text" : "the man",
         "startIndex" : 7,
         "endIndex" : 9
       },
       {
-        "sentNum" : 82,
+        "sentNum" : 81,
         "text" : "himself",
         "startIndex" : 11,
         "endIndex" : 12
@@ -814,13 +814,13 @@
     ],
     "83" : [
       {
-        "sentNum" : 83,
+        "sentNum" : 82,
         "text" : "John",
         "startIndex" : 1,
         "endIndex" : 2
       },
       {
-        "sentNum" : 83,
+        "sentNum" : 82,
         "text" : "him",
         "startIndex" : 7,
         "endIndex" : 8
@@ -828,13 +828,13 @@
     ],
     "84" : [
       {
-        "sentNum" : 84,
+        "sentNum" : 83,
         "text" : "John's father",
         "startIndex" : 1,
         "endIndex" : 4
       },
       {
-        "sentNum" : 84,
+        "sentNum" : 83,
         "text" : "himself",
         "startIndex" : 7,
         "endIndex" : 8
@@ -842,13 +842,13 @@
     ],
     "85" : [
       {
-        "sentNum" : 85,
+        "sentNum" : 84,
         "text" : "John",
         "startIndex" : 2,
         "endIndex" : 3
       },
       {
-        "sentNum" : 85,
+        "sentNum" : 84,
         "text" : "him",
         "startIndex" : 10,
         "endIndex" : 11
@@ -856,13 +856,13 @@
     ],
     "86" : [
       {
-        "sentNum" : 86,
+        "sentNum" : 85,
         "text" : "the policeman",
         "startIndex" : 7,
         "endIndex" : 9
       },
       {
-        "sentNum" : 86,
+        "sentNum" : 85,
         "text" : "himself",
         "startIndex" : 10,
         "endIndex" : 11
@@ -870,13 +870,13 @@
     ],
     "87" : [
       {
-        "sentNum" : 87,
+        "sentNum" : 86,
         "text" : "John",
         "startIndex" : 1,
         "endIndex" : 2
       },
       {
-        "sentNum" : 87,
+        "sentNum" : 86,
         "text" : "him",
         "startIndex" : 7,
         "endIndex" : 8
@@ -884,13 +884,13 @@
     ],
     "88" : [
       {
-        "sentNum" : 88,
+        "sentNum" : 87,
         "text" : "John",
         "startIndex" : 7,
         "endIndex" : 8
       },
       {
-        "sentNum" : 88,
+        "sentNum" : 87,
         "text" : "he",
         "startIndex" : 2,
         "endIndex" : 3
@@ -898,13 +898,13 @@
     ],
     "89" : [
       {
-        "sentNum" : 89,
+        "sentNum" : 88,
         "text" : "John",
         "startIndex" : 7,
         "endIndex" : 8
       },
       {
-        "sentNum" : 89,
+        "sentNum" : 88,
         "text" : "he",
         "startIndex" : 2,
         "endIndex" : 3
@@ -912,13 +912,13 @@
     ],
     "90" : [
       {
-        "sentNum" : 90,
+        "sentNum" : 89,
         "text" : "John",
         "startIndex" : 10,
         "endIndex" : 11
       },
       {
-        "sentNum" : 90,
+        "sentNum" : 89,
         "text" : "he",
         "startIndex" : 2,
         "endIndex" : 3
@@ -926,13 +926,13 @@
     ],
     "91" : [
       {
-        "sentNum" : 91,
+        "sentNum" : 90,
         "text" : "John and Bill",
         "startIndex" : 1,
         "endIndex" : 4
       },
       {
-        "sentNum" : 91,
+        "sentNum" : 90,
         "text" : "each other",
         "startIndex" : 5,
         "endIndex" : 7
