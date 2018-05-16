@@ -19,10 +19,11 @@ class Tree:
 
         children = vals[1:][0]
 
-        if self.__tag== 'PRP$':
+        if self.__tag== 'PRP$' or (self.__tag == 'PRP' and parent.tag() != 'NP'):
             assert (isinstance(children, str) or isinstance(children, unicode))
             self.__tag = 'NP'
             children = [[u'PRP', children],]
+
 
         if self.__tag == 'NP':
             Tree.NP_nodes.add(self)
@@ -127,6 +128,8 @@ class Bar:
         self.__children = []
         for x in vals:
             t = Tree(x, root_idx, c_index, prior_leaves + self.__num_leaves, parent)
+            #if t.tag() == 'NP':
+            #    print "NEST:", self.__parent.tag(), t.get_string()
             c_index += t.size_of_subtree()
             self.__num_leaves += t.num_leaves()
             self.__children.append(t)
