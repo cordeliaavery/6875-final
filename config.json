@@ -11,6 +11,30 @@
                 "type": "R",
                 "animate": true
             },
+            "father": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "case": "obj|dat|nom",
+                "type": "R",
+                "animate": true
+            },
+            "Smith": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "s",
+                "case":"obj|dat|nom",
+                "type":"R",
+                "animate": true
+            },
+            "Mr.": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "case":"obj|dat|nom",
+                "type":"R",
+                "animate": true
+            },
             "Mary": {
                 "gender": "f",
                 "person": "t",
@@ -251,6 +275,14 @@
                 "type": "R",
                 "animate": true
             },
+            "policeman": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "case": "obj|dat|nom",
+                "type": "R",
+                "animate": true
+            },
             "men": {
                 "gender": "m",
                 "person": "t",
@@ -274,6 +306,38 @@
                 "case":"obj|dat|nom",
                 "type":"R",
                 "animate": true
+            },
+            "king": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "case":"obj|dat|nom",
+                "type":"R",
+                "animate": true
+            },
+            "spouse": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "s",
+                "case":"obj|dat|nom",
+                "type":"R",
+                "animate": true
+            },
+            "driver": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "s",
+                "case":"obj|dat|nom",
+                "type":"R",
+                "animate": true
+            },
+            "chairman": {
+                "gender": "m",
+                "person": "t",
+                "count": "s",
+                "case":"obj|dat|nom",
+                "type":"R",
+                "animate": true
             }
         }
     },
@@ -285,19 +349,25 @@
                 "gender": "f",
                 "person": "t",
                 "count": "s",
-                "type": "R"
+                "case": "obj|dat|nom",
+                "type": "R",
+                "animate": true
             },
             "Johann": {
                 "gender": "m",
                 "person": "t",
                 "count": "s",
-                "type": "R"
+                "case": "obj|dat|nom",
+                "type": "R",
+                "animate": true
             },
             "Wilhelm": {
                 "gender": "m",
                 "person": "t",
                 "count": "s",
-                "type": "R"
+                "case": "obj|dat|nom",
+                "type": "R",
+                "animate": true
             },
             "ich": {
                 "gender": "[fm]",

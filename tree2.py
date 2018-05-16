@@ -29,6 +29,8 @@ class Tree:
             Tree.NP_nodes.add(self)
         elif self.__tag == 'PRP':
             Tree.PR_nodes.add(parent)
+        elif self.__tag == 'PPER':
+            Tree.PR_nodes.add(parent)
 
         self.__config = None
 
@@ -61,6 +63,8 @@ class Tree:
         return int(bool(self.__config and self.__config.get("dec")))
 
     def set_genitive(self, dec=False):
+        #print "SETTING GEN"
+        #print "parent:", self.__parent.tag(), self.__parent.__parent.tag()
         if self.__config:
             self.__config["case"] = "gen"
             self.__config["dec"] = dec
@@ -151,19 +155,32 @@ class Bar:
                     assert (parent in Tree.NP_nodes)
                 parent.set_config(conf)
 
+        # genitive structures behave slightly different
         for c in self.__children:
             if c.tag() == 'POS':
                 parent.set_genitive(True)
 
+        # full names such as "Mr. Smith" and "Betty Lou" ought to
+        # get their component name's feature markings
+        name_index = find_full_names(self.__children)
+        while (name_index != -1):
+            conf = intersect_configs(self.__children[name_index],
+                                     self.__children[name_index + 1],
+                                     False)
+            assert (conf)
+            self.__parent.set_config(conf)
+            print parent.config()
+            name_index = find_full_names(self.__children[name_index + 2:])
+
+        # coordinating conjunctions (i.e., "and") take two nouns
+        # and should mark their parent node as plural
         conj_index = find_conj(self.__children)
         while (conj_index != -1):
             conf = intersect_configs(self.__children[conj_index-1],
                                      self.__children[conj_index+1])
-            print "HEREEEE:", conf
             assert (conf)
             self.__parent.set_config(conf)
             conj_index = find_conj(self.__children[conj_index + 1:])
-            print self.__parent.config()
 
         if Bar.disable_pruning:
             return
@@ -276,14 +293,21 @@ def find_pair(treelist):
 def find_conj(treelist):
     for x in range(1, len(treelist) - 1):
         if treelist[x].tag() == 'CC':
-            assert(treelist[x-1].tag().startswith('N') and \
-                   treelist[x+1].tag().startswith('N'))
+            if treelist[x-1].tag().startswith('N') and \
+               treelist[x+1].tag().startswith('N') :
+                return x
+    return -1
+
+def find_full_names(treelist):
+    for x in range(len(treelist) - 1):
+        if treelist[x].tag() == 'NNP' and \
+           treelist[x+1].tag() == 'NNP':
             return x
     return -1
 
 WS = re.compile("\s")
 
-def process_string(val):
+def process_string(val, pos_mapping={}):
     current_str = ""
     current_depth = 0
     completed_stack = []
@@ -313,6 +337,9 @@ def process_string(val):
         elif WS.match(c):
             if current_str:
                 if not waiting_stack[-1]:
+                    prev_str = current_str
+                    current_str = pos_mapping.get(current_str, current_str)
+                    assert (current_str == prev_str)
                     waiting_stack[-1].append(current_str)
                     waiting_stack[-1].append([])
                 else:
@@ -340,7 +367,7 @@ def match(pro, ante, params):
     return True
 
 
-def intersect_configs(t1, t2):
+def intersect_configs(t1, t2, in_coord=True):
     c1 = t1.config()
     c2 = t2.config()
 
@@ -399,5 +426,7 @@ def intersect_configs(t1, t2):
                 return None
             new_config[k] = v1
 
-    new_config["count"] = "p"
+    if in_coord:
+        new_config["count"] = "p"
+
     return new_config

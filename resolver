@@ -14,20 +14,39 @@ lexicon = {}
 head_settings = {}
 models = ["deterministic", "neural", "statistical"]
 
+def compute_algo_accuracy(args, output_dict):
+    gold_data_file = args.gold_data
+    if args.language == 'ger':
+        gold_data_file = 'gold_data_ger.json'
+    gold_data = read_gold_data(gold_data_file)
+
+    eval = [(key,output_dict[key]==gold_data[key]) for key in gold_data]
+    counter = 0
+
+    for i in range(len(eval)):
+        if eval[i][1]:
+            counter += 1
+        elif not eval[i][1]:
+            expected = gold_data[eval[i][0]]
+            predicted = output_dict[eval[i][0]]
+            if args.v:
+                print "Sentence number %s does not match." % (eval[i][0])
+                print "\tExpected coreference set: ", expected
+                print "\tOutput coreference set: ", predicted
+
+    accuracy = float(counter)/len(eval)
+    print "Accuracy for algorithm: %s" % (accuracy)
+                
+
 def compute_corenlp_accuracy(args):
     gold_data_file = args.gold_data
     if args.language == 'ger':
         gold_data_file = 'gold_data_ger.json'
     gold_data = read_gold_data(gold_data_file)
-    print gold_data
-    return
-
 
     for model in models:
-        print "COMPUTING ACCURACY FOR %s MODEL..." % (model)
-
         corenlp_data = convert_all_sentences(model)
-        eval = [(key,corenlp_data[key]==gold_data[key]) for key in corenlp_data]
+        eval = [(key,corenlp_data[str(key)]==gold_data[key]) for key in gold_data]
 
         counter = 0
         for i in range(len(eval)):
@@ -43,7 +62,7 @@ def compute_corenlp_accuracy(args):
                     print "\tOutput coreference set: ", predicted
 
         accuracy = float(counter)/len(eval)
-        print "Accuracy: %s" % (accuracy)
+        print "Accuracy for %s model: %s" % (model,accuracy)
 
 
 def convert_all_sentences(model):
@@ -56,6 +75,10 @@ def convert_all_sentences(model):
         sentNum = basename(line).split("_")[1]
         entry = convert_corenlp_output(filename)
         dict[sentNum] = dict[sentNum] + entry
+
+    for key in dict:
+        dict[key] = sorted(dict[key])
+
     return dict
 
 def convert_corenlp_output(filename):
@@ -75,8 +98,8 @@ def convert_corenlp_output(filename):
     else:
         return ()
 
-def read_gold_data(args):
-    with open(args) as f:
+def read_gold_data(gold_data_file):
+    with open(gold_data_file) as f:
         gold_data = json.load(f)
 
     dict = defaultdict(tuple)
@@ -87,6 +110,9 @@ def read_gold_data(args):
             mention = coref_sets[i]
             dict[mention["sentNum"]] = dict[mention["sentNum"]] + (mention["startIndex"], mention["endIndex"])
 
+    for key in dict:
+        dict[key] = sorted(dict[key])
+
     return dict
 
 
@@ -94,6 +120,7 @@ def main(args):
     global lexicon
     gold_data_file = args.gold_data
     sentences = args.sentences
+    pos_mappings = {}
     if args.language == 'ger':
         gold_data_file = 'gold_data_ger.json'
         sentences = 'auf_deutsch.json'
@@ -101,27 +128,43 @@ def main(args):
     with open(args.config_file) as c:
         params = json.load(c)
     lexicon = params[args.language]['lexicon']
+    pos_mapping = params[args.language].get('pos_mapping', {})
     Tree.lexicon = lexicon
 
     with open(sentences) as s:
         parser_output = json.load(s)
 
+    output_dict = defaultdict(tuple)
+
     for sentence in sorted(parser_output["sentences"], key=lambda x: x["index"]):
-        list_hier = process_string(sentence["parse"])
+        list_hier = process_string(sentence["parse"], pos_mapping)
         tree_to_parse = Tree(list_hier[0], 0)
         print tree_to_parse.get_string()
 
-        tree_to_parse.pretty_print()
 
         candidate_matches = {}
-        for candidate in filter(lambda x: x.config(), Tree.NP_nodes):
+
+        sentNum = sentence["index"]+1
+        output = ()
+        #tree_to_parse.pretty_print()
+
+        for candidate in filter(lambda x: x.config(), Tree.PR_nodes):
             print "Candidate:", candidate.get_string(), candidate.leaf_range()
             print "Results:"
             candidate_matches[candidate] = {candidate,}
             proposed = resolve_anaphor(candidate, Tree.NP_nodes)
+            print candidate.config()
             for proposal in proposed:
                 candidate_matches[candidate].add(proposal)
                 print proposal.get_string(), proposal.leaf_range()
+
+            if not output:
+                output = output + candidate.leaf_range()
+                if proposed:
+                    for proposal in proposed:
+                        output = output + proposal.leaf_range()
+                else:
+                    output = ()
                 
 
         for grp in candidate_matches.values():
@@ -133,6 +176,18 @@ def main(args):
         print '-'*20
         Tree.PR_nodes.clear()
         Tree.NP_nodes.clear()
+
+        output_dict[sentNum] = output
+
+    for key in output_dict:
+        output_dict[key] = sorted(output_dict[key])
+
+    if args.language=="eng":
+        compute_corenlp_accuracy(args)
+        compute_algo_accuracy(args, output_dict)
+    elif args.language=="ger":
+        compute_algo_accuracy(args, output_dict)
+        
 
 
 if __name__ == "__main__":
@@ -167,4 +222,3 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     main(args)
-    #compute_corenlp_accuracy(args)
