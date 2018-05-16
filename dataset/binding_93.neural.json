@@ -1,0 +1,425 @@
+{
+  "docId": "binding_93.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (NNP John)\n      (CC and)\n      (NNP Bill))\n    (VP (VBD wanted)\n      (S\n        (VP (TO to)\n          (VP (VB eat)\n            (NP (PRP$ their) (NN food))))))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "wanted"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "wanted",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "cc",
+          "governor": 1,
+          "governorGloss": "John",
+          "dependent": 2,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj",
+          "governor": 1,
+          "governorGloss": "John",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "mark",
+          "governor": 6,
+          "governorGloss": "eat",
+          "dependent": 5,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 4,
+          "governorGloss": "wanted",
+          "dependent": 6,
+          "dependentGloss": "eat"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 8,
+          "governorGloss": "food",
+          "dependent": 7,
+          "dependentGloss": "their"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "eat",
+          "dependent": 8,
+          "dependentGloss": "food"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "wanted",
+          "dependent": 9,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "wanted"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "wanted",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 6,
+          "governorGloss": "eat",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "cc",
+          "governor": 1,
+          "governorGloss": "John",
+          "dependent": 2,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 1,
+          "governorGloss": "John",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "wanted",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 6,
+          "governorGloss": "eat",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "mark",
+          "governor": 6,
+          "governorGloss": "eat",
+          "dependent": 5,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 4,
+          "governorGloss": "wanted",
+          "dependent": 6,
+          "dependentGloss": "eat"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 8,
+          "governorGloss": "food",
+          "dependent": 7,
+          "dependentGloss": "their"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "eat",
+          "dependent": 8,
+          "dependentGloss": "food"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "wanted",
+          "dependent": 9,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "wanted"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "wanted",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 6,
+          "governorGloss": "eat",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "cc",
+          "governor": 1,
+          "governorGloss": "John",
+          "dependent": 2,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 1,
+          "governorGloss": "John",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "wanted",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 6,
+          "governorGloss": "eat",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "mark",
+          "governor": 6,
+          "governorGloss": "eat",
+          "dependent": 5,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 4,
+          "governorGloss": "wanted",
+          "dependent": 6,
+          "dependentGloss": "eat"
+        },
+        {
+          "dep": "nmod:poss",
+          "governor": 8,
+          "governorGloss": "food",
+          "dependent": 7,
+          "dependentGloss": "their"
+        },
+        {
+          "dep": "dobj",
+          "governor": 6,
+          "governorGloss": "eat",
+          "dependent": 8,
+          "dependentGloss": "food"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "wanted",
+          "dependent": 9,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 0,
+          "docTokenEnd": 1,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 2,
+          "docTokenEnd": 3,
+          "tokenBegin": 2,
+          "tokenEnd": 3,
+          "text": "Bill",
+          "characterOffsetBegin": 9,
+          "characterOffsetEnd": 13,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "John",
+          "originalText": "John",
+          "lemma": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "and",
+          "originalText": "and",
+          "lemma": "and",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 8,
+          "pos": "CC",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "Bill",
+          "originalText": "Bill",
+          "lemma": "Bill",
+          "characterOffsetBegin": 9,
+          "characterOffsetEnd": 13,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "wanted",
+          "originalText": "wanted",
+          "lemma": "want",
+          "characterOffsetBegin": 14,
+          "characterOffsetEnd": 20,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "to",
+          "originalText": "to",
+          "lemma": "to",
+          "characterOffsetBegin": 21,
+          "characterOffsetEnd": 23,
+          "pos": "TO",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "eat",
+          "originalText": "eat",
+          "lemma": "eat",
+          "characterOffsetBegin": 24,
+          "characterOffsetEnd": 27,
+          "pos": "VB",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "their",
+          "originalText": "their",
+          "lemma": "they",
+          "characterOffsetBegin": 28,
+          "characterOffsetEnd": 33,
+          "pos": "PRP$",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "food",
+          "originalText": "food",
+          "lemma": "food",
+          "characterOffsetBegin": 34,
+          "characterOffsetEnd": 38,
+          "pos": "NN",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 9,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 38,
+          "characterOffsetEnd": 39,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "4": [
+      {
+        "id": 2,
+        "text": "John and Bill",
+        "type": "LIST",
+        "number": "PLURAL",
+        "gender": "UNKNOWN",
+        "animacy": "ANIMATE",
+        "startIndex": 1,
+        "endIndex": 4,
+        "headIndex": 1,
+        "sentNum": 1,
+        "position": [
+          1,
+          3
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 4,
+        "text": "their",
+        "type": "PRONOMINAL",
+        "number": "PLURAL",
+        "gender": "UNKNOWN",
+        "animacy": "ANIMATE",
+        "startIndex": 7,
+        "endIndex": 8,
+        "headIndex": 7,
+        "sentNum": 1,
+        "position": [
+          1,
+          5
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}

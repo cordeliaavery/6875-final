@@ -88,3 +88,7 @@
 /Users/gabrielteixeira/Documents/MIT/spring2018/6863/final_project/6875-final/dataset/binding_89.txt
 /Users/gabrielteixeira/Documents/MIT/spring2018/6863/final_project/6875-final/dataset/binding_9.txt
 /Users/gabrielteixeira/Documents/MIT/spring2018/6863/final_project/6875-final/dataset/binding_90.txt
+/Users/gabrielteixeira/Documents/MIT/spring2018/6863/final_project/6875-final/dataset/binding_91.txt
+/Users/gabrielteixeira/Documents/MIT/spring2018/6863/final_project/6875-final/dataset/binding_92.txt
+/Users/gabrielteixeira/Documents/MIT/spring2018/6863/final_project/6875-final/dataset/binding_93.txt
+/Users/gabrielteixeira/Documents/MIT/spring2018/6863/final_project/6875-final/dataset/binding_94.txt

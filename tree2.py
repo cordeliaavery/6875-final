@@ -166,12 +166,15 @@ class Bar:
                 assert (parent.tag() == "NP")
                 parent.set_dummy()
 
+            # genitives
             if t.dummy() and not t.collapse():
+            #if False and not t.collapse():
                 self.__children += t.get_children()
                 for c in t.get_children():
                     c.set_parent(parent)
                 Tree.syntax_correction = True
 
+            ### ECM constructions
             elif t.tag() == 'NP' and first_child and \
                  parent.tag() == 'S' and (t.config() and \
                                           not re.search("nom", t.config()["case"]) and \
@@ -202,6 +205,7 @@ class Bar:
                 if conf["type"] != "R":
                     Tree.PR_nodes.add(parent)
                     assert (parent in Tree.NP_nodes)
+                # multi-token anaphors
                 parent.set_config(conf)
 
         # genitive structures behave slightly different
@@ -433,7 +437,7 @@ def intersect_configs(t1, t2, in_coord=True):
         v2 = c2.get(k)
         if k in ands:
             c = True
-            assert (re.search(v1, v2))
+            assert (re.search(v1, v2) or k=="gender")
             # want to intersect these
             # will be in regex form
             if char_match.match(v1):

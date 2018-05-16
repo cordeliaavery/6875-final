@@ -1,0 +1,295 @@
+{
+  "docId": "binding_91.txt",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (NNP John)\n      (CC and)\n      (NNP Bill))\n    (VP (VBD saw)\n      (NP (PRP themselves)))\n    (. .)))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "saw"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "saw",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "cc",
+          "governor": 1,
+          "governorGloss": "John",
+          "dependent": 2,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj",
+          "governor": 1,
+          "governorGloss": "John",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "dobj",
+          "governor": 4,
+          "governorGloss": "saw",
+          "dependent": 5,
+          "dependentGloss": "themselves"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "saw",
+          "dependent": 6,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "saw"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "saw",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "cc",
+          "governor": 1,
+          "governorGloss": "John",
+          "dependent": 2,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 1,
+          "governorGloss": "John",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "saw",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "dobj",
+          "governor": 4,
+          "governorGloss": "saw",
+          "dependent": 5,
+          "dependentGloss": "themselves"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "saw",
+          "dependent": 6,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 4,
+          "dependentGloss": "saw"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "saw",
+          "dependent": 1,
+          "dependentGloss": "John"
+        },
+        {
+          "dep": "cc",
+          "governor": 1,
+          "governorGloss": "John",
+          "dependent": 2,
+          "dependentGloss": "and"
+        },
+        {
+          "dep": "conj:and",
+          "governor": 1,
+          "governorGloss": "John",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 4,
+          "governorGloss": "saw",
+          "dependent": 3,
+          "dependentGloss": "Bill"
+        },
+        {
+          "dep": "dobj",
+          "governor": 4,
+          "governorGloss": "saw",
+          "dependent": 5,
+          "dependentGloss": "themselves"
+        },
+        {
+          "dep": "punct",
+          "governor": 4,
+          "governorGloss": "saw",
+          "dependent": 6,
+          "dependentGloss": "."
+        }
+      ],
+      "entitymentions": [
+        {
+          "docTokenBegin": 0,
+          "docTokenEnd": 1,
+          "tokenBegin": 0,
+          "tokenEnd": 1,
+          "text": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "ner": "PERSON"
+        },
+        {
+          "docTokenBegin": 2,
+          "docTokenEnd": 3,
+          "tokenBegin": 2,
+          "tokenEnd": 3,
+          "text": "Bill",
+          "characterOffsetBegin": 9,
+          "characterOffsetEnd": 13,
+          "ner": "PERSON"
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "John",
+          "originalText": "John",
+          "lemma": "John",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 4,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "and",
+          "originalText": "and",
+          "lemma": "and",
+          "characterOffsetBegin": 5,
+          "characterOffsetEnd": 8,
+          "pos": "CC",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "Bill",
+          "originalText": "Bill",
+          "lemma": "Bill",
+          "characterOffsetBegin": 9,
+          "characterOffsetEnd": 13,
+          "pos": "NNP",
+          "ner": "PERSON",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "saw",
+          "originalText": "saw",
+          "lemma": "see",
+          "characterOffsetBegin": 14,
+          "characterOffsetEnd": 17,
+          "pos": "VBD",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "themselves",
+          "originalText": "themselves",
+          "lemma": "themselves",
+          "characterOffsetBegin": 18,
+          "characterOffsetEnd": 28,
+          "pos": "PRP",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 6,
+          "word": ".",
+          "originalText": ".",
+          "lemma": ".",
+          "characterOffsetBegin": 28,
+          "characterOffsetEnd": 29,
+          "pos": ".",
+          "ner": "O",
+          "speaker": "PER0",
+          "before": "",
+          "after": "\n"
+        }
+      ]
+    }
+  ],
+  "corefs": {
+    "3": [
+      {
+        "id": 2,
+        "text": "John and Bill",
+        "type": "LIST",
+        "number": "PLURAL",
+        "gender": "UNKNOWN",
+        "animacy": "ANIMATE",
+        "startIndex": 1,
+        "endIndex": 4,
+        "headIndex": 1,
+        "sentNum": 1,
+        "position": [
+          1,
+          3
+        ],
+        "isRepresentativeMention": true
+      },
+      {
+        "id": 3,
+        "text": "themselves",
+        "type": "PRONOMINAL",
+        "number": "PLURAL",
+        "gender": "UNKNOWN",
+        "animacy": "ANIMATE",
+        "startIndex": 5,
+        "endIndex": 6,
+        "headIndex": 5,
+        "sentNum": 1,
+        "position": [
+          1,
+          4
+        ],
+        "isRepresentativeMention": false
+      }
+    ]
+  }
+}
