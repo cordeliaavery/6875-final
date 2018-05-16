@@ -73,8 +73,8 @@ def get_c_commanding_nodes(node, r_exp=False, base=None, heads=HEADS):
 
     # if node.type != R, only have to iterate
     # to the nearest S node
-    while node.parent() and node.parent().tag() not in HEADS:
-        node = node.parent()
+    #while node.parent() and node.parent().tag() not in HEADS:
+    #    node = node.parent()
 
     if node.parent():
         for n in node.parent().get_children():
