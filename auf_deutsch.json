@@ -3,7 +3,7 @@
   "sentences": [
     {
       "index": 0,
-      "parse": "(ROOT\n  (S (NE Maria) (VVFIN dachte) ($, ,)\n    (S (KOUS dass) (PPER sie)\n      (VP\n        (NP (ART die) (NN Bücher)\n          (PP (APPR an) (NE Wilhelm)))\n        (VVPP gegeben))\n      (VAFIN hat))\n    ($. .)))",
+      "parse": "(ROOT\n  (S (NE Maria) (VVFIN dachte) ($, ,)\n    (S (KOUS dass) (PPER sie)\n      (VP\n        (NP (ART die) (NN Buecher)\n          (PP (APPR an) (NE Wilhelm)))\n        (VVPP gegeben))\n      (VAFIN hat))\n    ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
@@ -43,7 +43,7 @@
         {
           "dep": "det",
           "governor": 7,
-          "governorGloss": "Bücher",
+          "governorGloss": "Buecher",
           "dependent": 6,
           "dependentGloss": "die"
         },
@@ -52,7 +52,7 @@
           "governor": 10,
           "governorGloss": "gegeben",
           "dependent": 7,
-          "dependentGloss": "Bücher"
+          "dependentGloss": "Buecher"
         },
         {
           "dep": "case",
@@ -129,7 +129,7 @@
         {
           "dep": "det",
           "governor": 7,
-          "governorGloss": "Bücher",
+          "governorGloss": "Buecher",
           "dependent": 6,
           "dependentGloss": "die"
         },
@@ -138,7 +138,7 @@
           "governor": 10,
           "governorGloss": "gegeben",
           "dependent": 7,
-          "dependentGloss": "Bücher"
+          "dependentGloss": "Buecher"
         },
         {
           "dep": "case",
@@ -215,7 +215,7 @@
         {
           "dep": "det",
           "governor": 7,
-          "governorGloss": "Bücher",
+          "governorGloss": "Buecher",
           "dependent": 6,
           "dependentGloss": "die"
         },
@@ -224,7 +224,7 @@
           "governor": 10,
           "governorGloss": "gegeben",
           "dependent": 7,
-          "dependentGloss": "Bücher"
+          "dependentGloss": "Buecher"
         },
         {
           "dep": "case",
@@ -359,9 +359,9 @@
         },
         {
           "index": 7,
-          "word": "Bücher",
-          "originalText": "Bücher",
-          "lemma": "bücher",
+          "word": "Buecher",
+          "originalText": "Buecher",
+          "lemma": "buecher",
           "characterOffsetBegin": 28,
           "characterOffsetEnd": 34,
           "pos": "NN",
@@ -1671,7 +1671,7 @@
     },
     {
       "index": 5,
-      "parse": "(ROOT\n  (S (NE Johann) (VAFIN hätte) (ADJD lieber) ($, ,)\n    (S (KOUS dass) (PPER er) (VVFIN gewinnt))\n    ($. .)))",
+      "parse": "(ROOT\n  (S (NE Johann) (VAFIN haette) (ADJD lieber) ($, ,)\n    (S (KOUS dass) (PPER er) (VVFIN gewinnt))\n    ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
@@ -1692,7 +1692,7 @@
           "governor": 3,
           "governorGloss": "lieber",
           "dependent": 2,
-          "dependentGloss": "hätte"
+          "dependentGloss": "haette"
         },
         {
           "dep": "punct",
@@ -1750,7 +1750,7 @@
           "governor": 3,
           "governorGloss": "lieber",
           "dependent": 2,
-          "dependentGloss": "hätte"
+          "dependentGloss": "haette"
         },
         {
           "dep": "punct",
@@ -1808,7 +1808,7 @@
           "governor": 3,
           "governorGloss": "lieber",
           "dependent": 2,
-          "dependentGloss": "hätte"
+          "dependentGloss": "haette"
         },
         {
           "dep": "punct",
@@ -1873,9 +1873,9 @@
         },
         {
           "index": 2,
-          "word": "hätte",
-          "originalText": "hätte",
-          "lemma": "hätte",
+          "word": "haette",
+          "originalText": "haette",
+          "lemma": "haette",
           "characterOffsetBegin": 249,
           "characterOffsetEnd": 254,
           "pos": "VAFIN",
@@ -3418,26 +3418,26 @@
     },
     {
       "index": 10,
-      "parse": "(ROOT\n  (S (NE Maria) (VAFIN hat) (NE Wilhelms) (NN Geschichten)\n    (AP\n      (PP (APPR von) (PPOSAT ihr))\n      (VVPP gehört))\n    ($. .)))",
+      "parse": "(ROOT\n  (S (NE Maria) (VAFIN hat) (NE Wilhelms) (NN Geschichten)\n    (AP\n      (PP (APPR von) (PPOSAT ihr))\n      (VVPP gehoert))\n    ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 7,
-          "dependentGloss": "gehört"
+          "dependentGloss": "gehoert"
         },
         {
           "dep": "nsubj",
           "governor": 7,
-          "governorGloss": "gehört",
+          "governorGloss": "gehoert",
           "dependent": 1,
           "dependentGloss": "Maria"
         },
         {
           "dep": "aux",
           "governor": 7,
-          "governorGloss": "gehört",
+          "governorGloss": "gehoert",
           "dependent": 2,
           "dependentGloss": "hat"
         },
@@ -3451,7 +3451,7 @@
         {
           "dep": "dobj",
           "governor": 7,
-          "governorGloss": "gehört",
+          "governorGloss": "gehoert",
           "dependent": 4,
           "dependentGloss": "Geschichten"
         },
@@ -3472,7 +3472,7 @@
         {
           "dep": "punct",
           "governor": 7,
-          "governorGloss": "gehört",
+          "governorGloss": "gehoert",
           "dependent": 8,
           "dependentGloss": "."
         }
@@ -3483,19 +3483,19 @@
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 7,
-          "dependentGloss": "gehört"
+          "dependentGloss": "gehoert"
         },
         {
           "dep": "nsubj",
           "governor": 7,
-          "governorGloss": "gehört",
+          "governorGloss": "gehoert",
           "dependent": 1,
           "dependentGloss": "Maria"
         },
         {
           "dep": "aux",
           "governor": 7,
-          "governorGloss": "gehört",
+          "governorGloss": "gehoert",
           "dependent": 2,
           "dependentGloss": "hat"
         },
@@ -3509,7 +3509,7 @@
         {
           "dep": "dobj",
           "governor": 7,
-          "governorGloss": "gehört",
+          "governorGloss": "gehoert",
           "dependent": 4,
           "dependentGloss": "Geschichten"
         },
@@ -3530,7 +3530,7 @@
         {
           "dep": "punct",
           "governor": 7,
-          "governorGloss": "gehört",
+          "governorGloss": "gehoert",
           "dependent": 8,
           "dependentGloss": "."
         }
@@ -3541,19 +3541,19 @@
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 7,
-          "dependentGloss": "gehört"
+          "dependentGloss": "gehoert"
         },
         {
           "dep": "nsubj",
           "governor": 7,
-          "governorGloss": "gehört",
+          "governorGloss": "gehoert",
           "dependent": 1,
           "dependentGloss": "Maria"
         },
         {
           "dep": "aux",
           "governor": 7,
-          "governorGloss": "gehört",
+          "governorGloss": "gehoert",
           "dependent": 2,
           "dependentGloss": "hat"
         },
@@ -3567,7 +3567,7 @@
         {
           "dep": "dobj",
           "governor": 7,
-          "governorGloss": "gehört",
+          "governorGloss": "gehoert",
           "dependent": 4,
           "dependentGloss": "Geschichten"
         },
@@ -3588,7 +3588,7 @@
         {
           "dep": "punct",
           "governor": 7,
-          "governorGloss": "gehört",
+          "governorGloss": "gehoert",
           "dependent": 8,
           "dependentGloss": "."
         }
@@ -3690,9 +3690,9 @@
         },
         {
           "index": 7,
-          "word": "gehört",
-          "originalText": "gehört",
-          "lemma": "gehört",
+          "word": "gehoert",
+          "originalText": "gehoert",
+          "lemma": "gehoert",
           "characterOffsetBegin": 529,
           "characterOffsetEnd": 535,
           "pos": "VVPP",
@@ -3716,7 +3716,7 @@
     },
     {
       "index": 11,
-      "parse": "(ROOT\n  (S (NE Johann) (VAFIN hat)\n    (S\n      (NP (PIAT einige) (NN Geschichten)\n        (PP (APPR von) (PPER ihm)))\n      (VVFIN gehört))\n    ($. .)))",
+      "parse": "(ROOT\n  (S (NE Johann) (VAFIN hat)\n    (S\n      (NP (PIAT einige) (NN Geschichten)\n        (PP (APPR von) (PPER ihm)))\n      (VVFIN gehoert))\n    ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
@@ -3742,7 +3742,7 @@
         {
           "dep": "dobj",
           "governor": 7,
-          "governorGloss": "gehört",
+          "governorGloss": "gehoert",
           "dependent": 4,
           "dependentGloss": "Geschichten"
         },
@@ -3765,7 +3765,7 @@
           "governor": 2,
           "governorGloss": "hat",
           "dependent": 7,
-          "dependentGloss": "gehört"
+          "dependentGloss": "gehoert"
         },
         {
           "dep": "punct",
@@ -3800,7 +3800,7 @@
         {
           "dep": "dobj",
           "governor": 7,
-          "governorGloss": "gehört",
+          "governorGloss": "gehoert",
           "dependent": 4,
           "dependentGloss": "Geschichten"
         },
@@ -3823,7 +3823,7 @@
           "governor": 2,
           "governorGloss": "hat",
           "dependent": 7,
-          "dependentGloss": "gehört"
+          "dependentGloss": "gehoert"
         },
         {
           "dep": "punct",
@@ -3858,7 +3858,7 @@
         {
           "dep": "dobj",
           "governor": 7,
-          "governorGloss": "gehört",
+          "governorGloss": "gehoert",
           "dependent": 4,
           "dependentGloss": "Geschichten"
         },
@@ -3881,7 +3881,7 @@
           "governor": 2,
           "governorGloss": "hat",
           "dependent": 7,
-          "dependentGloss": "gehört"
+          "dependentGloss": "gehoert"
         },
         {
           "dep": "punct",
@@ -3978,9 +3978,9 @@
         },
         {
           "index": 7,
-          "word": "gehört",
-          "originalText": "gehört",
-          "lemma": "gehört",
+          "word": "gehoert",
+          "originalText": "gehoert",
+          "lemma": "gehoert",
           "characterOffsetBegin": 576,
           "characterOffsetEnd": 582,
           "pos": "VVFIN",
@@ -4193,7 +4193,7 @@
     },
     {
       "index": 13,
-      "parse": "(ROOT\n  (S (NE Johann) (VAFIN hat) (NE Wilhelm)\n    (NP\n      (CS\n        (S\n          (PP (APPR von) (PPER ihm))\n          (VVFIN erzählt))))\n    ($. .)))",
+      "parse": "(ROOT\n  (S (NE Johann) (VAFIN hat) (NE Wilhelm)\n    (NP\n      (CS\n        (S\n          (PP (APPR von) (PPER ihm))\n          (VVFIN erzaehlt))))\n    ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
@@ -4212,7 +4212,7 @@
         {
           "dep": "dobj",
           "governor": 6,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 3,
           "dependentGloss": "Wilhelm"
         },
@@ -4235,7 +4235,7 @@
           "governor": 2,
           "governorGloss": "hat",
           "dependent": 6,
-          "dependentGloss": "erzählt"
+          "dependentGloss": "erzaehlt"
         },
         {
           "dep": "punct",
@@ -4263,7 +4263,7 @@
         {
           "dep": "dobj",
           "governor": 6,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 3,
           "dependentGloss": "Wilhelm"
         },
@@ -4286,7 +4286,7 @@
           "governor": 2,
           "governorGloss": "hat",
           "dependent": 6,
-          "dependentGloss": "erzählt"
+          "dependentGloss": "erzaehlt"
         },
         {
           "dep": "punct",
@@ -4314,7 +4314,7 @@
         {
           "dep": "dobj",
           "governor": 6,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 3,
           "dependentGloss": "Wilhelm"
         },
@@ -4337,7 +4337,7 @@
           "governor": 2,
           "governorGloss": "hat",
           "dependent": 6,
-          "dependentGloss": "erzählt"
+          "dependentGloss": "erzaehlt"
         },
         {
           "dep": "punct",
@@ -4432,9 +4432,9 @@
         },
         {
           "index": 6,
-          "word": "erzählt",
-          "originalText": "erzählt",
-          "lemma": "erzählt",
+          "word": "erzaehlt",
+          "originalText": "erzaehlt",
+          "lemma": "erzaehlt",
           "characterOffsetBegin": 637,
           "characterOffsetEnd": 644,
           "pos": "VVFIN",
@@ -4746,7 +4746,7 @@
     },
     {
       "index": 15,
-      "parse": "(ROOT\n  (S (NE Johann) (VAFIN würde)\n    (S (PPER es) (VVFIN hassen) ($, ,)\n      (S (KOUS wenn) (PPER er)\n        (VP (VVINF gewinnen))\n        (VAFIN würde)))\n    ($. .)))",
+      "parse": "(ROOT\n  (S (NE Johann) (VAFIN wuerde)\n    (S (PPER es) (VVFIN hassen) ($, ,)\n      (S (KOUS wenn) (PPER er)\n        (VP (VVINF gewinnen))\n        (VAFIN wuerde)))\n    ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
@@ -4767,7 +4767,7 @@
           "governor": 4,
           "governorGloss": "hassen",
           "dependent": 2,
-          "dependentGloss": "würde"
+          "dependentGloss": "wuerde"
         },
         {
           "dep": "nsubj",
@@ -4809,7 +4809,7 @@
           "governor": 8,
           "governorGloss": "gewinnen",
           "dependent": 9,
-          "dependentGloss": "würde"
+          "dependentGloss": "wuerde"
         },
         {
           "dep": "punct",
@@ -4839,7 +4839,7 @@
           "governor": 4,
           "governorGloss": "hassen",
           "dependent": 2,
-          "dependentGloss": "würde"
+          "dependentGloss": "wuerde"
         },
         {
           "dep": "nsubj",
@@ -4881,7 +4881,7 @@
           "governor": 8,
           "governorGloss": "gewinnen",
           "dependent": 9,
-          "dependentGloss": "würde"
+          "dependentGloss": "wuerde"
         },
         {
           "dep": "punct",
@@ -4911,7 +4911,7 @@
           "governor": 4,
           "governorGloss": "hassen",
           "dependent": 2,
-          "dependentGloss": "würde"
+          "dependentGloss": "wuerde"
         },
         {
           "dep": "nsubj",
@@ -4953,7 +4953,7 @@
           "governor": 8,
           "governorGloss": "gewinnen",
           "dependent": 9,
-          "dependentGloss": "würde"
+          "dependentGloss": "wuerde"
         },
         {
           "dep": "punct",
@@ -4990,9 +4990,9 @@
         },
         {
           "index": 2,
-          "word": "würde",
-          "originalText": "würde",
-          "lemma": "würde",
+          "word": "wuerde",
+          "originalText": "wuerde",
+          "lemma": "wuerde",
           "characterOffsetBegin": 694,
           "characterOffsetEnd": 699,
           "pos": "VAFIN",
@@ -5074,9 +5074,9 @@
         },
         {
           "index": 9,
-          "word": "würde",
-          "originalText": "würde",
-          "lemma": "würde",
+          "word": "wuerde",
+          "originalText": "wuerde",
+          "lemma": "wuerde",
           "characterOffsetBegin": 729,
           "characterOffsetEnd": 734,
           "pos": "VAFIN",
@@ -5818,7 +5818,7 @@
     },
     {
       "index": 18,
-      "parse": "(ROOT\n  (S (NE Johann) (VAFIN hat)\n    (VP (VVPP erwartet) ($, ,)\n      (S (KOUS dass) (PPER er)\n        (NP (NE Mariah))\n        (VP (VVINF einfangen))\n        (VAFIN würde)))\n    ($. .)))",
+      "parse": "(ROOT\n  (S (NE Johann) (VAFIN hat)\n    (VP (VVPP erwartet) ($, ,)\n      (S (KOUS dass) (PPER er)\n        (NP (NE Mariah))\n        (VP (VVINF einfangen))\n        (VAFIN wuerde)))\n    ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
@@ -5881,7 +5881,7 @@
           "governor": 8,
           "governorGloss": "einfangen",
           "dependent": 9,
-          "dependentGloss": "würde"
+          "dependentGloss": "wuerde"
         },
         {
           "dep": "punct",
@@ -5953,7 +5953,7 @@
           "governor": 8,
           "governorGloss": "einfangen",
           "dependent": 9,
-          "dependentGloss": "würde"
+          "dependentGloss": "wuerde"
         },
         {
           "dep": "punct",
@@ -6025,7 +6025,7 @@
           "governor": 8,
           "governorGloss": "einfangen",
           "dependent": 9,
-          "dependentGloss": "würde"
+          "dependentGloss": "wuerde"
         },
         {
           "dep": "punct",
@@ -6156,9 +6156,9 @@
         },
         {
           "index": 9,
-          "word": "würde",
-          "originalText": "würde",
-          "lemma": "würde",
+          "word": "wuerde",
+          "originalText": "wuerde",
+          "lemma": "wuerde",
           "characterOffsetBegin": 890,
           "characterOffsetEnd": 895,
           "pos": "VAFIN",
@@ -6612,7 +6612,7 @@
     },
     {
       "index": 20,
-      "parse": "(ROOT\n  (S (PPER Er) (VAFIN hat)\n    (VP (VVPP gesagt) ($, ,)\n      (S (KOUS dass) (NE Johann)\n        (VP (VVINF gewinnen))\n        (VAFIN würde)))\n    ($. .)))",
+      "parse": "(ROOT\n  (S (PPER Er) (VAFIN hat)\n    (VP (VVPP gesagt) ($, ,)\n      (S (KOUS dass) (NE Johann)\n        (VP (VVINF gewinnen))\n        (VAFIN wuerde)))\n    ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
@@ -6668,7 +6668,7 @@
           "governor": 7,
           "governorGloss": "gewinnen",
           "dependent": 8,
-          "dependentGloss": "würde"
+          "dependentGloss": "wuerde"
         },
         {
           "dep": "punct",
@@ -6733,7 +6733,7 @@
           "governor": 7,
           "governorGloss": "gewinnen",
           "dependent": 8,
-          "dependentGloss": "würde"
+          "dependentGloss": "wuerde"
         },
         {
           "dep": "punct",
@@ -6798,7 +6798,7 @@
           "governor": 7,
           "governorGloss": "gewinnen",
           "dependent": 8,
-          "dependentGloss": "würde"
+          "dependentGloss": "wuerde"
         },
         {
           "dep": "punct",
@@ -6907,9 +6907,9 @@
         },
         {
           "index": 8,
-          "word": "würde",
-          "originalText": "würde",
-          "lemma": "würde",
+          "word": "wuerde",
+          "originalText": "wuerde",
+          "lemma": "wuerde",
           "characterOffsetBegin": 997,
           "characterOffsetEnd": 1002,
           "pos": "VAFIN",
@@ -6933,7 +6933,7 @@
     },
     {
       "index": 21,
-      "parse": "(ROOT\n  (S (PPER Er) (VAFIN hat)\n    (VP (VVPP gesagt) ($, ,)\n      (S (KOUS dass) (NE Maria)\n        (VP\n          (NP\n            (AP (PIDAT jeden)))\n          (VVPP geküsst))\n        (VAFIN hat)))\n    ($. .)))",
+      "parse": "(ROOT\n  (S (PPER Er) (VAFIN hat)\n    (VP (VVPP gesagt) ($, ,)\n      (S (KOUS dass) (NE Maria)\n        (VP\n          (NP\n            (AP (PIDAT jeden)))\n          (VVPP gekuesst))\n        (VAFIN hat)))\n    ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
@@ -6980,7 +6980,7 @@
         {
           "dep": "det",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 7,
           "dependentGloss": "jeden"
         },
@@ -6989,7 +6989,7 @@
           "governor": 9,
           "governorGloss": "hat",
           "dependent": 8,
-          "dependentGloss": "geküsst"
+          "dependentGloss": "gekuesst"
         },
         {
           "dep": "ccomp",
@@ -7052,7 +7052,7 @@
         {
           "dep": "det",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 7,
           "dependentGloss": "jeden"
         },
@@ -7061,7 +7061,7 @@
           "governor": 9,
           "governorGloss": "hat",
           "dependent": 8,
-          "dependentGloss": "geküsst"
+          "dependentGloss": "gekuesst"
         },
         {
           "dep": "ccomp",
@@ -7124,7 +7124,7 @@
         {
           "dep": "det",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 7,
           "dependentGloss": "jeden"
         },
@@ -7133,7 +7133,7 @@
           "governor": 9,
           "governorGloss": "hat",
           "dependent": 8,
-          "dependentGloss": "geküsst"
+          "dependentGloss": "gekuesst"
         },
         {
           "dep": "ccomp",
@@ -7249,9 +7249,9 @@
         },
         {
           "index": 8,
-          "word": "geküsst",
-          "originalText": "geküsst",
-          "lemma": "geküsst",
+          "word": "gekuesst",
+          "originalText": "gekuesst",
+          "lemma": "gekuesst",
           "characterOffsetBegin": 1038,
           "characterOffsetEnd": 1045,
           "pos": "VVPP",
@@ -7287,7 +7287,7 @@
     },
     {
       "index": 22,
-      "parse": "(ROOT\n  (S (PPER Er) (VAFIN hat) (VVPP gesagt) ($, ,)\n    (S (KOUS dass)\n      (VP\n        (AVP\n          (S\n            (NP\n              (CS\n                (S\n                  (NP (PIDAT jeder))\n                  (VP (NE Maria) (VVPP geküsst)))))\n            (VAFIN hat)))))\n    ($. .)))",
+      "parse": "(ROOT\n  (S (PPER Er) (VAFIN hat) (VVPP gesagt) ($, ,)\n    (S (KOUS dass)\n      (VP\n        (AVP\n          (S\n            (NP\n              (CS\n                (S\n                  (NP (PIDAT jeder))\n                  (VP (NE Maria) (VVPP gekuesst)))))\n            (VAFIN hat)))))\n    ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
@@ -7327,14 +7327,14 @@
         {
           "dep": "det",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 6,
           "dependentGloss": "jeder"
         },
         {
           "dep": "name",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 7,
           "dependentGloss": "Maria"
         },
@@ -7343,7 +7343,7 @@
           "governor": 9,
           "governorGloss": "hat",
           "dependent": 8,
-          "dependentGloss": "geküsst"
+          "dependentGloss": "gekuesst"
         },
         {
           "dep": "ccomp",
@@ -7399,14 +7399,14 @@
         {
           "dep": "det",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 6,
           "dependentGloss": "jeder"
         },
         {
           "dep": "name",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 7,
           "dependentGloss": "Maria"
         },
@@ -7415,7 +7415,7 @@
           "governor": 9,
           "governorGloss": "hat",
           "dependent": 8,
-          "dependentGloss": "geküsst"
+          "dependentGloss": "gekuesst"
         },
         {
           "dep": "ccomp",
@@ -7471,14 +7471,14 @@
         {
           "dep": "det",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 6,
           "dependentGloss": "jeder"
         },
         {
           "dep": "name",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 7,
           "dependentGloss": "Maria"
         },
@@ -7487,7 +7487,7 @@
           "governor": 9,
           "governorGloss": "hat",
           "dependent": 8,
-          "dependentGloss": "geküsst"
+          "dependentGloss": "gekuesst"
         },
         {
           "dep": "ccomp",
@@ -7603,9 +7603,9 @@
         },
         {
           "index": 8,
-          "word": "geküsst",
-          "originalText": "geküsst",
-          "lemma": "geküsst",
+          "word": "gekuesst",
+          "originalText": "gekuesst",
+          "lemma": "gekuesst",
           "characterOffsetBegin": 1085,
           "characterOffsetEnd": 1092,
           "pos": "VVPP",
@@ -7641,7 +7641,7 @@
     },
     {
       "index": 23,
-      "parse": "(ROOT\n  (S (PIS Jeder) (VAFIN hat)\n    (VP (VVPP gesagt) ($, ,)\n      (S (KOUS dass) (NE Maria)\n        (VP (PPER ihn) (VVPP geküsst))\n        (VAFIN hat)))\n    ($. .)))",
+      "parse": "(ROOT\n  (S (PIS Jeder) (VAFIN hat)\n    (VP (VVPP gesagt) ($, ,)\n      (S (KOUS dass) (NE Maria)\n        (VP (PPER ihn) (VVPP gekuesst))\n        (VAFIN hat)))\n    ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
@@ -7674,21 +7674,21 @@
         {
           "dep": "mark",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 5,
           "dependentGloss": "dass"
         },
         {
           "dep": "nsubj",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 6,
           "dependentGloss": "Maria"
         },
         {
           "dep": "dobj",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 7,
           "dependentGloss": "ihn"
         },
@@ -7697,12 +7697,12 @@
           "governor": 3,
           "governorGloss": "gesagt",
           "dependent": 8,
-          "dependentGloss": "geküsst"
+          "dependentGloss": "gekuesst"
         },
         {
           "dep": "aux",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 9,
           "dependentGloss": "hat"
         },
@@ -7746,21 +7746,21 @@
         {
           "dep": "mark",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 5,
           "dependentGloss": "dass"
         },
         {
           "dep": "nsubj",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 6,
           "dependentGloss": "Maria"
         },
         {
           "dep": "dobj",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 7,
           "dependentGloss": "ihn"
         },
@@ -7769,12 +7769,12 @@
           "governor": 3,
           "governorGloss": "gesagt",
           "dependent": 8,
-          "dependentGloss": "geküsst"
+          "dependentGloss": "gekuesst"
         },
         {
           "dep": "aux",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 9,
           "dependentGloss": "hat"
         },
@@ -7818,21 +7818,21 @@
         {
           "dep": "mark",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 5,
           "dependentGloss": "dass"
         },
         {
           "dep": "nsubj",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 6,
           "dependentGloss": "Maria"
         },
         {
           "dep": "dobj",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 7,
           "dependentGloss": "ihn"
         },
@@ -7841,12 +7841,12 @@
           "governor": 3,
           "governorGloss": "gesagt",
           "dependent": 8,
-          "dependentGloss": "geküsst"
+          "dependentGloss": "gekuesst"
         },
         {
           "dep": "aux",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 9,
           "dependentGloss": "hat"
         },
@@ -7957,9 +7957,9 @@
         },
         {
           "index": 8,
-          "word": "geküsst",
-          "originalText": "geküsst",
-          "lemma": "geküsst",
+          "word": "gekuesst",
+          "originalText": "gekuesst",
+          "lemma": "gekuesst",
           "characterOffsetBegin": 1133,
           "characterOffsetEnd": 1140,
           "pos": "VVPP",
@@ -7995,7 +7995,7 @@
     },
     {
       "index": 24,
-      "parse": "(ROOT\n  (S (PIS Jeder) (VAFIN hat)\n    (VP (VVPP gesagt) ($, ,)\n      (S (KOUS dass) (PPER er)\n        (VP (NE Maria) (VVPP geküsst))\n        (VAFIN hat)))\n    ($. .)))",
+      "parse": "(ROOT\n  (S (PIS Jeder) (VAFIN hat)\n    (VP (VVPP gesagt) ($, ,)\n      (S (KOUS dass) (PPER er)\n        (VP (NE Maria) (VVPP gekuesst))\n        (VAFIN hat)))\n    ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
@@ -8028,21 +8028,21 @@
         {
           "dep": "mark",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 5,
           "dependentGloss": "dass"
         },
         {
           "dep": "nsubj",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 6,
           "dependentGloss": "er"
         },
         {
           "dep": "dobj",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 7,
           "dependentGloss": "Maria"
         },
@@ -8051,12 +8051,12 @@
           "governor": 3,
           "governorGloss": "gesagt",
           "dependent": 8,
-          "dependentGloss": "geküsst"
+          "dependentGloss": "gekuesst"
         },
         {
           "dep": "aux",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 9,
           "dependentGloss": "hat"
         },
@@ -8100,21 +8100,21 @@
         {
           "dep": "mark",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 5,
           "dependentGloss": "dass"
         },
         {
           "dep": "nsubj",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 6,
           "dependentGloss": "er"
         },
         {
           "dep": "dobj",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 7,
           "dependentGloss": "Maria"
         },
@@ -8123,12 +8123,12 @@
           "governor": 3,
           "governorGloss": "gesagt",
           "dependent": 8,
-          "dependentGloss": "geküsst"
+          "dependentGloss": "gekuesst"
         },
         {
           "dep": "aux",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 9,
           "dependentGloss": "hat"
         },
@@ -8172,21 +8172,21 @@
         {
           "dep": "mark",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 5,
           "dependentGloss": "dass"
         },
         {
           "dep": "nsubj",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 6,
           "dependentGloss": "er"
         },
         {
           "dep": "dobj",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 7,
           "dependentGloss": "Maria"
         },
@@ -8195,12 +8195,12 @@
           "governor": 3,
           "governorGloss": "gesagt",
           "dependent": 8,
-          "dependentGloss": "geküsst"
+          "dependentGloss": "gekuesst"
         },
         {
           "dep": "aux",
           "governor": 8,
-          "governorGloss": "geküsst",
+          "governorGloss": "gekuesst",
           "dependent": 9,
           "dependentGloss": "hat"
         },
@@ -8311,9 +8311,9 @@
         },
         {
           "index": 8,
-          "word": "geküsst",
-          "originalText": "geküsst",
-          "lemma": "geküsst",
+          "word": "gekuesst",
+          "originalText": "gekuesst",
+          "lemma": "gekuesst",
           "characterOffsetBegin": 1180,
           "characterOffsetEnd": 1187,
           "pos": "VVPP",
@@ -9189,7 +9189,7 @@
     },
     {
       "index": 27,
-      "parse": "(ROOT\n  (NUR\n    (S (PPER Ich) (VVFIN errinere) (PPER mich) (PTKNEG nicht))\n    (S\n      (NP (PWS wer))\n      (VVFIN glaubt) ($, ,)\n      (S (KOUS dass) (PPER er)\n        (NP (ART das) (NN Buch) ($, ,)\n          (S (KOUS dass)\n            (NP (NE Johann))\n            (VVFIN gefällt)))\n        ($, ,)\n        (VP (VVPP gelesen))\n        (VAFIN hat)))\n    ($. .)))",
+      "parse": "(ROOT\n  (NUR\n    (S (PPER Ich) (VVFIN errinere) (PPER mich) (PTKNEG nicht))\n    (S\n      (NP (PWS wer))\n      (VVFIN glaubt) ($, ,)\n      (S (KOUS dass) (PPER er)\n        (NP (ART das) (NN Buch) ($, ,)\n          (S (KOUS dass)\n            (NP (NE Johann))\n            (VVFIN gefaellt)))\n        ($, ,)\n        (VP (VVPP gelesen))\n        (VAFIN hat)))\n    ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
@@ -9278,14 +9278,14 @@
         {
           "dep": "mark",
           "governor": 15,
-          "governorGloss": "gefällt",
+          "governorGloss": "gefaellt",
           "dependent": 13,
           "dependentGloss": "dass"
         },
         {
           "dep": "nsubj",
           "governor": 15,
-          "governorGloss": "gefällt",
+          "governorGloss": "gefaellt",
           "dependent": 14,
           "dependentGloss": "Johann"
         },
@@ -9294,19 +9294,19 @@
           "governor": 11,
           "governorGloss": "Buch",
           "dependent": 15,
-          "dependentGloss": "gefällt"
+          "dependentGloss": "gefaellt"
         },
         {
           "dep": "punct",
           "governor": 15,
-          "governorGloss": "gefällt",
+          "governorGloss": "gefaellt",
           "dependent": 16,
           "dependentGloss": ","
         },
         {
           "dep": "ccomp",
           "governor": 15,
-          "governorGloss": "gefällt",
+          "governorGloss": "gefaellt",
           "dependent": 17,
           "dependentGloss": "gelesen"
         },
@@ -9413,14 +9413,14 @@
         {
           "dep": "mark",
           "governor": 15,
-          "governorGloss": "gefällt",
+          "governorGloss": "gefaellt",
           "dependent": 13,
           "dependentGloss": "dass"
         },
         {
           "dep": "nsubj",
           "governor": 15,
-          "governorGloss": "gefällt",
+          "governorGloss": "gefaellt",
           "dependent": 14,
           "dependentGloss": "Johann"
         },
@@ -9429,19 +9429,19 @@
           "governor": 11,
           "governorGloss": "Buch",
           "dependent": 15,
-          "dependentGloss": "gefällt"
+          "dependentGloss": "gefaellt"
         },
         {
           "dep": "punct",
           "governor": 15,
-          "governorGloss": "gefällt",
+          "governorGloss": "gefaellt",
           "dependent": 16,
           "dependentGloss": ","
         },
         {
           "dep": "ccomp",
           "governor": 15,
-          "governorGloss": "gefällt",
+          "governorGloss": "gefaellt",
           "dependent": 17,
           "dependentGloss": "gelesen"
         },
@@ -9548,14 +9548,14 @@
         {
           "dep": "mark",
           "governor": 15,
-          "governorGloss": "gefällt",
+          "governorGloss": "gefaellt",
           "dependent": 13,
           "dependentGloss": "dass"
         },
         {
           "dep": "nsubj",
           "governor": 15,
-          "governorGloss": "gefällt",
+          "governorGloss": "gefaellt",
           "dependent": 14,
           "dependentGloss": "Johann"
         },
@@ -9564,19 +9564,19 @@
           "governor": 11,
           "governorGloss": "Buch",
           "dependent": 15,
-          "dependentGloss": "gefällt"
+          "dependentGloss": "gefaellt"
         },
         {
           "dep": "punct",
           "governor": 15,
-          "governorGloss": "gefällt",
+          "governorGloss": "gefaellt",
           "dependent": 16,
           "dependentGloss": ","
         },
         {
           "dep": "ccomp",
           "governor": 15,
-          "governorGloss": "gefällt",
+          "governorGloss": "gefaellt",
           "dependent": 17,
           "dependentGloss": "gelesen"
         },
@@ -9778,9 +9778,9 @@
         },
         {
           "index": 15,
-          "word": "gefällt",
-          "originalText": "gefällt",
-          "lemma": "gefällt",
+          "word": "gefaellt",
+          "originalText": "gefaellt",
+          "lemma": "gefaellt",
           "characterOffsetBegin": 1379,
           "characterOffsetEnd": 1386,
           "pos": "VVFIN",
@@ -10803,26 +10803,26 @@
     },
     {
       "index": 31,
-      "parse": "(ROOT\n  (S (NE Johann) (VVFIN erzählt) (NE Wilhelm)\n    (PP (APPR von) (PPOSAT seiner) (NN Vorhaben))\n    ($. .)))",
+      "parse": "(ROOT\n  (S (NE Johann) (VVFIN erzaehlt) (NE Wilhelm)\n    (PP (APPR von) (PPOSAT seiner) (NN Vorhaben))\n    ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 2,
-          "dependentGloss": "erzählt"
+          "dependentGloss": "erzaehlt"
         },
         {
           "dep": "nsubj",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 1,
           "dependentGloss": "Johann"
         },
         {
           "dep": "dobj",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 3,
           "dependentGloss": "Wilhelm"
         },
@@ -10850,7 +10850,7 @@
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 7,
           "dependentGloss": "."
         }
@@ -10861,19 +10861,19 @@
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 2,
-          "dependentGloss": "erzählt"
+          "dependentGloss": "erzaehlt"
         },
         {
           "dep": "nsubj",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 1,
           "dependentGloss": "Johann"
         },
         {
           "dep": "dobj",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 3,
           "dependentGloss": "Wilhelm"
         },
@@ -10901,7 +10901,7 @@
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 7,
           "dependentGloss": "."
         }
@@ -10912,19 +10912,19 @@
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 2,
-          "dependentGloss": "erzählt"
+          "dependentGloss": "erzaehlt"
         },
         {
           "dep": "nsubj",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 1,
           "dependentGloss": "Johann"
         },
         {
           "dep": "dobj",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 3,
           "dependentGloss": "Wilhelm"
         },
@@ -10952,7 +10952,7 @@
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 7,
           "dependentGloss": "."
         }
@@ -10994,9 +10994,9 @@
         },
         {
           "index": 2,
-          "word": "erzählt",
-          "originalText": "erzählt",
-          "lemma": "erzählt",
+          "word": "erzaehlt",
+          "originalText": "erzaehlt",
+          "lemma": "erzaehlt",
           "characterOffsetBegin": 1548,
           "characterOffsetEnd": 1555,
           "pos": "VVFIN",
@@ -11631,19 +11631,19 @@
     },
     {
       "index": 34,
-      "parse": "(ROOT\n  (NUR\n    (S (NE Johann)\n      (NP\n        (CS\n          (S (VVFIN erzählt)\n            (NP (NE Wilhelm))\n            (PTKZU zu)\n            (NP (PIDAT viele) (NN Sachen))))))\n    (S\n      (NP\n        (PP (APPR für) (PPER ihn)))\n      (VP\n        (VZ (PTKZU zu) (VVINF verstehen))))\n    ($. .)))",
+      "parse": "(ROOT\n  (NUR\n    (S (NE Johann)\n      (NP\n        (CS\n          (S (VVFIN erzaehlt)\n            (NP (NE Wilhelm))\n            (PTKZU zu)\n            (NP (PIDAT viele) (NN Sachen))))))\n    (S\n      (NP\n        (PP (APPR fuer) (PPER ihn)))\n      (VP\n        (VZ (PTKZU zu) (VVINF verstehen))))\n    ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 2,
-          "dependentGloss": "erzählt"
+          "dependentGloss": "erzaehlt"
         },
         {
           "dep": "nsubj",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 1,
           "dependentGloss": "Johann"
         },
@@ -11680,7 +11680,7 @@
           "governor": 8,
           "governorGloss": "ihn",
           "dependent": 7,
-          "dependentGloss": "für"
+          "dependentGloss": "fuer"
         },
         {
           "dep": "nmod",
@@ -11699,14 +11699,14 @@
         {
           "dep": "xcomp",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 10,
           "dependentGloss": "verstehen"
         },
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 11,
           "dependentGloss": "."
         }
@@ -11717,12 +11717,12 @@
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 2,
-          "dependentGloss": "erzählt"
+          "dependentGloss": "erzaehlt"
         },
         {
           "dep": "nsubj",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 1,
           "dependentGloss": "Johann"
         },
@@ -11759,7 +11759,7 @@
           "governor": 8,
           "governorGloss": "ihn",
           "dependent": 7,
-          "dependentGloss": "für"
+          "dependentGloss": "fuer"
         },
         {
           "dep": "nmod",
@@ -11778,14 +11778,14 @@
         {
           "dep": "xcomp",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 10,
           "dependentGloss": "verstehen"
         },
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 11,
           "dependentGloss": "."
         }
@@ -11796,12 +11796,12 @@
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 2,
-          "dependentGloss": "erzählt"
+          "dependentGloss": "erzaehlt"
         },
         {
           "dep": "nsubj",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 1,
           "dependentGloss": "Johann"
         },
@@ -11838,7 +11838,7 @@
           "governor": 8,
           "governorGloss": "ihn",
           "dependent": 7,
-          "dependentGloss": "für"
+          "dependentGloss": "fuer"
         },
         {
           "dep": "nmod",
@@ -11857,14 +11857,14 @@
         {
           "dep": "xcomp",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 10,
           "dependentGloss": "verstehen"
         },
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 11,
           "dependentGloss": "."
         }
@@ -11906,9 +11906,9 @@
         },
         {
           "index": 2,
-          "word": "erzählt",
-          "originalText": "erzählt",
-          "lemma": "erzählt",
+          "word": "erzaehlt",
+          "originalText": "erzaehlt",
+          "lemma": "erzaehlt",
           "characterOffsetBegin": 1687,
           "characterOffsetEnd": 1694,
           "pos": "VVFIN",
@@ -11966,9 +11966,9 @@
         },
         {
           "index": 7,
-          "word": "für",
-          "originalText": "für",
-          "lemma": "für",
+          "word": "fuer",
+          "originalText": "fuer",
+          "lemma": "fuer",
           "characterOffsetBegin": 1719,
           "characterOffsetEnd": 1722,
           "pos": "APPR",
@@ -12028,19 +12028,19 @@
     },
     {
       "index": 35,
-      "parse": "(ROOT\n  (S (NE Johann) (VVFIN erzählt) (NE Wilhelm)\n    (NP (NN Sachen))\n    ($, ,)\n    (S (KOUS dass) (PPER er)\n      (VP\n        (AA (PTKA zu) (ADJD schwierig))\n        (VZ (PTKZU zu) (VVINF verstehen)))\n      (VVFIN findet))\n    ($. .)))",
+      "parse": "(ROOT\n  (S (NE Johann) (VVFIN erzaehlt) (NE Wilhelm)\n    (NP (NN Sachen))\n    ($, ,)\n    (S (KOUS dass) (PPER er)\n      (VP\n        (AA (PTKA zu) (ADJD schwierig))\n        (VZ (PTKZU zu) (VVINF verstehen)))\n      (VVFIN findet))\n    ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 2,
-          "dependentGloss": "erzählt"
+          "dependentGloss": "erzaehlt"
         },
         {
           "dep": "nsubj",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 1,
           "dependentGloss": "Johann"
         },
@@ -12054,14 +12054,14 @@
         {
           "dep": "dobj",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 4,
           "dependentGloss": "Sachen"
         },
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 5,
           "dependentGloss": ","
         },
@@ -12110,14 +12110,14 @@
         {
           "dep": "ccomp",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 12,
           "dependentGloss": "findet"
         },
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 13,
           "dependentGloss": "."
         }
@@ -12128,12 +12128,12 @@
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 2,
-          "dependentGloss": "erzählt"
+          "dependentGloss": "erzaehlt"
         },
         {
           "dep": "nsubj",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 1,
           "dependentGloss": "Johann"
         },
@@ -12147,14 +12147,14 @@
         {
           "dep": "dobj",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 4,
           "dependentGloss": "Sachen"
         },
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 5,
           "dependentGloss": ","
         },
@@ -12203,14 +12203,14 @@
         {
           "dep": "ccomp",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 12,
           "dependentGloss": "findet"
         },
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 13,
           "dependentGloss": "."
         }
@@ -12221,12 +12221,12 @@
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 2,
-          "dependentGloss": "erzählt"
+          "dependentGloss": "erzaehlt"
         },
         {
           "dep": "nsubj",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 1,
           "dependentGloss": "Johann"
         },
@@ -12240,14 +12240,14 @@
         {
           "dep": "dobj",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 4,
           "dependentGloss": "Sachen"
         },
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 5,
           "dependentGloss": ","
         },
@@ -12296,14 +12296,14 @@
         {
           "dep": "ccomp",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 12,
           "dependentGloss": "findet"
         },
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "erzählt",
+          "governorGloss": "erzaehlt",
           "dependent": 13,
           "dependentGloss": "."
         }
@@ -12345,9 +12345,9 @@
         },
         {
           "index": 2,
-          "word": "erzählt",
-          "originalText": "erzählt",
-          "lemma": "erzählt",
+          "word": "erzaehlt",
+          "originalText": "erzaehlt",
+          "lemma": "erzaehlt",
           "characterOffsetBegin": 1749,
           "characterOffsetEnd": 1756,
           "pos": "VVFIN",
@@ -14186,7 +14186,7 @@
     },
     {
       "index": 42,
-      "parse": "(ROOT\n  (S (NE Johann) (VAFIN ist)\n    (NP (PPOSAT sein) (ADJA ärgster) (NN Feind))\n    ($. .)))",
+      "parse": "(ROOT\n  (S (NE Johann) (VAFIN ist)\n    (NP (PPOSAT sein) (ADJA aergster) (NN Feind))\n    ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
@@ -14221,7 +14221,7 @@
           "governor": 5,
           "governorGloss": "Feind",
           "dependent": 4,
-          "dependentGloss": "ärgster"
+          "dependentGloss": "aergster"
         },
         {
           "dep": "punct",
@@ -14265,7 +14265,7 @@
           "governor": 5,
           "governorGloss": "Feind",
           "dependent": 4,
-          "dependentGloss": "ärgster"
+          "dependentGloss": "aergster"
         },
         {
           "dep": "punct",
@@ -14309,7 +14309,7 @@
           "governor": 5,
           "governorGloss": "Feind",
           "dependent": 4,
-          "dependentGloss": "ärgster"
+          "dependentGloss": "aergster"
         },
         {
           "dep": "punct",
@@ -14370,9 +14370,9 @@
         },
         {
           "index": 4,
-          "word": "ärgster",
-          "originalText": "ärgster",
-          "lemma": "ärgster",
+          "word": "aergster",
+          "originalText": "aergster",
+          "lemma": "aergster",
           "characterOffsetBegin": 2064,
           "characterOffsetEnd": 2071,
           "pos": "ADJA",
@@ -14408,33 +14408,33 @@
     },
     {
       "index": 43,
-      "parse": "(ROOT\n  (S (NE Johann) (VVFIN hässt) (PPER ihn) ($. .)))",
+      "parse": "(ROOT\n  (S (NE Johann) (VVFIN haesst) (PPER ihn) ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 2,
-          "dependentGloss": "hässt"
+          "dependentGloss": "haesst"
         },
         {
           "dep": "nsubj",
           "governor": 2,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 1,
           "dependentGloss": "Johann"
         },
         {
           "dep": "dobj",
           "governor": 2,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 3,
           "dependentGloss": "ihn"
         },
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 4,
           "dependentGloss": "."
         }
@@ -14445,26 +14445,26 @@
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 2,
-          "dependentGloss": "hässt"
+          "dependentGloss": "haesst"
         },
         {
           "dep": "nsubj",
           "governor": 2,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 1,
           "dependentGloss": "Johann"
         },
         {
           "dep": "dobj",
           "governor": 2,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 3,
           "dependentGloss": "ihn"
         },
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 4,
           "dependentGloss": "."
         }
@@ -14475,26 +14475,26 @@
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 2,
-          "dependentGloss": "hässt"
+          "dependentGloss": "haesst"
         },
         {
           "dep": "nsubj",
           "governor": 2,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 1,
           "dependentGloss": "Johann"
         },
         {
           "dep": "dobj",
           "governor": 2,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 3,
           "dependentGloss": "ihn"
         },
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 4,
           "dependentGloss": "."
         }
@@ -14526,9 +14526,9 @@
         },
         {
           "index": 2,
-          "word": "hässt",
-          "originalText": "hässt",
-          "lemma": "hässt",
+          "word": "haesst",
+          "originalText": "haesst",
+          "lemma": "haesst",
           "characterOffsetBegin": 2087,
           "characterOffsetEnd": 2092,
           "pos": "VVFIN",
@@ -14564,33 +14564,33 @@
     },
     {
       "index": 44,
-      "parse": "(ROOT\n  (S (NE Johann) (VVFIN hässt) (PRF sich) ($. .)))",
+      "parse": "(ROOT\n  (S (NE Johann) (VVFIN haesst) (PRF sich) ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 2,
-          "dependentGloss": "hässt"
+          "dependentGloss": "haesst"
         },
         {
           "dep": "nsubj",
           "governor": 2,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 1,
           "dependentGloss": "Johann"
         },
         {
           "dep": "dobj",
           "governor": 2,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 3,
           "dependentGloss": "sich"
         },
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 4,
           "dependentGloss": "."
         }
@@ -14601,26 +14601,26 @@
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 2,
-          "dependentGloss": "hässt"
+          "dependentGloss": "haesst"
         },
         {
           "dep": "nsubj",
           "governor": 2,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 1,
           "dependentGloss": "Johann"
         },
         {
           "dep": "dobj",
           "governor": 2,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 3,
           "dependentGloss": "sich"
         },
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 4,
           "dependentGloss": "."
         }
@@ -14631,26 +14631,26 @@
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 2,
-          "dependentGloss": "hässt"
+          "dependentGloss": "haesst"
         },
         {
           "dep": "nsubj",
           "governor": 2,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 1,
           "dependentGloss": "Johann"
         },
         {
           "dep": "dobj",
           "governor": 2,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 3,
           "dependentGloss": "sich"
         },
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 4,
           "dependentGloss": "."
         }
@@ -14682,9 +14682,9 @@
         },
         {
           "index": 2,
-          "word": "hässt",
-          "originalText": "hässt",
-          "lemma": "hässt",
+          "word": "haesst",
+          "originalText": "haesst",
+          "lemma": "haesst",
           "characterOffsetBegin": 2106,
           "characterOffsetEnd": 2111,
           "pos": "VVFIN",
@@ -14720,7 +14720,7 @@
     },
     {
       "index": 45,
-      "parse": "(ROOT\n  (S (NE Johann) (VVFIN glaubt) ($, ,)\n    (S (KOUS dass) (NE Maria)\n      (NP (PPER ihn))\n      (VVFIN hässt))\n    ($. .)))",
+      "parse": "(ROOT\n  (S (NE Johann) (VVFIN glaubt) ($, ,)\n    (S (KOUS dass) (NE Maria)\n      (NP (PPER ihn))\n      (VVFIN haesst))\n    ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
@@ -14746,21 +14746,21 @@
         {
           "dep": "mark",
           "governor": 7,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 4,
           "dependentGloss": "dass"
         },
         {
           "dep": "nsubj",
           "governor": 7,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 5,
           "dependentGloss": "Maria"
         },
         {
           "dep": "dobj",
           "governor": 7,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 6,
           "dependentGloss": "ihn"
         },
@@ -14769,7 +14769,7 @@
           "governor": 2,
           "governorGloss": "glaubt",
           "dependent": 7,
-          "dependentGloss": "hässt"
+          "dependentGloss": "haesst"
         },
         {
           "dep": "punct",
@@ -14804,21 +14804,21 @@
         {
           "dep": "mark",
           "governor": 7,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 4,
           "dependentGloss": "dass"
         },
         {
           "dep": "nsubj",
           "governor": 7,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 5,
           "dependentGloss": "Maria"
         },
         {
           "dep": "dobj",
           "governor": 7,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 6,
           "dependentGloss": "ihn"
         },
@@ -14827,7 +14827,7 @@
           "governor": 2,
           "governorGloss": "glaubt",
           "dependent": 7,
-          "dependentGloss": "hässt"
+          "dependentGloss": "haesst"
         },
         {
           "dep": "punct",
@@ -14862,21 +14862,21 @@
         {
           "dep": "mark",
           "governor": 7,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 4,
           "dependentGloss": "dass"
         },
         {
           "dep": "nsubj",
           "governor": 7,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 5,
           "dependentGloss": "Maria"
         },
         {
           "dep": "dobj",
           "governor": 7,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 6,
           "dependentGloss": "ihn"
         },
@@ -14885,7 +14885,7 @@
           "governor": 2,
           "governorGloss": "glaubt",
           "dependent": 7,
-          "dependentGloss": "hässt"
+          "dependentGloss": "haesst"
         },
         {
           "dep": "punct",
@@ -14992,9 +14992,9 @@
         },
         {
           "index": 7,
-          "word": "hässt",
-          "originalText": "hässt",
-          "lemma": "hässt",
+          "word": "haesst",
+          "originalText": "haesst",
+          "lemma": "haesst",
           "characterOffsetBegin": 2150,
           "characterOffsetEnd": 2155,
           "pos": "VVFIN",
@@ -15018,7 +15018,7 @@
     },
     {
       "index": 46,
-      "parse": "(ROOT\n  (S\n    (NP (ART Die) (NN Mutter)\n      (PP (APPR von) (NE Johann)))\n    (VVFIN hässt) (PPER ihn) ($. .)))",
+      "parse": "(ROOT\n  (S\n    (NP (ART Die) (NN Mutter)\n      (PP (APPR von) (NE Johann)))\n    (VVFIN haesst) (PPER ihn) ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
@@ -15044,14 +15044,14 @@
         {
           "dep": "case",
           "governor": 5,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 3,
           "dependentGloss": "von"
         },
         {
           "dep": "name",
           "governor": 5,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 4,
           "dependentGloss": "Johann"
         },
@@ -15060,7 +15060,7 @@
           "governor": 2,
           "governorGloss": "Mutter",
           "dependent": 5,
-          "dependentGloss": "hässt"
+          "dependentGloss": "haesst"
         },
         {
           "dep": "punct",
@@ -15095,14 +15095,14 @@
         {
           "dep": "case",
           "governor": 5,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 3,
           "dependentGloss": "von"
         },
         {
           "dep": "name",
           "governor": 5,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 4,
           "dependentGloss": "Johann"
         },
@@ -15111,7 +15111,7 @@
           "governor": 2,
           "governorGloss": "Mutter",
           "dependent": 5,
-          "dependentGloss": "hässt"
+          "dependentGloss": "haesst"
         },
         {
           "dep": "punct",
@@ -15146,14 +15146,14 @@
         {
           "dep": "case",
           "governor": 5,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 3,
           "dependentGloss": "von"
         },
         {
           "dep": "name",
           "governor": 5,
-          "governorGloss": "hässt",
+          "governorGloss": "haesst",
           "dependent": 4,
           "dependentGloss": "Johann"
         },
@@ -15162,7 +15162,7 @@
           "governor": 2,
           "governorGloss": "Mutter",
           "dependent": 5,
-          "dependentGloss": "hässt"
+          "dependentGloss": "haesst"
         },
         {
           "dep": "punct",
@@ -15235,9 +15235,9 @@
         },
         {
           "index": 5,
-          "word": "hässt",
-          "originalText": "hässt",
-          "lemma": "hässt",
+          "word": "haesst",
+          "originalText": "haesst",
+          "lemma": "haesst",
           "characterOffsetBegin": 2180,
           "characterOffsetEnd": 2185,
           "pos": "VVFIN",
@@ -15273,40 +15273,40 @@
     },
     {
       "index": 47,
-      "parse": "(ROOT\n  (S\n    (NP (PPER Sie))\n    (VP\n      (AVP\n        (AVP\n          (S (VMFIN mögen)\n            (NP (PRF sich))))\n        (PTKNEG nicht)))\n    ($. .)))",
+      "parse": "(ROOT\n  (S\n    (NP (PPER Sie))\n    (VP\n      (AVP\n        (AVP\n          (S (VMFIN moegen)\n            (NP (PRF sich))))\n        (PTKNEG nicht)))\n    ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 2,
-          "dependentGloss": "mögen"
+          "dependentGloss": "moegen"
         },
         {
           "dep": "nsubj",
           "governor": 2,
-          "governorGloss": "mögen",
+          "governorGloss": "moegen",
           "dependent": 1,
           "dependentGloss": "Sie"
         },
         {
           "dep": "dobj",
           "governor": 2,
-          "governorGloss": "mögen",
+          "governorGloss": "moegen",
           "dependent": 3,
           "dependentGloss": "sich"
         },
         {
           "dep": "neg",
           "governor": 2,
-          "governorGloss": "mögen",
+          "governorGloss": "moegen",
           "dependent": 4,
           "dependentGloss": "nicht"
         },
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "mögen",
+          "governorGloss": "moegen",
           "dependent": 5,
           "dependentGloss": "."
         }
@@ -15317,33 +15317,33 @@
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 2,
-          "dependentGloss": "mögen"
+          "dependentGloss": "moegen"
         },
         {
           "dep": "nsubj",
           "governor": 2,
-          "governorGloss": "mögen",
+          "governorGloss": "moegen",
           "dependent": 1,
           "dependentGloss": "Sie"
         },
         {
           "dep": "dobj",
           "governor": 2,
-          "governorGloss": "mögen",
+          "governorGloss": "moegen",
           "dependent": 3,
           "dependentGloss": "sich"
         },
         {
           "dep": "neg",
           "governor": 2,
-          "governorGloss": "mögen",
+          "governorGloss": "moegen",
           "dependent": 4,
           "dependentGloss": "nicht"
         },
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "mögen",
+          "governorGloss": "moegen",
           "dependent": 5,
           "dependentGloss": "."
         }
@@ -15354,33 +15354,33 @@
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 2,
-          "dependentGloss": "mögen"
+          "dependentGloss": "moegen"
         },
         {
           "dep": "nsubj",
           "governor": 2,
-          "governorGloss": "mögen",
+          "governorGloss": "moegen",
           "dependent": 1,
           "dependentGloss": "Sie"
         },
         {
           "dep": "dobj",
           "governor": 2,
-          "governorGloss": "mögen",
+          "governorGloss": "moegen",
           "dependent": 3,
           "dependentGloss": "sich"
         },
         {
           "dep": "neg",
           "governor": 2,
-          "governorGloss": "mögen",
+          "governorGloss": "moegen",
           "dependent": 4,
           "dependentGloss": "nicht"
         },
         {
           "dep": "punct",
           "governor": 2,
-          "governorGloss": "mögen",
+          "governorGloss": "moegen",
           "dependent": 5,
           "dependentGloss": "."
         }
@@ -15402,9 +15402,9 @@
         },
         {
           "index": 2,
-          "word": "mögen",
-          "originalText": "mögen",
-          "lemma": "mögen",
+          "word": "moegen",
+          "originalText": "moegen",
+          "lemma": "moegen",
           "characterOffsetBegin": 2196,
           "characterOffsetEnd": 2201,
           "pos": "VMFIN",
@@ -15452,7 +15452,7 @@
     },
     {
       "index": 48,
-      "parse": "(ROOT\n  (S (PPER Sie) (VVFIN lesen)\n    (NP (PPOSAT ihre) (NN Bücher))\n    ($. .)))",
+      "parse": "(ROOT\n  (S (PPER Sie) (VVFIN lesen)\n    (NP (PPOSAT ihre) (NN Buecher))\n    ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
@@ -15471,7 +15471,7 @@
         {
           "dep": "det",
           "governor": 4,
-          "governorGloss": "Bücher",
+          "governorGloss": "Buecher",
           "dependent": 3,
           "dependentGloss": "ihre"
         },
@@ -15480,7 +15480,7 @@
           "governor": 2,
           "governorGloss": "lesen",
           "dependent": 4,
-          "dependentGloss": "Bücher"
+          "dependentGloss": "Buecher"
         },
         {
           "dep": "punct",
@@ -15508,7 +15508,7 @@
         {
           "dep": "det",
           "governor": 4,
-          "governorGloss": "Bücher",
+          "governorGloss": "Buecher",
           "dependent": 3,
           "dependentGloss": "ihre"
         },
@@ -15517,7 +15517,7 @@
           "governor": 2,
           "governorGloss": "lesen",
           "dependent": 4,
-          "dependentGloss": "Bücher"
+          "dependentGloss": "Buecher"
         },
         {
           "dep": "punct",
@@ -15545,7 +15545,7 @@
         {
           "dep": "det",
           "governor": 4,
-          "governorGloss": "Bücher",
+          "governorGloss": "Buecher",
           "dependent": 3,
           "dependentGloss": "ihre"
         },
@@ -15554,7 +15554,7 @@
           "governor": 2,
           "governorGloss": "lesen",
           "dependent": 4,
-          "dependentGloss": "Bücher"
+          "dependentGloss": "Buecher"
         },
         {
           "dep": "punct",
@@ -15605,9 +15605,9 @@
         },
         {
           "index": 4,
-          "word": "Bücher",
-          "originalText": "Bücher",
-          "lemma": "bücher",
+          "word": "Buecher",
+          "originalText": "Buecher",
+          "lemma": "buecher",
           "characterOffsetBegin": 2230,
           "characterOffsetEnd": 2236,
           "pos": "NN",
@@ -16983,14 +16983,14 @@
     },
     {
       "index": 54,
-      "parse": "(ROOT\n  (S\n    (NP (PPOSAT Ihre) (NN Bilder)\n      (PP (APPR von) (ADV einander)))\n    (VAFIN sind) (ADJD schön) ($. .)))",
+      "parse": "(ROOT\n  (S\n    (NP (PPOSAT Ihre) (NN Bilder)\n      (PP (APPR von) (ADV einander)))\n    (VAFIN sind) (ADJD schoen) ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 6,
-          "dependentGloss": "schön"
+          "dependentGloss": "schoen"
         },
         {
           "dep": "det",
@@ -17002,7 +17002,7 @@
         {
           "dep": "nsubj",
           "governor": 6,
-          "governorGloss": "schön",
+          "governorGloss": "schoen",
           "dependent": 2,
           "dependentGloss": "Bilder"
         },
@@ -17023,14 +17023,14 @@
         {
           "dep": "cop",
           "governor": 6,
-          "governorGloss": "schön",
+          "governorGloss": "schoen",
           "dependent": 5,
           "dependentGloss": "sind"
         },
         {
           "dep": "punct",
           "governor": 6,
-          "governorGloss": "schön",
+          "governorGloss": "schoen",
           "dependent": 7,
           "dependentGloss": "."
         }
@@ -17041,7 +17041,7 @@
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 6,
-          "dependentGloss": "schön"
+          "dependentGloss": "schoen"
         },
         {
           "dep": "det",
@@ -17053,7 +17053,7 @@
         {
           "dep": "nsubj",
           "governor": 6,
-          "governorGloss": "schön",
+          "governorGloss": "schoen",
           "dependent": 2,
           "dependentGloss": "Bilder"
         },
@@ -17074,14 +17074,14 @@
         {
           "dep": "cop",
           "governor": 6,
-          "governorGloss": "schön",
+          "governorGloss": "schoen",
           "dependent": 5,
           "dependentGloss": "sind"
         },
         {
           "dep": "punct",
           "governor": 6,
-          "governorGloss": "schön",
+          "governorGloss": "schoen",
           "dependent": 7,
           "dependentGloss": "."
         }
@@ -17092,7 +17092,7 @@
           "governor": 0,
           "governorGloss": "ROOT",
           "dependent": 6,
-          "dependentGloss": "schön"
+          "dependentGloss": "schoen"
         },
         {
           "dep": "det",
@@ -17104,7 +17104,7 @@
         {
           "dep": "nsubj",
           "governor": 6,
-          "governorGloss": "schön",
+          "governorGloss": "schoen",
           "dependent": 2,
           "dependentGloss": "Bilder"
         },
@@ -17125,14 +17125,14 @@
         {
           "dep": "cop",
           "governor": 6,
-          "governorGloss": "schön",
+          "governorGloss": "schoen",
           "dependent": 5,
           "dependentGloss": "sind"
         },
         {
           "dep": "punct",
           "governor": 6,
-          "governorGloss": "schön",
+          "governorGloss": "schoen",
           "dependent": 7,
           "dependentGloss": "."
         }
@@ -17202,9 +17202,9 @@
         },
         {
           "index": 6,
-          "word": "schön",
-          "originalText": "schön",
-          "lemma": "schön",
+          "word": "schoen",
+          "originalText": "schoen",
+          "lemma": "schoen",
           "characterOffsetBegin": 2453,
           "characterOffsetEnd": 2458,
           "pos": "ADJD",
@@ -17228,7 +17228,7 @@
     },
     {
       "index": 55,
-      "parse": "(ROOT\n  (S (PPER Sie) (VVFIN lesen)\n    (NP (ART die) (NN Bücher)\n      (PP (APPR von) (ADV einander)))\n    ($. .)))",
+      "parse": "(ROOT\n  (S (PPER Sie) (VVFIN lesen)\n    (NP (ART die) (NN Buecher)\n      (PP (APPR von) (ADV einander)))\n    ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
@@ -17247,7 +17247,7 @@
         {
           "dep": "det",
           "governor": 4,
-          "governorGloss": "Bücher",
+          "governorGloss": "Buecher",
           "dependent": 3,
           "dependentGloss": "die"
         },
@@ -17256,7 +17256,7 @@
           "governor": 2,
           "governorGloss": "lesen",
           "dependent": 4,
-          "dependentGloss": "Bücher"
+          "dependentGloss": "Buecher"
         },
         {
           "dep": "case",
@@ -17268,7 +17268,7 @@
         {
           "dep": "nmod",
           "governor": 4,
-          "governorGloss": "Bücher",
+          "governorGloss": "Buecher",
           "dependent": 6,
           "dependentGloss": "einander"
         },
@@ -17298,7 +17298,7 @@
         {
           "dep": "det",
           "governor": 4,
-          "governorGloss": "Bücher",
+          "governorGloss": "Buecher",
           "dependent": 3,
           "dependentGloss": "die"
         },
@@ -17307,7 +17307,7 @@
           "governor": 2,
           "governorGloss": "lesen",
           "dependent": 4,
-          "dependentGloss": "Bücher"
+          "dependentGloss": "Buecher"
         },
         {
           "dep": "case",
@@ -17319,7 +17319,7 @@
         {
           "dep": "nmod",
           "governor": 4,
-          "governorGloss": "Bücher",
+          "governorGloss": "Buecher",
           "dependent": 6,
           "dependentGloss": "einander"
         },
@@ -17349,7 +17349,7 @@
         {
           "dep": "det",
           "governor": 4,
-          "governorGloss": "Bücher",
+          "governorGloss": "Buecher",
           "dependent": 3,
           "dependentGloss": "die"
         },
@@ -17358,7 +17358,7 @@
           "governor": 2,
           "governorGloss": "lesen",
           "dependent": 4,
-          "dependentGloss": "Bücher"
+          "dependentGloss": "Buecher"
         },
         {
           "dep": "case",
@@ -17370,7 +17370,7 @@
         {
           "dep": "nmod",
           "governor": 4,
-          "governorGloss": "Bücher",
+          "governorGloss": "Buecher",
           "dependent": 6,
           "dependentGloss": "einander"
         },
@@ -17423,9 +17423,9 @@
         },
         {
           "index": 4,
-          "word": "Bücher",
-          "originalText": "Bücher",
-          "lemma": "bücher",
+          "word": "Buecher",
+          "originalText": "Buecher",
+          "lemma": "buecher",
           "characterOffsetBegin": 2475,
           "characterOffsetEnd": 2481,
           "pos": "NN",
@@ -17473,7 +17473,7 @@
     },
     {
       "index": 56,
-      "parse": "(ROOT\n  (S\n    (NP (ART Die) (NN Manner))\n    (VVFIN sehen) (ADV zueinander) (ADJD klug) (PTKVZ aus) ($. .)))",
+      "parse": "(ROOT\n  (S\n    (NP (ART Die) (NN Maenner))\n    (VVFIN sehen) (ADV zueinander) (ADJD klug) (PTKVZ aus) ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
@@ -17485,7 +17485,7 @@
         {
           "dep": "det",
           "governor": 2,
-          "governorGloss": "Manner",
+          "governorGloss": "Maenner",
           "dependent": 1,
           "dependentGloss": "Die"
         },
@@ -17494,7 +17494,7 @@
           "governor": 3,
           "governorGloss": "sehen",
           "dependent": 2,
-          "dependentGloss": "Manner"
+          "dependentGloss": "Maenner"
         },
         {
           "dep": "advmod",
@@ -17536,7 +17536,7 @@
         {
           "dep": "det",
           "governor": 2,
-          "governorGloss": "Manner",
+          "governorGloss": "Maenner",
           "dependent": 1,
           "dependentGloss": "Die"
         },
@@ -17545,7 +17545,7 @@
           "governor": 3,
           "governorGloss": "sehen",
           "dependent": 2,
-          "dependentGloss": "Manner"
+          "dependentGloss": "Maenner"
         },
         {
           "dep": "advmod",
@@ -17587,7 +17587,7 @@
         {
           "dep": "det",
           "governor": 2,
-          "governorGloss": "Manner",
+          "governorGloss": "Maenner",
           "dependent": 1,
           "dependentGloss": "Die"
         },
@@ -17596,7 +17596,7 @@
           "governor": 3,
           "governorGloss": "sehen",
           "dependent": 2,
-          "dependentGloss": "Manner"
+          "dependentGloss": "Maenner"
         },
         {
           "dep": "advmod",
@@ -17644,9 +17644,9 @@
         },
         {
           "index": 2,
-          "word": "Manner",
-          "originalText": "Manner",
-          "lemma": "manner",
+          "word": "Maenner",
+          "originalText": "Maenner",
+          "lemma": "maenner",
           "characterOffsetBegin": 2501,
           "characterOffsetEnd": 2507,
           "pos": "NN",
