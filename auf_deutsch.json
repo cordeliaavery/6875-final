@@ -17473,7 +17473,7 @@
     },
     {
       "index": 56,
-      "parse": "(ROOT\n  (S\n    (NP (ART Die) (NN Männer))\n    (VVFIN sehen) (ADV zueinander) (ADJD klug) (PTKVZ aus) ($. .)))",
+      "parse": "(ROOT\n  (S\n    (NP (ART Die) (NN Manner))\n    (VVFIN sehen) (ADV zueinander) (ADJD klug) (PTKVZ aus) ($. .)))",
       "basicDependencies": [
         {
           "dep": "ROOT",
@@ -17485,7 +17485,7 @@
         {
           "dep": "det",
           "governor": 2,
-          "governorGloss": "Männer",
+          "governorGloss": "Manner",
           "dependent": 1,
           "dependentGloss": "Die"
         },
@@ -17494,7 +17494,7 @@
           "governor": 3,
           "governorGloss": "sehen",
           "dependent": 2,
-          "dependentGloss": "Männer"
+          "dependentGloss": "Manner"
         },
         {
           "dep": "advmod",
@@ -17536,7 +17536,7 @@
         {
           "dep": "det",
           "governor": 2,
-          "governorGloss": "Männer",
+          "governorGloss": "Manner",
           "dependent": 1,
           "dependentGloss": "Die"
         },
@@ -17545,7 +17545,7 @@
           "governor": 3,
           "governorGloss": "sehen",
           "dependent": 2,
-          "dependentGloss": "Männer"
+          "dependentGloss": "Manner"
         },
         {
           "dep": "advmod",
@@ -17587,7 +17587,7 @@
         {
           "dep": "det",
           "governor": 2,
-          "governorGloss": "Männer",
+          "governorGloss": "Manner",
           "dependent": 1,
           "dependentGloss": "Die"
         },
@@ -17596,7 +17596,7 @@
           "governor": 3,
           "governorGloss": "sehen",
           "dependent": 2,
-          "dependentGloss": "Männer"
+          "dependentGloss": "Manner"
         },
         {
           "dep": "advmod",
@@ -17644,9 +17644,9 @@
         },
         {
           "index": 2,
-          "word": "Männer",
-          "originalText": "Männer",
-          "lemma": "männer",
+          "word": "Manner",
+          "originalText": "Manner",
+          "lemma": "manner",
           "characterOffsetBegin": 2501,
           "characterOffsetEnd": 2507,
           "pos": "NN",

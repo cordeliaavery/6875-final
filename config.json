@@ -342,6 +342,17 @@
         }
     },
     "ger": {
+        "pos_mapping": {
+            "NE": "NNP",
+            "VAFIN": "VP",
+            "VVFIN": "VP",
+            "PPER": "PRP",
+            "KON": "CC",
+            "CNP": "NP",
+            "PTJVZ": "PRP",
+            "PPOSAT": "PRP",
+            "PTKVZ": "PRP"
+        },
         "I_dir": "left",
         "V_dir": "right",
         "lexicon": {
@@ -481,6 +492,14 @@
                 "type": "A",
                 "animate": true
             },
+            "aus": {
+                "gender": "[fm]",
+                "person": "t",
+                "count": "p",
+                "case": "obj",
+                "type": "A",
+                "animate": true
+            },
             "jeder": {
                 "gender": "[fm]",
                 "person": "t",
@@ -545,11 +564,11 @@
                 "type": "A",
                 "animate": true
             },
-            "Männer": {
+            "Manner": {
                 "gender": "m",
                 "person": "t",
                 "count": "p",
-                "case": "nom",
+                "case": "nom|obj",
                 "type": "R",
                 "animate": true
             }, 

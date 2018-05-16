@@ -41,7 +41,9 @@ class Tree:
             self.__leaf = True
 
             if self.__tag.startswith("N") or self.__tag.startswith("PR"):
+                print children
                 conf = Tree.lexicon.get(self.__node.get_string())
+                print conf
                 if not conf:
                     conf = {"gender": "[fm]",
                             "person": "t",
@@ -337,9 +339,7 @@ def process_string(val, pos_mapping={}):
         elif WS.match(c):
             if current_str:
                 if not waiting_stack[-1]:
-                    prev_str = current_str
                     current_str = pos_mapping.get(current_str, current_str)
-                    assert (current_str == prev_str)
                     waiting_stack[-1].append(current_str)
                     waiting_stack[-1].append([])
                 else:

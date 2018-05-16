@@ -141,7 +141,6 @@ def main(args):
         tree_to_parse = Tree(list_hier[0], 0)
         print tree_to_parse.get_string()
 
-
         candidate_matches = {}
 
         sentNum = sentence["index"]+1
